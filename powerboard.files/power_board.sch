@@ -18112,8 +18112,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </libraries>
 <attributes>
 <attribute name="DRAWING_NAME" value="Xiaochuan Chen"/>
-<attribute name="DRAWING_TITLE" value="ARVP Power Board"/>
-<attribute name="REVISION" value="3.0"/>
+<attribute name="DRAWING_TITLE" value="power_board"/>
+<attribute name="REVISION" value="1.0"/>
 </attributes>
 <variantdefs>
 </variantdefs>

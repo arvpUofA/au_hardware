@@ -11505,98 +11505,6 @@ for power line</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="switch">
-<packages>
-<package name="M9040P">
-<description>&lt;b&gt;TOGGLE SWITCH&lt;/b&gt;&lt;p&gt;
-Marquardt</description>
-<wire x1="-3.3528" y1="6.6802" x2="-3.9878" y2="6.0452" width="0.1524" layer="21"/>
-<wire x1="-3.3528" y1="6.6802" x2="3.3528" y2="6.6802" width="0.1524" layer="21"/>
-<wire x1="3.9878" y1="6.0452" x2="3.3528" y2="6.6802" width="0.1524" layer="21"/>
-<wire x1="3.3782" y1="-6.6802" x2="4.0132" y2="-6.0452" width="0.1524" layer="21"/>
-<wire x1="3.3782" y1="-6.6802" x2="-3.3782" y2="-6.6802" width="0.1524" layer="21"/>
-<wire x1="-4.0132" y1="-6.0452" x2="-3.3782" y2="-6.6802" width="0.1524" layer="21"/>
-<wire x1="4.318" y1="2.286" x2="4.318" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-4.318" y1="2.286" x2="-4.318" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="4.318" y1="2.286" x2="3.9878" y2="2.5146" width="0.1524" layer="21"/>
-<wire x1="0" y1="5.08" x2="-3.9878" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-4.318" y1="-2.286" x2="-4.0132" y2="-2.4892" width="0.1524" layer="21"/>
-<wire x1="0" y1="-5.08" x2="4.0132" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="1.905" y1="-1.27" x2="2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="-2.54" width="0.1524" layer="51"/>
-<wire x1="1.905" y1="-3.175" x2="2.54" y2="-2.54" width="0.1524" layer="51"/>
-<wire x1="1.905" y1="-3.175" x2="-1.905" y2="-3.175" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-2.54" x2="-1.905" y2="-3.175" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="-1.905" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="1.6002" y1="1.27" x2="2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="4.0132" y1="-6.0452" x2="4.0132" y2="-2.4892" width="0.1524" layer="21"/>
-<wire x1="3.9878" y1="6.0452" x2="3.9878" y2="2.5146" width="0.1524" layer="21"/>
-<wire x1="-3.9878" y1="2.4892" x2="-3.9878" y2="6.0452" width="0.1524" layer="21"/>
-<wire x1="-4.0132" y1="-6.0452" x2="-4.0132" y2="-2.4892" width="0.1524" layer="21"/>
-<wire x1="-1.6002" y1="1.27" x2="-2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="51" curve="-270"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.1524" layer="51" curve="-233.130102"/>
-<wire x1="-1.6002" y1="1.27" x2="1.6002" y2="1.27" width="0.1524" layer="51"/>
-<wire x1="3.9878" y1="2.5146" x2="0" y2="5.08" width="0.1524" layer="51"/>
-<wire x1="4.0132" y1="-2.4892" x2="4.318" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-4.0132" y1="-2.4892" x2="0" y2="-5.08" width="0.1524" layer="51"/>
-<wire x1="-3.9878" y1="2.4892" x2="-4.318" y2="2.286" width="0.1524" layer="21"/>
-<pad name="3" x="0" y="-4.699" drill="1.8034" shape="long"/>
-<pad name="2" x="0" y="0" drill="1.8034" shape="long"/>
-<pad name="1" x="0" y="4.699" drill="1.8034" shape="long"/>
-<text x="-3.81" y="7.62" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-9.525" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="KS-U">
-<wire x1="-3.81" y1="1.905" x2="-2.54" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="1.905" x2="-3.81" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-0.762" y2="0" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="1.905" x2="-3.81" y2="1.905" width="0.254" layer="94"/>
-<wire x1="0.254" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-3.175" x2="2.54" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.905" x2="0.635" y2="3.175" width="0.254" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="3.175" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="3.175" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="0" x2="-0.254" y2="-0.762" width="0.1524" layer="94"/>
-<wire x1="-0.254" y1="-0.762" x2="0.254" y2="0" width="0.1524" layer="94"/>
-<text x="-6.35" y="-1.905" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="P" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="S" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="O" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="M9040P" prefix="S" uservalue="yes">
-<description>&lt;b&gt;TOGGLE SWITCH&lt;/b&gt;&lt;p&gt;
-Marquardt</description>
-<gates>
-<gate name="1" symbol="KS-U" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="M9040P">
-<connects>
-<connect gate="1" pin="O" pad="1"/>
-<connect gate="1" pin="P" pad="2"/>
-<connect gate="1" pin="S" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun">
 <packages>
 <package name="STAND-OFF">
@@ -18463,6 +18371,69 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-phoenix-254">
+<description>&lt;b&gt;Phoenix Connectors&lt;/b&gt;&lt;p&gt;
+Grid 2.54 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="2POL254">
+<description>&lt;b&gt;PHOENIX CONNECTOR&lt;/b&gt;</description>
+<wire x1="-2.67" y1="-1.45" x2="2.67" y2="-1.45" width="0.254" layer="21"/>
+<wire x1="2.67" y1="-1.45" x2="2.67" y2="1.45" width="0.254" layer="21"/>
+<wire x1="2.67" y1="1.45" x2="-2.67" y2="1.45" width="0.254" layer="21"/>
+<wire x1="-2.67" y1="1.45" x2="-2.67" y2="-1.45" width="0.254" layer="21"/>
+<wire x1="-2.56" y1="1.1" x2="2.56" y2="1.1" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-0.508" x2="-0.762" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.508" y1="-0.254" x2="2.032" y2="0.127" width="0.1524" layer="51"/>
+<circle x="-1.27" y="0" radius="0.889" width="0.1524" layer="51"/>
+<circle x="1.27" y="0" radius="0.889" width="0.1524" layer="51"/>
+<pad name="1" x="-1.27" y="0" drill="1.2" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.2" shape="long" rot="R90"/>
+<text x="-2.794" y="1.778" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-3.048" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SKB">
+<wire x1="2.032" y1="0.762" x2="0.508" y2="-0.762" width="0.254" layer="94"/>
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="3.556" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+<symbol name="SKBV">
+<wire x1="2.032" y1="0.762" x2="0.508" y2="-0.762" width="0.254" layer="94"/>
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="3.556" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.016" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPT2" prefix="X" uservalue="yes">
+<description>&lt;b&gt;PHOENIX CONNECTOR&lt;/b&gt;</description>
+<gates>
+<gate name="-1" symbol="SKB" x="0" y="0" addlevel="always"/>
+<gate name="-2" symbol="SKBV" x="0" y="-5.08" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="2POL254">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="DRAWING_NAME" value="Xiaochuan Chen"/>
@@ -18478,7 +18449,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </classes>
 <parts>
 <part name="C1" library="rcl" deviceset="CPOL-US" device="E5-10.5"/>
-<part name="S1" library="switch" deviceset="M9040P" device=""/>
 <part name="JP1" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="JP6" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="JP2" library="SparkFun" deviceset="STAND-OFF" device=""/>
@@ -18592,6 +18562,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="PAD49" library="wirepad" deviceset="WIREPAD" device="3,17/1,3"/>
 <part name="P$1" library="ARVP" deviceset="AND_PWR" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="0204/7" value="1k"/>
+<part name="X1" library="con-phoenix-254" deviceset="MPT2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19339,7 +19310,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="50.8" y="226.06"/>
-<instance part="S1" gate="1" x="68.58" y="233.68" rot="R270"/>
 <instance part="JP1" gate="G$1" x="17.78" y="215.9"/>
 <instance part="JP6" gate="G$1" x="17.78" y="190.5"/>
 <instance part="JP2" gate="G$1" x="17.78" y="210.82"/>
@@ -19348,7 +19318,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <instance part="JP5" gate="G$1" x="17.78" y="195.58" rot="R90"/>
 <instance part="P+1" gate="1" x="53.34" y="238.76"/>
 <instance part="P-2" gate="1" x="50.8" y="200.66"/>
-<instance part="P-3" gate="1" x="63.5" y="213.36"/>
+<instance part="P-3" gate="1" x="66.04" y="215.9"/>
 <instance part="P-4" gate="1" x="106.68" y="203.2"/>
 <instance part="P-5" gate="1" x="106.68" y="160.02"/>
 <instance part="P-6" gate="1" x="106.68" y="116.84"/>
@@ -19576,6 +19546,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </instance>
 <instance part="P$1" gate="G$1" x="22.86" y="226.06" rot="MR0"/>
 <instance part="R1" gate="G$1" x="35.56" y="195.58"/>
+<instance part="X1" gate="-1" x="66.04" y="243.84" rot="R90"/>
+<instance part="X1" gate="-2" x="71.12" y="243.84" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -19601,8 +19573,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </segment>
 <segment>
 <pinref part="P-3" gate="1" pin="V-"/>
-<pinref part="S1" gate="1" pin="P"/>
-<wire x1="63.5" y1="215.9" x2="63.5" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="218.44" x2="66.04" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="1"/>
 </segment>
 <segment>
 <pinref part="P-1" gate="1" pin="V-"/>
@@ -19682,8 +19654,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </net>
 <net name="ON/OFF" class="0">
 <segment>
-<pinref part="S1" gate="1" pin="O"/>
-<wire x1="73.66" y1="233.68" x2="78.74" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="233.68" x2="78.74" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="233.68" x2="86.36" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="233.68" x2="86.36" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="218.44" x2="86.36" y2="175.26" width="0.1524" layer="91"/>
@@ -19698,6 +19669,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U1" gate="G$1" pin="RC"/>
 <pinref part="U2" gate="G$1" pin="RC"/>
 <pinref part="U3" gate="G$1" pin="RC"/>
+<pinref part="X1" gate="-2" pin="1"/>
+<wire x1="71.12" y1="241.3" x2="71.12" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">

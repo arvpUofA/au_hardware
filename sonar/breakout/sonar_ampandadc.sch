@@ -2024,6 +2024,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,-68.58,-20.32,VCC,V+,,,,"/>
+<approved hash="102,1,-58.42,-20.32,VCC,V+,,,,"/>
+<approved hash="104,2,40.64,15.24,U$2,+VA,V+,,,"/>
+<approved hash="104,2,38.1,45.72,U$2,+VBD,V+,,,"/>
+<approved hash="113,1,-30.5223,-0.194731,1-8,,,,,"/>
+<approved hash="113,1,30.5223,2.73473,9-16,,,,,"/>
+<approved hash="113,2,104.098,31.9447,6-10,,,,,"/>
+<approved hash="113,2,83.8623,29.0153,1-5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

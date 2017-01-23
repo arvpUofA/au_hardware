@@ -144,7 +144,7 @@
 <wire x1="25.4" y1="0" x2="25.4" y2="45.9232" width="0" layer="20"/>
 <wire x1="25.4" y1="45.9232" x2="0" y2="45.9232" width="0" layer="20"/>
 <text x="4.0132" y="44.2214" size="1.27" layer="25">ARVP SONAR Breakout</text>
-<text x="8.255" y="0.635" size="0.635" layer="25">Mike Bardwell 17/10/16</text>
+<text x="8.255" y="0.635" size="0.635" layer="25">Mike Bardwell 22/01/16</text>
 <text x="0.635" y="21.59" size="0.4064" layer="25">NC</text>
 <text x="0.635" y="19.05" size="0.4064" layer="25">LATCH</text>
 <text x="0.635" y="16.51" size="0.4064" layer="25">V+</text>
@@ -173,7 +173,7 @@
 <text x="23.2664" y="37.5666" size="0.4064" layer="25">SCLK</text>
 <text x="23.3172" y="35.052" size="0.4064" layer="25">SDI</text>
 <text x="23.1394" y="32.7152" size="0.4064" layer="25">+VBD</text>
-<wire x1="0.0508" y1="25.4508" x2="25.2984" y2="25.4762" width="0.2032" layer="102" style="shortdash"/>
+<wire x1="0.0508" y1="25.4508" x2="25.2984" y2="25.4762" width="0.2032" layer="48" style="shortdash"/>
 <wire x1="0" y1="0" x2="0" y2="45.9232" width="0" layer="20"/>
 </plain>
 <libraries>

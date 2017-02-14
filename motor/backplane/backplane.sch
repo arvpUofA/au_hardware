@@ -488,11 +488,17 @@ Source: 1859075.pdf (Farnell)</description>
 <pad name="B25" x="30.5139" y="-7.5256" drill="1.2" diameter="1.778" shape="square" rot="R180"/>
 <text x="-31.7161" y="0.0944" size="1.27" layer="21">TOP</text>
 <text x="-32.9861" y="-2.4456" size="1.27" layer="21">1</text>
+<text x="-5.08" y="0" size="1.27" layer="21">EBC25DCWN</text>
 </package>
 <package name="KILL_SW">
 <pad name="P$1" x="-1.27" y="0" drill="0.8" shape="square"/>
 <pad name="P$2" x="1.27" y="0" drill="0.8"/>
 <pad name="P$3" x="3.81" y="0" drill="0.8"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
+<text x="0" y="1.27" size="1.27" layer="21">KS</text>
 </package>
 </packages>
 <symbols>
@@ -5078,6 +5084,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-12.7" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="20.32" x2="-12.7" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
+<junction x="-12.7" y="20.32"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5087,6 +5094,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="D2" gate="1" pin="A"/>
 <wire x1="-7.62" y1="38.1" x2="-12.7" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+<junction x="-12.7" y="38.1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5096,6 +5104,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="D1" gate="1" pin="A"/>
 <wire x1="-7.62" y1="55.88" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
+<junction x="-12.7" y="55.88"/>
 </segment>
 </net>
 <net name="AGND" class="0">
@@ -5155,6 +5164,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-7.62" y1="43.18" x2="-10.16" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
 <label x="7.62" y="43.18" size="1.778" layer="95"/>
+<junction x="-7.62" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="PWR"/>

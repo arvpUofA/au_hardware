@@ -5616,10 +5616,9 @@ naming: grid - package width</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="U$12" library="motor" deviceset="KILL_SW" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="capacitor-wima" deviceset="C" device="5/2.5" value="1uF"/>
-<part name="C2" library="capacitor-wima" deviceset="C" device="5/2.5" value="1uF"/>
-<part name="C3" library="capacitor-wima" deviceset="C" device="5/2.5" value="1uF"/>
 <part name="U$13" library="motor" deviceset="ARVP_LOGO" device=""/>
+<part name="C3" library="capacitor-wima" deviceset="C" device="5/2.5" value="1uF"/>
+<part name="C4" library="capacitor-wima" deviceset="C" device="5/2.5" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -5653,13 +5652,12 @@ naming: grid - package width</description>
 <instance part="U$11" gate="G$1" x="218.44" y="33.02" rot="R90"/>
 <instance part="GND1" gate="1" x="99.06" y="33.02"/>
 <instance part="GND2" gate="1" x="99.06" y="45.72"/>
-<instance part="GND3" gate="1" x="-17.78" y="73.66"/>
+<instance part="GND3" gate="1" x="-15.24" y="73.66"/>
 <instance part="U$12" gate="G$1" x="-35.56" y="5.08"/>
 <instance part="GND4" gate="1" x="-20.32" y="-5.08"/>
-<instance part="C1" gate="G$1" x="2.54" y="58.42"/>
-<instance part="C2" gate="G$1" x="2.54" y="40.64"/>
-<instance part="C3" gate="G$1" x="2.54" y="22.86"/>
 <instance part="U$13" gate="G$1" x="208.28" y="58.42"/>
+<instance part="C3" gate="G$1" x="-22.86" y="73.66"/>
+<instance part="C4" gate="G$1" x="-22.86" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -5727,7 +5725,11 @@ naming: grid - package width</description>
 <segment>
 <pinref part="X1" gate="-3" pin="S"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="-30.48" y1="76.2" x2="-17.78" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="76.2" x2="-22.86" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="-22.86" y1="76.2" x2="-15.24" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-22.86" y="76.2"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="G$1" pin="GND"/>
@@ -5743,15 +5745,19 @@ naming: grid - package width</description>
 </segment>
 <segment>
 <pinref part="X1" gate="-1" pin="S"/>
-<wire x1="-25.4" y1="71.12" x2="-30.48" y2="71.12" width="0.1524" layer="91"/>
-<label x="-25.4" y="71.12" size="1.778" layer="95"/>
+<wire x1="-27.94" y1="71.12" x2="-30.48" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="71.12" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="66.04" x2="-22.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="66.04" x2="-22.86" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-22.86" y1="66.04" x2="-10.16" y2="66.04" width="0.1524" layer="91"/>
+<label x="-10.16" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM_Z1" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="21/A7/PWM"/>
 <wire x1="48.26" y1="2.54" x2="43.18" y2="2.54" width="0.1524" layer="91"/>
-<label x="-12.7" y="76.2" size="1.778" layer="95"/>
 <label x="38.1" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -5779,7 +5785,6 @@ naming: grid - package width</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="22/A8/T/PWM"/>
 <wire x1="48.26" y1="0" x2="43.18" y2="0" width="0.1524" layer="91"/>
-<label x="-12.7" y="73.66" size="1.778" layer="95"/>
 <label x="38.1" y="0" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -5861,7 +5866,6 @@ naming: grid - package width</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="23/A9/T/PWM"/>
 <wire x1="48.26" y1="-2.54" x2="43.18" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-12.7" y="71.12" size="1.778" layer="95"/>
 <label x="38.1" y="-2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -5908,8 +5912,13 @@ naming: grid - package width</description>
 </segment>
 <segment>
 <pinref part="X1" gate="-4" pin="S"/>
-<wire x1="-30.48" y1="78.74" x2="-25.4" y2="78.74" width="0.1524" layer="91"/>
-<label x="-25.4" y="78.74" size="1.778" layer="95"/>
+<wire x1="-30.48" y1="78.74" x2="-27.94" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="78.74" x2="-27.94" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="86.36" x2="-22.86" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="-22.86" y1="83.82" x2="-22.86" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="86.36" x2="-10.16" y2="86.36" width="0.1524" layer="91"/>
+<label x="-10.16" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="G$1" pin="PWR"/>
@@ -6184,7 +6193,6 @@ naming: grid - package width</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="19/A5/T/SCL0"/>
 <wire x1="48.26" y1="7.62" x2="43.18" y2="7.62" width="0.1524" layer="91"/>
-<label x="-12.7" y="81.28" size="1.778" layer="95"/>
 <label x="38.1" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6293,7 +6301,6 @@ naming: grid - package width</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="20/A6/PWM"/>
 <wire x1="48.26" y1="5.08" x2="43.18" y2="5.08" width="0.1524" layer="91"/>
-<label x="-12.7" y="78.74" size="1.778" layer="95"/>
 <label x="38.1" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6371,22 +6378,16 @@ naming: grid - package width</description>
 <pinref part="AGND2" gate="VR1" pin="AGND"/>
 <wire x1="-2.54" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="17.78" x2="2.54" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AGND3" gate="VR1" pin="AGND"/>
 <wire x1="-2.54" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="35.56" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AGND4" gate="VR1" pin="AGND"/>
 <wire x1="-2.54" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="53.34" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="AGND"/>
@@ -6409,12 +6410,9 @@ naming: grid - package width</description>
 <pinref part="U$6" gate="G$1" pin="S"/>
 <pinref part="D2" gate="1" pin="C"/>
 <wire x1="-7.62" y1="43.18" x2="-10.16" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="43.18" x2="2.54" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
 <label x="7.62" y="43.18" size="1.778" layer="95"/>
 <junction x="-7.62" y="43.18"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
-<junction x="2.54" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="PWR"/>
@@ -6427,10 +6425,7 @@ naming: grid - package width</description>
 <pinref part="U$8" gate="G$1" pin="S"/>
 <pinref part="D3" gate="1" pin="C"/>
 <wire x1="-7.62" y1="25.4" x2="-10.16" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="25.4" x2="2.54" y2="25.4" width="0.1524" layer="91"/>
-<junction x="2.54" y="25.4"/>
-<wire x1="2.54" y1="25.4" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="25.4" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
 <label x="7.62" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -6449,10 +6444,7 @@ naming: grid - package width</description>
 <pinref part="D1" gate="1" pin="C"/>
 <pinref part="U$7" gate="G$1" pin="S"/>
 <wire x1="-10.16" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
-<junction x="2.54" y="60.96"/>
-<wire x1="2.54" y1="60.96" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="60.96" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
 <label x="7.62" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>

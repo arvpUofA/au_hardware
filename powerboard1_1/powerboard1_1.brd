@@ -308,11 +308,11 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 <text x="-1.778" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.778" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="E2,5-7">
+<package name="E3,5-8">
 <description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm, diameter 7 mm</description>
-<wire x1="-3.048" y1="0" x2="-2.286" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.667" y1="-0.381" x2="-2.667" y2="0.381" width="0.1524" layer="21"/>
+grid 3.5 mm, diameter 8 mm</description>
+<wire x1="-3.429" y1="1.143" x2="-2.667" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="0.762" x2="-3.048" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="-1.651" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
 <wire x1="-0.762" y1="0" x2="-0.762" y2="-1.27" width="0.1524" layer="51"/>
 <wire x1="-0.762" y1="-1.27" x2="-0.254" y2="-1.27" width="0.1524" layer="51"/>
@@ -320,11 +320,11 @@ grid 2.54 mm, diameter 7 mm</description>
 <wire x1="-0.254" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="51"/>
 <wire x1="-0.762" y1="1.27" x2="-0.762" y2="0" width="0.1524" layer="51"/>
 <wire x1="0.635" y1="0" x2="1.651" y2="0" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
-<pad name="-" x="1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
-<pad name="+" x="-1.27" y="0" drill="0.8128" diameter="1.6002"/>
-<text x="3.048" y="2.032" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.048" y="-3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="4.064" width="0.1524" layer="21"/>
+<pad name="-" x="1.778" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="+" x="-1.778" y="0" drill="0.8128" diameter="1.6002"/>
+<text x="3.302" y="2.794" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
 </package>
 </packages>
@@ -2127,10 +2127,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="47.6504" y="38.1" size="0.9906" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="48.4251" y="41.5544" size="0.9906" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="Q1" library="transistor-power" package="TO220BV" value="IPP80P03P4L04AKSA1" x="32.385" y="52.07" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.4452" y="50.8" size="1.27" layer="25" ratio="10" rot="R90"/>
+<element name="Q1" library="transistor-power" package="TO220BV" value="IPP80P03P4L04AKSA1" x="31.75" y="52.07" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.83" y="51.7398" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="R5" library="resistor" package="0204/7" value="4.7k" x="42.8625" y="43.18" smashed="yes" rot="R270">
+<element name="R5" library="resistor" package="0204/7" value="2k" x="42.8625" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="42.5704" y="38.1" size="0.9906" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="43.3451" y="41.5544" size="0.9906" layer="27" ratio="10" rot="R90"/>
 </element>
@@ -2405,9 +2405,8 @@ design rules under a new name.</description>
 <element name="D1" library="diode" package="DO34Z7" value="BZV10" x="44.1325" y="49.53" smashed="yes" rot="R180">
 <attribute name="NAME" x="45.339" y="52.197" size="1.27" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="C1" library="rcl" package="E2,5-7" value="" x="36.83" y="41.5925" smashed="yes" rot="R270">
-<attribute name="NAME" x="31.242" y="42.3545" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="33.655" y="38.5445" size="1.27" layer="27" ratio="10" rot="R270"/>
+<element name="C1" library="rcl" package="E3,5-8" value="100u" x="36.83" y="41.5925" smashed="yes" rot="R270">
+<attribute name="NAME" x="32.258" y="42.291" size="1.27" layer="25" ratio="10" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -2416,7 +2415,9 @@ design rules under a new name.</description>
 <vertex x="40.64" y="77.1525"/>
 <vertex x="178.7525" y="77.1525"/>
 <vertex x="178.7525" y="39.0525"/>
-<vertex x="34.29" y="39.0525"/>
+<vertex x="52.705" y="39.0525"/>
+<vertex x="51.435" y="38.1"/>
+<vertex x="34.29" y="38.1"/>
 <vertex x="34.29" y="48.26"/>
 <vertex x="40.64" y="48.26"/>
 </polygon>
@@ -2454,16 +2455,16 @@ design rules under a new name.</description>
 <contactref element="P$1" pad="GND"/>
 <contactref element="X1" pad="1"/>
 <contactref element="R6" pad="2"/>
-<contactref element="C1" pad="-"/>
 <wire x1="36.83" y1="31.75" x2="34.29" y2="31.75" width="1.016" layer="16"/>
 <wire x1="34.29" y1="31.75" x2="33.02" y2="33.02" width="1.016" layer="16"/>
-<wire x1="33.02" y1="33.02" x2="33.02" y2="38.1" width="1.016" layer="16"/>
-<wire x1="33.02" y1="38.1" x2="34.925" y2="40.005" width="1.016" layer="16"/>
-<wire x1="34.925" y1="40.005" x2="34.925" y2="41.275" width="1.016" layer="16"/>
+<wire x1="33.02" y1="33.02" x2="33.02" y2="37.465" width="1.016" layer="16"/>
+<wire x1="33.02" y1="37.465" x2="34.925" y2="39.37" width="1.016" layer="16"/>
+<wire x1="34.925" y1="39.37" x2="34.925" y2="41.275" width="1.016" layer="16"/>
 <wire x1="36.83" y1="31.75" x2="34.29" y2="31.75" width="1.016" layer="1"/>
 <wire x1="34.29" y1="31.75" x2="30.48" y2="27.94" width="1.016" layer="1"/>
 <wire x1="30.48" y1="27.94" x2="30.48" y2="6.35" width="1.016" layer="1"/>
 <wire x1="30.48" y1="6.35" x2="33.02" y2="3.81" width="1.016" layer="1"/>
+<contactref element="C1" pad="-"/>
 </signal>
 <signal name="V+">
 <contactref element="F3" pad="1B"/>
@@ -2477,8 +2478,8 @@ design rules under a new name.</description>
 <vertex x="34.29" y="48.26"/>
 <vertex x="40.64" y="48.26"/>
 <vertex x="40.64" y="52.3875"/>
-<vertex x="33.02" y="52.3875"/>
-<vertex x="33.02" y="57.15"/>
+<vertex x="31.75" y="52.3875"/>
+<vertex x="31.75" y="57.15"/>
 <vertex x="177.8" y="57.15"/>
 </polygon>
 <contactref element="R7" pad="2"/>
@@ -2494,8 +2495,8 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1"/>
 <contactref element="D1" pad="C"/>
 <polygon width="0.3048" layer="1" thermals="no">
-<vertex x="33.02" y="57.15"/>
-<vertex x="33.02" y="50.8"/>
+<vertex x="31.75" y="57.15"/>
+<vertex x="31.75" y="50.8"/>
 <vertex x="40.64" y="50.8"/>
 <vertex x="40.64" y="57.15"/>
 </polygon>
@@ -2548,7 +2549,9 @@ design rules under a new name.</description>
 <vertex x="178.7525" y="37.1475"/>
 <vertex x="178.7525" y="-8.5725"/>
 <vertex x="29.5275" y="-8.5725"/>
-<vertex x="29.5275" y="37.1475"/>
+<vertex x="29.5275" y="36.195"/>
+<vertex x="52.07" y="36.195"/>
+<vertex x="53.34" y="37.1475"/>
 </polygon>
 <contactref element="U1" pad="-VOUT"/>
 <contactref element="U1" pad="-SENSE"/>
@@ -2886,8 +2889,7 @@ design rules under a new name.</description>
 <contactref element="R5" pad="1"/>
 <contactref element="D1" pad="A"/>
 <wire x1="42.8625" y1="46.99" x2="40.3225" y2="49.53" width="0.8128" layer="16"/>
-<wire x1="40.3225" y1="49.53" x2="34.925" y2="49.53" width="0.8128" layer="16"/>
-<wire x1="34.925" y1="49.53" x2="34.29" y2="49.53" width="1.27" layer="16"/>
+<wire x1="40.3225" y1="49.53" x2="34.29" y2="49.53" width="0.8128" layer="16"/>
 </signal>
 <signal name="J4">
 <contactref element="R8" pad="1"/>

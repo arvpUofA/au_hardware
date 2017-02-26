@@ -17933,7 +17933,7 @@ Grid 2.54 mm&lt;p&gt;
 <part name="R7" library="resistor" deviceset="R-US_" device="0204/7" value="36k"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="transistor-power" deviceset="IPP80P03P4L04AKSA1" device=""/>
-<part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="4.7k"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="2k"/>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
 <part name="JP7" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="U1" library="New Power Board Library" deviceset="UWQ-12/20-T48NBS-C" device=""/>
@@ -18027,7 +18027,7 @@ Grid 2.54 mm&lt;p&gt;
 <part name="P+1" library="supply1" deviceset="V+" device=""/>
 <part name="F1" library="special" deviceset="FUSE2P" device=""/>
 <part name="D1" library="diode" deviceset="BZV10" device=""/>
-<part name="C1" library="rcl" deviceset="CPOL-US" device="E2.5-7"/>
+<part name="C1" library="rcl" deviceset="CPOL-US" device="E3.5-8" value="100u"/>
 </parts>
 <sheets>
 <sheet>
@@ -19001,8 +19001,8 @@ Grid 2.54 mm&lt;p&gt;
 <instance part="X1" gate="-1" x="71.12" y="243.84" rot="R90"/>
 <instance part="X1" gate="-2" x="76.2" y="243.84" rot="R90"/>
 <instance part="JP8" gate="A" x="86.36" y="91.44"/>
-<instance part="GND3" gate="1" x="119.38" y="101.6"/>
-<instance part="GND2" gate="1" x="55.88" y="101.6"/>
+<instance part="GND3" gate="1" x="121.92" y="101.6"/>
+<instance part="GND2" gate="1" x="53.34" y="101.6"/>
 <instance part="R6" gate="G$1" x="60.96" y="215.9" rot="R270"/>
 <instance part="GND8" gate="1" x="220.98" y="96.52"/>
 <instance part="X2" gate="-1" x="226.06" y="142.24"/>
@@ -19022,7 +19022,10 @@ Grid 2.54 mm&lt;p&gt;
 <instance part="D1" gate="1" x="50.8" y="228.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.895" y="226.822" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="C1" gate="G$1" x="55.88" y="226.06"/>
+<instance part="C1" gate="G$1" x="55.88" y="226.06" smashed="yes">
+<attribute name="NAME" x="56.896" y="226.695" size="1.778" layer="95"/>
+<attribute name="VALUE" x="54.991" y="216.916" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -19275,18 +19278,18 @@ Grid 2.54 mm&lt;p&gt;
 </segment>
 <segment>
 <pinref part="JP8" gate="A" pin="8"/>
-<wire x1="91.44" y1="91.44" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="91.44" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="106.68" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="91.44" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="106.68" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="106.68" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="JP8" gate="A" pin="7"/>
-<wire x1="83.82" y1="91.44" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="91.44" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="106.68" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="106.68" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="91.44" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="106.68" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>

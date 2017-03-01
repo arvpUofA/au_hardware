@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11692,21 +11692,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </package>
 </packages>
 <symbols>
-<symbol name="UWQ-12/20-T48NBS-C">
-<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
-<pin name="-VIN" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
-<pin name="+VIN" x="-17.78" y="10.16" length="middle" direction="pwr"/>
-<pin name="RC" x="-17.78" y="0" length="middle"/>
-<pin name="+VOUT" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
-<text x="-8.89" y="-14.224" size="1.27" layer="94">UWQ-12/20-T48NBS-C</text>
-<pin name="+SENSE" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="TRIM" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="-SENSE" x="17.78" y="-5.08" length="middle" rot="R180"/>
-</symbol>
 <symbol name="UWE-5/20-Q48NB-C">
 <wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
@@ -11737,30 +11722,23 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
 <text x="-8.636" y="-13.97" size="1.27" layer="94">UWE-3.3/30-Q48NB-C</text>
 </symbol>
+<symbol name="UWQ-12/20-T48NTB-C">
+<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<pin name="-VIN" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
+<pin name="+VIN" x="-17.78" y="10.16" length="middle" direction="pwr"/>
+<pin name="RC" x="-17.78" y="0" length="middle"/>
+<pin name="+VOUT" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<text x="-8.89" y="-14.224" size="1.27" layer="94">UWQ-12/20-T48NTB-C</text>
+<pin name="+SENSE" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="TRIM" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="-SENSE" x="17.78" y="-5.08" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="UWQ-12/20-T48NBS-C" prefix="U">
-<gates>
-<gate name="G$1" symbol="UWQ-12/20-T48NBS-C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="UWQ-12/20-T48">
-<connects>
-<connect gate="G$1" pin="+SENSE" pad="+SENSE"/>
-<connect gate="G$1" pin="+VIN" pad="+VIN"/>
-<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
-<connect gate="G$1" pin="-SENSE" pad="-SENSE"/>
-<connect gate="G$1" pin="-VIN" pad="-VIN"/>
-<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
-<connect gate="G$1" pin="RC" pad="RC"/>
-<connect gate="G$1" pin="TRIM" pad="TRIM"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="UWE-5/20-Q48NB-C" prefix="U">
 <gates>
 <gate name="G$1" symbol="UWE-5/20-Q48NB-C" x="0" y="0"/>
@@ -11794,6 +11772,28 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <connect gate="G$1" pin="+VIN" pad="+VIN"/>
 <connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
 <connect gate="G$1" pin="-SEN" pad="-SENSE"/>
+<connect gate="G$1" pin="-VIN" pad="-VIN"/>
+<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
+<connect gate="G$1" pin="RC" pad="RC"/>
+<connect gate="G$1" pin="TRIM" pad="TRIM"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UWQ-12/20-T48NTB-C" prefix="U">
+<gates>
+<gate name="G$1" symbol="UWQ-12/20-T48NTB-C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UWQ-12/20-T48">
+<connects>
+<connect gate="G$1" pin="+SENSE" pad="+SENSE"/>
+<connect gate="G$1" pin="+VIN" pad="+VIN"/>
+<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
+<connect gate="G$1" pin="-SENSE" pad="-SENSE"/>
 <connect gate="G$1" pin="-VIN" pad="-VIN"/>
 <connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
 <connect gate="G$1" pin="RC" pad="RC"/>
@@ -17936,7 +17936,6 @@ Grid 2.54 mm&lt;p&gt;
 <part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="2k"/>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
 <part name="JP7" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="U1" library="New Power Board Library" deviceset="UWQ-12/20-T48NBS-C" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="U2" library="New Power Board Library" deviceset="UWE-5/20-Q48NB-C" device=""/>
 <part name="U3" library="New Power Board Library" deviceset="UWE-3.3/30-Q48NB-C" device=""/>
@@ -18028,6 +18027,7 @@ Grid 2.54 mm&lt;p&gt;
 <part name="F1" library="special" deviceset="FUSE2P" device=""/>
 <part name="D1" library="diode" deviceset="BZV10" device=""/>
 <part name="C1" library="rcl" deviceset="CPOL-US" device="E3.5-8" value="100u"/>
+<part name="U4" library="New Power Board Library" deviceset="UWQ-12/20-T48NTB-C" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18805,7 +18805,6 @@ Grid 2.54 mm&lt;p&gt;
 <instance part="R5" gate="G$1" x="45.72" y="215.9" rot="R270"/>
 <instance part="P+3" gate="1" x="78.74" y="205.74"/>
 <instance part="JP7" gate="G$1" x="35.56" y="182.88" rot="R270"/>
-<instance part="U1" gate="G$1" x="129.54" y="218.44"/>
 <instance part="FRAME1" gate="G$1" x="5.08" y="53.34"/>
 <instance part="FRAME1" gate="G$2" x="177.8" y="53.34"/>
 <instance part="U2" gate="G$1" x="129.54" y="175.26"/>
@@ -19026,6 +19025,7 @@ Grid 2.54 mm&lt;p&gt;
 <attribute name="NAME" x="56.896" y="226.695" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.991" y="216.916" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="U4" gate="G$1" x="129.54" y="218.44"/>
 </instances>
 <busses>
 </busses>
@@ -19071,8 +19071,8 @@ Grid 2.54 mm&lt;p&gt;
 <segment>
 <pinref part="P-4" gate="1" pin="V-"/>
 <wire x1="106.68" y1="205.74" x2="106.68" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="-VIN"/>
 <wire x1="106.68" y1="208.28" x2="111.76" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="-VIN"/>
 </segment>
 <segment>
 <pinref part="P-6" gate="1" pin="V-"/>
@@ -19155,12 +19155,12 @@ Grid 2.54 mm&lt;p&gt;
 <junction x="91.44" y="175.26"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="83.82" y1="223.52" x2="83.82" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="RC"/>
 <pinref part="U2" gate="G$1" pin="RC"/>
 <pinref part="U3" gate="G$1" pin="RC"/>
 <pinref part="X1" gate="-2" pin="1"/>
 <wire x1="76.2" y1="241.3" x2="76.2" y2="233.68" width="0.1524" layer="91"/>
 <junction x="83.82" y="233.68"/>
+<pinref part="U4" gate="G$1" pin="RC"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -19188,11 +19188,11 @@ Grid 2.54 mm&lt;p&gt;
 <wire x1="147.32" y1="208.28" x2="160.02" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="208.28" x2="160.02" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="U1" gate="G$1" pin="-VOUT"/>
-<pinref part="U1" gate="G$1" pin="-SENSE"/>
 <wire x1="147.32" y1="213.36" x2="160.02" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="213.36" x2="160.02" y2="208.28" width="0.1524" layer="91"/>
 <junction x="160.02" y="208.28"/>
+<pinref part="U4" gate="G$1" pin="-VOUT"/>
+<pinref part="U4" gate="G$1" pin="-SENSE"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -19311,12 +19311,12 @@ Grid 2.54 mm&lt;p&gt;
 <net name="12V+SENSE" class="0">
 <segment>
 <wire x1="147.32" y1="228.6" x2="160.02" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="+VOUT"/>
 <label x="160.02" y="236.22" size="1.778" layer="95" xref="yes"/>
 <wire x1="160.02" y1="228.6" x2="162.56" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="236.22" x2="160.02" y2="228.6" width="0.1524" layer="91"/>
 <junction x="160.02" y="228.6"/>
 <pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="U4" gate="G$1" pin="+VOUT"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
@@ -19365,8 +19365,8 @@ Grid 2.54 mm&lt;p&gt;
 <wire x1="106.68" y1="228.6" x2="109.22" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="F2" gate="G$1" pin="2A"/>
 <pinref part="F2" gate="G$1" pin="2B"/>
-<pinref part="U1" gate="G$1" pin="+VIN"/>
 <wire x1="109.22" y1="228.6" x2="111.76" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="+VIN"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -19392,13 +19392,13 @@ Grid 2.54 mm&lt;p&gt;
 <net name="12V-SENSE" class="0">
 <segment>
 <wire x1="172.72" y1="228.6" x2="175.26" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="+SENSE"/>
 <wire x1="175.26" y1="228.6" x2="177.8" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="223.52" x2="175.26" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="223.52" x2="175.26" y2="228.6" width="0.1524" layer="91"/>
 <junction x="175.26" y="228.6"/>
 <label x="177.8" y="228.6" size="1.778" layer="95" xref="yes"/>
 <pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="U4" gate="G$1" pin="+SENSE"/>
 </segment>
 <segment>
 <label x="231.14" y="165.1" size="1.778" layer="95" rot="R270" xref="yes"/>

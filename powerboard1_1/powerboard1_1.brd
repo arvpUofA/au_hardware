@@ -2225,9 +2225,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="99.0219" y="13.97" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="103.2383" y="24.257" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R7" library="rcl" package="0617/22" value="0.004" x="139.3825" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="134.5819" y="13.97" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="138.7983" y="24.257" size="1.27" layer="27" ratio="10" rot="R270"/>
+<element name="R7" library="rcl" package="0617/22" value="0.004" x="139.7" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="134.8994" y="13.97" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="139.1158" y="24.257" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R10" library="rcl" package="0617/22" value="0.004" x="174.9425" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="170.1419" y="13.97" size="1.27" layer="25" ratio="10" rot="R270"/>

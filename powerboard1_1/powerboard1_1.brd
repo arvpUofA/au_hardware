@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -165,7 +165,7 @@
 <wire x1="151.13" y1="5.08" x2="167.64" y2="5.08" width="0.3048" layer="25" style="longdash"/>
 <wire x1="167.64" y1="5.08" x2="167.64" y2="-7.62" width="0.3048" layer="25" style="longdash"/>
 <wire x1="167.64" y1="-7.62" x2="151.13" y2="-7.62" width="0.3048" layer="25" style="longdash"/>
-<text x="37.465" y="54.61" size="1.27" layer="25">ARVP POWER SUPPLY</text>
+<text x="37.465" y="53.34" size="1.27" layer="25">ARVP POWER SUPPLY</text>
 <text x="44.1325" y="27.94" size="1.27" layer="25" rot="R270">A. LETOURNEAU</text>
 <text x="42.545" y="27.94" size="1.27" layer="25" rot="R270">A. SCHROEDER</text>
 <wire x1="38.735" y1="29.845" x2="34.925" y2="29.845" width="0.3048" layer="25" style="longdash"/>
@@ -198,7 +198,7 @@
 <text x="57.15" y="6.985" size="1.016" layer="25">USE SOLDER FLUX WHEN </text>
 <text x="41.5925" y="29.845" size="1.27" layer="25">V_BAT OK</text>
 <text x="57.15" y="5.715" size="1.016" layer="25">SOLDERING INTO WIRE PADS!</text>
-<text x="37.465" y="52.705" size="1.27" layer="25">REV 1.1, 03/2017</text>
+<text x="37.465" y="51.435" size="1.27" layer="25">REV 1.1, 03/2017</text>
 <text x="30.48" y="0" size="0.8128" layer="25">TO BATT_GND</text>
 <text x="42.2275" y="1.27" size="1.016" layer="25" rot="R90" align="center-left">BATT_GND</text>
 <text x="43.815" y="1.27" size="1.016" layer="25" rot="R90" align="center-left">3V3 ON/OFF</text>
@@ -220,6 +220,7 @@
 <text x="78.74" y="41.91" size="1.27" layer="25" align="bottom-center">UWQ-12/20-T48NTB-C</text>
 <text x="121.92" y="41.91" size="1.27" layer="25" align="bottom-center">UWE-5/20-Q48NB-C</text>
 <text x="157.48" y="41.91" size="1.27" layer="25" align="bottom-center">UWE-5/20-Q48NB-C</text>
+<text x="39.37" y="71.12" size="1.016" layer="25" rot="R90" align="bottom-center">18V-48V</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -2203,7 +2204,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="42.5704" y="38.1" size="0.9906" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="43.3451" y="41.5544" size="0.9906" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="U$3" library="ARVP" package="ARVP" value="" x="37.465" y="56.515"/>
+<element name="U$3" library="ARVP" package="ARVP" value="" x="37.465" y="55.245"/>
 <element name="JP7" library="pinhead" package="1X02" value="" x="36.83" y="33.02" smashed="yes" rot="R270">
 <attribute name="VALUE" x="33.655" y="35.56" size="1.27" layer="27" rot="R270"/>
 </element>
@@ -2522,8 +2523,8 @@ design rules under a new name.</description>
 <vertex x="40.64" y="77.1525"/>
 <vertex x="178.7525" y="77.1525"/>
 <vertex x="178.7525" y="39.0525"/>
-<vertex x="151.13" y="39.0525"/>
-<vertex x="147.0025" y="43.18"/>
+<vertex x="151.4475" y="39.0525"/>
+<vertex x="147.32" y="43.18"/>
 <vertex x="66.04" y="43.18"/>
 <vertex x="60.6425" y="37.7825"/>
 <vertex x="34.29" y="37.7825"/>
@@ -2564,9 +2565,9 @@ design rules under a new name.</description>
 <contactref element="R4" pad="2"/>
 <wire x1="36.83" y1="31.75" x2="34.29" y2="31.75" width="1.016" layer="16"/>
 <wire x1="34.29" y1="31.75" x2="33.02" y2="33.02" width="1.016" layer="16"/>
-<wire x1="33.02" y1="33.02" x2="33.02" y2="37.1475" width="1.016" layer="16"/>
-<wire x1="33.02" y1="37.1475" x2="34.925" y2="39.0525" width="1.016" layer="16"/>
-<wire x1="34.925" y1="39.0525" x2="34.925" y2="41.275" width="1.016" layer="16"/>
+<wire x1="33.02" y1="33.02" x2="33.02" y2="36.83" width="1.016" layer="16"/>
+<wire x1="33.02" y1="36.83" x2="34.925" y2="38.735" width="1.016" layer="16"/>
+<wire x1="34.925" y1="38.735" x2="34.925" y2="41.275" width="1.016" layer="16"/>
 <contactref element="C3" pad="-"/>
 <contactref element="U1" pad="-VIN"/>
 <contactref element="LED1" pad="K"/>
@@ -3132,8 +3133,10 @@ design rules under a new name.</description>
 <via x="57.15" y="40.64" extent="1-16" drill="0.6"/>
 <wire x1="57.15" y1="40.64" x2="57.15" y2="36.195" width="0.6096" layer="1"/>
 <wire x1="57.15" y1="36.195" x2="55.88" y2="34.925" width="0.6096" layer="1"/>
-<wire x1="55.88" y1="34.925" x2="51.435" y2="34.925" width="0.6096" layer="1"/>
-<wire x1="51.435" y1="34.925" x2="44.45" y2="27.94" width="0.6096" layer="1"/>
+<wire x1="55.88" y1="34.925" x2="53.34" y2="34.925" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="34.925" x2="50.165" y2="31.75" width="0.6096" layer="1"/>
+<wire x1="50.165" y1="31.75" x2="48.26" y2="31.75" width="0.6096" layer="1"/>
+<wire x1="48.26" y1="31.75" x2="44.45" y2="27.94" width="0.6096" layer="1"/>
 <wire x1="44.45" y1="27.94" x2="44.45" y2="0.635" width="0.6096" layer="1"/>
 <wire x1="44.45" y1="0.635" x2="42.545" y2="-1.27" width="0.6096" layer="1"/>
 <wire x1="42.545" y1="-1.27" x2="42.545" y2="-3.81" width="0.6096" layer="1"/>

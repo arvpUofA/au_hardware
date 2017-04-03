@@ -20129,12 +20129,6 @@ Grid 2.54 mm&lt;p&gt;
 <pinref part="U2" gate="G$1" pin="+VIN"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<wire x1="116.84" y1="154.94" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="+VIN"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="F4" gate="G$1" pin="2B"/>
@@ -20145,7 +20139,6 @@ Grid 2.54 mm&lt;p&gt;
 <wire x1="99.06" y1="160.02" x2="101.6" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="160.02" x2="116.84" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="154.94" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="160.02" x2="116.84" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="162.56" x2="101.6" y2="160.02" width="0.1524" layer="91"/>
@@ -20158,6 +20151,8 @@ Grid 2.54 mm&lt;p&gt;
 <junction x="101.6" y="160.02"/>
 <junction x="109.22" y="160.02"/>
 <junction x="99.06" y="157.48"/>
+<pinref part="U3" gate="G$1" pin="+VIN"/>
+<wire x1="116.84" y1="154.94" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ON/OFF_2" class="2">

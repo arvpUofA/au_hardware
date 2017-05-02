@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -143,6 +143,14 @@
 <pad name="B" x="0" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
 <text x="-2.54" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-4.572" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="PHOENIX_CONTACT_MKDS_5/2-7.62">
+<pad name="P$1" x="3.81" y="0" drill="1.3" shape="long" rot="R90"/>
+<pad name="P$2" x="-3.81" y="0" drill="1.3" shape="long" rot="R90"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.4064" layer="21"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-7.62" width="0.4064" layer="21"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="21"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="5.08" width="0.4064" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -309,6 +317,16 @@
 <pin name="-SEN" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
 <text x="-8.128" y="-13.97" size="1.27" layer="94">UWE-12/10-Q12PB-C</text>
+</symbol>
+<symbol name="2_POS_TERMINAL">
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.4064" layer="94"/>
+<pin name="P$1" x="10.16" y="2.54" visible="off" length="middle" direction="pwr" rot="R180"/>
+<pin name="P$2" x="10.16" y="-2.54" visible="off" length="middle" direction="pwr" rot="R180"/>
+<text x="2.54" y="2.54" size="3.81" layer="94" align="center">+</text>
+<text x="2.54" y="-2.54" size="3.81" layer="94" align="center">-</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -535,6 +553,22 @@
 <connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
 <connect gate="G$1" pin="RC" pad="RC"/>
 <connect gate="G$1" pin="TRIM" pad="TRIM"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2_POS_TERMINAL" prefix="T">
+<gates>
+<gate name="G$1" symbol="2_POS_TERMINAL" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="PHOENIX_CONTACT_MKDS_5/2-7.62">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

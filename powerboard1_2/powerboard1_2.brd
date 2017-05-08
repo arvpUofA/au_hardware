@@ -135,13 +135,13 @@
 <text x="54.61" y="11.43" size="1.016" layer="25" rot="R270" align="center-left">5V</text>
 <text x="57.15" y="11.43" size="1.016" layer="25" rot="R270" align="center-left">3V3</text>
 <text x="59.3725" y="15.24" size="1.016" layer="25" rot="R270" align="bottom-center">SENSE</text>
-<wire x1="40.3225" y1="18.415" x2="48.26" y2="18.415" width="0.3048" layer="25"/>
-<wire x1="48.26" y1="18.415" x2="48.26" y2="12.065" width="0.3048" layer="25"/>
-<wire x1="48.26" y1="12.065" x2="40.3225" y2="12.065" width="0.3048" layer="25"/>
+<wire x1="40.3225" y1="18.415" x2="50.8" y2="18.415" width="0.3048" layer="25"/>
+<wire x1="50.8" y1="18.415" x2="50.8" y2="12.065" width="0.3048" layer="25"/>
+<wire x1="50.8" y1="12.065" x2="40.3225" y2="12.065" width="0.3048" layer="25"/>
 <wire x1="40.3225" y1="12.065" x2="40.3225" y2="18.415" width="0.3048" layer="25"/>
-<wire x1="48.26" y1="12.065" x2="59.055" y2="12.065" width="0.3048" layer="25"/>
+<wire x1="50.8" y1="12.065" x2="59.055" y2="12.065" width="0.3048" layer="25"/>
 <wire x1="59.055" y1="12.065" x2="59.055" y2="18.415" width="0.3048" layer="25"/>
-<wire x1="59.055" y1="18.415" x2="48.26" y2="18.415" width="0.3048" layer="25"/>
+<wire x1="59.055" y1="18.415" x2="50.8" y2="18.415" width="0.3048" layer="25"/>
 <dimension x1="29.21" y1="-9.144" x2="34.29" y2="-9.144" x3="31.75" y3="-15.24" textsize="1.778" layer="20" unit="inch" precision="3" visible="yes"/>
 <dimension x1="28.956" y1="-8.89" x2="28.956" y2="-3.81" x3="22.86" y3="-6.35" textsize="1.778" layer="20" unit="inch" precision="3" visible="yes"/>
 <dimension x1="28.956" y1="72.39" x2="28.956" y2="-3.81" x3="17.672540625" y3="34.29" textsize="1.778" layer="20" unit="inch" precision="3" visible="yes"/>
@@ -170,9 +170,9 @@
 <text x="46.99" y="11.43" size="1.016" layer="25" rot="R270" align="center-left">3V3</text>
 <wire x1="38.4175" y1="7.9375" x2="38.4175" y2="18.415" width="0.3048" layer="25"/>
 <wire x1="40.3225" y1="18.415" x2="38.4175" y2="18.415" width="0.3048" layer="25"/>
-<wire x1="48.26" y1="7.9375" x2="38.4175" y2="7.9375" width="0.3048" layer="25"/>
-<wire x1="48.26" y1="7.9375" x2="48.26" y2="12.065" width="0.3048" layer="25"/>
-<wire x1="61.2775" y1="7.9375" x2="48.26" y2="7.9375" width="0.3048" layer="25"/>
+<wire x1="50.8" y1="7.9375" x2="38.4175" y2="7.9375" width="0.3048" layer="25"/>
+<wire x1="50.8" y1="7.9375" x2="50.8" y2="12.065" width="0.3048" layer="25"/>
+<wire x1="61.2775" y1="7.9375" x2="50.8" y2="7.9375" width="0.3048" layer="25"/>
 <wire x1="61.2775" y1="18.415" x2="59.055" y2="18.415" width="0.3048" layer="25"/>
 <wire x1="61.2775" y1="7.9375" x2="61.2775" y2="18.415" width="0.3048" layer="25"/>
 <text x="40.005" y="15.24" size="1.016" layer="25" rot="R90" align="bottom-center">SUPPLY</text>
@@ -181,7 +181,7 @@
 <dimension x1="167.64" y1="77.7875" x2="29.21" y2="77.7875" x3="98.425" y3="91.757503125" textsize="1.778" layer="20" unit="inch" precision="3" visible="yes"/>
 <text x="38.1" y="-6.0325" size="1.016" layer="25">USE SOLDER FLUX WHEN </text>
 <text x="38.1" y="-7.62" size="1.016" layer="25">SOLDERING INTO WIRE PADS!</text>
-<text x="36.195" y="51.435" size="1.27" layer="25">REV 1.2, 04/2017</text>
+<text x="36.195" y="51.435" size="1.27" layer="25">REV 1.2, 05/2017</text>
 <text x="30.48" y="2.54" size="0.8128" layer="25">SHORT JP8 AND</text>
 <text x="38.735" y="20.32" size="0.8128" layer="25" align="center-left">BATT_GND</text>
 <text x="36.195" y="15.5575" size="1.016" layer="25" rot="R90" align="top-center">3V3</text>

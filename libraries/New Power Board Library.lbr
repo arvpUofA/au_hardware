@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -240,21 +240,6 @@
 <pin name="P$1" x="12.7" y="0" visible="off" length="middle" direction="out" rot="R180"/>
 <pin name="P$2" x="-12.7" y="0" visible="off" length="middle" direction="in"/>
 </symbol>
-<symbol name="UWE-12/10-Q48NB-C">
-<wire x1="-12.7" y1="-25.4" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-25.4" x2="12.7" y2="25.4" width="0.254" layer="94"/>
-<wire x1="12.7" y1="25.4" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="25.4" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
-<pin name="-VIN" x="-17.78" y="-17.78" length="middle" direction="pwr"/>
-<pin name="+VIN" x="-17.78" y="17.78" length="middle" direction="pwr"/>
-<pin name="RC" x="-17.78" y="0" length="middle"/>
-<pin name="+VOUT" x="17.78" y="17.78" length="middle" direction="pwr" rot="R180"/>
-<pin name="+SEN" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="TRIM" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="-SEN" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="-VOUT" x="17.78" y="-17.78" length="middle" direction="pwr" rot="R180"/>
-<text x="-7.62" y="-22.86" size="1.27" layer="94">UWE-12/10-Q48NB-C</text>
-</symbol>
 <symbol name="NPN">
 <wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
 <wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
@@ -327,6 +312,21 @@
 <pin name="P$2" x="10.16" y="-2.54" visible="off" length="middle" direction="pwr" rot="R180"/>
 <text x="2.54" y="2.54" size="3.81" layer="94" align="center">+</text>
 <text x="2.54" y="-2.54" size="3.81" layer="94" align="center">-</text>
+</symbol>
+<symbol name="UWE-12/10-Q48NB-C">
+<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<pin name="-VIN" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
+<pin name="+VIN" x="-17.78" y="10.16" length="middle" direction="pwr"/>
+<pin name="RC" x="-17.78" y="0" length="middle"/>
+<pin name="+VOUT" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="+SEN" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="TRIM" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="-SEN" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<text x="-8.128" y="-13.97" size="1.27" layer="94">UWE-12/10-Q48NB-C</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -438,7 +438,7 @@
 </deviceset>
 <deviceset name="UWE-12/10-Q48NB-C" prefix="U">
 <gates>
-<gate name="G$1" symbol="UWE-12/10-Q48NB-C" x="0" y="0"/>
+<gate name="G$1" symbol="UWE-5/20-Q48NB-C" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="UWE-100-120W">

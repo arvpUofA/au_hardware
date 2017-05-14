@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11726,51 +11726,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
 <pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
-<symbol name="UWE-12/10-Q12PB-C">
-<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
-<pin name="-VIN" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
-<pin name="+VIN" x="-17.78" y="10.16" length="middle" direction="pwr"/>
-<pin name="RC" x="-17.78" y="0" length="middle"/>
-<pin name="+VOUT" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="+SEN" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="TRIM" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="-SEN" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
-<text x="-8.128" y="-13.97" size="1.27" layer="94">UWE-12/10-Q12PB-C</text>
-</symbol>
-<symbol name="UWE-5/15-Q12PB-C">
-<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
-<pin name="-VIN" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
-<pin name="+VIN" x="-17.78" y="10.16" length="middle" direction="pwr"/>
-<pin name="RC" x="-17.78" y="0" length="middle"/>
-<pin name="+VOUT" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="+SEN" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="TRIM" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="-SEN" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
-<text x="-7.62" y="-13.97" size="1.27" layer="94">UWE-5/15-Q12PB-C</text>
-</symbol>
-<symbol name="UWE-3.3/20-Q12PB-C">
-<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
-<pin name="-VIN" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
-<pin name="+VIN" x="-17.78" y="10.16" length="middle" direction="pwr"/>
-<pin name="RC" x="-17.78" y="0" length="middle"/>
-<pin name="+VOUT" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="+SEN" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="TRIM" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="-SEN" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
-<text x="-8.636" y="-13.97" size="1.27" layer="94">UWE-3.3/20-Q12PB-C</text>
-</symbol>
 <symbol name="2_POS_TERMINAL">
 <wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
@@ -11780,6 +11735,36 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <pin name="P$2" x="10.16" y="-2.54" visible="off" length="middle" direction="pwr" rot="R180"/>
 <text x="2.54" y="2.54" size="3.81" layer="94" align="center">+</text>
 <text x="2.54" y="-2.54" size="3.81" layer="94" align="center">-</text>
+</symbol>
+<symbol name="UWE-5/20-Q48NB-C">
+<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<pin name="-VIN" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
+<pin name="+VIN" x="-17.78" y="10.16" length="middle" direction="pwr"/>
+<pin name="RC" x="-17.78" y="0" length="middle"/>
+<pin name="+VOUT" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="+SEN" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="TRIM" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="-SEN" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<text x="-7.62" y="-13.97" size="1.27" layer="94">UWE-5/20-Q48NB-C</text>
+</symbol>
+<symbol name="UWE-3.3/30-Q48NB-C">
+<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<pin name="-VIN" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
+<pin name="+VIN" x="-17.78" y="10.16" length="middle" direction="pwr"/>
+<pin name="RC" x="-17.78" y="0" length="middle"/>
+<pin name="+VOUT" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="+SEN" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="TRIM" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="-SEN" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="-VOUT" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<text x="-8.636" y="-13.97" size="1.27" layer="94">UWE-3.3/30-Q48NB-C</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11801,72 +11786,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </device>
 </devices>
 </deviceset>
-<deviceset name="UWE-12/10-Q12PB-C" prefix="U">
-<gates>
-<gate name="G$1" symbol="UWE-12/10-Q12PB-C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="UWE-100-120W">
-<connects>
-<connect gate="G$1" pin="+SEN" pad="+SENSE"/>
-<connect gate="G$1" pin="+VIN" pad="+VIN"/>
-<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
-<connect gate="G$1" pin="-SEN" pad="-SENSE"/>
-<connect gate="G$1" pin="-VIN" pad="-VIN"/>
-<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
-<connect gate="G$1" pin="RC" pad="RC"/>
-<connect gate="G$1" pin="TRIM" pad="TRIM"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="UWE-5/15-Q12PB-C" prefix="U">
-<gates>
-<gate name="G$1" symbol="UWE-5/15-Q12PB-C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="UWE-100-120W">
-<connects>
-<connect gate="G$1" pin="+SEN" pad="+SENSE"/>
-<connect gate="G$1" pin="+VIN" pad="+VIN"/>
-<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
-<connect gate="G$1" pin="-SEN" pad="-SENSE"/>
-<connect gate="G$1" pin="-VIN" pad="-VIN"/>
-<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
-<connect gate="G$1" pin="RC" pad="RC"/>
-<connect gate="G$1" pin="TRIM" pad="TRIM"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="UWE-3.3/20-Q12PB-C" prefix="U">
-<gates>
-<gate name="G$1" symbol="UWE-3.3/20-Q12PB-C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="UWE-100-120W">
-<connects>
-<connect gate="G$1" pin="+SEN" pad="+SENSE"/>
-<connect gate="G$1" pin="+VIN" pad="+VIN"/>
-<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
-<connect gate="G$1" pin="-SEN" pad="-SENSE"/>
-<connect gate="G$1" pin="-VIN" pad="-VIN"/>
-<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
-<connect gate="G$1" pin="RC" pad="RC"/>
-<connect gate="G$1" pin="TRIM" pad="TRIM"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="2_POS_TERMINAL" prefix="T">
 <gates>
 <gate name="G$1" symbol="2_POS_TERMINAL" x="-2.54" y="0"/>
@@ -11876,6 +11795,72 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UWE-12/10-Q48NB-C" prefix="U">
+<gates>
+<gate name="G$1" symbol="UWE-5/20-Q48NB-C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UWE-100-120W">
+<connects>
+<connect gate="G$1" pin="+SEN" pad="+SENSE"/>
+<connect gate="G$1" pin="+VIN" pad="+VIN"/>
+<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
+<connect gate="G$1" pin="-SEN" pad="-SENSE"/>
+<connect gate="G$1" pin="-VIN" pad="-VIN"/>
+<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
+<connect gate="G$1" pin="RC" pad="RC"/>
+<connect gate="G$1" pin="TRIM" pad="TRIM"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UWE-5/20-Q48NB-C" prefix="U">
+<gates>
+<gate name="G$1" symbol="UWE-5/20-Q48NB-C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UWE-100-120W">
+<connects>
+<connect gate="G$1" pin="+SEN" pad="+SENSE"/>
+<connect gate="G$1" pin="+VIN" pad="+VIN"/>
+<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
+<connect gate="G$1" pin="-SEN" pad="-SENSE"/>
+<connect gate="G$1" pin="-VIN" pad="-VIN"/>
+<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
+<connect gate="G$1" pin="RC" pad="RC"/>
+<connect gate="G$1" pin="TRIM" pad="TRIM"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UWE-3.3/30-Q48NB-C" prefix="U">
+<gates>
+<gate name="G$1" symbol="UWE-3.3/30-Q48NB-C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UWE-100-120W">
+<connects>
+<connect gate="G$1" pin="+SEN" pad="+SENSE"/>
+<connect gate="G$1" pin="+VIN" pad="+VIN"/>
+<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
+<connect gate="G$1" pin="-SEN" pad="-SENSE"/>
+<connect gate="G$1" pin="-VIN" pad="-VIN"/>
+<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
+<connect gate="G$1" pin="RC" pad="RC"/>
+<connect gate="G$1" pin="TRIM" pad="TRIM"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18122,9 +18107,6 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <part name="C17" library="rcl" deviceset="C-EU" device="025-040X050"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="U1" library="New Power Board Library" deviceset="UWE-12/10-Q12PB-C" device=""/>
-<part name="U2" library="New Power Board Library" deviceset="UWE-5/15-Q12PB-C" device=""/>
-<part name="U3" library="New Power Board Library" deviceset="UWE-3.3/20-Q12PB-C" device=""/>
 <part name="JP9" library="pinhead" deviceset="PINHD-1X2" device="/90"/>
 <part name="JP8" library="pinhead" deviceset="PINHD-2X3" device="/90"/>
 <part name="JP7" library="pinhead" deviceset="PINHD-1X2" device="/90"/>
@@ -18136,6 +18118,9 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <part name="LED4" library="led" deviceset="LED" device="3MM"/>
 <part name="R19" library="resistor" deviceset="R-US_" device="0204/7" value="36k"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
+<part name="U4" library="New Power Board Library" deviceset="UWE-12/10-Q48NB-C" device=""/>
+<part name="U1" library="New Power Board Library" deviceset="UWE-5/20-Q48NB-C" device=""/>
+<part name="U2" library="New Power Board Library" deviceset="UWE-3.3/30-Q48NB-C" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19124,9 +19109,6 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <instance part="C17" gate="G$1" x="170.18" y="248.92" rot="R180"/>
 <instance part="GND13" gate="1" x="177.8" y="256.54" rot="R180"/>
 <instance part="GND7" gate="1" x="170.18" y="256.54" rot="R180"/>
-<instance part="U1" gate="G$1" x="137.16" y="231.14"/>
-<instance part="U2" gate="G$1" x="137.16" y="187.96"/>
-<instance part="U3" gate="G$1" x="137.16" y="144.78"/>
 <instance part="JP9" gate="G$1" x="55.88" y="144.78" rot="MR0"/>
 <instance part="JP8" gate="A" x="45.72" y="167.64" rot="MR0"/>
 <instance part="JP7" gate="G$1" x="38.1" y="200.66" rot="MR270"/>
@@ -19138,6 +19120,9 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <instance part="LED4" gate="G$1" x="251.46" y="127"/>
 <instance part="R19" gate="G$1" x="251.46" y="137.16" rot="R90"/>
 <instance part="GND26" gate="1" x="238.76" y="111.76"/>
+<instance part="U4" gate="G$1" x="137.16" y="231.14"/>
+<instance part="U1" gate="G$1" x="137.16" y="187.96"/>
+<instance part="U2" gate="G$1" x="137.16" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -19187,19 +19172,19 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <pinref part="P-8" gate="1" pin="V-"/>
 <wire x1="99.06" y1="218.44" x2="99.06" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="220.98" x2="119.38" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="-VIN"/>
+<pinref part="U4" gate="G$1" pin="-VIN"/>
 </segment>
 <segment>
 <pinref part="P-10" gate="1" pin="V-"/>
 <wire x1="99.06" y1="132.08" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="-VIN"/>
+<pinref part="U2" gate="G$1" pin="-VIN"/>
 </segment>
 <segment>
 <pinref part="P-9" gate="1" pin="V-"/>
 <wire x1="99.06" y1="175.26" x2="99.06" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="177.8" x2="119.38" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="-VIN"/>
+<pinref part="U1" gate="G$1" pin="-VIN"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -19361,8 +19346,8 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <wire x1="154.94" y1="139.7" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
 <junction x="160.02" y="134.62"/>
-<pinref part="U3" gate="G$1" pin="-SEN"/>
-<pinref part="U3" gate="G$1" pin="-VOUT"/>
+<pinref part="U2" gate="G$1" pin="-SEN"/>
+<pinref part="U2" gate="G$1" pin="-VOUT"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -19371,8 +19356,8 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <wire x1="160.02" y1="182.88" x2="154.94" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="177.8" x2="160.02" y2="177.8" width="0.1524" layer="91"/>
 <junction x="160.02" y="177.8"/>
-<pinref part="U2" gate="G$1" pin="-SEN"/>
-<pinref part="U2" gate="G$1" pin="-VOUT"/>
+<pinref part="U1" gate="G$1" pin="-SEN"/>
+<pinref part="U1" gate="G$1" pin="-VOUT"/>
 </segment>
 <segment>
 <wire x1="154.94" y1="220.98" x2="160.02" y2="220.98" width="0.1524" layer="91"/>
@@ -19381,8 +19366,8 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <wire x1="154.94" y1="226.06" x2="160.02" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="226.06" x2="160.02" y2="220.98" width="0.1524" layer="91"/>
 <junction x="160.02" y="220.98"/>
-<pinref part="U1" gate="G$1" pin="-SEN"/>
-<pinref part="U1" gate="G$1" pin="-VOUT"/>
+<pinref part="U4" gate="G$1" pin="-SEN"/>
+<pinref part="U4" gate="G$1" pin="-VOUT"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -19584,7 +19569,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <label x="162.56" y="251.46" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="162.56" y1="251.46" x2="162.56" y2="241.3" width="0.1524" layer="91"/>
 <junction x="162.56" y="241.3"/>
-<pinref part="U1" gate="G$1" pin="+VOUT"/>
+<pinref part="U4" gate="G$1" pin="+VOUT"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -19618,7 +19603,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <junction x="185.42" y="198.12"/>
 <label x="162.56" y="208.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="162.56" y1="208.28" x2="162.56" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="+VOUT"/>
+<pinref part="U1" gate="G$1" pin="+VOUT"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -19652,7 +19637,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <junction x="185.42" y="154.94"/>
 <label x="162.56" y="165.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="162.56" y1="165.1" x2="162.56" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="+VOUT"/>
+<pinref part="U2" gate="G$1" pin="+VOUT"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -19683,7 +19668,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <wire x1="109.22" y1="243.84" x2="109.22" y2="246.38" width="0.1524" layer="91"/>
 <junction x="101.6" y="246.38"/>
 <junction x="109.22" y="246.38"/>
-<pinref part="U1" gate="G$1" pin="+VIN"/>
+<pinref part="U4" gate="G$1" pin="+VIN"/>
 </segment>
 </net>
 <net name="12V-SENSE" class="0">
@@ -19723,7 +19708,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <label x="200.66" y="243.84" size="1.778" layer="95" rot="R90" xref="yes"/>
 <wire x1="200.66" y1="243.84" x2="200.66" y2="241.3" width="0.1524" layer="91"/>
 <junction x="200.66" y="241.3"/>
-<pinref part="U1" gate="G$1" pin="+SEN"/>
+<pinref part="U4" gate="G$1" pin="+SEN"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
@@ -19783,7 +19768,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <wire x1="162.56" y1="193.04" x2="154.94" y2="193.04" width="0.1524" layer="91"/>
 <junction x="200.66" y="198.12"/>
 <label x="200.66" y="200.66" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="+SEN"/>
+<pinref part="U1" gate="G$1" pin="+SEN"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -19847,7 +19832,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <wire x1="200.66" y1="134.62" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
 <junction x="200.66" y="154.94"/>
 <label x="200.66" y="157.48" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="+SEN"/>
+<pinref part="U2" gate="G$1" pin="+SEN"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -20002,7 +19987,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <pinref part="Q2" gate="G$1" pin="C"/>
 <wire x1="91.44" y1="228.6" x2="91.44" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="231.14" x2="119.38" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="RC"/>
+<pinref part="U4" gate="G$1" pin="RC"/>
 </segment>
 </net>
 <net name="ENABLE_5V" class="0">
@@ -20010,7 +19995,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <pinref part="Q3" gate="G$1" pin="C"/>
 <wire x1="91.44" y1="185.42" x2="91.44" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="187.96" x2="119.38" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="RC"/>
+<pinref part="U1" gate="G$1" pin="RC"/>
 </segment>
 </net>
 <net name="ENABLE_3V3" class="0">
@@ -20018,7 +20003,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <pinref part="Q4" gate="G$1" pin="C"/>
 <wire x1="91.44" y1="142.24" x2="91.44" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="144.78" x2="119.38" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="RC"/>
+<pinref part="U2" gate="G$1" pin="RC"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -20044,7 +20029,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <wire x1="116.84" y1="203.2" x2="116.84" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
 <junction x="99.06" y="200.66"/>
-<pinref part="U2" gate="G$1" pin="+VIN"/>
+<pinref part="U1" gate="G$1" pin="+VIN"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -20069,8 +20054,8 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <junction x="101.6" y="160.02"/>
 <junction x="109.22" y="160.02"/>
 <junction x="99.06" y="157.48"/>
-<pinref part="U3" gate="G$1" pin="+VIN"/>
 <wire x1="116.84" y1="154.94" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="+VIN"/>
 </segment>
 </net>
 <net name="ON/OFF_2" class="2">

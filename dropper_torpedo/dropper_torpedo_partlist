@@ -1,0 +1,35 @@
+Partlist
+
+Exported from dropper_torpedo_schematic.sch at 2017-01-12 6:27 PM
+
+EAGLE Version 7.7.0 Copyright (c) 1988-2016 CadSoft
+
+Assembly variant: 
+
+Part     Value            Device           Package          Library                    Sheet
+
+C1                        CAP0805          0805             SparkFun                   1
+C2                        CAP0805          0805             SparkFun                   1
+D1       1N4004           1N4004           DO41-10          adafruit                   1
+D2       1N4004           1N4004           DO41-10          adafruit                   1
+D24V22F5                  M05PTH           1X05             SparkFun                   1
+JP1                       M04POLAR         MOLEX-1X4        SparkFun                   1
+JP3                       M03POLAR         MOLEX-1X3        SparkFun                   1
+JP4                       M03POLAR         MOLEX-1X3        SparkFun                   1
+JP5                       M03POLAR         MOLEX-1X3        SparkFun                   1
+JP6                       M03POLAR         MOLEX-1X3        SparkFun                   1
+LED1                      LEDCHIP-LED0603  CHIP-LED0603     adafruit                   1
+LED2                      LEDCHIP-LED0603  CHIP-LED0603     adafruit                   1
+LED4                      LEDCHIP-LED0603  CHIP-LED0603     adafruit                   1
+Q1       IRFZ48Z          IRFZ48Z          TO220BH          transistor-power           1
+Q2       IRFZ48Z          IRFZ48Z          TO220BH          transistor-power           1
+R1                        RESISTOR0805-RES 0805             SparkFun                   1
+R2                        RESISTOR0805-RES 0805             SparkFun                   1
+R3                        RESISTOR0805-RES 0805             SparkFun                   1
+R4                        RESISTOR0805-RES 0805             SparkFun                   1
+R5                        RESISTOR0805-RES 0805             SparkFun                   1
+R6                        RESISTOR0805-RES 0805             SparkFun                   1
+R7                        RESISTOR0805-RES 0805             SparkFun                   1
+T1       BD139            BD139            TO126            transistor                 1
+T2       BD139            BD139            TO126            transistor                 1
+U$1      TEENSY_3.1_BASIC TEENSY_3.1_BASIC TEENSY_3.1_BASIC Teensy_3_Series_Board_v1.0 1

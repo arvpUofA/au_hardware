@@ -175,18 +175,18 @@
 <hole x="73" y="47.6" drill="3.2"/>
 <hole x="3.2" y="3.2" drill="3.2"/>
 <hole x="12.7" y="47.6" drill="3.2"/>
-<dimension x1="76.18" y1="50.75" x2="76.18" y2="0" x3="87.5" y3="25.375" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="76.18" y1="50.75" x2="0" y2="50.75" x3="38.09" y3="59.6" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="3.2" y1="3.2" x2="0" y2="3.2" x3="1.6" y3="-6.5" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="12.7" y1="47.6" x2="12.7" y2="50.9" x3="17.3" y3="49.25" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="12.7" y1="47.6" x2="0" y2="47.6" x3="6.35" y3="47.6" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="3.2" y1="3.2" x2="3.2" y2="-0.1" x3="-5.1" y3="1.55" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="73" y1="3.2" x2="76.2" y2="3.2" x3="74.6" y3="-3.5" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="73" y1="3.2" x2="73" y2="0" x3="85.9" y3="1.6" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="73" y1="47.6" x2="73.1" y2="50.9" x3="73.05" y3="49.249996875" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="73" y1="47.6" x2="76.3" y2="47.6" x3="74.65" y3="47.6" textsize="1.016" textratio="14" layer="20" unit="inch"/>
-<dimension x1="2.312478125" y1="4.53128125" x2="4.087521875" y2="1.86871875" x3="5.000003125" y3="4.4" textsize="1.016" textratio="14" layer="20" dtype="diameter" unit="inch"/>
-<text x="-16.3" y="64.1" size="1.778" layer="20" ratio="14">ALL MOUNTING HOLES ARE 1/8" IN DIAMETER. MOUNTING HOLES ARE ALSO 1/8" AWAY FROM
+<dimension x1="76.18" y1="50.75" x2="76.18" y2="0" x3="87.5" y3="25.375" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="76.18" y1="50.75" x2="0" y2="50.75" x3="38.09" y3="59.6" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="3.2" y1="3.2" x2="0" y2="3.2" x3="1.6" y3="-6.5" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="12.7" y1="47.6" x2="12.7" y2="50.9" x3="17.3" y3="49.25" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="12.7" y1="47.6" x2="0" y2="47.6" x3="6.35" y3="47.6" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="3.2" y1="3.2" x2="3.2" y2="-0.1" x3="-5.1" y3="1.55" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="73" y1="3.2" x2="76.2" y2="3.2" x3="74.6" y3="-3.5" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="73" y1="3.2" x2="73" y2="0" x3="85.9" y3="1.6" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="73" y1="47.6" x2="73.1" y2="50.9" x3="73.05" y3="49.249996875" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="73" y1="47.6" x2="76.3" y2="47.6" x3="74.65" y3="47.6" textsize="1.016" textratio="14" layer="51" unit="inch"/>
+<dimension x1="2.312478125" y1="4.53128125" x2="4.087521875" y2="1.86871875" x3="5.000003125" y3="4.4" textsize="1.016" textratio="14" layer="51" dtype="diameter" unit="inch"/>
+<text x="-16.3" y="64.1" size="1.778" layer="51" ratio="14">ALL MOUNTING HOLES ARE 1/8" IN DIAMETER. MOUNTING HOLES ARE ALSO 1/8" AWAY FROM
  CORNERS W/ RESPECT TO X AND Y EXCEPT FOR TOP LEFT HOLE</text>
 <wire x1="76.2" y1="0" x2="0" y2="0" width="0" layer="46"/>
 <wire x1="0" y1="0" x2="0" y2="50.8" width="0" layer="46"/>

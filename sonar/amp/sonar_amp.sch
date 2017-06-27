@@ -170,37 +170,6 @@ reflow soldering</description>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 <rectangle x1="-0.5001" y1="-0.3" x2="0.5001" y2="0.3" layer="35"/>
 </package>
-<package name="PUSHCONN4TERM">
-<description>Sheet 5/8
-
-https://media.digikey.com/pdf/Data%20Sheets/AVX%20PDFs/00927600x021x06_Spec.PDF</description>
-<wire x1="0" y1="0" x2="0" y2="9" width="0.127" layer="21"/>
-<wire x1="0" y1="9" x2="10" y2="9" width="0.127" layer="21"/>
-<wire x1="10" y1="9" x2="10" y2="0" width="0.127" layer="21"/>
-<wire x1="10" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<smd name="P$1" x="1.25" y="1.2" dx="1.5" dy="1.8" layer="1"/>
-<smd name="P$2" x="3.75" y="1.2" dx="1.5" dy="1.8" layer="1"/>
-<smd name="P$3" x="6.25" y="1.2" dx="1.5" dy="1.8" layer="1"/>
-<smd name="P$4" x="8.75" y="1.2" dx="1.5" dy="1.8" layer="1"/>
-<smd name="P$1@2" x="1.25" y="8.3" dx="1.2" dy="1.8" layer="1"/>
-<smd name="P$2@2" x="3.75" y="8.3" dx="1.2" dy="1.8" layer="1"/>
-<smd name="P$3@2" x="6.25" y="8.3" dx="1.2" dy="1.8" layer="1"/>
-<smd name="P$4@2" x="8.75" y="8.3" dx="1.2" dy="1.8" layer="1"/>
-<wire x1="1.25" y1="7.5" x2="1.25" y2="1.25" width="0.127" layer="21"/>
-<wire x1="3.75" y1="7.5" x2="3.75" y2="1.25" width="0.127" layer="21"/>
-<wire x1="6.25" y1="7.5" x2="6.25" y2="1.25" width="0.127" layer="21"/>
-<wire x1="8.75" y1="7.5" x2="8.75" y2="1.25" width="0.127" layer="21"/>
-<text x="1.66" y="9.42" size="1.27" layer="21">&gt;NAME</text>
-<text x="6.865" y="3.695" size="1.27" layer="21" rot="R180">PLUG</text>
-<rectangle x1="0.8" y1="7.5" x2="1.7" y2="8.9" layer="21"/>
-<rectangle x1="3.3" y1="7.5" x2="4.2" y2="8.9" layer="21"/>
-<rectangle x1="5.8" y1="7.5" x2="6.7" y2="8.9" layer="21"/>
-<rectangle x1="8.3" y1="7.5" x2="9.2" y2="8.9" layer="21"/>
-<rectangle x1="0.6" y1="0.4" x2="1.9" y2="2" layer="21"/>
-<rectangle x1="3.1" y1="0.4" x2="4.4" y2="2" layer="21"/>
-<rectangle x1="5.6" y1="0.4" x2="6.9" y2="2" layer="21"/>
-<rectangle x1="8.1" y1="0.4" x2="9.4" y2="2" layer="21"/>
-</package>
 <package name="TSSOP8">
 <description>&lt;b&gt;Thin Shrink Small Outline Package&lt;/b&gt;&lt;p&gt;
 package type ST</description>
@@ -228,91 +197,6 @@ package type ST</description>
 <rectangle x1="-0.45" y1="2.2" x2="-0.2" y2="3.2" layer="51"/>
 <rectangle x1="-1.1" y1="2.2" x2="-0.85" y2="3.2" layer="51"/>
 </package>
-<package name="LED_1206">
-<description>&lt;b&gt;CHICAGO MINIATURE LAMP, INC.&lt;/b&gt;&lt;p&gt;
-7022X Series SMT LEDs 1206 Package Size</description>
-<wire x1="1.55" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="-1.55" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="1.55" y1="0.75" x2="1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-0.55" y1="-0.5" x2="0.55" y2="-0.5" width="0.1016" layer="21" curve="95.452622"/>
-<wire x1="-0.55" y1="-0.5" x2="-0.55" y2="0.5" width="0.1016" layer="51" curve="-84.547378"/>
-<wire x1="-0.55" y1="0.5" x2="0.55" y2="0.5" width="0.1016" layer="21" curve="-95.452622"/>
-<wire x1="0.55" y1="0.5" x2="0.55" y2="-0.5" width="0.1016" layer="51" curve="-84.547378"/>
-<rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="21"/>
-<rectangle x1="0.8" y1="-0.7" x2="0.9" y2="0.5" layer="51"/>
-<rectangle x1="0.8" y1="0.55" x2="0.9" y2="0.7" layer="51"/>
-<rectangle x1="-0.9" y1="-0.7" x2="-0.8" y2="0.5" layer="51"/>
-<rectangle x1="-0.9" y1="0.55" x2="-0.8" y2="0.7" layer="51"/>
-<smd name="A" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="C" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
-</package>
-<package name="LED_LD260">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-5 mm, square, Siemens</description>
-<wire x1="-1.27" y1="-1.27" x2="0" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="-1.27" x2="1.27" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="0" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="1.27" x2="-1.27" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.889" x2="1.27" y2="0" width="0.1524" layer="51"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-0.889" width="0.1524" layer="51"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.889" x2="-1.27" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.889" width="0.1524" layer="51"/>
-<wire x1="0" y1="1.27" x2="0.9917" y2="0.7934" width="0.1524" layer="21" curve="-51.33923"/>
-<wire x1="-0.9917" y1="0.7934" x2="0" y2="1.27" width="0.1524" layer="21" curve="-51.33923"/>
-<wire x1="0" y1="-1.27" x2="0.9917" y2="-0.7934" width="0.1524" layer="21" curve="51.33923"/>
-<wire x1="-0.9917" y1="-0.7934" x2="0" y2="-1.27" width="0.1524" layer="21" curve="51.33923"/>
-<wire x1="0.9558" y1="-0.8363" x2="1.27" y2="0" width="0.1524" layer="51" curve="41.185419"/>
-<wire x1="0.9756" y1="0.813" x2="1.2699" y2="0" width="0.1524" layer="51" curve="-39.806332"/>
-<wire x1="-1.27" y1="0" x2="-0.9643" y2="-0.8265" width="0.1524" layer="51" curve="40.600331"/>
-<wire x1="-1.27" y1="0" x2="-0.9643" y2="0.8265" width="0.1524" layer="51" curve="-40.600331"/>
-<wire x1="-0.889" y1="0" x2="0" y2="0.889" width="0.1524" layer="51" curve="-90"/>
-<wire x1="-0.508" y1="0" x2="0" y2="0.508" width="0.1524" layer="51" curve="-90"/>
-<wire x1="0" y1="-0.508" x2="0.508" y2="0" width="0.1524" layer="21" curve="90"/>
-<wire x1="0" y1="-0.889" x2="0.889" y2="0" width="0.1524" layer="51" curve="90"/>
-<rectangle x1="1.27" y1="-0.635" x2="2.032" y2="0.635" layer="51"/>
-<rectangle x1="1.905" y1="-0.635" x2="2.032" y2="0.635" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.2954" y="1.4732" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-2.4892" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="LED_SML0603">
-<description>&lt;b&gt;SML0603-XXX (HIGH INTENSITY) LED&lt;/b&gt;&lt;p&gt;
-&lt;table&gt;
-&lt;tr&gt;&lt;td&gt;AG3K&lt;/td&gt;&lt;td&gt;AQUA GREEN&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;B1K&lt;/td&gt;&lt;td&gt;SUPER BLUE&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;R1K&lt;/td&gt;&lt;td&gt;SUPER RED&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;R3K&lt;/td&gt;&lt;td&gt;ULTRA RED&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;O3K&lt;/td&gt;&lt;td&gt;SUPER ORANGE&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;O3KH&lt;/td&gt;&lt;td&gt;SOFT ORANGE&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Y3KH&lt;/td&gt;&lt;td&gt;SUPER YELLOW&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Y3K&lt;/td&gt;&lt;td&gt;SUPER YELLOW&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;2CW&lt;/td&gt;&lt;td&gt;WHITE&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
-<wire x1="-0.75" y1="0.35" x2="0.75" y2="0.35" width="0.1016" layer="51"/>
-<wire x1="0.75" y1="0.35" x2="0.75" y2="-0.35" width="0.1016" layer="51"/>
-<wire x1="0.75" y1="-0.35" x2="-0.75" y2="-0.35" width="0.1016" layer="51"/>
-<wire x1="-0.75" y1="-0.35" x2="-0.75" y2="0.35" width="0.1016" layer="51"/>
-<wire x1="-0.45" y1="0.3" x2="-0.45" y2="-0.3" width="0.1016" layer="51"/>
-<wire x1="0.45" y1="0.3" x2="0.45" y2="-0.3" width="0.1016" layer="51"/>
-<wire x1="-0.2" y1="0.35" x2="0.2" y2="0.35" width="0.1016" layer="21"/>
-<wire x1="-0.2" y1="-0.35" x2="0.2" y2="-0.35" width="0.1016" layer="21"/>
-<rectangle x1="-0.4" y1="0.175" x2="0" y2="0.4" layer="51"/>
-<rectangle x1="-0.25" y1="0.175" x2="0" y2="0.4" layer="21"/>
-<smd name="A" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<smd name="C" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="SOD-923">
 <wire x1="-1.273" y1="0.583" x2="0.573" y2="0.583" width="0.0508" layer="39"/>
 <wire x1="0.573" y1="0.583" x2="0.573" y2="-0.583" width="0.0508" layer="39"/>
@@ -329,6 +213,18 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <rectangle x1="-0.9" y1="0.3" x2="0.1" y2="0.4" layer="21"/>
 <rectangle x1="-0.9" y1="-0.4" x2="0.1" y2="-0.3" layer="21"/>
 </package>
+<package name="BNC-CONN">
+<pad name="P$1" x="0" y="0" drill="0.9144" rot="R180"/>
+<pad name="P$2" x="3.8" y="7.8" drill="1.8034" rot="R180"/>
+<pad name="P$3" x="-3.8" y="7.8" drill="1.8034" rot="R180"/>
+<wire x1="-6" y1="-1" x2="-6" y2="12.4" width="0.127" layer="21"/>
+<wire x1="-6" y1="12.4" x2="6" y2="12.4" width="0.127" layer="21"/>
+<wire x1="6" y1="12.4" x2="6" y2="-1" width="0.127" layer="21"/>
+<wire x1="6" y1="-1" x2="-6" y2="-1" width="0.127" layer="21"/>
+<wire x1="-6" y1="-1" x2="-6" y2="22" width="0.127" layer="39"/>
+<wire x1="-6" y1="22" x2="6" y2="22" width="0.127" layer="39"/>
+<wire x1="6" y1="22" x2="6" y2="-1" width="0.127" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADR510ARTZ-REEL7">
@@ -342,16 +238,6 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <pin name="V+" x="-7.62" y="2.54" length="short" direction="pwr"/>
 <pin name="V-" x="-7.62" y="-2.54" length="short" direction="pwr"/>
 <pin name="TRIM" x="10.16" y="0" length="short" direction="in" rot="R180"/>
-</symbol>
-<symbol name="4PINCONN">
-<wire x1="-2.54" y1="0" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="12.7" x2="17.78" y2="12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="12.7" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<pin name="P$1" x="0" y="-5.08" length="middle" rot="R90"/>
-<pin name="P$2" x="5.08" y="-5.08" length="middle" rot="R90"/>
-<pin name="P$3" x="10.16" y="-5.08" length="middle" rot="R90"/>
-<pin name="P$4" x="15.24" y="-5.08" length="middle" rot="R90"/>
 </symbol>
 <symbol name="LMV797">
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
@@ -369,33 +255,6 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <pin name="+INB" x="12.7" y="-10.16" visible="pin" length="middle" rot="R180"/>
 <pin name="-INA" x="-12.7" y="0" visible="pin" length="middle"/>
 </symbol>
-<symbol name="LED_LED">
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
-<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.429" y="-2.159"/>
-<vertex x="-3.048" y="-1.27"/>
-<vertex x="-2.54" y="-1.778"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.302" y="-3.302"/>
-<vertex x="-2.921" y="-2.413"/>
-<vertex x="-2.413" y="-2.921"/>
-</polygon>
-<text x="0" y="-5.08" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
-<text x="0" y="2.54" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
-</symbol>
 <symbol name="DIODE">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
@@ -410,39 +269,22 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="BNC-F2">
+<wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.508" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.762" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.508" x2="-2.54" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="0.508" width="0.3048" layer="94" curve="-79.611142" cap="flat"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-0.508" width="0.3048" layer="94" curve="79.611142" cap="flat"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="GND@1" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="009276004021106CONN">
-<description>Digi-Key Part Number	478-6171-1-ND
-Quantity Available	9,338 
-Can ship immediately 
-Manufacturer	
-AVX Corporation
-Manufacturer Part Number	
-009276004021106
-Description	CONN TERM BLOCK 4 POS WTB
-Lead Free Status / RoHS Status	Lead free / RoHS Compliant
-Moisture Sensitivity Level (MSL)	3 (168 Hours)
-Manufacturer Standard Lead Time	8 Weeks
-Detailed Description	4 Position Wire to Board Terminal Block Horizontal with Board 0.098" (2.50mm) Surface Mount
-&lt;p&gt;CONN TERM BLOCK 4 POS WTB</description>
-<gates>
-<gate name="G$1" symbol="4PINCONN" x="-7.62" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="PUSHCONN4TERM">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1 P$1@2"/>
-<connect gate="G$1" pin="P$2" pad="P$2 P$2@2"/>
-<connect gate="G$1" pin="P$3" pad="P$3 P$3@2"/>
-<connect gate="G$1" pin="P$4" pad="P$4 P$4@2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LMV797" prefix="IC">
 <description>&lt;b&gt;OP AMP&lt;/b&gt;</description>
 <gates>
@@ -485,56 +327,6 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX6520.pdf"&gt; Data s
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED_E" prefix="LED" uservalue="yes">
-<description>&lt;b&gt;LED&lt;/b&gt;&lt;p&gt;
-Source: http://www.osram.convergy.de&lt;p&gt;
-Source: www.luxeon.com&lt;p&gt;
-Source: www.kingbright.com</description>
-<gates>
-<gate name="G$1" symbol="LED_LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LED_1206">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="SPICEMODEL" value="NONE" constant="no"/>
-<attribute name="SPICEPREFIX" value="D" constant="no"/>
-<attribute name="SPICETYPE" value="diode" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LD260" package="LED_LD260">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="SPICEMODEL" value="NONE" constant="no"/>
-<attribute name="SPICEPREFIX" value="D" constant="no"/>
-<attribute name="SPICETYPE" value="diode" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="SML0603" package="LED_SML0603">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="SPICEMODEL" value="NONE" constant="no"/>
-<attribute name="SPICEPREFIX" value="D" constant="no"/>
-<attribute name="SPICETYPE" value="diode" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CDZV2.0B">
 <description>https://www.digikey.ca/product-detail/en/rohm-semiconductor/CDZVT2R2.0B/CDZVT2R2.0BCT-ND/5955744</description>
 <gates>
@@ -545,6 +337,22 @@ Source: www.kingbright.com</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOLEX-0731000105">
+<gates>
+<gate name="G$1" symbol="BNC-F2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BNC-CONN">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="GND@1" pad="P$2 P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2373,15 +2181,11 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <part name="R12" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="1k"/>
 <part name="LEFT" library="pinhead" deviceset="PINHD-2X20" device=""/>
 <part name="R13" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="4.7k"/>
-<part name="U$11" library="SONAR" deviceset="009276004021106CONN" device=""/>
 <part name="IC3" library="SONAR" deviceset="LMV797" device=""/>
 <part name="IC2" library="SONAR" deviceset="LMV797" device=""/>
 <part name="IC4" library="SONAR" deviceset="LMV797" device=""/>
 <part name="IC5" library="SONAR" deviceset="LMV797" device=""/>
 <part name="IC6" library="SONAR" deviceset="ADR510" device=""/>
-<part name="R14" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="30"/>
-<part name="U$5" library="SparkFun-Aesthetics" deviceset="AGND" device=""/>
-<part name="1V" library="SONAR" deviceset="LED_E" device=""/>
 <part name="ANALOGIN" library="pinhead" deviceset="PINHD-2X5" device=""/>
 <part name="1V-TIE" library="jump-0r-smd" deviceset="0R-JUMP" device="C"/>
 <part name="GNDTIE" library="eagle-ltspice" deviceset="R" device="R0402"/>
@@ -2389,6 +2193,8 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <part name="ZD2" library="SONAR" deviceset="CDZV2.0B" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="SERVO" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="U$8" library="SONAR" deviceset="MOLEX-0731000105" device=""/>
+<part name="U$12" library="SONAR" deviceset="MOLEX-0731000105" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2458,15 +2264,11 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <instance part="R12" gate="G$1" x="129.54" y="-48.26" rot="R180"/>
 <instance part="LEFT" gate="A" x="116.84" y="96.52"/>
 <instance part="R13" gate="G$1" x="-17.78" y="101.6" rot="R90"/>
-<instance part="U$11" gate="G$1" x="53.34" y="81.28" rot="R90"/>
 <instance part="IC3" gate="G$1" x="162.56" y="10.16"/>
 <instance part="IC2" gate="G$1" x="58.42" y="10.16"/>
 <instance part="IC4" gate="G$1" x="58.42" y="-38.1"/>
 <instance part="IC5" gate="G$1" x="162.56" y="-38.1"/>
 <instance part="IC6" gate="G$1" x="-5.08" y="93.98"/>
-<instance part="R14" gate="G$1" x="17.78" y="86.36" rot="R90"/>
-<instance part="U$5" gate="G$1" x="17.78" y="76.2"/>
-<instance part="1V" gate="G$1" x="17.78" y="99.06"/>
 <instance part="ANALOGIN" gate="A" x="177.8" y="111.76"/>
 <instance part="1V-TIE" gate="-0R" x="-2.54" y="81.28" rot="R270"/>
 <instance part="1V-TIE" gate="G$2" x="0" y="83.82" rot="R270"/>
@@ -2475,6 +2277,8 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <instance part="ZD2" gate="G$1" x="208.28" y="27.94" rot="R90"/>
 <instance part="JP1" gate="G$1" x="200.66" y="-25.4" rot="R90"/>
 <instance part="SERVO" gate="A" x="180.34" y="88.9" rot="R180"/>
+<instance part="U$8" gate="G$1" x="50.8" y="96.52"/>
+<instance part="U$12" gate="G$1" x="50.8" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -2538,11 +2342,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <wire x1="137.16" y1="-27.94" x2="137.16" y2="-25.4" width="0.1524" layer="91"/>
 <label x="137.16" y="-25.4" size="1.778" layer="95"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="17.78" y1="101.6" x2="17.78" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="1V" gate="G$1" pin="A"/>
-<label x="17.78" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="1V-TIE" gate="-0R" pin="2"/>
@@ -2644,21 +2443,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <pinref part="U$10" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="P$3"/>
-<wire x1="58.42" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
-<label x="63.5" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$11" gate="G$1" pin="P$2"/>
-<wire x1="58.42" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
-<label x="63.5" y="86.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R14" gate="G$1" pin="1"/>
-<pinref part="U$5" gate="G$1" pin="AGND"/>
-<wire x1="17.78" y1="81.28" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="ANALOGIN" gate="A" pin="1"/>
 <wire x1="175.26" y1="116.84" x2="167.64" y2="116.84" width="0.1524" layer="91"/>
 <label x="162.56" y="116.84" size="1.778" layer="95"/>
@@ -2672,6 +2456,16 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <pinref part="ZD2" gate="G$1" pin="A"/>
 <wire x1="208.28" y1="25.4" x2="208.28" y2="22.86" width="0.1524" layer="91"/>
 <label x="208.28" y="17.78" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="GND@1"/>
+<wire x1="53.34" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
+<label x="63.5" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="G$1" pin="GND@1"/>
+<wire x1="53.34" y1="78.74" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
+<label x="63.5" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POW" class="0">
@@ -2763,9 +2557,9 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <label x="-12.7" y="10.16" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="P$4"/>
-<wire x1="58.42" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
 <label x="63.5" y="96.52" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HYDRO2" class="0">
@@ -2775,9 +2569,9 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <label x="-12.7" y="-38.1" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
-<wire x1="58.42" y1="81.28" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
 <label x="63.5" y="81.28" size="1.778" layer="95"/>
+<pinref part="U$12" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="81.28" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="POW1" class="0">
@@ -3037,13 +2831,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <segment>
 <pinref part="IC5" gate="G$1" pin="+INB"/>
 <wire x1="175.26" y1="-48.26" x2="177.8" y2="-48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="93.98" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="1V" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$200" class="0">

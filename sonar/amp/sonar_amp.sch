@@ -2182,7 +2182,7 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <part name="LEFT" library="pinhead" deviceset="PINHD-2X20" device=""/>
 <part name="R13" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="4.7k"/>
 <part name="IC3" library="SONAR" deviceset="LMV797" device=""/>
-<part name="IC2" library="SONAR" deviceset="LMV797" device=""/>
+<part name="IC2" library="SONAR" deviceset="LMV797" device="" value=""/>
 <part name="IC4" library="SONAR" deviceset="LMV797" device=""/>
 <part name="IC5" library="SONAR" deviceset="LMV797" device=""/>
 <part name="IC6" library="SONAR" deviceset="ADR510" device=""/>
@@ -2195,6 +2195,7 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <part name="SERVO" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="U$8" library="SONAR" deviceset="MOLEX-0731000105" device=""/>
 <part name="U$12" library="SONAR" deviceset="MOLEX-0731000105" device=""/>
+<part name="SERVO1" library="pinhead" deviceset="PINHD-1X3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2279,6 +2280,7 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <instance part="SERVO" gate="A" x="180.34" y="88.9" rot="R180"/>
 <instance part="U$8" gate="G$1" x="50.8" y="96.52"/>
 <instance part="U$12" gate="G$1" x="50.8" y="81.28"/>
+<instance part="SERVO1" gate="A" x="154.94" y="88.9" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2320,6 +2322,11 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <pinref part="SERVO" gate="A" pin="3"/>
 <wire x1="182.88" y1="91.44" x2="190.5" y2="91.44" width="0.1524" layer="91"/>
 <label x="190.5" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SERVO1" gate="A" pin="3"/>
+<wire x1="157.48" y1="91.44" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
+<label x="165.1" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="1V" class="0">
@@ -2672,6 +2679,11 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <wire x1="182.88" y1="88.9" x2="190.5" y2="88.9" width="0.1524" layer="91"/>
 <label x="190.5" y="88.9" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SERVO1" gate="A" pin="2"/>
+<wire x1="157.48" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
+<label x="165.1" y="88.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VDD_3V3" class="0">
 <segment>
@@ -2781,6 +2793,11 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <pinref part="LEFT" gate="A" pin="16"/>
 <wire x1="121.92" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
 <label x="129.54" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SERVO1" gate="A" pin="1"/>
+<wire x1="157.48" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
+<label x="165.1" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_5" class="0">

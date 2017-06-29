@@ -299,8 +299,8 @@ package type ST</description>
 <connect gate="G$1" pin="-INB" pad="6"/>
 <connect gate="G$1" pin="OUTA" pad="1"/>
 <connect gate="G$1" pin="OUTB" pad="7"/>
-<connect gate="G$1" pin="V+" pad="4"/>
-<connect gate="G$1" pin="V-" pad="8"/>
+<connect gate="G$1" pin="V+" pad="8"/>
+<connect gate="G$1" pin="V-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1718,7 +1718,7 @@ Solder type</description>
 <part name="C13" library="SparkFun-Capacitors" deviceset="1UF-25V-10%(0805)" device="&quot;" value="10n"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="20k"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="1k"/>
-<part name="LEFT" library="pinhead" deviceset="PINHD-2X20" device=""/>
+<part name="P9" library="pinhead" deviceset="PINHD-2X20" device=""/>
 <part name="R13" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="4.7k"/>
 <part name="IC3" library="SONAR" deviceset="LMV797" device=""/>
 <part name="IC2" library="SONAR" deviceset="LMV797" device="" value=""/>
@@ -1800,7 +1800,7 @@ Solder type</description>
 <instance part="C13" gate="G$1" x="127" y="-38.1" rot="R270"/>
 <instance part="R11" gate="G$1" x="137.16" y="-33.02" rot="R90"/>
 <instance part="R12" gate="G$1" x="129.54" y="-48.26" rot="R180"/>
-<instance part="LEFT" gate="A" x="116.84" y="96.52"/>
+<instance part="P9" gate="A" x="116.84" y="96.52"/>
 <instance part="R13" gate="G$1" x="-17.78" y="101.6" rot="R90"/>
 <instance part="IC3" gate="G$1" x="162.56" y="10.16"/>
 <instance part="IC2" gate="G$1" x="58.42" y="10.16"/>
@@ -1851,7 +1851,7 @@ Solder type</description>
 <label x="-17.78" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LEFT" gate="A" pin="5"/>
+<pinref part="P9" gate="A" pin="5"/>
 <wire x1="114.3" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
 <label x="96.52" y="114.3" size="1.778" layer="95"/>
 </segment>
@@ -2202,7 +2202,7 @@ Solder type</description>
 </net>
 <net name="DGND" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="1"/>
+<pinref part="P9" gate="A" pin="1"/>
 <wire x1="114.3" y1="119.38" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
 <label x="96.52" y="119.38" size="1.778" layer="95"/>
 </segment>
@@ -2224,98 +2224,98 @@ Solder type</description>
 </net>
 <net name="VDD_3V3" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="3"/>
+<pinref part="P9" gate="A" pin="3"/>
 <wire x1="114.3" y1="116.84" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
 <label x="96.52" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWR_BUT" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="9"/>
+<pinref part="P9" gate="A" pin="9"/>
 <wire x1="114.3" y1="109.22" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
 <label x="96.52" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_30" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="11"/>
+<pinref part="P9" gate="A" pin="11"/>
 <wire x1="114.3" y1="106.68" x2="106.68" y2="106.68" width="0.1524" layer="91"/>
 <label x="96.52" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_31" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="13"/>
+<pinref part="P9" gate="A" pin="13"/>
 <wire x1="114.3" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
 <label x="96.52" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_48" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="15"/>
+<pinref part="P9" gate="A" pin="15"/>
 <wire x1="114.3" y1="101.6" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
 <label x="96.52" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="17"/>
+<pinref part="P9" gate="A" pin="17"/>
 <wire x1="114.3" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
 <label x="96.52" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="19"/>
+<pinref part="P9" gate="A" pin="19"/>
 <wire x1="114.3" y1="96.52" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
 <label x="96.52" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="2"/>
+<pinref part="P9" gate="A" pin="2"/>
 <wire x1="121.92" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
 <label x="129.54" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="4"/>
+<pinref part="P9" gate="A" pin="4"/>
 <wire x1="121.92" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
 <label x="129.54" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="6"/>
+<pinref part="P9" gate="A" pin="6"/>
 <wire x1="121.92" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91"/>
 <label x="129.54" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="8"/>
+<pinref part="P9" gate="A" pin="8"/>
 <wire x1="121.92" y1="111.76" x2="129.54" y2="111.76" width="0.1524" layer="91"/>
 <label x="129.54" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SYS_!RESETN" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="10"/>
+<pinref part="P9" gate="A" pin="10"/>
 <wire x1="121.92" y1="109.22" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
 <label x="129.54" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_60" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="12"/>
+<pinref part="P9" gate="A" pin="12"/>
 <wire x1="121.92" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
 <label x="129.54" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EHRPWM1A" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="14"/>
+<pinref part="P9" gate="A" pin="14"/>
 <wire x1="121.92" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
 <label x="129.54" y="104.14" size="1.778" layer="95"/>
 </segment>
@@ -2327,7 +2327,7 @@ Solder type</description>
 </net>
 <net name="EHRPWM1B" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="16"/>
+<pinref part="P9" gate="A" pin="16"/>
 <wire x1="121.92" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
 <label x="129.54" y="101.6" size="1.778" layer="95"/>
 </segment>
@@ -2339,14 +2339,14 @@ Solder type</description>
 </net>
 <net name="GPIO_5" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="18"/>
+<pinref part="P9" gate="A" pin="18"/>
 <wire x1="121.92" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
 <label x="129.54" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C2_SDA" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="20"/>
+<pinref part="P9" gate="A" pin="20"/>
 <wire x1="121.92" y1="96.52" x2="129.54" y2="96.52" width="0.1524" layer="91"/>
 <label x="129.54" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -2504,147 +2504,147 @@ Solder type</description>
 </net>
 <net name="SYS_5V" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="7"/>
+<pinref part="P9" gate="A" pin="7"/>
 <wire x1="114.3" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
 <label x="96.52" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_3" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="21"/>
+<pinref part="P9" gate="A" pin="21"/>
 <wire x1="114.3" y1="93.98" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
 <label x="96.52" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_49" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="23"/>
+<pinref part="P9" gate="A" pin="23"/>
 <wire x1="114.3" y1="91.44" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
 <label x="96.52" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_117" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="25"/>
+<pinref part="P9" gate="A" pin="25"/>
 <wire x1="114.3" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
 <label x="96.52" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_125" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="27"/>
+<pinref part="P9" gate="A" pin="27"/>
 <wire x1="114.3" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
 <label x="96.52" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_121" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="29"/>
+<pinref part="P9" gate="A" pin="29"/>
 <wire x1="114.3" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 <label x="96.52" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_120" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="31"/>
+<pinref part="P9" gate="A" pin="31"/>
 <wire x1="114.3" y1="81.28" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
 <label x="96.52" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN4" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="33"/>
+<pinref part="P9" gate="A" pin="33"/>
 <wire x1="114.3" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
 <label x="96.52" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN6" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="35"/>
+<pinref part="P9" gate="A" pin="35"/>
 <wire x1="114.3" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
 <label x="96.52" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN2" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="37"/>
+<pinref part="P9" gate="A" pin="37"/>
 <wire x1="114.3" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
 <label x="96.52" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN0" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="39"/>
+<pinref part="P9" gate="A" pin="39"/>
 <wire x1="114.3" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
 <label x="96.52" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_2" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="22"/>
+<pinref part="P9" gate="A" pin="22"/>
 <wire x1="121.92" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
 <label x="129.54" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_15" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="24"/>
+<pinref part="P9" gate="A" pin="24"/>
 <wire x1="121.92" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
 <label x="129.54" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_14" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="26"/>
+<pinref part="P9" gate="A" pin="26"/>
 <wire x1="121.92" y1="88.9" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
 <label x="129.54" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_123" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="28"/>
+<pinref part="P9" gate="A" pin="28"/>
 <wire x1="121.92" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
 <label x="129.54" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_122" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="30"/>
+<pinref part="P9" gate="A" pin="30"/>
 <wire x1="121.92" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
 <label x="129.54" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDD_ADC" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="32"/>
+<pinref part="P9" gate="A" pin="32"/>
 <wire x1="121.92" y1="81.28" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
 <label x="129.54" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GNDA_ADC" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="34"/>
+<pinref part="P9" gate="A" pin="34"/>
 <wire x1="121.92" y1="78.74" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
 <label x="129.54" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN5" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="36"/>
+<pinref part="P9" gate="A" pin="36"/>
 <wire x1="121.92" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
 <label x="129.54" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN3" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="38"/>
+<pinref part="P9" gate="A" pin="38"/>
 <wire x1="121.92" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 <label x="129.54" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN1" class="0">
 <segment>
-<pinref part="LEFT" gate="A" pin="40"/>
+<pinref part="P9" gate="A" pin="40"/>
 <wire x1="121.92" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
 <label x="129.54" y="71.12" size="1.778" layer="95"/>
 </segment>

@@ -43,8 +43,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -55,6 +59,48 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -7048,6 +7094,69 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ARVP">
+<packages>
+<package name="ARVP">
+<description>Logo</description>
+<wire x1="7.4676" y1="2.4384" x2="7.4676" y2="0.7874" width="0.127" layer="21"/>
+<wire x1="11.0998" y1="2.413" x2="11.0998" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="11.0998" y1="1.2192" x2="11.0998" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="14.2494" y1="2.413" x2="14.4272" y2="2.2606" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="14.4272" y1="1.397" x2="14.2748" y2="1.2192" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="14.2494" y1="2.413" x2="11.0998" y2="2.413" width="0.127" layer="21"/>
+<wire x1="14.4272" y1="2.2606" x2="14.4272" y2="1.397" width="0.127" layer="21"/>
+<wire x1="14.4272" y1="1.397" x2="14.4272" y2="1.3716" width="0.127" layer="21"/>
+<wire x1="14.2494" y1="1.2192" x2="11.0998" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="10.7188" y1="2.413" x2="7.4676" y2="0.7874" width="0.127" layer="21"/>
+<wire x1="3.7338" y1="2.413" x2="3.7338" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="3.7338" y1="1.2192" x2="3.7338" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="6.8834" y1="2.413" x2="7.0612" y2="2.2606" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="7.0612" y1="1.397" x2="6.9088" y2="1.2192" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="6.8834" y1="2.413" x2="3.7338" y2="2.413" width="0.127" layer="21"/>
+<wire x1="7.0612" y1="2.2606" x2="7.0612" y2="1.397" width="0.127" layer="21"/>
+<wire x1="7.0612" y1="1.397" x2="7.0612" y2="1.3716" width="0.127" layer="21"/>
+<wire x1="6.8834" y1="1.2192" x2="6.858" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="6.858" y1="1.2192" x2="3.7338" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="6.858" y1="1.2192" x2="7.0358" y2="1.0668" width="0.127" layer="21" curve="-83.388121"/>
+<wire x1="7.0358" y1="1.0922" x2="7.0358" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="3.3528" y1="2.413" x2="0.2286" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="3.4036" y1="2.4384" x2="3.4036" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="3.3528" y1="1.2192" x2="1.143" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="0.8382" y1="1.7018" x2="0.7366" y2="1.2954" width="0.0508" layer="21"/>
+<wire x1="0.254" y1="1.7018" x2="0.3556" y2="1.2954" width="0.0508" layer="21"/>
+<wire x1="0.6858" y1="1.6256" x2="0.8382" y2="1.7018" width="0.0508" layer="21"/>
+<wire x1="0.254" y1="1.7018" x2="0.4318" y2="1.6256" width="0.0508" layer="21"/>
+<wire x1="0.5588" y1="1.905" x2="0.6858" y2="1.6256" width="0.0508" layer="21"/>
+<wire x1="0.5588" y1="1.905" x2="0.4318" y2="1.6256" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="1.4732" x2="0.3556" y2="1.2954" width="0.0508" layer="21"/>
+<wire x1="-0.127" y1="1.1684" x2="0.1778" y2="0.9398" width="0.0508" layer="21"/>
+<wire x1="0" y1="1.2192" x2="-0.127" y2="1.1684" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="1.4732" x2="0.127" y2="1.3462" width="0.0508" layer="21"/>
+<wire x1="-0.0762" y1="1.397" x2="0" y2="1.2192" width="0.0508" layer="21"/>
+<wire x1="-0.0762" y1="1.397" x2="0.127" y2="1.3462" width="0.0508" layer="21"/>
+<text x="0" y="0" size="0.508" layer="21">autonomous robotic vehicle project</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ARVP">
+<text x="-2.54" y="0" size="2.54" layer="94">ARVP</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ARVP_LOGO">
+<gates>
+<gate name="G$1" symbol="ARVP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ARVP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7063,6 +7172,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="Moira" deviceset="DRV5033(SMD)" device="1"/>
 <part name="J1" library="con-molex" deviceset="22-?-03" device="27-2031"/>
+<part name="U$2" library="ARVP" deviceset="ARVP_LOGO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7076,6 +7186,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="J1" gate="-1" x="88.9" y="68.58"/>
 <instance part="J1" gate="-2" x="88.9" y="63.5"/>
 <instance part="J1" gate="-3" x="88.9" y="58.42"/>
+<instance part="U$2" gate="G$1" x="17.78" y="73.66"/>
 </instances>
 <busses>
 </busses>

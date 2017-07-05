@@ -10635,6 +10635,7 @@ Source: 3M</description>
 <part name="U$8" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
 <part name="U$9" library="ARVP_MOLEX_FEMALE" deviceset="ARVP_MOLEX_FEMALE" device=""/>
 <part name="U$10" library="ARVP" deviceset="ARVP_LOGO" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10727,6 +10728,7 @@ Source: 3M</description>
 <instance part="U$8" gate="G$1" x="114.3" y="-50.8" rot="R90"/>
 <instance part="U$9" gate="G$1" x="91.44" y="182.88" rot="R90"/>
 <instance part="U$10" gate="G$1" x="91.44" y="55.88"/>
+<instance part="GND14" gate="1" x="73.66" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -10812,6 +10814,14 @@ Source: 3M</description>
 <pinref part="X3" gate="-1" pin="KL"/>
 <wire x1="170.18" y1="-43.18" x2="170.18" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND18" gate="VR1" pin="AGND"/>
+<pinref part="U$4" gate="G$1" pin="KL1"/>
+<wire x1="73.66" y1="91.44" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="91.44" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
+<junction x="73.66" y="91.44"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SDA_OUT" class="0">
@@ -11483,11 +11493,6 @@ Source: 3M</description>
 </net>
 <net name="AGND" class="0">
 <segment>
-<pinref part="AGND" gate="VR1" pin="AGND"/>
-<pinref part="U$1" gate="G$1" pin="KL1"/>
-<wire x1="33.02" y1="91.44" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND16" gate="VR1" pin="AGND"/>
 <pinref part="U$2" gate="G$1" pin="KL1"/>
 <wire x1="45.72" y1="91.44" x2="45.72" y2="96.52" width="0.1524" layer="91"/>
@@ -11496,11 +11501,6 @@ Source: 3M</description>
 <pinref part="GND17" gate="VR1" pin="AGND"/>
 <pinref part="U$3" gate="G$1" pin="KL1"/>
 <wire x1="58.42" y1="91.44" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND18" gate="VR1" pin="AGND"/>
-<pinref part="U$4" gate="G$1" pin="KL1"/>
-<wire x1="73.66" y1="91.44" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="VR1" pin="AGND"/>
@@ -11526,6 +11526,11 @@ Source: 3M</description>
 <pinref part="X3" gate="-4" pin="KL"/>
 <wire x1="177.8" y1="-43.18" x2="177.8" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="VR1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="AGND" gate="VR1" pin="AGND"/>
+<pinref part="U$1" gate="G$1" pin="KL1"/>
+<wire x1="33.02" y1="91.44" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

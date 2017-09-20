@@ -8038,31 +8038,31 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="1.27" y1="-3.048" x2="3.81" y2="-3.048" width="0.1524" layer="21"/>
 <wire x1="3.81" y1="-3.048" x2="3.81" y2="-3.429" width="0.1524" layer="21"/>
 </package>
-<package name="SOT223">
-<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;</description>
-<wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-3.277" y1="-1.778" x2="-3.277" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.277" y1="1.778" x2="3.277" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.473" y1="4.483" x2="3.473" y2="4.483" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="-4.483" x2="-3.473" y2="-4.483" width="0.0508" layer="39"/>
-<wire x1="-3.473" y1="-4.483" x2="-3.473" y2="4.483" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="4.483" x2="3.473" y2="-4.483" width="0.0508" layer="39"/>
-<smd name="1" x="-2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
-<smd name="2" x="0" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
-<smd name="3" x="2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-2.54" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="35"/>
+<package name="SO-8">
+<description>&lt;b&gt;SO 8 small outline&lt;/b&gt;</description>
+<wire x1="-1.7526" y1="2.3622" x2="-1.7526" y2="-2.3622" width="0.127" layer="21"/>
+<wire x1="-1.7526" y1="-2.3622" x2="1.7526" y2="-2.3622" width="0.127" layer="21"/>
+<wire x1="1.7526" y1="-2.3622" x2="1.7526" y2="2.3622" width="0.127" layer="21"/>
+<wire x1="1.7526" y1="2.3622" x2="-1.7526" y2="2.3622" width="0.127" layer="21"/>
+<circle x="-1.2446" y="1.8034" radius="0.3556" width="0.0508" layer="21"/>
+<smd name="1" x="-2.6924" y="1.905" dx="1.524" dy="0.6096" layer="1"/>
+<smd name="8" x="2.6924" y="1.905" dx="1.524" dy="0.6096" layer="1"/>
+<smd name="2" x="-2.6924" y="0.635" dx="1.524" dy="0.6096" layer="1"/>
+<smd name="3" x="-2.6924" y="-0.635" dx="1.524" dy="0.6096" layer="1"/>
+<smd name="7" x="2.6924" y="0.635" dx="1.524" dy="0.6096" layer="1"/>
+<smd name="6" x="2.6924" y="-0.635" dx="1.524" dy="0.6096" layer="1"/>
+<smd name="4" x="-2.6924" y="-1.905" dx="1.524" dy="0.6096" layer="1"/>
+<smd name="5" x="2.6924" y="-1.905" dx="1.524" dy="0.6096" layer="1"/>
+<text x="-2.032" y="-4.0005" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.032" y="2.7305" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-2.8194" y1="1.7272" x2="-1.8034" y2="2.0828" layer="51"/>
+<rectangle x1="-2.8194" y1="0.4572" x2="-1.8034" y2="0.8128" layer="51"/>
+<rectangle x1="-2.8194" y1="-0.8128" x2="-1.8034" y2="-0.4572" layer="51"/>
+<rectangle x1="-2.8194" y1="-2.0828" x2="-1.8034" y2="-1.7272" layer="51"/>
+<rectangle x1="1.8034" y1="1.7272" x2="2.8194" y2="2.0828" layer="51"/>
+<rectangle x1="1.8034" y1="0.4572" x2="2.8194" y2="0.8128" layer="51"/>
+<rectangle x1="1.8034" y1="-0.8128" x2="2.8194" y2="-0.4572" layer="51"/>
+<rectangle x1="1.8034" y1="-2.0828" x2="2.8194" y2="-1.7272" layer="51"/>
 </package>
 <package name="DO214AC">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
@@ -8317,16 +8317,16 @@ Source: AVX .. aphvc.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IRLL2705TRPBF" prefix="Q">
+<deviceset name="SI4896DY-T1-E3" prefix="Q">
 <gates>
-<gate name="G$1" symbol="MOSFET_N" x="0" y="0"/>
+<gate name="A" symbol="MOSFET_N" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT223">
+<device name="" package="SO-8">
 <connects>
-<connect gate="G$1" pin="D" pad="2 4"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="A" pin="D" pad="5 6 7 8"/>
+<connect gate="A" pin="G" pad="4"/>
+<connect gate="A" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8700,7 +8700,7 @@ Source: http://www.molex.com</description>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="TRM1" library="dropper_torpedo_v3" deviceset="OSTTC022162" device=""/>
-<part name="Q1" library="dropper_torpedo_v3" deviceset="IRLL2705TRPBF" device=""/>
+<part name="Q1" library="dropper_torpedo_v3" deviceset="SI4896DY-T1-E3" device=""/>
 <part name="D1" library="dropper_torpedo_v3" deviceset="STPS1L30A" device=""/>
 <part name="U2" library="dropper_torpedo_v3" deviceset="LTV-355T" device=""/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
@@ -8712,7 +8712,7 @@ Source: http://www.molex.com</description>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="TRM2" library="dropper_torpedo_v3" deviceset="OSTTC022162" device=""/>
-<part name="Q2" library="dropper_torpedo_v3" deviceset="IRLL2705TRPBF" device=""/>
+<part name="Q2" library="dropper_torpedo_v3" deviceset="SI4896DY-T1-E3" device=""/>
 <part name="D2" library="dropper_torpedo_v3" deviceset="STPS1L30A" device=""/>
 <part name="U3" library="dropper_torpedo_v3" deviceset="LTV-355T" device=""/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
@@ -8770,7 +8770,7 @@ Source: http://www.molex.com</description>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
 <instance part="TRM1" gate="G$1" x="269.24" y="121.92" smashed="yes"/>
 <instance part="TRM1" gate="G$2" x="269.24" y="132.08" smashed="yes"/>
-<instance part="Q1" gate="G$1" x="259.08" y="104.14" smashed="yes">
+<instance part="Q1" gate="A" x="259.08" y="104.14" smashed="yes">
 <attribute name="NAME" x="265.43" y="106.68" size="1.778" layer="95"/>
 </instance>
 <instance part="D1" gate="G$1" x="256.54" y="127" smashed="yes" rot="R90">
@@ -8787,7 +8787,7 @@ Source: http://www.molex.com</description>
 <instance part="SUPPLY4" gate="GND" x="213.36" y="96.52"/>
 <instance part="TRM2" gate="G$1" x="269.24" y="55.88" smashed="yes"/>
 <instance part="TRM2" gate="G$2" x="269.24" y="66.04" smashed="yes"/>
-<instance part="Q2" gate="G$1" x="259.08" y="38.1" smashed="yes">
+<instance part="Q2" gate="A" x="259.08" y="38.1" smashed="yes">
 <attribute name="NAME" x="265.43" y="40.64" size="1.778" layer="95"/>
 </instance>
 <instance part="D2" gate="G$1" x="256.54" y="60.96" smashed="yes" rot="R90">
@@ -8860,7 +8860,7 @@ Source: http://www.molex.com</description>
 <wire x1="124.46" y1="91.44" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="Q1" gate="A" pin="S"/>
 <wire x1="261.62" y1="99.06" x2="261.62" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="86.36" x2="251.46" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -8879,7 +8879,7 @@ Source: http://www.molex.com</description>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="Q2" gate="G$1" pin="S"/>
+<pinref part="Q2" gate="A" pin="S"/>
 <wire x1="261.62" y1="33.02" x2="261.62" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="20.32" x2="251.46" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -9177,7 +9177,7 @@ Source: http://www.molex.com</description>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="101.6" x2="251.46" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="G"/>
+<pinref part="Q1" gate="A" pin="G"/>
 <wire x1="251.46" y1="101.6" x2="251.46" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="101.6" x2="256.54" y2="101.6" width="0.1524" layer="91"/>
 <junction x="251.46" y="101.6"/>
@@ -9185,7 +9185,7 @@ Source: http://www.molex.com</description>
 </net>
 <net name="TRP_RETURN0" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="D"/>
+<pinref part="Q1" gate="A" pin="D"/>
 <wire x1="261.62" y1="121.92" x2="261.62" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="261.62" y1="114.3" x2="261.62" y2="109.22" width="0.1524" layer="91"/>
@@ -9228,11 +9228,11 @@ Source: http://www.molex.com</description>
 <label x="190.5" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="8/TX3"/>
-<wire x1="99.06" y1="43.18" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
-<label x="104.14" y="45.72" size="1.778" layer="95" xref="yes"/>
-<wire x1="101.6" y1="43.18" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="16/A2/T"/>
+<wire x1="99.06" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="63.5" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
+<label x="104.14" y="60.96" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TRP_GATE1" class="0">
@@ -9240,7 +9240,7 @@ Source: http://www.molex.com</description>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="35.56" x2="251.46" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="G"/>
+<pinref part="Q2" gate="A" pin="G"/>
 <wire x1="251.46" y1="35.56" x2="251.46" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="35.56" x2="256.54" y2="35.56" width="0.1524" layer="91"/>
 <junction x="251.46" y="35.56"/>
@@ -9248,7 +9248,7 @@ Source: http://www.molex.com</description>
 </net>
 <net name="TRP_RETURN1" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="D"/>
+<pinref part="Q2" gate="A" pin="D"/>
 <wire x1="261.62" y1="55.88" x2="261.62" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="261.62" y1="48.26" x2="261.62" y2="43.18" width="0.1524" layer="91"/>
@@ -9291,9 +9291,9 @@ Source: http://www.molex.com</description>
 <label x="190.5" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="7/RX3"/>
-<label x="104.14" y="40.64" size="1.778" layer="95" xref="yes"/>
-<wire x1="99.06" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="17/A3/T"/>
+<wire x1="99.06" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
+<label x="101.6" y="66.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PCA_OE" class="0">

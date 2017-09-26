@@ -8744,9 +8744,9 @@ Source: http://www.molex.com</description>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="25.4" y="60.96" rot="MR0"/>
-<instance part="X1" gate="G$2" x="25.4" y="58.42" rot="MR0"/>
+<instance part="X1" gate="G$2" x="25.4" y="63.5" rot="MR0"/>
 <instance part="X1" gate="G$3" x="25.4" y="55.88" rot="MR0"/>
-<instance part="X1" gate="G$4" x="25.4" y="53.34" rot="MR0"/>
+<instance part="X1" gate="G$4" x="25.4" y="58.42" rot="MR0"/>
 <instance part="P+2" gate="1" x="33.02" y="71.12"/>
 <instance part="P+3" gate="1" x="40.64" y="71.12"/>
 <instance part="GND1" gate="1" x="33.02" y="48.26"/>
@@ -8823,13 +8823,13 @@ Source: http://www.molex.com</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="33.02" y1="55.88" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$4" pin="S"/>
-<wire x1="33.02" y1="53.34" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="50.8" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="55.88" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$3" pin="S"/>
-<wire x1="25.4" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
-<junction x="33.02" y="53.34"/>
+<wire x1="33.02" y1="55.88" x2="25.4" y2="55.88" width="0.1524" layer="91"/>
+<junction x="33.02" y="55.88"/>
+<pinref part="X1" gate="G$4" pin="S"/>
+<wire x1="25.4" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="53.34" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
@@ -8916,9 +8916,9 @@ Source: http://www.molex.com</description>
 <net name="+5V" class="0">
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="40.64" y1="58.42" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$2" pin="S"/>
-<wire x1="40.64" y1="58.42" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="60.96" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="S"/>
+<wire x1="40.64" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="22.86" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
@@ -8931,9 +8931,9 @@ Source: http://www.molex.com</description>
 <net name="+12V" class="0">
 <segment>
 <pinref part="P+2" gate="1" pin="+12V"/>
-<wire x1="33.02" y1="68.58" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="S"/>
-<wire x1="33.02" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="68.58" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$2" pin="S"/>
+<wire x1="33.02" y1="63.5" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+12V"/>

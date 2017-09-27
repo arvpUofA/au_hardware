@@ -8410,6 +8410,27 @@ Source: AVX .. aphvc.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="IRL6372TRPBF" prefix="Q">
+<gates>
+<gate name="A" symbol="MOSFET_N" x="-2.54" y="10.16"/>
+<gate name="B" symbol="MOSFET_N" x="-2.54" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="SO-8">
+<connects>
+<connect gate="A" pin="D" pad="5 6"/>
+<connect gate="A" pin="G" pad="4"/>
+<connect gate="A" pin="S" pad="3"/>
+<connect gate="B" pin="D" pad="7 8"/>
+<connect gate="B" pin="G" pad="2"/>
+<connect gate="B" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="ARVP">
@@ -8737,6 +8758,8 @@ Source: http://www.molex.com</description>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X6" device="" package3d_urn="urn:adsk.eagle:package:22474/2"/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="Q3" library="dropper_torpedo_v3" deviceset="IRL6372TRPBF" device=""/>
+<part name="Q4" library="dropper_torpedo_v3" deviceset="IRL6372TRPBF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8816,6 +8839,18 @@ Source: http://www.molex.com</description>
 <instance part="SUPPLY10" gate="GND" x="27.94" y="142.24"/>
 <instance part="JP5" gate="A" x="45.72" y="127" rot="R90"/>
 <instance part="+3V2" gate="G$1" x="60.96" y="124.46"/>
+<instance part="Q3" gate="A" x="218.44" y="259.08" smashed="yes">
+<attribute name="NAME" x="224.79" y="261.62" size="1.778" layer="95"/>
+</instance>
+<instance part="Q3" gate="B" x="231.14" y="246.38" smashed="yes">
+<attribute name="NAME" x="237.49" y="248.92" size="1.778" layer="95"/>
+</instance>
+<instance part="Q4" gate="A" x="243.84" y="233.68" smashed="yes">
+<attribute name="NAME" x="250.19" y="236.22" size="1.778" layer="95"/>
+</instance>
+<instance part="Q4" gate="B" x="256.54" y="220.98" smashed="yes">
+<attribute name="NAME" x="262.89" y="223.52" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9313,7 +9348,7 @@ Source: http://www.molex.com</description>
 <label x="27.94" y="165.1" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="PWM_CH0" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="LED0"/>
 <wire x1="109.22" y1="223.52" x2="111.76" y2="223.52" width="0.1524" layer="91"/>
@@ -9322,7 +9357,7 @@ Source: http://www.molex.com</description>
 <wire x1="111.76" y1="248.92" x2="134.62" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="PWM_CH1" class="0">
 <segment>
 <wire x1="114.3" y1="243.84" x2="114.3" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED1"/>
@@ -9331,7 +9366,7 @@ Source: http://www.molex.com</description>
 <wire x1="114.3" y1="243.84" x2="134.62" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="PWM_CH2" class="0">
 <segment>
 <wire x1="116.84" y1="238.76" x2="116.84" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED2"/>
@@ -9340,7 +9375,7 @@ Source: http://www.molex.com</description>
 <wire x1="116.84" y1="238.76" x2="134.62" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="PWM_CH3" class="0">
 <segment>
 <wire x1="119.38" y1="233.68" x2="119.38" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED3"/>
@@ -9349,7 +9384,7 @@ Source: http://www.molex.com</description>
 <wire x1="119.38" y1="233.68" x2="134.62" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="PWM_CH4" class="0">
 <segment>
 <wire x1="121.92" y1="223.52" x2="121.92" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED4"/>
@@ -9358,7 +9393,7 @@ Source: http://www.molex.com</description>
 <pinref part="R14" gate="A" pin="82"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="PWM_CH5" class="0">
 <segment>
 <wire x1="124.46" y1="218.44" x2="124.46" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED5"/>
@@ -9367,7 +9402,7 @@ Source: http://www.molex.com</description>
 <wire x1="124.46" y1="218.44" x2="134.62" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="PWM_CH6" class="0">
 <segment>
 <wire x1="127" y1="213.36" x2="127" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED6"/>
@@ -9376,7 +9411,7 @@ Source: http://www.molex.com</description>
 <wire x1="127" y1="213.36" x2="134.62" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="PWM_CH7" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="LED7"/>
 <wire x1="129.54" y1="208.28" x2="129.54" y2="205.74" width="0.1524" layer="91"/>
@@ -9385,7 +9420,7 @@ Source: http://www.molex.com</description>
 <wire x1="129.54" y1="208.28" x2="134.62" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="PWM_CH8" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="LED8"/>
 <wire x1="109.22" y1="200.66" x2="129.54" y2="200.66" width="0.1524" layer="91"/>
@@ -9394,7 +9429,7 @@ Source: http://www.molex.com</description>
 <wire x1="129.54" y1="198.12" x2="134.62" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="PWM_CH9" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="LED9"/>
 <wire x1="109.22" y1="198.12" x2="127" y2="198.12" width="0.1524" layer="91"/>
@@ -9403,7 +9438,7 @@ Source: http://www.molex.com</description>
 <pinref part="R15" gate="A" pin="74"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="PWM_CH10" class="0">
 <segment>
 <wire x1="124.46" y1="187.96" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED10"/>
@@ -9412,7 +9447,7 @@ Source: http://www.molex.com</description>
 <wire x1="124.46" y1="187.96" x2="134.62" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="PWM_CH11" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="LED11"/>
 <wire x1="109.22" y1="193.04" x2="121.92" y2="193.04" width="0.1524" layer="91"/>
@@ -9421,7 +9456,7 @@ Source: http://www.molex.com</description>
 <wire x1="121.92" y1="182.88" x2="134.62" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="PWM_CH12" class="0">
 <segment>
 <wire x1="119.38" y1="172.72" x2="119.38" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED12"/>
@@ -9430,7 +9465,7 @@ Source: http://www.molex.com</description>
 <wire x1="119.38" y1="172.72" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="PWM_CH13" class="0">
 <segment>
 <wire x1="116.84" y1="167.64" x2="116.84" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED13"/>
@@ -9439,7 +9474,7 @@ Source: http://www.molex.com</description>
 <wire x1="116.84" y1="167.64" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="PWM_CH14" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="LED14"/>
 <wire x1="109.22" y1="185.42" x2="114.3" y2="185.42" width="0.1524" layer="91"/>
@@ -9448,7 +9483,7 @@ Source: http://www.molex.com</description>
 <wire x1="114.3" y1="162.56" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="PWM_CH15" class="0">
 <segment>
 <wire x1="111.76" y1="157.48" x2="111.76" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="LED15"/>
@@ -9457,7 +9492,7 @@ Source: http://www.molex.com</description>
 <wire x1="111.76" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="A0+" class="0">
 <segment>
 <pinref part="R17" gate="A" pin="35"/>
 <wire x1="33.02" y1="147.32" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
@@ -9466,7 +9501,7 @@ Source: http://www.molex.com</description>
 <wire x1="40.64" y1="137.16" x2="40.64" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="A1+" class="0">
 <segment>
 <pinref part="R17" gate="A" pin="47"/>
 <wire x1="38.1" y1="147.32" x2="38.1" y2="139.7" width="0.1524" layer="91"/>
@@ -9475,7 +9510,7 @@ Source: http://www.molex.com</description>
 <wire x1="43.18" y1="139.7" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="A2+" class="0">
 <segment>
 <pinref part="R18" gate="A" pin="11"/>
 <wire x1="48.26" y1="147.32" x2="48.26" y2="144.78" width="0.1524" layer="91"/>
@@ -9484,7 +9519,7 @@ Source: http://www.molex.com</description>
 <wire x1="45.72" y1="144.78" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="A3+" class="0">
 <segment>
 <pinref part="R18" gate="A" pin="23"/>
 <wire x1="53.34" y1="147.32" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
@@ -9493,7 +9528,7 @@ Source: http://www.molex.com</description>
 <wire x1="48.26" y1="142.24" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="A4+" class="0">
 <segment>
 <pinref part="R18" gate="A" pin="35"/>
 <wire x1="58.42" y1="147.32" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
@@ -9502,7 +9537,7 @@ Source: http://www.molex.com</description>
 <wire x1="50.8" y1="139.7" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="A5+" class="0">
 <segment>
 <pinref part="JP5" gate="A" pin="12"/>
 <wire x1="53.34" y1="132.08" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
@@ -9511,7 +9546,7 @@ Source: http://www.molex.com</description>
 <wire x1="63.5" y1="137.16" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="A5" class="0">
 <segment>
 <pinref part="R18" gate="A" pin="58"/>
 <pinref part="U4" gate="G$1" pin="A5"/>
@@ -9519,7 +9554,7 @@ Source: http://www.molex.com</description>
 <wire x1="63.5" y1="185.42" x2="68.58" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="A4" class="0">
 <segment>
 <pinref part="R18" gate="A" pin="66"/>
 <pinref part="U4" gate="G$1" pin="A4"/>
@@ -9527,7 +9562,7 @@ Source: http://www.molex.com</description>
 <wire x1="58.42" y1="187.96" x2="68.58" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="A3" class="0">
 <segment>
 <pinref part="R18" gate="A" pin="74"/>
 <pinref part="U4" gate="G$1" pin="A3"/>
@@ -9535,7 +9570,7 @@ Source: http://www.molex.com</description>
 <wire x1="53.34" y1="190.5" x2="68.58" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="A2" class="0">
 <segment>
 <pinref part="R18" gate="A" pin="82"/>
 <pinref part="U4" gate="G$1" pin="A2"/>
@@ -9543,7 +9578,7 @@ Source: http://www.molex.com</description>
 <wire x1="48.26" y1="193.04" x2="68.58" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="A1" class="0">
 <segment>
 <pinref part="R17" gate="A" pin="58"/>
 <pinref part="U4" gate="G$1" pin="A1"/>
@@ -9551,7 +9586,7 @@ Source: http://www.molex.com</description>
 <wire x1="38.1" y1="195.58" x2="68.58" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="A0" class="0">
 <segment>
 <pinref part="R17" gate="A" pin="66"/>
 <pinref part="U4" gate="G$1" pin="A0"/>

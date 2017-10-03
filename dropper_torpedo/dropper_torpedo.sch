@@ -9687,6 +9687,7 @@ Source: http://www.molex.com</description>
 <wire x1="193.04" y1="73.66" x2="200.66" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="73.66" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="76.2" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
+<label x="205.74" y="76.2" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TRP_GATE1" class="0">
@@ -9754,6 +9755,7 @@ Source: http://www.molex.com</description>
 <wire x1="193.04" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="71.12" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="68.58" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
+<label x="205.74" y="68.58" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PCA_OE" class="0">
@@ -10103,6 +10105,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R12" gate="A" pin="11"/>
 <wire x1="147.32" y1="248.92" x2="154.94" y2="248.92" width="0.1524" layer="91"/>
+<label x="154.94" y="248.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP6" gate="A" pin="1"/>
@@ -10115,6 +10118,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R10" gate="A" pin="47"/>
 <wire x1="147.32" y1="182.88" x2="154.94" y2="182.88" width="0.1524" layer="91"/>
+<label x="154.94" y="182.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
@@ -10127,6 +10131,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R10" gate="A" pin="35"/>
 <wire x1="147.32" y1="187.96" x2="154.94" y2="187.96" width="0.1524" layer="91"/>
+<label x="154.94" y="187.96" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
@@ -10139,6 +10144,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R10" gate="A" pin="23"/>
 <wire x1="147.32" y1="193.04" x2="154.94" y2="193.04" width="0.1524" layer="91"/>
+<label x="154.94" y="193.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="2"/>
@@ -10151,6 +10157,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R10" gate="A" pin="11"/>
 <wire x1="147.32" y1="198.12" x2="154.94" y2="198.12" width="0.1524" layer="91"/>
+<label x="154.94" y="198.12" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="1"/>
@@ -10163,6 +10170,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R11" gate="A" pin="47"/>
 <wire x1="147.32" y1="208.28" x2="154.94" y2="208.28" width="0.1524" layer="91"/>
+<label x="154.94" y="208.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="2"/>
@@ -10175,6 +10183,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R11" gate="A" pin="35"/>
 <wire x1="147.32" y1="213.36" x2="154.94" y2="213.36" width="0.1524" layer="91"/>
+<label x="154.94" y="213.36" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
@@ -10187,6 +10196,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R11" gate="A" pin="23"/>
 <wire x1="147.32" y1="218.44" x2="154.94" y2="218.44" width="0.1524" layer="91"/>
+<label x="154.94" y="218.44" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="A" pin="2"/>
@@ -10199,6 +10209,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R11" gate="A" pin="11"/>
 <wire x1="147.32" y1="223.52" x2="154.94" y2="223.52" width="0.1524" layer="91"/>
+<label x="154.94" y="223.52" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="A" pin="1"/>
@@ -10211,6 +10222,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R12" gate="A" pin="47"/>
 <wire x1="147.32" y1="233.68" x2="154.94" y2="233.68" width="0.1524" layer="91"/>
+<label x="154.94" y="233.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="2"/>
@@ -10223,6 +10235,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R12" gate="A" pin="35"/>
 <wire x1="147.32" y1="238.76" x2="154.94" y2="238.76" width="0.1524" layer="91"/>
+<label x="154.94" y="238.76" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="1"/>
@@ -10235,6 +10248,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="R12" gate="A" pin="23"/>
 <wire x1="147.32" y1="243.84" x2="154.94" y2="243.84" width="0.1524" layer="91"/>
+<label x="154.94" y="243.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP6" gate="A" pin="2"/>

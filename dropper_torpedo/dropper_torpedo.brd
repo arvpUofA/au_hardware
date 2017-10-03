@@ -2638,8 +2638,6 @@ design rules under a new name.</description>
 <vertex x="36.35375" y="6.6675"/>
 <vertex x="36.35375" y="10.16"/>
 </polygon>
-<wire x1="49.53" y1="6.35" x2="50.945" y2="7.765" width="1.524" layer="1"/>
-<wire x1="50.945" y1="7.765" x2="50.945" y2="12.065" width="1.524" layer="1"/>
 <contactref element="X2" pad="2"/>
 <wire x1="63.5" y1="6.35" x2="64.915" y2="7.765" width="1.524" layer="1"/>
 <wire x1="64.915" y1="7.765" x2="64.915" y2="12.065" width="1.524" layer="1"/>
@@ -2653,6 +2651,8 @@ design rules under a new name.</description>
 <contactref element="X1" pad="P$5"/>
 <wire x1="27.94" y1="6.35" x2="34.75125" y2="6.35" width="2.159" layer="1"/>
 <wire x1="34.75125" y1="6.35" x2="37.50125" y2="9.1" width="2.159" layer="1"/>
+<wire x1="50.945" y1="12.065" x2="50.945" y2="7.765" width="1.524" layer="1"/>
+<wire x1="50.945" y1="7.765" x2="49.53" y2="6.35" width="1.524" layer="1"/>
 </signal>
 <signal name="TRP_GATE0">
 <contactref element="R6" pad="1"/>

@@ -438,13 +438,13 @@ Sensor</text>
 <wire x1="5.08" y1="0" x2="3.81" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="3.81" y1="-1.27" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-3.81" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="-3.81" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="-3.81" width="0.1524" layer="94"/>
 <circle x="2.54" y="0" radius="5.08" width="0.1524" layer="94"/>
 <pin name="GATE" x="-2.54" y="0" visible="off" length="point"/>
 <pin name="SOURCE" x="5.08" y="-5.08" visible="off" length="point"/>
 <pin name="DRAIN" x="5.08" y="5.08" visible="off" length="point" rot="R90"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="3.81" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="NMOS" library_version="1" library_locally_modified="yes">
 <pin name="G" x="-2.54" y="0" visible="off" length="point" direction="pas"/>

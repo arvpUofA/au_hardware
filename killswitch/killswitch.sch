@@ -8606,6 +8606,7 @@ Magnetic Field Near the Board</text>
 <segment>
 <wire x1="76.2" y1="43.18" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+5V"/>
+<pinref part="U$6" gate="A" pin="DRAIN"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>

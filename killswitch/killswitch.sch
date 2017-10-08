@@ -8281,8 +8281,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="C13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="2.2uF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="1uF"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="320"/>
-<part name="LED1" library="SparkFun (2015_10_14 22_27_04 UTC)" deviceset="LED" device="1206"/>
+<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="324"/>
+<part name="LED1" library="SparkFun (2015_10_14 22_27_04 UTC)" deviceset="LED" device="1206" value="RED, 1.8V"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U1" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" deviceset="CD4012BPWR" device=""/>
 <part name="U2" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" deviceset="2N7002-7-F" device=""/>

@@ -1535,6 +1535,51 @@ Sensor</text>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CD4082BM96">
+<gates>
+<gate name="G$1" symbol="CD4072B_D_14" x="-25.4" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="D14">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="D" pad="5"/>
+<connect gate="G$1" pin="E" pad="9"/>
+<connect gate="G$1" pin="F" pad="10"/>
+<connect gate="G$1" pin="G" pad="11"/>
+<connect gate="G$1" pin="H" pad="12"/>
+<connect gate="G$1" pin="J" pad="1"/>
+<connect gate="G$1" pin="K" pad="13"/>
+<connect gate="G$1" pin="NC" pad="6"/>
+<connect gate="G$1" pin="NC_2" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+<connect gate="G$1" pin="VSS" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRLMS2002TRPBF">
+<gates>
+<gate name="G$1" symbol="NMOS" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="D" pad="DRAIN DRAIN2 DRAIN3 DRAIN4"/>
+<connect gate="G$1" pin="G" pad="GATE"/>
+<connect gate="G$1" pin="S" pad="SOURCE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

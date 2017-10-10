@@ -1,0 +1,67 @@
+Partlist
+
+Exported from dropper_torpedo.sch at 2017-10-09 7:00 PM
+
+EAGLE Version 8.3.2 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value              Device               Package            Library                    Sheet
+
+C1       1u                 C-EUC1206            C1206              rcl                        1
+C2       1u                 C-EUC1206            C1206              rcl                        1
+C3       1u                 C-EUC1206            C1206              rcl                        1
+D1       STPS1L30A          STPS1L30A            DO214AC            dropper_torpedo_v3         1
+D2       STPS1L30A          STPS1L30A            DO214AC            dropper_torpedo_v3         1
+JP1                         PINHD-2X3            2X03               pinhead                    1
+JP2                         PINHD-2X3            2X03               pinhead                    1
+JP3                         PINHD-2X3            2X03               pinhead                    1
+JP4                         PINHD-2X3            2X03               pinhead                    1
+JP5                         PINHD-2X3            2X03               pinhead                    1
+JP6                         PINHD-2X3            2X03               pinhead                    1
+JP7                         PINHD-2X3            2X03               pinhead                    1
+JP8                         PINHD-1X4            1X04               pinhead                    1
+JP9                         PINHD-2X4            2X04               pinhead                    1
+JP10                        PINHD-2X3            2X03               pinhead                    1
+JP11                        PINHD-2X6            2X06               pinhead                    1
+JP12                        PINHD-1X2            1X02               pinhead                    1
+LED1                        LEDCHIPLED_1206      CHIPLED_1206       led                        1
+LED2                        LEDCHIPLED_1206      CHIPLED_1206       led                        1
+LED3                        LEDCHIPLED_1206      CHIPLED_1206       led                        1
+LED4                        LEDCHIPLED_1206      CHIPLED_1206       led                        1
+LED5                        LEDCHIPLED_1206      CHIPLED_1206       led                        1
+Q1       SI4896DY-T1-E3     SI4896DY-T1-E3       SO-8               dropper_torpedo_v3         1
+Q2       SI4896DY-T1-E3     SI4896DY-T1-E3       SO-8               dropper_torpedo_v3         1
+Q3       IRL6372TRPBF       IRL6372TRPBF         SO-8               dropper_torpedo_v3         1
+Q4       IRL6372TRPBF       IRL6372TRPBF         SO-8               dropper_torpedo_v3         1
+R1       3k                 R-US_R1206           R1206              rcl                        1
+R2       3k                 R-US_R1206           R1206              rcl                        1
+R3       10k                R-US_R1206           R1206              rcl                        1
+R4       10k                R-US_R1206           R1206              rcl                        1
+R5       1k                 R-US_R1206           R1206              rcl                        1
+R6       1k                 R-US_R1206           R1206              rcl                        1
+R7       2k                 R-US_R1206           R1206              rcl                        1
+R8       2k                 R-US_R1206           R1206              rcl                        1
+R9       5k                 R-US_R1206           R1206              rcl                        1
+R10      5k                 R-US_R1206           R1206              rcl                        1
+R11      220                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R12      220                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R13      220                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R14      220                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R15      220                R-US_R1206           R1206              rcl                        1
+R16      220                R-US_R1206           R1206              rcl                        1
+R17      10k                R-US_R1206           R1206              rcl                        1
+R18      10k                R-US_R1206           R1206              rcl                        1
+R19      10k                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R20      240                R-US_R1206           R1206              rcl                        1
+R21      580                R-US_R1206           R1206              rcl                        1
+R22      2k                 R-US_R1206           R1206              rcl                        1
+R23      10k                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+TRM1     OSTTC022162        OSTTC022162          OSTTC022162        dropper_torpedo_v3         1
+TRM2     OSTTC022162        OSTTC022162          OSTTC022162        dropper_torpedo_v3         1
+U1       LTV-355T           LTV-355T             SMD4               dropper_torpedo_v3         1
+U2       LTV-355T           LTV-355T             SMD4               dropper_torpedo_v3         1
+U3       PCA9685PW          PCA9685PW            TSSOP28            dropper_torpedo_v3         1
+U4       TEENSY_3.1_BASIC_2 TEENSY_3.1_BASIC_2   TEENSY_3.1_BASIC_2 Teensy_3_Series_Board_v1.0 1
+X1       OSTVN05A150        OSTVN05A150          OSTVN05A150        dropper_torpedo_v3         1
+X2       MOLEX_5566-4       MOLEX_5566-4         5566-4             ARVP                       1

@@ -7269,7 +7269,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="U$5" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" deviceset="TCS40DLR" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.47uF"/>
-<part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="1k"/>
 <part name="JP1" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" deviceset="1241150-3" device=""/>
 </parts>
 <sheets>
@@ -7304,7 +7303,6 @@ Magnetic Field Near the Board</text>
 <instance part="U$5" gate="G$1" x="-27.94" y="-104.14"/>
 <instance part="P+8" gate="1" x="-27.94" y="-76.2"/>
 <instance part="C11" gate="G$1" x="-45.72" y="-104.14"/>
-<instance part="R9" gate="G$1" x="35.56" y="27.94"/>
 <instance part="JP1" gate="A" x="58.42" y="30.48"/>
 </instances>
 <busses>
@@ -7426,8 +7424,9 @@ Magnetic Field Near the Board</text>
 <wire x1="-45.72" y1="-101.6" x2="-45.72" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="OUTPUT" class="0">
 <segment>
+<pinref part="JP1" gate="A" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="OUTPUT"/>
 <pinref part="U$5" gate="G$1" pin="OUTPUT"/>
 <wire x1="-17.78" y1="-104.14" x2="5.08" y2="-104.14" width="0.1524" layer="91"/>
@@ -7440,22 +7439,15 @@ Magnetic Field Near the Board</text>
 <wire x1="5.08" y1="0" x2="-17.78" y2="0" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="0" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
 <junction x="5.08" y="0"/>
-<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="27.94" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="38.1" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
 <junction x="22.86" y="27.94"/>
 <wire x1="-17.78" y1="53.34" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="53.34" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
 <junction x="5.08" y="27.94"/>
-</segment>
-</net>
-<net name="OUTPUT" class="0">
-<segment>
-<wire x1="40.64" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="2"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="27.94" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
+<label x="33.02" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

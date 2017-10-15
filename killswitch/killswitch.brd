@@ -1583,7 +1583,6 @@ design rules under a new name.</description>
 <element name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.47uF" x="-6.985" y="-4.445" rot="R270"/>
 <element name="U$5" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" package="SOT23" value="TCS40DLR" x="3.81" y="-5.08" rot="R180"/>
 <element name="C11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.47uF" x="6.985" y="-4.445" rot="R270"/>
-<element name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="1k" x="0" y="3.302" rot="MR90"/>
 <element name="JP1" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" package="CONN_1241150-3_TYCO" value="1241150-3" x="0" y="8.89" rot="MR0">
 <attribute name="MANUFACTURER_PART_NUMBER" value="12411503" x="0" y="8.89" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VENDOR" value="Tyco Electronics" x="0" y="8.89" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -1690,12 +1689,12 @@ design rules under a new name.</description>
 <wire x1="-2.54" y1="-2.286" x2="-2.54" y2="-3.66" width="0.254" layer="1"/>
 <wire x1="-2.54" y1="-3.66" x2="-2.615" y2="-3.735" width="0.254" layer="1"/>
 </signal>
-<signal name="N$5">
+<signal name="OUTPUT">
+<contactref element="JP1" pad="2"/>
 <contactref element="U$1" pad="OUTPUT"/>
 <contactref element="U$5" pad="OUTPUT"/>
 <contactref element="U$4" pad="OUTPUT"/>
 <contactref element="U$3" pad="OUTPUT"/>
-<contactref element="R9" pad="1"/>
 <contactref element="R6" pad="1"/>
 <wire x1="4.708" y1="2.658" x2="4.572" y2="2.522" width="0.254" layer="1"/>
 <wire x1="4.708" y1="2.658" x2="4.76" y2="2.71" width="0.254" layer="1"/>
@@ -1715,14 +1714,9 @@ design rules under a new name.</description>
 <wire x1="2.794" y1="-3.048" x2="2.794" y2="-3.914" width="0.508" layer="1"/>
 <wire x1="2.794" y1="-3.914" x2="2.86" y2="-3.98" width="0.254" layer="1"/>
 <via x="0" y="-0.508" extent="1-16" drill="0.35"/>
-<wire x1="0" y1="2.352" x2="0" y2="-0.508" width="1.016" layer="16"/>
 <wire x1="0" y1="-0.508" x2="3.622" y2="-0.508" width="0.254" layer="16"/>
 <wire x1="3.622" y1="-0.508" x2="4.13" y2="0" width="0.254" layer="16"/>
-</signal>
-<signal name="OUTPUT">
-<contactref element="JP1" pad="2"/>
-<contactref element="R9" pad="2"/>
-<wire x1="0" y1="4.252" x2="0" y2="7.5946" width="1.016" layer="16"/>
+<wire x1="0" y1="7.5946" x2="0" y2="-0.508" width="1.016" layer="16"/>
 </signal>
 <signal name="N$4">
 <polygon width="0.1524" layer="16" pour="cutout">

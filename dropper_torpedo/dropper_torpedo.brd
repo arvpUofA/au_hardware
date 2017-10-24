@@ -195,8 +195,8 @@ A LETOURNEAU</text>
 <text x="31.75" y="29.5275" size="1.27" layer="25" align="center">T0</text>
 <text x="34.29" y="29.5275" size="1.27" layer="25" align="center">T1</text>
 <text x="36.98875" y="29.5275" size="1.27" layer="25" align="center">OE</text>
-<text x="26.82875" y="41.275" size="0.8128" layer="25" rot="R180" align="center-right">CH0</text>
-<text x="26.82875" y="27.305" size="0.8128" layer="25" rot="R180" align="center-right">CH15</text>
+<text x="26.9875" y="41.275" size="0.8128" layer="25" rot="R180" align="center-right">CH0</text>
+<text x="26.9875" y="27.305" size="0.8128" layer="25" rot="R180" align="center-right">CH15</text>
 <text x="67.945" y="11.43" size="1.27" layer="25" rot="R90" align="center">H</text>
 <text x="67.945" y="8.89" size="1.27" layer="25" rot="R90" align="center">L</text>
 <text x="67.6275" y="23.495" size="1.27" layer="25" rot="R270" align="center">CAN</text>

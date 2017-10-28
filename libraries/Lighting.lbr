@@ -118,7 +118,7 @@
 </symbols>
 <devicesets>
 <deviceset name="CLV1A-FKB-CHMKPEHBB7A363">
-<description>CLV1A-FKB-CHMKPEHBB7A363 RGB LED from Cree.</description>
+<description>DO NOT USE: CLV1A-FKB-CHMKPEHBB7A363 RGB LED from Cree.</description>
 <gates>
 <gate name="G$1" symbol="CLV1A-FKB" x="0" y="0"/>
 </gates>

@@ -10543,11 +10543,21 @@ Source: www.kingbright.com</description>
 <wire x1="266.7" y1="182.88" x2="266.7" y2="180.34" width="0.1524" layer="91"/>
 <label x="266.7" y="180.34" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R5" gate="A" pin="11"/>
+<wire x1="147.32" y1="248.92" x2="154.94" y2="248.92" width="0.1524" layer="91"/>
+<label x="154.94" y="248.92" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_ESC1" class="0">
 <segment>
 <wire x1="284.48" y1="182.88" x2="284.48" y2="180.34" width="0.1524" layer="91"/>
 <label x="284.48" y="180.34" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R5" gate="A" pin="23"/>
+<wire x1="147.32" y1="243.84" x2="154.94" y2="243.84" width="0.1524" layer="91"/>
+<label x="154.94" y="243.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWM_ESC2" class="0">
@@ -10555,11 +10565,21 @@ Source: www.kingbright.com</description>
 <wire x1="302.26" y1="182.88" x2="302.26" y2="180.34" width="0.1524" layer="91"/>
 <label x="302.26" y="180.34" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R5" gate="A" pin="35"/>
+<wire x1="147.32" y1="238.76" x2="154.94" y2="238.76" width="0.1524" layer="91"/>
+<label x="154.94" y="238.76" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_ESC3" class="0">
 <segment>
 <wire x1="320.04" y1="182.88" x2="320.04" y2="180.34" width="0.1524" layer="91"/>
 <label x="320.04" y="180.34" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R5" gate="A" pin="47"/>
+<wire x1="147.32" y1="233.68" x2="154.94" y2="233.68" width="0.1524" layer="91"/>
+<label x="154.94" y="233.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWM_ESC4" class="0">
@@ -10567,11 +10587,21 @@ Source: www.kingbright.com</description>
 <wire x1="266.7" y1="157.48" x2="266.7" y2="154.94" width="0.1524" layer="91"/>
 <label x="266.7" y="154.94" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R6" gate="A" pin="11"/>
+<wire x1="147.32" y1="223.52" x2="154.94" y2="223.52" width="0.1524" layer="91"/>
+<label x="154.94" y="223.52" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_ESC5" class="0">
 <segment>
 <wire x1="287.02" y1="157.48" x2="287.02" y2="154.94" width="0.1524" layer="91"/>
 <label x="287.02" y="154.94" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R6" gate="A" pin="23"/>
+<wire x1="147.32" y1="218.44" x2="154.94" y2="218.44" width="0.1524" layer="91"/>
+<label x="154.94" y="218.44" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWM_ESC6" class="0">
@@ -10579,11 +10609,21 @@ Source: www.kingbright.com</description>
 <wire x1="304.8" y1="157.48" x2="304.8" y2="154.94" width="0.1524" layer="91"/>
 <label x="304.8" y="154.94" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R6" gate="A" pin="35"/>
+<wire x1="147.32" y1="213.36" x2="154.94" y2="213.36" width="0.1524" layer="91"/>
+<label x="154.94" y="213.36" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_ESC7" class="0">
 <segment>
 <wire x1="322.58" y1="157.48" x2="322.58" y2="154.94" width="0.1524" layer="91"/>
 <label x="322.58" y="154.94" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R6" gate="A" pin="47"/>
+<wire x1="147.32" y1="208.28" x2="154.94" y2="208.28" width="0.1524" layer="91"/>
+<label x="154.94" y="208.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -11158,69 +11198,13 @@ Source: www.kingbright.com</description>
 <wire x1="33.02" y1="198.12" x2="68.58" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LED_GATE0" class="0">
-<segment>
-<pinref part="R8" gate="A" pin="47"/>
-<wire x1="147.32" y1="157.48" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
-<label x="154.94" y="157.48" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LED_GATE1" class="0">
-<segment>
-<pinref part="R8" gate="A" pin="35"/>
-<wire x1="147.32" y1="162.56" x2="154.94" y2="162.56" width="0.1524" layer="91"/>
-<label x="154.94" y="162.56" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LED_GATE2" class="0">
-<segment>
-<pinref part="R8" gate="A" pin="23"/>
-<wire x1="147.32" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
-<label x="154.94" y="167.64" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LED_GATE3" class="0">
-<segment>
-<pinref part="R8" gate="A" pin="11"/>
-<wire x1="147.32" y1="172.72" x2="154.94" y2="172.72" width="0.1524" layer="91"/>
-<label x="154.94" y="172.72" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="PWM_SERVO0" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="11"/>
-<wire x1="147.32" y1="248.92" x2="154.94" y2="248.92" width="0.1524" layer="91"/>
-<label x="154.94" y="248.92" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="JP21" gate="A" pin="1"/>
 <wire x1="218.44" y1="228.6" x2="210.82" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="228.6" x2="210.82" y2="233.68" width="0.1524" layer="91"/>
 <label x="210.82" y="233.68" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
-</net>
-<net name="PWM_SERVO11" class="0">
-<segment>
-<pinref part="R7" gate="A" pin="47"/>
-<wire x1="147.32" y1="182.88" x2="154.94" y2="182.88" width="0.1524" layer="91"/>
-<label x="154.94" y="182.88" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="PWM_SERVO10" class="0">
-<segment>
-<pinref part="R7" gate="A" pin="35"/>
-<wire x1="147.32" y1="187.96" x2="154.94" y2="187.96" width="0.1524" layer="91"/>
-<label x="154.94" y="187.96" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="PWM_SERVO9" class="0">
-<segment>
-<pinref part="R7" gate="A" pin="23"/>
-<wire x1="147.32" y1="193.04" x2="154.94" y2="193.04" width="0.1524" layer="91"/>
-<label x="154.94" y="193.04" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="PWM_SERVO8" class="0">
 <segment>
 <pinref part="R7" gate="A" pin="11"/>
 <wire x1="147.32" y1="198.12" x2="154.94" y2="198.12" width="0.1524" layer="91"/>
@@ -11229,93 +11213,93 @@ Source: www.kingbright.com</description>
 </net>
 <net name="PWM_SERVO7" class="0">
 <segment>
-<pinref part="R6" gate="A" pin="47"/>
-<wire x1="147.32" y1="208.28" x2="154.94" y2="208.28" width="0.1524" layer="91"/>
-<label x="154.94" y="208.28" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP24" gate="A" pin="2"/>
 <wire x1="276.86" y1="228.6" x2="284.48" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="228.6" x2="284.48" y2="233.68" width="0.1524" layer="91"/>
 <label x="284.48" y="233.68" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R8" gate="A" pin="47"/>
+<wire x1="147.32" y1="157.48" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
+<label x="154.94" y="157.48" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_SERVO6" class="0">
-<segment>
-<pinref part="R6" gate="A" pin="35"/>
-<wire x1="147.32" y1="213.36" x2="154.94" y2="213.36" width="0.1524" layer="91"/>
-<label x="154.94" y="213.36" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="JP24" gate="A" pin="1"/>
 <wire x1="269.24" y1="228.6" x2="261.62" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="228.6" x2="261.62" y2="233.68" width="0.1524" layer="91"/>
 <label x="261.62" y="233.68" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R8" gate="A" pin="35"/>
+<wire x1="147.32" y1="162.56" x2="154.94" y2="162.56" width="0.1524" layer="91"/>
+<label x="154.94" y="162.56" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_SERVO5" class="0">
-<segment>
-<pinref part="R6" gate="A" pin="23"/>
-<wire x1="147.32" y1="218.44" x2="154.94" y2="218.44" width="0.1524" layer="91"/>
-<label x="154.94" y="218.44" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="JP23" gate="A" pin="2"/>
 <wire x1="226.06" y1="142.24" x2="233.68" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="142.24" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
 <label x="233.68" y="147.32" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R8" gate="A" pin="23"/>
+<wire x1="147.32" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
+<label x="154.94" y="167.64" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_SERVO4" class="0">
-<segment>
-<pinref part="R6" gate="A" pin="11"/>
-<wire x1="147.32" y1="223.52" x2="154.94" y2="223.52" width="0.1524" layer="91"/>
-<label x="154.94" y="223.52" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="JP23" gate="A" pin="1"/>
 <wire x1="218.44" y1="142.24" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="142.24" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
 <label x="210.82" y="147.32" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R8" gate="A" pin="11"/>
+<wire x1="147.32" y1="172.72" x2="154.94" y2="172.72" width="0.1524" layer="91"/>
+<label x="154.94" y="172.72" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_SERVO3" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="47"/>
-<wire x1="147.32" y1="233.68" x2="154.94" y2="233.68" width="0.1524" layer="91"/>
-<label x="154.94" y="233.68" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="JP22" gate="A" pin="2"/>
 <wire x1="226.06" y1="185.42" x2="233.68" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="185.42" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
 <label x="233.68" y="190.5" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R7" gate="A" pin="47"/>
+<wire x1="147.32" y1="182.88" x2="154.94" y2="182.88" width="0.1524" layer="91"/>
+<label x="154.94" y="182.88" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_SERVO2" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="35"/>
-<wire x1="147.32" y1="238.76" x2="154.94" y2="238.76" width="0.1524" layer="91"/>
-<label x="154.94" y="238.76" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="JP22" gate="A" pin="1"/>
 <wire x1="218.44" y1="185.42" x2="210.82" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="185.42" x2="210.82" y2="190.5" width="0.1524" layer="91"/>
 <label x="210.82" y="190.5" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R7" gate="A" pin="35"/>
+<wire x1="147.32" y1="187.96" x2="154.94" y2="187.96" width="0.1524" layer="91"/>
+<label x="154.94" y="187.96" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_SERVO1" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="23"/>
-<wire x1="147.32" y1="243.84" x2="154.94" y2="243.84" width="0.1524" layer="91"/>
-<label x="154.94" y="243.84" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="JP21" gate="A" pin="2"/>
 <wire x1="226.06" y1="228.6" x2="233.68" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="228.6" x2="233.68" y2="233.68" width="0.1524" layer="91"/>
 <label x="233.68" y="233.68" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R7" gate="A" pin="23"/>
+<wire x1="147.32" y1="193.04" x2="154.94" y2="193.04" width="0.1524" layer="91"/>
+<label x="154.94" y="193.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">

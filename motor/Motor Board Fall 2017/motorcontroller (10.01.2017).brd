@@ -1992,14 +1992,14 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="JP10" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="209.55" y="67.31"/>
-<element name="JP11" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="203.2" y="67.31"/>
-<element name="JP12" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="196.85" y="67.31"/>
-<element name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="198.12" y="60.96"/>
-<element name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="191.77" y="60.96"/>
-<element name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="185.42" y="60.96"/>
-<element name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="179.07" y="60.96"/>
-<element name="JP9" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="215.9" y="67.31"/>
+<element name="JP10" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="125.73" y="74.93" rot="R180"/>
+<element name="JP11" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="132.08" y="74.93" rot="R180"/>
+<element name="JP12" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="138.43" y="74.93" rot="R180"/>
+<element name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="93.98" y="74.93" rot="R180"/>
+<element name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="100.33" y="74.93" rot="R180"/>
+<element name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="106.68" y="74.93" rot="R180"/>
+<element name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="113.03" y="74.93" rot="R180"/>
+<element name="JP9" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="119.38" y="74.93" rot="R180"/>
 <element name="JP17" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X03" package3d_urn="urn:adsk.eagle:package:22462/2" value="" x="129.54" y="120.015" smashed="yes" rot="R180">
 <attribute name="VALUE" x="133.35" y="124.46" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -2093,8 +2093,8 @@ design rules under a new name.</description>
 <attribute name="NAME" x="157.63875" y="90.32875" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="154.14625" y="88.74125" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="CON2" library="ARVP" package="5566-2" value="MOLEX_5566-2" x="142.875" y="77.94625" smashed="yes">
-<attribute name="VALUE" x="140.335" y="71.59625" size="1.27" layer="27"/>
+<element name="CON2" library="ARVP" package="5566-2" value="MOLEX_5566-2" x="144.145" y="91.91625" smashed="yes">
+<attribute name="VALUE" x="141.605" y="85.56625" size="1.27" layer="27"/>
 </element>
 <element name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="580" x="84.93125" y="82.39125" smashed="yes" rot="R270">
 <attribute name="NAME" x="86.51875" y="79.85125" size="1.27" layer="25"/>
@@ -2163,16 +2163,16 @@ design rules under a new name.</description>
 <via x="154.94" y="89.37625" extent="1-16" drill="0.35"/>
 <contactref element="CON2" pad="2"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="141.44625" y="78.58125"/>
-<vertex x="144.30375" y="78.58125"/>
-<vertex x="144.30375" y="81.43875"/>
-<vertex x="141.44625" y="81.43875"/>
+<vertex x="142.71625" y="92.55125"/>
+<vertex x="145.57375" y="92.55125"/>
+<vertex x="145.57375" y="95.40875"/>
+<vertex x="142.71625" y="95.40875"/>
 </polygon>
 <polygon width="0.254" layer="16" thermals="no">
-<vertex x="141.44625" y="78.58125"/>
-<vertex x="144.30375" y="78.58125"/>
-<vertex x="144.30375" y="81.43875"/>
-<vertex x="141.44625" y="81.43875"/>
+<vertex x="142.71625" y="92.55125"/>
+<vertex x="145.57375" y="92.55125"/>
+<vertex x="145.57375" y="95.40875"/>
+<vertex x="142.71625" y="95.40875"/>
 </polygon>
 <contactref element="LED2" pad="C"/>
 <wire x1="153.67" y1="92.7862" x2="153.67" y2="95.09375" width="0.6096" layer="1"/>
@@ -2185,7 +2185,7 @@ design rules under a new name.</description>
 <wire x1="156.68625" y1="89.05625" x2="154.94" y2="89.37625" width="0" layer="19" extent="1-1"/>
 <wire x1="149.38375" y1="87.15625" x2="154.94" y2="89.37625" width="0" layer="19" extent="1-1"/>
 <wire x1="149.38375" y1="85.725" x2="149.38375" y2="87.15625" width="0" layer="19" extent="1-1"/>
-<wire x1="142.875" y1="80.04175" x2="149.38375" y2="85.725" width="0" layer="19" extent="1-1"/>
+<wire x1="144.145" y1="94.01175" x2="149.38375" y2="85.725" width="0" layer="19" extent="1-1"/>
 <wire x1="156.21" y1="114.3" x2="153.9875" y2="96.8375" width="0" layer="19" extent="1-1"/>
 <wire x1="148.59" y1="118.745" x2="156.21" y2="114.3" width="0" layer="19" extent="1-1"/>
 <wire x1="148.59" y1="121.285" x2="148.59" y2="118.745" width="0" layer="19" extent="1-1"/>
@@ -2235,8 +2235,8 @@ design rules under a new name.</description>
 <wire x1="91.44" y1="97.79" x2="91.44" y2="95.25" width="2.54" layer="16"/>
 <contactref element="CON2" pad="1"/>
 <contactref element="R26" pad="2"/>
-<wire x1="142.875" y1="75.85075" x2="148.59" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="91.44" y1="95.25" x2="142.875" y2="75.85075" width="0" layer="19" extent="1-1"/>
+<wire x1="144.145" y1="89.82075" x2="148.59" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="91.44" y1="95.25" x2="144.145" y2="89.82075" width="0" layer="19" extent="1-1"/>
 <wire x1="84.93125" y1="80.96925" x2="91.44" y2="95.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
@@ -2582,69 +2582,45 @@ design rules under a new name.</description>
 <contactref element="U2" pad="1"/>
 <wire x1="120.1125" y1="109.5978" x2="117.7036" y2="114.7191" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="LED_GATE0">
-<contactref element="R8" pad="4"/>
-</signal>
-<signal name="LED_GATE3">
-<contactref element="R8" pad="1"/>
-</signal>
-<signal name="LED_GATE2">
-<contactref element="R8" pad="2"/>
-</signal>
-<signal name="LED_GATE1">
-<contactref element="R8" pad="3"/>
-</signal>
 <signal name="PWM_SERVO0">
-<contactref element="R5" pad="1"/>
 <contactref element="JP21" pad="1"/>
-<wire x1="93.98" y1="113.03" x2="107.0991" y2="113.6142" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PWM_SERVO11">
-<contactref element="R7" pad="4"/>
-</signal>
-<signal name="PWM_SERVO10">
-<contactref element="R7" pad="3"/>
-</signal>
-<signal name="PWM_SERVO9">
-<contactref element="R7" pad="2"/>
-</signal>
-<signal name="PWM_SERVO8">
 <contactref element="R7" pad="1"/>
+<wire x1="93.98" y1="113.03" x2="107.0991" y2="105.9942" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO7">
-<contactref element="R6" pad="4"/>
 <contactref element="JP24" pad="2"/>
-<wire x1="93.98" y1="95.25" x2="107.0991" y2="107.3658" width="0" layer="19" extent="1-1"/>
+<contactref element="R8" pad="4"/>
+<wire x1="93.98" y1="95.25" x2="107.0991" y2="99.7458" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO6">
-<contactref element="R6" pad="3"/>
 <contactref element="JP24" pad="1"/>
-<wire x1="93.98" y1="97.79" x2="107.0991" y2="108.1786" width="0" layer="19" extent="1-1"/>
+<contactref element="R8" pad="3"/>
+<wire x1="93.98" y1="97.79" x2="107.0991" y2="100.5586" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO5">
-<contactref element="R6" pad="2"/>
 <contactref element="JP23" pad="2"/>
-<wire x1="93.98" y1="100.33" x2="107.0991" y2="108.9914" width="0" layer="19" extent="1-1"/>
+<contactref element="R8" pad="2"/>
+<wire x1="93.98" y1="100.33" x2="107.0991" y2="101.3714" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO4">
-<contactref element="R6" pad="1"/>
 <contactref element="JP23" pad="1"/>
-<wire x1="93.98" y1="102.87" x2="107.0991" y2="109.8042" width="0" layer="19" extent="1-1"/>
+<contactref element="R8" pad="1"/>
+<wire x1="93.98" y1="102.87" x2="107.0991" y2="102.1842" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO3">
-<contactref element="R5" pad="4"/>
 <contactref element="JP22" pad="2"/>
-<wire x1="93.98" y1="105.41" x2="107.0991" y2="111.1758" width="0" layer="19" extent="1-1"/>
+<contactref element="R7" pad="4"/>
+<wire x1="93.98" y1="105.41" x2="107.0991" y2="103.5558" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO2">
-<contactref element="R5" pad="3"/>
 <contactref element="JP22" pad="1"/>
-<wire x1="93.98" y1="107.95" x2="107.0991" y2="111.9886" width="0" layer="19" extent="1-1"/>
+<contactref element="R7" pad="3"/>
+<wire x1="93.98" y1="107.95" x2="107.0991" y2="104.3686" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_SERVO1">
-<contactref element="R5" pad="2"/>
 <contactref element="JP21" pad="2"/>
-<wire x1="93.98" y1="110.49" x2="107.0991" y2="112.8014" width="0" layer="19" extent="1-1"/>
+<contactref element="R7" pad="2"/>
+<wire x1="93.98" y1="110.49" x2="107.0991" y2="105.1814" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R23" pad="1"/>
@@ -2707,6 +2683,30 @@ design rules under a new name.</description>
 <contactref element="R26" pad="1"/>
 <contactref element="LED2" pad="A"/>
 <wire x1="84.93125" y1="83.81325" x2="84.93125" y2="86.03875" width="0.6096" layer="1"/>
+</signal>
+<signal name="PWM_ESC0">
+<contactref element="R5" pad="1"/>
+</signal>
+<signal name="PWM_ESC1">
+<contactref element="R5" pad="2"/>
+</signal>
+<signal name="PWM_ESC2">
+<contactref element="R5" pad="3"/>
+</signal>
+<signal name="PWM_ESC3">
+<contactref element="R5" pad="4"/>
+</signal>
+<signal name="PWM_ESC4">
+<contactref element="R6" pad="1"/>
+</signal>
+<signal name="PWM_ESC5">
+<contactref element="R6" pad="2"/>
+</signal>
+<signal name="PWM_ESC6">
+<contactref element="R6" pad="3"/>
+</signal>
+<signal name="PWM_ESC7">
+<contactref element="R6" pad="4"/>
 </signal>
 </signals>
 </board>

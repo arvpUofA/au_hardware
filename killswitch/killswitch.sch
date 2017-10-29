@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4331,20 +4331,20 @@ Source: AVX .. aphvc.pdf</description>
 <part name="U$1" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" deviceset="TCS40DLR" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="2.2uF"/>
-<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100nF"/>
+<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.47nF"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$3" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" deviceset="TCS40DLR" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="2.2uF"/>
-<part name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100nF"/>
+<part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.47nF"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$4" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" deviceset="TCS40DLR" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.47uF"/>
+<part name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.47uF"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$5" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" deviceset="TCS40DLR" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="C11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.47uF"/>
+<part name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.47uF"/>
 <part name="JP1" library="KillSwitch" library_urn="urn:adsk.eagle:library:576207" deviceset="1241150-3" device=""/>
 </parts>
 <sheets>
@@ -4355,6 +4355,9 @@ OUTPUT of Hall Effect Sensor is
 LOW</text>
 <text x="73.66" y="27.94" size="1.778" layer="94">OUTPUT is HIGH if theres a
 Magnetic Field Near the Board</text>
+<text x="-22.86" y="66.04" size="1.778" layer="94">Testing the  DRV5033FAQDBZR  and the  
+DRV5033FAEDBZRQ1 halleffect sensors instead of
+the one listed in the part</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="-27.94" y="35.56"/>
@@ -4368,15 +4371,15 @@ Magnetic Field Near the Board</text>
 <instance part="U$3" gate="G$1" x="-27.94" y="0"/>
 <instance part="P+2" gate="1" x="-27.94" y="27.94"/>
 <instance part="C4" gate="G$1" x="-55.88" y="0"/>
-<instance part="C5" gate="G$1" x="-45.72" y="0"/>
+<instance part="C3" gate="G$1" x="-45.72" y="0"/>
 <instance part="GND6" gate="1" x="-27.94" y="-71.12"/>
 <instance part="U$4" gate="G$1" x="-27.94" y="-53.34"/>
 <instance part="P+6" gate="1" x="-27.94" y="-25.4"/>
-<instance part="C8" gate="G$1" x="-45.72" y="-53.34"/>
+<instance part="C5" gate="G$1" x="-45.72" y="-53.34"/>
 <instance part="GND8" gate="1" x="-27.94" y="-121.92"/>
 <instance part="U$5" gate="G$1" x="-27.94" y="-104.14"/>
 <instance part="P+8" gate="1" x="-27.94" y="-76.2"/>
-<instance part="C11" gate="G$1" x="-45.72" y="-104.14"/>
+<instance part="C6" gate="G$1" x="-45.72" y="-104.14"/>
 <instance part="JP1" gate="A" x="58.42" y="30.48"/>
 </instances>
 <busses>
@@ -4409,7 +4412,7 @@ Magnetic Field Near the Board</text>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="-27.94" y1="-12.7" x2="-27.94" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-5.08" x2="-55.88" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="-5.08" x2="-45.72" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-12.7" x2="-45.72" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="-12.7" x2="-27.94" y2="-12.7" width="0.1524" layer="91"/>
@@ -4421,7 +4424,7 @@ Magnetic Field Near the Board</text>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="-27.94" y1="-63.5" x2="-27.94" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-66.04" x2="-27.94" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="-58.42" x2="-45.72" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="-66.04" x2="-27.94" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-66.04"/>
@@ -4431,7 +4434,7 @@ Magnetic Field Near the Board</text>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="-27.94" y1="-114.3" x2="-27.94" y2="-116.84" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-116.84" x2="-27.94" y2="-119.38" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="-109.22" x2="-45.72" y2="-116.84" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="-116.84" x2="-27.94" y2="-116.84" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-116.84"/>
@@ -4467,7 +4470,7 @@ Magnetic Field Near the Board</text>
 <wire x1="-55.88" y1="2.54" x2="-55.88" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="12.7" x2="-45.72" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-27.94" y="12.7"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="12.7" x2="-27.94" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="2.54" x2="-45.72" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-45.72" y="12.7"/>
@@ -4478,7 +4481,7 @@ Magnetic Field Near the Board</text>
 <wire x1="-27.94" y1="-27.94" x2="-27.94" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-40.64" x2="-27.94" y2="-43.18" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-40.64"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="-40.64" x2="-27.94" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="-50.8" x2="-45.72" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
@@ -4488,7 +4491,7 @@ Magnetic Field Near the Board</text>
 <wire x1="-27.94" y1="-78.74" x2="-27.94" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-91.44" x2="-27.94" y2="-93.98" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-91.44"/>
-<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="-91.44" x2="-27.94" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="-101.6" x2="-45.72" y2="-91.44" width="0.1524" layer="91"/>
 </segment>

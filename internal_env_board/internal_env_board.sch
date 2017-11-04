@@ -14269,7 +14269,7 @@ and be placed away from the board</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="19.05" y="74.93"/>
-<instance part="JP5" gate="G$1" x="62.23" y="64.77"/>
+<instance part="JP5" gate="G$1" x="60.96" y="64.77"/>
 <instance part="GND" gate="1" x="167.64" y="92.71"/>
 <instance part="GND8" gate="1" x="199.39" y="92.71"/>
 <instance part="GND6" gate="1" x="156.21" y="92.71"/>
@@ -14556,18 +14556,18 @@ and be placed away from the board</text>
 <label x="36.83" y="72.39" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="INT1"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
-<wire x1="34.29" y1="72.39" x2="59.69" y2="72.39" width="0.1524" layer="91"/>
-<wire x1="59.69" y1="72.39" x2="59.69" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="72.39" x2="58.42" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="72.39" x2="58.42" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT2" class="0">
 <segment>
 <label x="36.83" y="69.85" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="INT2"/>
-<wire x1="34.29" y1="69.85" x2="54.61" y2="69.85" width="0.1524" layer="91"/>
-<wire x1="54.61" y1="69.85" x2="54.61" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="69.85" x2="53.34" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="69.85" x2="53.34" y2="64.77" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="2"/>
-<wire x1="54.61" y1="64.77" x2="59.69" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="64.77" x2="58.42" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">

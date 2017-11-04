@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8405,10 +8405,10 @@ Source: http://www.molex.com</description>
 <wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
 <wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
 <wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
-<pad name="1" x="2.0955" y="-2.0955" drill="1.524" shape="square"/>
-<pad name="2" x="-2.0955" y="-2.0955" drill="1.524" shape="square"/>
-<pad name="4" x="-2.0955" y="2.0955" drill="1.524" shape="square"/>
-<pad name="3" x="2.0955" y="2.0955" drill="1.524" shape="square"/>
+<pad name="1" x="2.10058125" y="-2.7559" drill="1.524" shape="square"/>
+<pad name="2" x="-2.10058125" y="-2.7559" drill="1.524" shape="square"/>
+<pad name="4" x="-2.10058125" y="2.7559" drill="1.524" shape="square"/>
+<pad name="3" x="2.10058125" y="2.7559" drill="1.524" shape="square"/>
 <text x="-1.27" y="-6.985" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="6.985" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -8549,8 +8549,8 @@ Source: http://www.molex.com</description>
 <wire x1="2.6" y1="-4.9" x2="-2.6" y2="-4.9" width="0.254" layer="21"/>
 <wire x1="-2.6" y1="-4.9" x2="-2.6" y2="4.5" width="0.254" layer="21"/>
 <wire x1="2.6" y1="-2.2" x2="2.6" y2="-3.3" width="0.254" layer="21" curve="-180"/>
-<pad name="1" x="0" y="-2.0955" drill="1.524" shape="square"/>
-<pad name="2" x="0" y="2.0955" drill="1.524" shape="square"/>
+<pad name="1" x="0" y="-2.7559" drill="1.524" shape="square"/>
+<pad name="2" x="0" y="2.7559" drill="1.524" shape="square"/>
 <text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>

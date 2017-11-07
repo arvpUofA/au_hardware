@@ -201,17 +201,17 @@ A LETOURNEAU</text>
 <dimension x1="0" y1="-1.27" x2="3.81" y2="-1.27" x3="1.905" y3="-5.08" textsize="1.778" layer="48" unit="inch" visible="yes"/>
 <dimension x1="77.47" y1="3.81" x2="77.47" y2="46.99" x3="83.82" y3="25.4" textsize="1.778" layer="48" unit="inch" visible="yes"/>
 <dimension x1="77.47" y1="0" x2="77.47" y2="3.81" x3="81.28" y3="1.905" textsize="1.778" layer="48" unit="inch" visible="yes"/>
-<text x="65.405" y="36.35375" size="1.27" layer="25" rot="R90" align="center">H</text>
-<text x="65.405" y="34.29" size="1.27" layer="25" rot="R90" align="center">L</text>
+<text x="65.405" y="36.5125" size="1.27" layer="25" rot="R90" align="center">H</text>
+<text x="65.405" y="34.44875" size="1.27" layer="25" rot="R90" align="center">L</text>
 <text x="63.02375" y="34.925" size="1.27" layer="25" rot="R90" align="center">CAN</text>
 <wire x1="0" y1="0" x2="76.2" y2="0" width="0.0762" layer="20"/>
 <wire x1="76.2" y1="0" x2="76.2" y2="50.8" width="0.0762" layer="20"/>
 <wire x1="76.2" y1="50.8" x2="0" y2="50.8" width="0.0762" layer="20"/>
 <wire x1="0" y1="50.8" x2="0" y2="0" width="0.0762" layer="20"/>
-<text x="65.405" y="32.22625" size="1.27" layer="25" rot="R90" align="center">S</text>
-<text x="65.405" y="32.22625" size="1.27" layer="26" rot="MR270" align="center">H</text>
-<text x="65.405" y="34.29" size="1.27" layer="26" rot="MR270" align="center">L</text>
-<text x="65.405" y="36.35375" size="1.27" layer="26" rot="MR270" align="center">S</text>
+<text x="65.405" y="32.385" size="1.27" layer="25" rot="R90" align="center">S</text>
+<text x="65.405" y="32.385" size="1.27" layer="26" rot="MR270" align="center">H</text>
+<text x="65.405" y="34.44875" size="1.27" layer="26" rot="MR270" align="center">L</text>
+<text x="65.405" y="36.5125" size="1.27" layer="26" rot="MR270" align="center">S</text>
 <text x="63.02375" y="34.925" size="1.27" layer="26" rot="MR90" align="center">CAN</text>
 <text x="75.2475" y="22.86" size="0.8128" layer="25" rot="R270" align="center">3V3</text>
 <text x="75.2475" y="20.32" size="0.8128" layer="25" rot="R270" align="center">3V3</text>

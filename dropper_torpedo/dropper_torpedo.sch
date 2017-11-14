@@ -11346,24 +11346,26 @@ Source: www.kingbright.com</description>
 <label x="63.5" y="223.52" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="111.76" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="119.38" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="111.76" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="119.38" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="104.14" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="93.98" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
-<junction x="104.14" y="111.76"/>
-<wire x1="93.98" y1="71.12" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="71.12" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="68.58" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 <junction x="104.14" y="93.98"/>
-<pinref part="U5" gate="G$1" pin="19/A5/T/SCL0"/>
 <pinref part="JP8" gate="A" pin="4"/>
 <wire x1="121.92" y1="119.38" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="A" pin="3"/>
 <wire x1="121.92" y1="93.98" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
-<junction x="104.14" y="71.12"/>
-<label x="109.22" y="71.12" size="1.778" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="18/A4/T/SDA0"/>
+<wire x1="93.98" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="68.58" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="68.58" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="66.04" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
+<label x="111.76" y="66.04" size="1.778" layer="95" xref="yes"/>
+<junction x="104.14" y="68.58"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+<junction x="104.14" y="104.14"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -11373,26 +11375,24 @@ Source: www.kingbright.com</description>
 <label x="63.5" y="218.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="121.92" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="104.14" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="121.92" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="111.76" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="96.52" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
-<junction x="101.6" y="104.14"/>
-<wire x1="93.98" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="68.58" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="71.12" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
 <junction x="101.6" y="96.52"/>
-<pinref part="U5" gate="G$1" pin="18/A4/T/SDA0"/>
 <pinref part="JP8" gate="A" pin="6"/>
 <wire x1="124.46" y1="121.92" x2="124.46" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="A" pin="5"/>
 <wire x1="124.46" y1="96.52" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="68.58" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="66.04" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
-<junction x="101.6" y="68.58"/>
-<label x="109.22" y="66.04" size="1.778" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="19/A5/T/SCL0"/>
+<wire x1="93.98" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
+<label x="111.76" y="71.12" size="1.778" layer="95" xref="yes"/>
+<junction x="101.6" y="71.12"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="111.76" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
+<junction x="101.6" y="111.76"/>
 </segment>
 </net>
 <net name="TRP_GATE0" class="0">

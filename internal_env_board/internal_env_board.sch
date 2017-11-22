@@ -14371,7 +14371,7 @@ Source: http://www.molex.com</description>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="51.1"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100nF"/>
-<part name="LED_DANGER" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
+<part name="DANGER" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
 <part name="LED_3V3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
 <part name="LED_5V" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF"/>
@@ -14431,7 +14431,7 @@ and be placed away from the board</text>
 <instance part="R4" gate="G$1" x="140.97" y="99.06"/>
 <instance part="GND1" gate="1" x="102.87" y="50.8"/>
 <instance part="C3" gate="G$1" x="-60.96" y="54.61"/>
-<instance part="LED_DANGER" gate="G$1" x="86.36" y="93.98"/>
+<instance part="DANGER" gate="G$1" x="86.36" y="93.98"/>
 <instance part="LED_3V3" gate="G$1" x="97.79" y="93.98"/>
 <instance part="LED_5V" gate="G$1" x="129.54" y="93.98"/>
 <instance part="C1" gate="G$1" x="-69.85" y="54.61"/>
@@ -14480,7 +14480,7 @@ and be placed away from the board</text>
 <segment>
 <wire x1="86.36" y1="88.9" x2="86.36" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="LED_DANGER" gate="G$1" pin="C"/>
+<pinref part="DANGER" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="HIH1" gate="G$1" pin="GND"/>
@@ -14792,7 +14792,7 @@ and be placed away from the board</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="99.06" x2="80.01" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="LED_DANGER" gate="G$1" pin="A"/>
+<pinref part="DANGER" gate="G$1" pin="A"/>
 <wire x1="86.36" y1="99.06" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>

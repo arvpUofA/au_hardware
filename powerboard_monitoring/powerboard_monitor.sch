@@ -9497,22 +9497,22 @@ www.irf.com&lt;p&gt;
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="10kOhm"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="10kOhm"/>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="10kOhm"/>
-<part name="LED1/AMBER" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
-<part name="LED2/RED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
-<part name="LED3/GREEN" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="825 Ohm"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="910 Ohm"/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="360 Ohm"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q1" library="transistor-small-signal" deviceset="BSS123" device=""/>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="78.74" y="33.02" size="1.778" layer="91">Colour LED:</text>
-<text x="78.74" y="30.48" size="1.778" layer="91">Green = PV</text>
-<text x="78.74" y="27.94" size="1.778" layer="91">Red = Critical</text>
-<text x="78.74" y="25.4" size="1.778" layer="91">Amber = Warning</text>
+<text x="78.74" y="30.48" size="1.778" layer="91">Green (LED 3)= PV</text>
+<text x="78.74" y="27.94" size="1.778" layer="91">Red (LED 2) = Critical</text>
+<text x="78.74" y="25.4" size="1.778" layer="91">Amber  (LED 1) = Warning</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="30.48" y="81.28"/>
@@ -9526,14 +9526,17 @@ www.irf.com&lt;p&gt;
 <instance part="R1" gate="G$1" x="114.3" y="124.46" rot="R90"/>
 <instance part="R2" gate="G$1" x="114.3" y="101.6" rot="R90"/>
 <instance part="R3" gate="G$1" x="114.3" y="78.74" rot="R90"/>
-<instance part="LED1/AMBER" gate="G$1" x="27.94" y="33.02" rot="R90"/>
-<instance part="LED2/RED" gate="G$1" x="27.94" y="22.86" rot="R90"/>
-<instance part="LED3/GREEN" gate="G$1" x="27.94" y="-17.78"/>
+<instance part="LED1" gate="G$1" x="27.94" y="33.02" rot="R90"/>
+<instance part="LED2" gate="G$1" x="27.94" y="22.86" rot="R90"/>
 <instance part="R4" gate="G$1" x="15.24" y="33.02"/>
 <instance part="R5" gate="G$1" x="15.24" y="22.86"/>
-<instance part="R6" gate="G$1" x="27.94" y="-2.54" rot="R90"/>
+<instance part="R6" gate="G$1" x="27.94" y="0" rot="R90"/>
 <instance part="GND5" gate="1" x="27.94" y="-43.18"/>
 <instance part="Q1" gate="G$1" x="27.94" y="-27.94"/>
+<instance part="LED3" gate="G$1" x="27.94" y="-15.24" smashed="yes">
+<attribute name="NAME" x="23.876" y="-22.352" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="33.655" y="-19.812" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9619,13 +9622,9 @@ www.irf.com&lt;p&gt;
 <label x="2.54" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED3/GREEN" gate="G$1" pin="A"/>
-<wire x1="27.94" y1="-15.24" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="-7.62" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
-<junction x="27.94" y="-7.62"/>
-<label x="27.94" y="2.54" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="27.94" y1="5.08" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
+<label x="27.94" y="7.62" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -9745,7 +9744,7 @@ www.irf.com&lt;p&gt;
 </segment>
 <segment>
 <wire x1="45.72" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="LED1/AMBER" gate="G$1" pin="C"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 <label x="45.72" y="33.02" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
@@ -9764,7 +9763,7 @@ www.irf.com&lt;p&gt;
 <junction x="114.3" y="96.52"/>
 </segment>
 <segment>
-<pinref part="LED2/RED" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="33.02" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
 <label x="45.72" y="22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -9785,28 +9784,37 @@ www.irf.com&lt;p&gt;
 <junction x="114.3" y="73.66"/>
 </segment>
 <segment>
-<wire x1="22.86" y1="-30.48" x2="12.7" y2="-30.48" width="0.1524" layer="91"/>
-<label x="12.7" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="22.86" y1="-30.48" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
+<label x="15.24" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="LED1/AMBER" gate="G$1" pin="A"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="25.4" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="LED2/RED" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="25.4" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="LED3/GREEN" gate="G$1" pin="C"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="27.94" y1="-5.08" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="27.94" y1="-20.32" x2="27.94" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

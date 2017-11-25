@@ -9626,6 +9626,11 @@ www.irf.com&lt;p&gt;
 <wire x1="27.94" y1="5.08" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
 <label x="27.94" y="7.62" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="25.4" y1="121.92" x2="17.78" y2="121.92" width="0.1524" layer="91"/>
+<label x="17.78" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -196,6 +196,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;ul&gt;&lt;li&gt; 5.0x3.0x1.2mm&lt;/li&gt;
 &lt;li&gt;8-pad&lt;/li&gt;&lt;br&gt;&lt;/ul&gt;
 Used in MPL115A1</description>
+<circle x="0" y="-1.2282" radius="0.508" width="0.2032" layer="21"/>
+<circle x="-0.38" y="2.14" radius="0.05" width="0.2032" layer="21"/>
 <wire x1="-1.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.2032" layer="21"/>
 <wire x1="1.5" y1="2.5" x2="-1.5" y2="2.5" width="0.2032" layer="21"/>
 <wire x1="-1.5" y1="1.05" x2="-1.5" y2="1.45" width="0.2032" layer="21"/>
@@ -208,16 +210,14 @@ Used in MPL115A1</description>
 <wire x1="1.5" y1="-0.2" x2="1.5" y2="0.2" width="0.2032" layer="21"/>
 <wire x1="1.5" y1="-1.45" x2="1.5" y2="-1.05" width="0.2032" layer="21"/>
 <wire x1="1.5" y1="-2.3" x2="1.5" y2="-2.5" width="0.2032" layer="21"/>
-<circle x="0" y="-1.2282" radius="0.508" width="0.2032" layer="21"/>
-<circle x="-0.38" y="2.14" radius="0.05" width="0.2032" layer="21"/>
-<smd name="1" x="-1.2" y="1.875" dx="1.2" dy="0.5" layer="1"/>
-<smd name="2" x="-1.2" y="0.625" dx="1.2" dy="0.5" layer="1"/>
-<smd name="3" x="-1.2" y="-0.625" dx="1.2" dy="0.5" layer="1"/>
-<smd name="4" x="-1.2" y="-1.875" dx="1.2" dy="0.5" layer="1"/>
-<smd name="8" x="1.2" y="1.875" dx="1.2" dy="0.5" layer="1"/>
-<smd name="7" x="1.2" y="0.625" dx="1.2" dy="0.5" layer="1"/>
-<smd name="6" x="1.2" y="-0.625" dx="1.2" dy="0.5" layer="1"/>
-<smd name="5" x="1.2" y="-1.875" dx="1.2" dy="0.5" layer="1"/>
+<smd name="1" x="-1.7" y="1.875" dx="2.2" dy="0.5" layer="1"/>
+<smd name="2" x="-1.7" y="0.625" dx="2.2" dy="0.5" layer="1"/>
+<smd name="3" x="-1.7" y="-0.625" dx="2.2" dy="0.5" layer="1"/>
+<smd name="4" x="-1.7" y="-1.875" dx="2.2" dy="0.5" layer="1"/>
+<smd name="5" x="1.7" y="-1.875" dx="2.2" dy="0.5" layer="1"/>
+<smd name="6" x="1.7" y="-0.625" dx="2.2" dy="0.5" layer="1"/>
+<smd name="7" x="1.7" y="0.625" dx="2.2" dy="0.5" layer="1"/>
+<smd name="8" x="1.7" y="1.875" dx="2.2" dy="0.5" layer="1"/>
 <text x="-1.524" y="2.667" size="0.4064" layer="25" font="vector" ratio="15">&gt;Name</text>
 <text x="-1.524" y="-3.048" size="0.4064" layer="27" font="vector" ratio="15">&gt;Value</text>
 <text x="-1.905" y="1.905" size="0.4064" layer="51" font="vector">pin 1</text>
@@ -229,16 +229,16 @@ Used in MPL115A1</description>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
 <pin name="CAP" x="-15.24" y="0" length="middle"/>
 <pin name="GND" x="-15.24" y="-2.54" length="middle"/>
-<pin name="VDDIO" x="-15.24" y="-5.08" length="middle"/>
-<pin name="SCL" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="SDA" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="INT1" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="INT2" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
+<pin name="VDDIO" x="-15.24" y="-5.08" length="middle"/>
+<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>

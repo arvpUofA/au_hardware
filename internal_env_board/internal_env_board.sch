@@ -360,11 +360,6 @@ Used in MPL115A1</description>
 <library name="HIH7120">
 <packages>
 <package name="SIP4">
-<pad name="SDA" x="1.27" y="0" drill="0.7" diameter="1.016" rot="R270"/>
-<dimension x1="-17.78" y1="16.51" x2="-17.78" y2="-16.51" x3="12.7" y3="0" textsize="1.778" layer="94" dtype="diameter"/>
-<pad name="SCL" x="0" y="0" drill="0.7" diameter="1.016" rot="R270"/>
-<pad name="GND" x="-1.27" y="0" drill="0.7" diameter="1.016" rot="R270"/>
-<pad name="VCC" x="-2.54" y="0" drill="0.7" diameter="1.016" rot="R270"/>
 <wire x1="-3.81" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
@@ -374,19 +369,23 @@ Used in MPL115A1</description>
 <text x="0" y="2.54" size="0.4064" layer="21" rot="R90" align="center-right">SCL</text>
 <text x="1.27" y="2.54" size="0.4064" layer="21" rot="R90" align="center-right">SDA</text>
 <text x="1.27" y="-2.54" size="1.016" layer="25" ratio="1" align="center-right">&gt;NAME</text>
+<pad name="VCC" x="-2.54" y="0" drill="0.635" diameter="1.016"/>
+<pad name="GND" x="-1.27" y="0" drill="0.635" diameter="1.016"/>
+<pad name="SCL" x="0" y="0" drill="0.635" diameter="1.016"/>
+<pad name="SDA" x="1.27" y="0" drill="0.635" diameter="1.016"/>
 </package>
 </packages>
 <symbols>
 <symbol name="HIH7120">
 <description>A humidity sensor from HoneyWell</description>
-<pin name="VCC" x="-5.08" y="5.08" length="middle" direction="pwr" rot="R270"/>
-<pin name="GND" x="-2.54" y="5.08" length="middle" direction="pwr" rot="R270"/>
-<pin name="SCL" x="0" y="5.08" length="middle" rot="R270"/>
-<pin name="SDA" x="2.54" y="5.08" length="middle" rot="R270"/>
 <wire x1="5.08" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="2.54" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<pin name="GND" x="-2.54" y="5.08" length="middle" direction="pwr" rot="R270"/>
+<pin name="SCL" x="0" y="5.08" length="middle" rot="R270"/>
+<pin name="SDA" x="2.54" y="5.08" length="middle" rot="R270"/>
+<pin name="VCC" x="-5.08" y="5.08" length="middle" direction="pwr" rot="R270"/>
 <text x="-10.16" y="-7.62" size="1.27" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 </symbols>
@@ -395,7 +394,7 @@ Used in MPL115A1</description>
 <description>A humidity and temperature sensor from honeywell.
 2.3-5V operating voltage
 -40 to 85 temperature range
-Digikey Part #: 	HIH7120-021-001CT-ND</description>
+Digikey Part #:  HIH7120-021-001CT-ND</description>
 <gates>
 <gate name="G$1" symbol="HIH7120" x="-7.62" y="-2.54"/>
 </gates>
@@ -14351,6 +14350,7 @@ Source: http://www.molex.com</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+<clearance class="0" value="0.205"/>
 </class>
 <class number="1" name="net1" width="0" drill="0">
 <clearance class="0" value="0.2032"/>

@@ -132,6 +132,9 @@
 <wire x1="19.812" y1="0" x2="19.812" y2="25.908" width="0" layer="20"/>
 <wire x1="19.812" y1="25.908" x2="0" y2="25.908" width="0" layer="20"/>
 <wire x1="0" y1="25.908" x2="0" y2="0" width="0" layer="20"/>
+<text x="1.27" y="7.1755" size="0.3048" layer="25" rot="R90" align="center">Critical</text>
+<text x="3.6195" y="7.112" size="0.3048" layer="25" rot="R90" align="center">Warning</text>
+<text x="6.604" y="7.3025" size="0.3048" layer="25" rot="R90" align="center">PV</text>
 </plain>
 <libraries>
 <library name="resistor" urn="urn:adsk.eagle:library:348">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8392,19 +8392,19 @@ Source: http://www.molex.com</description>
 <rectangle x1="1.8034" y1="-0.8128" x2="2.8194" y2="-0.4572" layer="51"/>
 <rectangle x1="1.8034" y1="-2.0828" x2="2.8194" y2="-1.7272" layer="51"/>
 </package>
-<package name="S3B-PH-SM4-TB">
-<smd name="P$1" x="-2" y="1.75" dx="3.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="1.75" dx="3.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$3" x="2" y="1.75" dx="3.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$4" x="4.35" y="-3.8" dx="3.4" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$5" x="-4.35" y="-3.8" dx="3.4" dy="1.5" layer="1" rot="R90"/>
-<wire x1="-5" y1="-5.25" x2="5" y2="-5.25" width="0.1524" layer="21"/>
-<wire x1="5" y1="-5.25" x2="5" y2="2.25" width="0.1524" layer="21"/>
-<wire x1="5" y1="2.25" x2="-5" y2="2.25" width="0.1524" layer="21"/>
-<wire x1="-5" y1="2.25" x2="-5" y2="-5.25" width="0.1524" layer="21"/>
-<wire x1="-3" y1="-5.25" x2="-3" y2="-4.25" width="0.1524" layer="51"/>
-<wire x1="-3" y1="-4.25" x2="3" y2="-4.25" width="0.1524" layer="51"/>
-<wire x1="3" y1="-4.25" x2="3" y2="-5.25" width="0.1524" layer="51"/>
+<package name="SM03B-GHS-TB">
+<smd name="P$2" x="0" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$1" x="-1.25" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$3" x="1.25" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$4" x="-3.1" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="P$5" x="3.1" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
+<wire x1="-3.5" y1="0.75" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="0.75" width="0.127" layer="21"/>
+<wire x1="3.5" y1="0.75" x2="-3.5" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-2" y1="-3.5" x2="-2" y2="-3" width="0.127" layer="51"/>
+<wire x1="-2" y1="-3" x2="2" y2="-3" width="0.127" layer="51"/>
+<wire x1="2" y1="-3" x2="2" y2="-3.5" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -8592,7 +8592,7 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="S3B-PH-SM4-TB" prefix="CON">
+<deviceset name="SM03B-GHS-TB" prefix="CON">
 <gates>
 <gate name="-1" symbol="M" x="0" y="5.08"/>
 <gate name="-2" symbol="M" x="0" y="2.54"/>
@@ -8600,7 +8600,7 @@ Source: http://www.molex.com</description>
 <gate name="-TABS" symbol="M" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="S3B-PH-SM4-TB">
+<device name="" package="SM03B-GHS-TB">
 <connects>
 <connect gate="-1" pin="S" pad="P$1"/>
 <connect gate="-2" pin="S" pad="P$2"/>
@@ -10682,9 +10682,9 @@ Source: www.kingbright.com</description>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CON1" library="ARVP" deviceset="S3B-PH-SM4-TB" device=""/>
+<part name="CON1" library="ARVP" deviceset="SM03B-GHS-TB" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CON2" library="ARVP" deviceset="S3B-PH-SM4-TB" device=""/>
+<part name="CON2" library="ARVP" deviceset="SM03B-GHS-TB" device=""/>
 <part name="+3V32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5k"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5k"/>

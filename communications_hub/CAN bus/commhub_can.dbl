@@ -5,7 +5,7 @@
 <description>Design block for CAN bus portion of communications hub.</description>
 <attributes>
 <attribute name="AIRWIRES" value="YES"/>
-<attribute name="BOARDSIZE" value="1730 x 1060 mil"/>
+<attribute name="BOARDSIZE" value="1531 x 947 mil"/>
 <attribute name="LAYERS" value="1: 1"/>
 </attributes>
 <drawings>

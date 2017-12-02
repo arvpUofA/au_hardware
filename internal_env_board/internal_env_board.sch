@@ -14497,12 +14497,6 @@ and be placed away from the board</text>
 <wire x1="146.05" y1="59.69" x2="121.92" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="59.69" x2="121.92" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<pinref part="CON3" gate="-3" pin="S"/>
-<wire x1="119.38" y1="46.99" x2="121.92" y2="46.99" width="0.1524" layer="91"/>
-<pinref part="CON5" gate="-3" pin="S"/>
-<wire x1="143.51" y1="46.99" x2="146.05" y2="46.99" width="0.1524" layer="91"/>
-<pinref part="CON6" gate="-3" pin="S"/>
-<wire x1="165.1" y1="46.99" x2="167.64" y2="46.99" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VDD"/>
@@ -14689,6 +14683,15 @@ and be placed away from the board</text>
 <wire x1="138.43" y1="46.99" x2="140.97" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="CON6" gate="-2" pin="S"/>
 <wire x1="160.02" y1="46.99" x2="162.56" y2="46.99" width="0.1524" layer="91"/>
+<pinref part="CON3" gate="-3" pin="S"/>
+<wire x1="119.38" y1="46.99" x2="116.84" y2="46.99" width="0.1524" layer="91"/>
+<junction x="116.84" y="46.99"/>
+<pinref part="CON5" gate="-3" pin="S"/>
+<wire x1="143.51" y1="46.99" x2="140.97" y2="46.99" width="0.1524" layer="91"/>
+<junction x="140.97" y="46.99"/>
+<pinref part="CON6" gate="-3" pin="S"/>
+<wire x1="165.1" y1="46.99" x2="162.56" y2="46.99" width="0.1524" layer="91"/>
+<junction x="162.56" y="46.99"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="14/A0"/>

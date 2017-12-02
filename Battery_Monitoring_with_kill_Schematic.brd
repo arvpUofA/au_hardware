@@ -3989,6 +3989,9 @@ design rules under a new name.</description>
 <vertex x="148.59" y="-10.795"/>
 <vertex x="148.59" y="-6.35"/>
 </polygon>
+<via x="132.08" y="57.785" extent="1-16" drill="0.35"/>
+<via x="132.08" y="53.34" extent="1-16" drill="0.35"/>
+<via x="132.08" y="46.99" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="VBAT1">
 </signal>

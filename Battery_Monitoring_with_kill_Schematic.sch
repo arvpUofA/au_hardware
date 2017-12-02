@@ -4636,7 +4636,7 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HCS3920">
+<deviceset name="HCS3920" prefix="R">
 <description>0.001 Ohm ±1% 5W Chip Resistor 4020 Automotive AEC-Q200, Current Sense, Moisture Resistant Metal Element
 Stackpole Electronics Inc.
 Digikey: HCS3920FT1L00CT-ND</description>
@@ -4655,7 +4655,7 @@ Digikey: HCS3920FT1L00CT-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MKDS_5/2-6,35">
+<deviceset name="MKDS_5/2-6,35" prefix="J">
 <description>CONN TERM BLOCK 2POS 6.35MM PCB,
 2 Position Wire to Board Terminal Block Horizontal with Board 0.250" (6.35mm) Through Hole,
 Phoenix Contact (1714955),
@@ -4676,7 +4676,7 @@ MKDS 5/2-6,35 package adpated from Eagle library package MKDS 5/3-6,35</descript
 </device>
 </devices>
 </deviceset>
-<deviceset name="TCLD1000CT">
+<deviceset name="TCLD1000CT" prefix="Q">
 <description>OPTOISOLTR 5KV DARLINGTON 4-SOP by VISHAY Digikey: TCLD1000CT_ND</description>
 <gates>
 <gate name="G$1" symbol="OPTOISOLATOR-D" x="0" y="0"/>
@@ -4695,7 +4695,7 @@ MKDS 5/2-6,35 package adpated from Eagle library package MKDS 5/3-6,35</descript
 </device>
 </devices>
 </deviceset>
-<deviceset name="PSMN1R5-30BLE">
+<deviceset name="PSMN1R5-30BLE" prefix="Q">
 <description>N-channel 30 V 1.5 mΩ logic level MOSFET in D2PAK by Nexperia USA Inc. Digikey: 1727-1101-1-ND</description>
 <gates>
 <gate name="G$1" symbol="HEXFET_N" x="0" y="0"/>
@@ -4713,7 +4713,7 @@ MKDS 5/2-6,35 package adpated from Eagle library package MKDS 5/3-6,35</descript
 </device>
 </devices>
 </deviceset>
-<deviceset name="BZT52C10">
+<deviceset name="BZT52C10" prefix="D">
 <description>DIODE ZENER 10V 500MW SOD123 by Diodes Incorporated Digikey: BZT52C10-FDICT-ND</description>
 <gates>
 <gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>

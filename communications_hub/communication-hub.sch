@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -64,8 +64,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -75,7 +75,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Mittellin" color="7" fill="1" visible="yes" active="yes"/>
@@ -9602,12 +9602,12 @@ Source: www.kingbright.com</description>
 <part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:26088/1"/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:26088/1"/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="LED1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1"/>
-<part name="LED2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1"/>
+<part name="GPIO_EXP_P17" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1"/>
+<part name="GPIO_EXP_P16" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R21" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:26088/1"/>
-<part name="R22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:26088/1"/>
+<part name="R21" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:26088/1" value="2k4"/>
+<part name="R22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:26088/1" value="2k4"/>
 <part name="U3" library="ARVP" deviceset="TCAN1042HVDR" device=""/>
 <part name="U4" library="ARVP" deviceset="TCAN1042HVDR" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -9699,12 +9699,12 @@ Source: www.kingbright.com</description>
 <instance part="R9" gate="G$1" x="193.04" y="71.12" rot="R90"/>
 <instance part="R10" gate="G$1" x="193.04" y="114.3" rot="R270"/>
 <instance part="+3V10" gate="G$1" x="203.2" y="99.06"/>
-<instance part="LED1" gate="G$1" x="231.14" y="93.98"/>
-<instance part="LED2" gate="G$1" x="243.84" y="93.98"/>
+<instance part="GPIO_EXP_P17" gate="G$1" x="231.14" y="93.98"/>
+<instance part="GPIO_EXP_P16" gate="G$1" x="243.84" y="93.98"/>
 <instance part="GND3" gate="1" x="231.14" y="83.82"/>
 <instance part="GND4" gate="1" x="243.84" y="83.82"/>
-<instance part="R21" gate="G$1" x="231.14" y="106.68" rot="R90"/>
-<instance part="R22" gate="G$1" x="243.84" y="106.68" rot="R90"/>
+<instance part="R21" gate="G$1" x="231.14" y="111.76" rot="R90"/>
+<instance part="R22" gate="G$1" x="243.84" y="111.76" rot="R90"/>
 <instance part="U3" gate="G$1" x="200.66" y="195.58"/>
 <instance part="U4" gate="G$1" x="200.66" y="154.94"/>
 <instance part="P+3" gate="1" x="220.98" y="223.52"/>
@@ -9802,12 +9802,12 @@ Source: www.kingbright.com</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="GPIO_EXP_P17" gate="G$1" pin="C"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="231.14" y1="88.9" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="GPIO_EXP_P16" gate="G$1" pin="C"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="243.84" y1="88.9" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
 </segment>
@@ -10157,23 +10157,23 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="GPIO_EXP_P17" gate="G$1" pin="A"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="231.14" y1="96.52" x2="231.14" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="96.52" x2="231.14" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="GPIO_EXP_P16" gate="G$1" pin="A"/>
 <pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="96.52" x2="243.84" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="96.52" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO_EXP_P17" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="116.84" x2="231.14" y2="111.76" width="0.1524" layer="91"/>
-<label x="226.06" y="116.84" size="1.778" layer="95"/>
+<wire x1="231.14" y1="121.92" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
+<label x="231.14" y="121.92" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="J21" gate="A" pin="15"/>
@@ -10184,8 +10184,8 @@ Source: www.kingbright.com</description>
 <net name="GPIO_EXP_P16" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="116.84" x2="243.84" y2="111.76" width="0.1524" layer="91"/>
-<label x="243.84" y="116.84" size="1.778" layer="95"/>
+<wire x1="243.84" y1="121.92" x2="243.84" y2="116.84" width="0.1524" layer="91"/>
+<label x="243.84" y="121.92" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="J21" gate="A" pin="22"/>

@@ -1,0 +1,46 @@
+Partlist
+
+Exported from motorboard_2017.sch at 2017-12-03 4:16 PM
+
+EAGLE Version 8.4.3 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value              Device               Package            Library                    Sheet
+
+C1       10u                C-EUC0805            C0805              rcl                        1
+C2       10u                C-EUC0805            C0805              rcl                        1
+C3       10u                C-EUC0805            C0805              rcl                        1
+CON1     MOLEX_5566-2       MOLEX_5566-2         5566-2             ARVP                       1
+CON2     SM03B-GHS-TB       SM03B-GHS-TB         SM03B-GHS-TB       ARVP                       1
+CON3     SM03B-GHS-TB       SM03B-GHS-TB         SM03B-GHS-TB       ARVP                       1
+JP1                         PINHD-1X2            1X02               pinhead                    1
+JP2                         PINHD-2X6            2X06               pinhead                    1
+JP3                         PINHD-2X3            2X03               pinhead                    1
+JP4                         PINHD-2X4            2X04               pinhead                    1
+JP5                         PINHD-2X3            2X03               pinhead                    1
+JP6                         PINHD-2X3            2X03               pinhead                    1
+JP7                         PINHD-2X3            2X03               pinhead                    1
+JP8                         PINHD-2X3            2X03               pinhead                    1
+JP9                         PINHD-2X2            2X02               pinhead                    1
+JP10                        PINHD-2X2            2X02               pinhead                    1
+JP11                        PINHD-2X2            2X02               pinhead                    1
+JP12                        PINHD-2X2            2X02               pinhead                    1
+LED1                        LEDCHIPLED_1206      CHIPLED_1206       led                        1
+LED2                        LEDCHIPLED_1206      CHIPLED_1206       led                        1
+R1       10k                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R2       580                R-US_R1206           R1206              rcl                        1
+R3       240                R-US_R1206           R1206              rcl                        1
+R4       10k                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R5       10k                R-US_R1206           R1206              rcl                        1
+R6       10k                R-US_R1206           R1206              rcl                        1
+R7       220                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R8       220                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R9       220                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R10      220                EXB-V8V221JVEXBV8V-M EXBV8V-M           ARVP                       1
+R11      220                R-US_R0805           R0805              rcl                        1
+R12      220                R-US_R0805           R0805              rcl                        1
+R13      1k                 R-US_R0805           R0805              rcl                        1
+U1       TEENSY_3.1_BASIC_2 TEENSY_3.1_BASIC_2   TEENSY_3.1_BASIC_2 Teensy_3_Series_Board_v1.0 1
+U2       PCA9685PW          PCA9685PW            TSSOP28            dropper_torpedo_v3         1
+U3       TCAN1042HVDR       TCAN1042HVDR         SO-8               ARVP                       1

@@ -10658,9 +10658,8 @@ Source: www.kingbright.com</description>
 <label x="157.48" y="248.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="314.96" y1="241.3" x2="307.34" y2="241.3" width="0.1524" layer="91"/>
-<label x="307.34" y="241.3" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP15" gate="A" pin="4"/>
+<wire x1="363.22" y1="220.98" x2="368.3" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_ESC1" class="0">
@@ -10670,9 +10669,8 @@ Source: www.kingbright.com</description>
 <label x="157.48" y="243.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="322.58" y1="241.3" x2="330.2" y2="241.3" width="0.1524" layer="91"/>
-<label x="330.2" y="241.3" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP15" gate="A" pin="3"/>
+<wire x1="355.6" y1="220.98" x2="350.52" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_ESC2" class="0">
@@ -10682,9 +10680,8 @@ Source: www.kingbright.com</description>
 <label x="157.48" y="238.76" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="355.6" y1="241.3" x2="347.98" y2="241.3" width="0.1524" layer="91"/>
-<label x="347.98" y="241.3" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="322.58" y1="241.3" x2="327.66" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_ESC3" class="0">
@@ -10694,9 +10691,8 @@ Source: www.kingbright.com</description>
 <label x="157.48" y="233.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="4"/>
-<wire x1="363.22" y1="241.3" x2="370.84" y2="241.3" width="0.1524" layer="91"/>
-<label x="370.84" y="241.3" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="314.96" y1="241.3" x2="309.88" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_ESC4" class="0">
@@ -10706,9 +10702,8 @@ Source: www.kingbright.com</description>
 <label x="157.48" y="223.52" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="3"/>
-<wire x1="314.96" y1="220.98" x2="307.34" y2="220.98" width="0.1524" layer="91"/>
-<label x="307.34" y="220.98" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP2" gate="A" pin="4"/>
+<wire x1="363.22" y1="241.3" x2="368.3" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_ESC5" class="0">
@@ -10718,9 +10713,8 @@ Source: www.kingbright.com</description>
 <label x="157.48" y="218.44" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="4"/>
-<wire x1="322.58" y1="220.98" x2="330.2" y2="220.98" width="0.1524" layer="91"/>
-<label x="330.2" y="220.98" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="355.6" y1="241.3" x2="350.52" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_ESC6" class="0">
@@ -10730,9 +10724,8 @@ Source: www.kingbright.com</description>
 <label x="157.48" y="213.36" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP15" gate="A" pin="3"/>
-<wire x1="355.6" y1="220.98" x2="347.98" y2="220.98" width="0.1524" layer="91"/>
-<label x="347.98" y="220.98" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP3" gate="A" pin="4"/>
+<wire x1="322.58" y1="220.98" x2="327.66" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_ESC7" class="0">
@@ -10742,9 +10735,8 @@ Source: www.kingbright.com</description>
 <label x="157.48" y="208.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP15" gate="A" pin="4"/>
-<wire x1="363.22" y1="220.98" x2="370.84" y2="220.98" width="0.1524" layer="91"/>
-<label x="370.84" y="220.98" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP3" gate="A" pin="3"/>
+<wire x1="314.96" y1="220.98" x2="309.88" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">

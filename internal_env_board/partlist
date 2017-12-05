@@ -1,0 +1,42 @@
+Partlist
+
+Exported from internal_env_board.sch at 2017-12-04 8:20 PM
+
+EAGLE Version 8.4.3 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value              Device             Package            Library                    Sheet
+
+3V3                         LEDSMT1206         1206               adafruit                   1
+5V                          LEDSMT1206         1206               adafruit                   1
+C1       100nF              C-USC1206          C1206              rcl                        1
+C2       10uF               C-USC1206          C1206              rcl                        1
+C3       100nF              C-USC1206          C1206              rcl                        1
+C4       10u                C-EUC0805          C0805              rcl                        1
+C5       10u                C-EUC0805          C0805              rcl                        1
+CON1     MOLEX_5566-2       MOLEX_5566-2       5566-2             ARVP                       1
+CON2     SM03B-GHS-TB       SM03B-GHS-TB       SM03B-GHS-TB       ARVP                       1
+CON3     SM03B-GHS-TB       SM03B-GHS-TB       SM03B-GHS-TB       ARVP                       1
+CON4     SM02B-GHS-TB       SM02B-GHS-TB       SM02B-GHS-TB       ARVP                       1
+CON5     SM02B-GHS-TB       SM02B-GHS-TB       SM02B-GHS-TB       ARVP                       1
+CON6     SM02B-GHS-TB       SM02B-GHS-TB       SM02B-GHS-TB       ARVP                       1
+CON7     SM02B-GHS-TB       SM02B-GHS-TB       SM02B-GHS-TB       ARVP                       1
+DANGER                      LEDSMT1206         1206               adafruit                   1
+HIH71201 HIH7120            HIH7120            SIP4               HIH7120                    1
+JP1                         PINHD-1X2          1X02               pinhead                    1
+JP2                         PINHD-2X3          2X03               pinhead                    1
+JP3                         PINHD-2X4          2X04               pinhead                    1
+JP4                         PINHD-1X2          1X02               pinhead                    1
+R1       10k                R-US_R1206         R1206              rcl                        1
+R2       10k                R-US_R1206         R1206              rcl                        1
+R3       220                R-US_R0805         R0805              rcl                        1
+R4       220                R-US_R0805         R0805              rcl                        1
+R5       1k                 R-US_R0805         R0805              rcl                        1
+R6       240                R-US_R1206         R1206              resistor                   1
+R7       80k                R-US_R1206         R1206              resistor                   1
+R8       240                R-US_R1206         R1206              resistor                   1
+R9       580                R-US_R1206         R1206              resistor                   1
+U1       TEENSY_3.1_BASIC_2 TEENSY_3.1_BASIC_2 TEENSY_3.1_BASIC_2 Teensy_3_Series_Board_v1.0 1
+U2       MPL3115A2LGA8      MPL3115A2LGA8      LGA8               SparkFun-Sensors           1
+U3       TCAN1042HVDR       TCAN1042HVDR       SO-8               ARVP                       1

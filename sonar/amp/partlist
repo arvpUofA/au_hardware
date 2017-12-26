@@ -1,0 +1,60 @@
+Partlist
+
+Exported from sonar_amp.sch at 2017-12-07 8:45 PM
+
+EAGLE Version 8.4.3 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value            Device               Package  Library             Sheet
+
+1V-TIE   0R-JUMPC         0R-JUMPC             C0R-JMP  jump-0r-smd         1
+ANALOGIN                  PINHD-2X5            2X05     pinhead             1
+C1       1u               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C2       5p               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C4       56p              1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C5       470p             1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C6       1n               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C7       10n              1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C8       1u               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C9       5p               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C10      56p              1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C11      470p             1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C12      1n               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C13      10n              1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+GNDTIE                    SJ                   SJ       jumper              1
+I2C2_SDA                  LEDSMT1206           1206     led                 1
+IC2                       LMV797               TSSOP8   SONAR               1
+IC3                       LMV797               TSSOP8   SONAR               1
+IC4                       LMV797               TSSOP8   SONAR               1
+IC5      LMV797           LMV797               TSSOP8   SONAR               1
+IC6                       ADR510               SOT23    SONAR               1
+OUT                       PINHD-1X2            1X02     pinhead             1
+P8       PINHD-2X23       PINHD-2X23           2X23     pinhead             1
+P9       PINHD-2X23       PINHD-2X23           2X23     pinhead             1
+R1       1k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R2       2k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R3       10k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R4       20k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R5       20k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R6       1k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R7       1k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R8       760              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R9       10k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R10      20k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R11      20k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R12      1k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R13      4.7k             0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R14      1.5k             0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R15      1.5k             0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+SERVO1                    PINHD-1X3            1X03     pinhead             1
+SERVO2                    PINHD-1X3            1X03     pinhead             1
+SYS_5V                    LEDSMT1206           1206     led                 1
+U$5      MCP4561          MCP4561              MSOP8    SONAR               1
+U$8      MOLEX-0731000105 MOLEX-0731000105     BNC-CONN SONAR               1
+U$9      MCP4561          MCP4561              MSOP8    SONAR               1
+U$12     MOLEX-0731000105 MOLEX-0731000105     BNC-CONN SONAR               1
+VCC_5V                    LEDSMT1206           1206     led                 1
+VDD_3V3                   LEDSMT1206           1206     led                 1
+ZD1      CDZV2.0B         CDZV2.0B             SOD-923  SONAR               1
+ZD2      CDZV2.0B         CDZV2.0B             SOD-923  SONAR               1

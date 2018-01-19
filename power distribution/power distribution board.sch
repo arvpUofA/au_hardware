@@ -244,6 +244,60 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="Littlefuse Fuse">
+<packages>
+<package name="0154SERIES">
+<smd name="1" x="-3.1877" y="0" dx="4.2418" dy="3.81" layer="1"/>
+<smd name="2" x="3.1877" y="0" dx="4.2418" dy="3.81" layer="1" rot="R180"/>
+<wire x1="-7.7724" y1="0" x2="-8.5344" y2="0" width="0.1524" layer="21"/>
+<wire x1="-8.128" y1="0.381" x2="-8.128" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-4.9784" y1="-2.6416" x2="4.9784" y2="-2.6416" width="0.1524" layer="21"/>
+<wire x1="4.9784" y1="-2.6416" x2="4.9784" y2="-2.2352" width="0.1524" layer="21"/>
+<wire x1="4.9784" y1="2.6416" x2="-4.9784" y2="2.6416" width="0.1524" layer="21"/>
+<wire x1="-4.9784" y1="2.6416" x2="-4.9784" y2="2.2352" width="0.1524" layer="21"/>
+<wire x1="-4.9784" y1="-2.2352" x2="-4.9784" y2="-2.6416" width="0.1524" layer="21"/>
+<wire x1="4.9784" y1="2.2352" x2="4.9784" y2="2.6416" width="0.1524" layer="21"/>
+<wire x1="-7.7724" y1="0" x2="-8.5344" y2="0" width="0.1524" layer="51"/>
+<wire x1="-8.128" y1="0.381" x2="-8.128" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-4.8768" y1="-2.5146" x2="4.8768" y2="-2.5146" width="0.1524" layer="51"/>
+<wire x1="4.8768" y1="-2.5146" x2="4.8768" y2="2.5146" width="0.1524" layer="51"/>
+<wire x1="4.8768" y1="2.5146" x2="-4.8768" y2="2.5146" width="0.1524" layer="51"/>
+<wire x1="-4.8768" y1="2.5146" x2="-4.8768" y2="-2.5146" width="0.1524" layer="51"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+</packages>
+<symbols>
+<symbol name="FUSE">
+<pin name="1" x="0" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="10.16" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="0" width="0.1524" layer="94" curve="-180"/>
+<text x="-3.8862" y="-4.9276" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-2.8194" y="1.4224" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0154010.DR" prefix="F">
+<gates>
+<gate name="A" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0154SERIES">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="0154010.DR" constant="no"/>
+<attribute name="VENDOR" value="Littelfuse Inc" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -260,6 +314,8 @@
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$2" library="Nichole" deviceset="TERM_BLOCK_6" device=""/>
 <part name="U$4" library="Nichole" deviceset="TERM_BLOCK_6" device=""/>
+<part name="F1" library="Littlefuse Fuse" deviceset="0154010.DR" device=""/>
+<part name="F2" library="Littlefuse Fuse" deviceset="0154010.DR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -272,6 +328,8 @@
 <instance part="GND1" gate="1" x="48.26" y="48.26"/>
 <instance part="U$2" gate="G$1" x="76.2" y="-30.48"/>
 <instance part="U$4" gate="G$1" x="93.98" y="5.08"/>
+<instance part="F1" gate="A" x="116.84" y="38.1"/>
+<instance part="F2" gate="A" x="116.84" y="12.7"/>
 </instances>
 <busses>
 </busses>

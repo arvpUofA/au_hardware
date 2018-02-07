@@ -8787,7 +8787,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R5B" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2010" package3d_urn="urn:adsk.eagle:package:26066/1" value="5k"/>
 <part name="R6B" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2010" package3d_urn="urn:adsk.eagle:package:26066/1" value="5k"/>
 <part name="BC-JUMPER" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2010" package3d_urn="urn:adsk.eagle:package:26066/1" value="NOPOP"/>
-<part name="R1C" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2010" package3d_urn="urn:adsk.eagle:package:26066/1" value="187k"/>
+<part name="R1C" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2010" package3d_urn="urn:adsk.eagle:package:26066/1" value="94k"/>
 <part name="R2C" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2010" package3d_urn="urn:adsk.eagle:package:26066/1" value="7.5k"/>
 <part name="R3C" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2010" package3d_urn="urn:adsk.eagle:package:26066/1" value="187k"/>
 <part name="R5C" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2010" package3d_urn="urn:adsk.eagle:package:26066/1" value="0"/>
@@ -8846,12 +8846,10 @@ Hon = -R2/R1
 Hobp = -R3/R1
 Holp = -(R2/R1)((R6+R5)/R6)</text>
 <text x="55.88" y="91.44" size="1.778" layer="97">Design parameters:
-All Hobp = -1
-
-Filter A: Q = 15 (mode 1b)
-Filter B: Q = 25
-Filter C: Q = 35
-Filter D: Q = 45
+Filter A: Q = 15 Hopb = 1 (mode 1b)
+Filter B: Q = 25 Hopb = 2
+Filter C: Q = 35 Hopb = 1
+Filter D: Q = 45 Hopb = 1
 
 FINAL R VALUES SUBJECT TO CHANGE</text>
 <text x="-55.88" y="58.42" size="1.778" layer="97">CX should be determined experimentally

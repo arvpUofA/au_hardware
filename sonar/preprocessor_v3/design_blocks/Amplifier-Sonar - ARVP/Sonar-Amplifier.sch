@@ -13033,7 +13033,7 @@ Gain 20x(+26dB)</text>
 IC</text>
 <text x="203.2" y="83.82" size="1.778" layer="92">Noise Filter for
 Gain Control</text>
-<text x="162.56" y="177.8" size="1.778" layer="91">Single male headers so there's
+<text x="162.56" y="177.8" size="1.778" layer="91">0.2" (5.08mm) pitch male headers so there's
 room for alligator clips
 
 And ocsilloscope can easily clip on</text>

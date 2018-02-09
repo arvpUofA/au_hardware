@@ -8333,6 +8333,13 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <wire x1="-35.56" y1="-17.78" x2="-20.32" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="5"/>
 </segment>
+<segment>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<wire x1="111.76" y1="48.26" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="25MHZ" gate="G$1" pin="GND"/>
+<wire x1="109.22" y1="50.8" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -8532,12 +8539,6 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <wire x1="121.92" y1="45.72" x2="127" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="25MHZ" gate="G$1" pin="GND"/>
-<wire x1="109.22" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="RCLK" gate="G$1" pin="1"/>
@@ -8651,11 +8652,6 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 </net>
 <net name="OUT_A" class="0">
 <segment>
-<label x="0" y="-17.78" size="1.778" layer="95"/>
-<wire x1="0" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="6"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="BPA"/>
 <pinref part="R3A" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
@@ -8697,6 +8693,11 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <label x="55.88" y="73.66" size="1.778" layer="95"/>
 <wire x1="53.34" y1="58.42" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
 <junction x="53.34" y="58.42"/>
+</segment>
+<segment>
+<label x="0" y="-17.78" size="1.778" layer="95"/>
+<wire x1="0" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="OUT_D" class="0">

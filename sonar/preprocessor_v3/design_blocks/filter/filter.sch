@@ -8824,11 +8824,14 @@ Source: AVX .. aphvc.pdf</description>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2"/>
 <part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2"/>
 <part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2"/>
+<part name="CC1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C2012" package3d_urn="urn:adsk.eagle:package:23625/2" value="0.47u"/>
+<part name="CC2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C2012" package3d_urn="urn:adsk.eagle:package:23625/2" value="0.47u"/>
+<part name="CC3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C2012" package3d_urn="urn:adsk.eagle:package:23625/2" value="0.33u"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-38.1" y="81.28" size="1.778" layer="97">Notes: 
+<text x="-38.1" y="83.82" size="1.778" layer="97">Notes: 
 1) Only populate XX-JUMPER if a 4th order filter is desired
 2) R6x should only be populated if running in mode 1b is desired
 3) R5x can be changed from a 0ohm resistor if mode 1b is desired
@@ -8844,7 +8847,10 @@ Fo = (fclk/20)(sqrt(R6/(R6+R5)))
 Q = (R3/R2)(sqrt(R6/(R6+R5)))
 Hon = -R2/R1
 Hobp = -R3/R1
-Holp = -(R2/R1)((R6+R5)/R6)</text>
+Holp = -(R2/R1)((R6+R5)/R6)
+7) Analog and digital grounds to be connected at a single point on the PCB
+8) Do not connect to IN_C or IN_D if the 
+BC or AD jumpers are connected respectively</text>
 <text x="55.88" y="91.44" size="1.778" layer="97">Design parameters:
 Filter A: Q = 15 Hopb = 1 (mode 1b)
 Filter B: Q = 25 Hopb = 2
@@ -8859,7 +8865,7 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <instance part="U$1" gate="G$1" x="33.02" y="53.34"/>
 <instance part="U$2" gate="G$1" x="132.08" y="48.26"/>
 <instance part="U$3" gate="G$1" x="121.92" y="73.66" rot="R180"/>
-<instance part="SUPPLY1" gate="GND" x="180.34" y="38.1"/>
+<instance part="SUPPLY1" gate="GND" x="180.34" y="30.48"/>
 <instance part="SUPPLY2" gate="GND" x="-17.78" y="38.1"/>
 <instance part="P+1" gate="1" x="127" y="88.9"/>
 <instance part="P+2" gate="1" x="-10.16" y="55.88"/>
@@ -8910,6 +8916,9 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <instance part="JP3" gate="G$1" x="-38.1" y="10.16" rot="MR0"/>
 <instance part="JP4" gate="G$1" x="-38.1" y="5.08" rot="MR0"/>
 <instance part="JP5" gate="G$1" x="-38.1" y="0" rot="MR0"/>
+<instance part="CC1" gate="G$1" x="167.64" y="38.1"/>
+<instance part="CC2" gate="G$1" x="111.76" y="53.34"/>
+<instance part="CC3" gate="G$1" x="132.08" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -8924,6 +8933,8 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <wire x1="167.64" y1="71.12" x2="167.64" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
 <label x="139.7" y="71.12" size="1.778" layer="95"/>
+<pinref part="CC2" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="55.88" x2="127" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8940,11 +8951,13 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="154.94" y1="45.72" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="45.72" x2="180.34" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="45.72" x2="180.34" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="127" y1="73.66" x2="180.34" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="73.66" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="CC1" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="33.02" x2="167.64" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="AGND"/>
@@ -9009,7 +9022,10 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VIN"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="127" y1="76.2" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="127" y1="76.2" x2="127" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="CC3" gate="G$1" pin="1"/>
+<wire x1="127" y1="81.28" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="V+"/>
@@ -9052,16 +9068,6 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <wire x1="10.16" y1="63.5" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R3B" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="BPB"/>
-<pinref part="BC-JUMPER" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="58.42" x2="15.24" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="LPB"/>
@@ -9094,6 +9100,9 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <segment>
 <pinref part="R3C" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="58.42" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="73.66" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
+<label x="55.88" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -9115,26 +9124,6 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <wire x1="53.34" y1="45.72" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SC"/>
 <wire x1="53.34" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="BC-JUMPER" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="78.74" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R1C" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="BPA"/>
-<pinref part="R3A" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="AD-JUMPER" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="0" x2="15.24" y2="0" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
-<junction x="15.24" y="22.86"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -9187,13 +9176,6 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <wire x1="76.2" y1="27.94" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="R3D" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="BPD"/>
-<wire x1="53.34" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="HPD/ND"/>
@@ -9240,15 +9222,6 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <segment>
 <pinref part="25MHZ" gate="G$1" pin="GND"/>
 <wire x1="109.22" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="AD-JUMPER" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="0" x2="86.36" y2="0" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="0" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R1D" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -9312,12 +9285,26 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <pinref part="JP2" gate="A" pin="4"/>
 <wire x1="-35.56" y1="-17.78" x2="-20.32" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R1A" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="12.7" x2="-25.4" y2="12.7" width="0.1524" layer="91"/>
+<label x="-22.86" y="12.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="IN_D" class="0">
 <segment>
 <label x="-27.94" y="-27.94" size="1.778" layer="95"/>
 <pinref part="JP2" gate="A" pin="8"/>
 <wire x1="-35.56" y1="-27.94" x2="-20.32" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="AD-JUMPER" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="0" x2="86.36" y2="0" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="0" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R1D" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="0" x2="96.52" y2="0" width="0.1524" layer="91"/>
+<label x="91.44" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN_C" class="0">
@@ -9326,12 +9313,25 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <pinref part="JP2" gate="A" pin="7"/>
 <wire x1="-20.32" y1="-25.4" x2="-35.56" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="BC-JUMPER" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="78.74" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R1C" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+<label x="83.82" y="78.74" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="IN_B" class="0">
 <segment>
 <label x="-27.94" y="-20.32" size="1.778" layer="95"/>
 <pinref part="JP2" gate="A" pin="5"/>
 <wire x1="-20.32" y1="-20.32" x2="-35.56" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R1B" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="68.58" x2="-22.86" y2="68.58" width="0.1524" layer="91"/>
+<label x="-20.32" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUT_A" class="0">
@@ -9340,12 +9340,32 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="0" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="BPA"/>
+<pinref part="R3A" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="AD-JUMPER" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="0" x2="15.24" y2="0" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
+<junction x="15.24" y="22.86"/>
+<label x="20.32" y="0" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="OUT_B" class="0">
 <segment>
 <label x="0" y="-20.32" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="5"/>
 <wire x1="0" y1="-20.32" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3B" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="BPB"/>
+<pinref part="BC-JUMPER" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="58.42" x2="15.24" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
+<label x="20.32" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUT_C" class="0">
@@ -9360,6 +9380,14 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <label x="0" y="-27.94" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="8"/>
 <wire x1="15.24" y1="-27.94" x2="0" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3D" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="BPD"/>
+<wire x1="53.34" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="22.86" x2="53.34" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="5.08" x2="58.42" y2="5.08" width="0.1524" layer="91"/>
+<label x="55.88" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -9437,12 +9465,6 @@ FINAL R VALUES SUBJECT TO CHANGE</text>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="-20.32" x2="83.82" y2="-22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R1B" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="68.58" x2="-22.86" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

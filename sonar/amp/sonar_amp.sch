@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.2">
+<eagle version="8.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7294,8 +7294,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY16" gate="G$1" x="195.58" y="-27.94" smashed="yes">
 <attribute name="VALUE" x="193.04" y="-30.48" size="1.27" layer="96"/>
 </instance>
-<instance part="X1" gate="-1" x="281.94" y="-109.22" rot="R180"/>
-<instance part="X1" gate="-2" x="281.94" y="-106.68" rot="R180"/>
+<instance part="X1" gate="-1" x="281.94" y="-106.68" rot="MR0"/>
+<instance part="X1" gate="-2" x="281.94" y="-109.22" rot="MR0"/>
 <instance part="SUPPLY5" gate="G$1" x="287.02" y="-114.3"/>
 <instance part="P2" gate="G$1" x="287.02" y="-104.14"/>
 <instance part="P8" gate="G$1" x="444.5" y="-144.78"/>
@@ -7572,10 +7572,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY16" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-1" pin="S"/>
-<wire x1="284.48" y1="-109.22" x2="287.02" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="-109.22" x2="287.02" y2="-111.76" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="AGND"/>
+<pinref part="X1" gate="-2" pin="S"/>
+<wire x1="287.02" y1="-109.22" x2="284.48" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -8607,19 +8607,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="254" y1="-50.8" x2="259.08" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="12V" class="0">
-<segment>
-<pinref part="CR1" gate="A" pin="INPUT"/>
-<wire x1="251.46" y1="-88.9" x2="251.46" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="12V"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-2" pin="S"/>
-<wire x1="284.48" y1="-106.68" x2="287.02" y2="-106.68" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="-106.68" x2="287.02" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="P2" gate="G$1" pin="12V"/>
-</segment>
-</net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="CR1" gate="A" pin="OUTPUT"/>
@@ -9010,6 +8997,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="246.38" y1="-40.64" x2="243.84" y2="-40.64" width="0.1524" layer="91"/>
 <label x="236.22" y="-40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="287.02" y1="-106.68" x2="287.02" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="P2" gate="G$1" pin="12V"/>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="287.02" y1="-106.68" x2="284.48" y2="-106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CR1" gate="A" pin="INPUT"/>
+<wire x1="251.46" y1="-88.9" x2="251.46" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="P1" gate="G$1" pin="12V"/>
 </segment>
 </net>
 <net name="GPIO_26" class="0">

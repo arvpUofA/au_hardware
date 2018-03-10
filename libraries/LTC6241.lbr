@@ -181,21 +181,21 @@
 <devicesets>
 <deviceset name="LTC6241">
 <gates>
-<gate name="G$1" symbol="OPAMP" x="-20.32" y="22.86"/>
-<gate name="G$2" symbol="OPAMP" x="-20.32" y="5.08"/>
-<gate name="G$3" symbol="TLC450P" x="5.08" y="17.78"/>
+<gate name="G1" symbol="OPAMP" x="-20.32" y="22.86"/>
+<gate name="G2" symbol="OPAMP" x="-20.32" y="5.08"/>
+<gate name="G3" symbol="TLC450P" x="5.08" y="17.78"/>
 </gates>
 <devices>
 <device name="" package="SO-8">
 <connects>
-<connect gate="G$1" pin="+IN" pad="3"/>
-<connect gate="G$1" pin="-IN" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="1"/>
-<connect gate="G$2" pin="+IN" pad="5"/>
-<connect gate="G$2" pin="-IN" pad="6"/>
-<connect gate="G$2" pin="OUT" pad="7"/>
-<connect gate="G$3" pin="V+" pad="8"/>
-<connect gate="G$3" pin="V-" pad="4"/>
+<connect gate="G1" pin="+IN" pad="3"/>
+<connect gate="G1" pin="-IN" pad="2"/>
+<connect gate="G1" pin="OUT" pad="1"/>
+<connect gate="G2" pin="+IN" pad="5"/>
+<connect gate="G2" pin="-IN" pad="6"/>
+<connect gate="G2" pin="OUT" pad="7"/>
+<connect gate="G3" pin="V+" pad="8"/>
+<connect gate="G3" pin="V-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

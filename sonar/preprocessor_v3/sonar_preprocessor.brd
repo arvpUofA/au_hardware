@@ -34,27 +34,27 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
@@ -163,18 +163,18 @@
 </layers>
 <board>
 <plain>
-<wire x1="45.72" y1="1.905" x2="45.72" y2="-50.165" width="0.1524" layer="20"/>
-<wire x1="45.72" y1="-50.165" x2="44.45" y2="-51.435" width="0.1524" layer="20" curve="-90"/>
-<wire x1="44.45" y1="-51.435" x2="-54.61" y2="-51.435" width="0.1524" layer="20"/>
-<wire x1="-54.61" y1="-51.435" x2="-55.88" y2="-50.165" width="0.1524" layer="20" curve="-90"/>
-<wire x1="-55.88" y1="-50.165" x2="-55.88" y2="1.905" width="0.1524" layer="20"/>
-<wire x1="-55.88" y1="1.905" x2="-54.61" y2="3.175" width="0.1524" layer="20" curve="-90"/>
-<wire x1="-54.61" y1="3.175" x2="44.45" y2="3.175" width="0.1524" layer="20"/>
-<wire x1="44.45" y1="3.175" x2="45.72" y2="1.905" width="0.1524" layer="20" curve="-90"/>
-<dimension x1="45.72" y1="6.985" x2="-55.88" y2="6.985" x3="-5.08" y3="12.065" textsize="1.778" layer="48" unit="inch" visible="yes"/>
-<dimension x1="49.53" y1="3.175" x2="49.53" y2="-51.435" x3="55.88" y3="-24.13" textsize="1.778" layer="48" unit="inch" visible="yes"/>
-<text x="48.26" y="-12.065" size="1.778" layer="48" rot="R270">Ethernet+Power Side</text>
-<text x="-58.42" y="-28.575" size="1.778" layer="48" rot="R90">USB Side</text>
+<wire x1="50.8" y1="1.905" x2="50.8" y2="-50.165" width="0.1524" layer="20"/>
+<wire x1="50.8" y1="-50.165" x2="49.53" y2="-51.435" width="0.1524" layer="20" curve="-90"/>
+<wire x1="49.53" y1="-51.435" x2="-49.53" y2="-51.435" width="0.1524" layer="20"/>
+<wire x1="-49.53" y1="-51.435" x2="-50.8" y2="-50.165" width="0.1524" layer="20" curve="-90"/>
+<wire x1="-50.8" y1="-50.165" x2="-50.8" y2="1.905" width="0.1524" layer="20"/>
+<wire x1="-50.8" y1="1.905" x2="-49.53" y2="3.175" width="0.1524" layer="20" curve="-90"/>
+<wire x1="-49.53" y1="3.175" x2="49.53" y2="3.175" width="0.1524" layer="20"/>
+<wire x1="49.53" y1="3.175" x2="50.8" y2="1.905" width="0.1524" layer="20" curve="-90"/>
+<dimension x1="50.8" y1="6.985" x2="-50.8" y2="6.985" x3="0" y3="12.065" textsize="1.778" layer="48" unit="inch" visible="yes"/>
+<dimension x1="54.61" y1="3.175" x2="54.61" y2="-51.435" x3="60.96" y3="-24.13" textsize="1.778" layer="48" unit="inch" visible="yes"/>
+<text x="53.34" y="-12.065" size="1.778" layer="48" rot="R270">Ethernet+Power Side</text>
+<text x="-53.34" y="-28.575" size="1.778" layer="48" rot="R90">USB Side</text>
 </plain>
 <libraries>
 <library name="frames" urn="urn:adsk.eagle:library:229">
@@ -735,141 +735,332 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U$1" library="frames" library_urn="urn:adsk.eagle:library:229" package="A4L-LOC" value="" x="-129.54" y="-114.3"/>
-<element name="P8" library="pinhead-1" package="2X23" value="PINHD-2X23_2.54" x="0" y="-48.26" rot="R180"/>
-<element name="P9" library="pinhead-1" package="2X23" value="PINHD-2X23_2.54" x="0" y="0" rot="R180"/>
-<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X05" package3d_urn="urn:adsk.eagle:package:22470/2" value="" x="-16.40205" y="-11.574559375" rot="R180"/>
+<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X05" package3d_urn="urn:adsk.eagle:package:22470/2" value="" x="-11.32205" y="-11.574559375" locked="yes" rot="R180"/>
+<element name="PH1" library="pinhead-1" package="2X23" value="PINHD-2X23_2.54" x="0" y="-48.26" locked="yes" smashed="yes">
+<attribute name="NAME" x="-26.67" y="-45.085" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="PH2" library="pinhead-1" package="2X23" value="PINHD-2X23_2.54" x="0" y="0" locked="yes" smashed="yes">
+<attribute name="NAME" x="-26.67" y="-4.445" size="1.27" layer="25" ratio="10"/>
+</element>
 </elements>
 <signals>
-<signal name="DGND">
-<contactref element="P9" pad="2"/>
+<signal name="GND">
+<contactref element="PH1" pad="1"/>
+<contactref element="PH1" pad="2"/>
+<contactref element="PH2" pad="1"/>
+<contactref element="PH2" pad="43"/>
+<contactref element="PH2" pad="45"/>
+<contactref element="PH2" pad="2"/>
+<contactref element="PH2" pad="44"/>
+<contactref element="PH2" pad="46"/>
+<polygon width="0.1524" layer="1">
+<vertex x="49.53" y="-51.435" curve="90"/>
+<vertex x="50.8" y="-50.165"/>
+<vertex x="50.8" y="1.905" curve="90"/>
+<vertex x="49.53" y="3.175"/>
+<vertex x="-49.53" y="3.175" curve="90"/>
+<vertex x="-50.8" y="1.905"/>
+<vertex x="-50.8" y="-50.165" curve="90"/>
+<vertex x="-49.53" y="-51.435"/>
+</polygon>
+<polygon width="0.1524" layer="15">
+<vertex x="49.53" y="-51.435" curve="90"/>
+<vertex x="50.8" y="-50.165"/>
+<vertex x="50.8" y="1.905" curve="90"/>
+<vertex x="49.53" y="3.175"/>
+<vertex x="-49.53" y="3.175" curve="90"/>
+<vertex x="-50.8" y="1.905"/>
+<vertex x="-50.8" y="-50.165" curve="90"/>
+<vertex x="-49.53" y="-51.435"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="49.53" y="-51.435" curve="90"/>
+<vertex x="50.8" y="-50.165"/>
+<vertex x="50.8" y="1.905" curve="90"/>
+<vertex x="49.53" y="3.175"/>
+<vertex x="-49.53" y="3.175" curve="90"/>
+<vertex x="-50.8" y="1.905"/>
+<vertex x="-50.8" y="-50.165" curve="90"/>
+<vertex x="-49.53" y="-51.435"/>
+</polygon>
+<polygon width="0.1524" layer="2">
+<vertex x="49.53" y="-51.435" curve="90"/>
+<vertex x="50.8" y="-50.165"/>
+<vertex x="50.8" y="1.905" curve="90"/>
+<vertex x="49.53" y="3.175"/>
+<vertex x="-49.53" y="3.175" curve="90"/>
+<vertex x="-50.8" y="1.905"/>
+<vertex x="-50.8" y="-50.165" curve="90"/>
+<vertex x="-49.53" y="-51.435"/>
+</polygon>
+<contactref element="JP2" pad="1"/>
 </signal>
 <signal name="MMC1_DAT2">
+<contactref element="PH1" pad="5"/>
 </signal>
 <signal name="MMC1_DAT3">
+<contactref element="PH1" pad="6"/>
 </signal>
 <signal name="MMC1_CMD">
+<contactref element="PH1" pad="20"/>
 </signal>
 <signal name="MMC1_CLK">
+<contactref element="PH1" pad="21"/>
 </signal>
 <signal name="MMC1_DAT5">
+<contactref element="PH1" pad="22"/>
 </signal>
 <signal name="MMC1_DATO">
+<contactref element="PH1" pad="25"/>
 </signal>
 <signal name="GPIO_69">
+<contactref element="PH1" pad="9"/>
 </signal>
 <signal name="GPIO_68">
+<contactref element="PH1" pad="10"/>
 </signal>
 <signal name="EHRPWM2B">
+<contactref element="PH1" pad="13"/>
 </signal>
 <signal name="GPIO_26">
+<contactref element="PH1" pad="14"/>
 </signal>
 <signal name="GPIO_61">
+<contactref element="PH1" pad="26"/>
 </signal>
 <signal name="GPIO_27">
+<contactref element="PH1" pad="17"/>
 </signal>
 <signal name="LCD_HSYNC">
+<contactref element="PH1" pad="29"/>
 </signal>
 <signal name="LCD_AC_BIAS">
+<contactref element="PH1" pad="30"/>
 </signal>
 <signal name="LCD_DATA13">
+<contactref element="PH1" pad="33"/>
 </signal>
 <signal name="LCD_DATA11">
+<contactref element="PH1" pad="34"/>
 </signal>
 <signal name="LCD_DATA8">
+<contactref element="PH1" pad="37"/>
 </signal>
 <signal name="LCD_DATA9">
+<contactref element="PH1" pad="38"/>
 </signal>
 <signal name="LCD_DATA4">
+<contactref element="PH1" pad="41"/>
 </signal>
 <signal name="LCD_DATA5">
+<contactref element="PH1" pad="42"/>
 </signal>
 <signal name="VDD_3V3">
+<contactref element="PH2" pad="3"/>
+<contactref element="PH2" pad="4"/>
+<wire x1="-22.86" y1="1.27" x2="-22.86" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_5V">
+<contactref element="PH2" pad="5"/>
+<contactref element="PH2" pad="6"/>
+<wire x1="-20.32" y1="1.27" x2="-20.32" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SYS_5V">
+<contactref element="PH2" pad="7"/>
+<contactref element="PH2" pad="8"/>
+<wire x1="-17.78" y1="1.27" x2="-17.78" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SYS_RESET">
+<contactref element="PH2" pad="10"/>
 </signal>
 <signal name="UART4_RXD">
+<contactref element="PH2" pad="11"/>
 </signal>
 <signal name="EHRPWM1A">
+<contactref element="PH2" pad="14"/>
 </signal>
 <signal name="GPIO_48">
+<contactref element="PH2" pad="15"/>
 </signal>
 <signal name="SPIO_D1">
+<contactref element="PH2" pad="18"/>
 </signal>
 <signal name="I2C_SCL">
+<contactref element="PH2" pad="19"/>
 </signal>
 <signal name="SPIO_SCLK">
+<contactref element="PH2" pad="22"/>
 </signal>
 <signal name="GPIO_49">
+<contactref element="PH2" pad="23"/>
 </signal>
 <signal name="UART1_RXD">
+<contactref element="PH2" pad="26"/>
 </signal>
 <signal name="GPIO_115">
+<contactref element="PH2" pad="27"/>
 </signal>
 <signal name="GPIO_112">
+<contactref element="PH2" pad="30"/>
 </signal>
 <signal name="SP11_CLK">
+<contactref element="PH2" pad="31"/>
 </signal>
 <signal name="GND_ADC">
+<contactref element="PH2" pad="34"/>
 </signal>
 <signal name="AIN6">
+<contactref element="PH2" pad="35"/>
 </signal>
 <signal name="AIN3">
+<contactref element="PH2" pad="38"/>
 </signal>
 <signal name="AIN0">
+<contactref element="PH2" pad="39"/>
 </signal>
 <signal name="ECAPWMO">
+<contactref element="PH2" pad="42"/>
 </signal>
-<signal name="N$1">
-<polygon width="0.1524" layer="1">
-<vertex x="44.45" y="-51.435" curve="90"/>
-<vertex x="45.72" y="-50.165"/>
-<vertex x="45.72" y="1.905" curve="90"/>
-<vertex x="44.45" y="3.175"/>
-<vertex x="-54.61" y="3.175" curve="90"/>
-<vertex x="-55.88" y="1.905"/>
-<vertex x="-55.88" y="-50.165" curve="90"/>
-<vertex x="-54.61" y="-51.435"/>
-</polygon>
+<signal name="IN0">
+<contactref element="JP2" pad="2"/>
 </signal>
-<signal name="N$2">
-<polygon width="0.1524" layer="2">
-<vertex x="44.45" y="-51.435" curve="90"/>
-<vertex x="45.72" y="-50.165"/>
-<vertex x="45.72" y="1.905" curve="90"/>
-<vertex x="44.45" y="3.175"/>
-<vertex x="-54.61" y="3.175" curve="90"/>
-<vertex x="-55.88" y="1.905"/>
-<vertex x="-55.88" y="-50.165" curve="90"/>
-<vertex x="-54.61" y="-51.435"/>
-</polygon>
+<signal name="IN1">
+<contactref element="JP2" pad="4"/>
 </signal>
-<signal name="N$4">
-<polygon width="0.1524" layer="16">
-<vertex x="44.45" y="-51.435" curve="90"/>
-<vertex x="45.72" y="-50.165"/>
-<vertex x="45.72" y="1.905" curve="90"/>
-<vertex x="44.45" y="3.175"/>
-<vertex x="-54.61" y="3.175" curve="90"/>
-<vertex x="-55.88" y="1.905"/>
-<vertex x="-55.88" y="-50.165" curve="90"/>
-<vertex x="-54.61" y="-51.435"/>
-</polygon>
+<signal name="IN2">
+<contactref element="JP2" pad="6"/>
 </signal>
-<signal name="N$5">
-<polygon width="0.1524" layer="15">
-<vertex x="44.45" y="-51.435" curve="90"/>
-<vertex x="45.72" y="-50.165"/>
-<vertex x="45.72" y="1.905" curve="90"/>
-<vertex x="44.45" y="3.175"/>
-<vertex x="-54.61" y="3.175" curve="90"/>
-<vertex x="-55.88" y="1.905"/>
-<vertex x="-55.88" y="-50.165" curve="90"/>
-<vertex x="-54.61" y="-51.435"/>
-</polygon>
+<signal name="IN3">
+<contactref element="JP2" pad="8"/>
+</signal>
+<signal name="IN4">
+<contactref element="JP2" pad="10"/>
+</signal>
+<signal name="VREF">
+<contactref element="JP2" pad="9"/>
+</signal>
+<signal name="MMC1_DAT6">
+<contactref element="PH1" pad="3"/>
+</signal>
+<signal name="GPIO_66">
+<contactref element="PH1" pad="7"/>
+</signal>
+<signal name="GPIO_45">
+<contactref element="PH1" pad="11"/>
+</signal>
+<signal name="GPIO_47">
+<contactref element="PH1" pad="15"/>
+</signal>
+<signal name="EHRPPWM2A">
+<contactref element="PH1" pad="19"/>
+</signal>
+<signal name="MMC1_DAT4">
+<contactref element="PH1" pad="23"/>
+</signal>
+<signal name="LCD_VSYNC">
+<contactref element="PH1" pad="27"/>
+</signal>
+<signal name="LCD_DATA14">
+<contactref element="PH1" pad="31"/>
+</signal>
+<signal name="LCD_DATA12">
+<contactref element="PH1" pad="35"/>
+</signal>
+<signal name="LCD_DATA6">
+<contactref element="PH1" pad="39"/>
+</signal>
+<signal name="LCD_DATA2">
+<contactref element="PH1" pad="43"/>
+</signal>
+<signal name="LCD_DATA0">
+<contactref element="PH1" pad="45"/>
+</signal>
+<signal name="LCD_DATA1">
+<contactref element="PH1" pad="46"/>
+</signal>
+<signal name="LCD_DATA3">
+<contactref element="PH1" pad="44"/>
+</signal>
+<signal name="LCD_DATA7">
+<contactref element="PH1" pad="40"/>
+</signal>
+<signal name="LCD_DATA10">
+<contactref element="PH1" pad="36"/>
+</signal>
+<signal name="LCD_DATA15">
+<contactref element="PH1" pad="32"/>
+</signal>
+<signal name="LCD_PCLK">
+<contactref element="PH1" pad="28"/>
+</signal>
+<signal name="MMC1_DAT1">
+<contactref element="PH1" pad="24"/>
+</signal>
+<signal name="GPIO_65">
+<contactref element="PH1" pad="18"/>
+</signal>
+<signal name="GPIO_46">
+<contactref element="PH1" pad="16"/>
+</signal>
+<signal name="GPIO_44">
+<contactref element="PH1" pad="12"/>
+</signal>
+<signal name="GPIO_67">
+<contactref element="PH1" pad="8"/>
+</signal>
+<signal name="MMC1_DAT7">
+<contactref element="PH1" pad="4"/>
+</signal>
+<signal name="PWR_BUT">
+<contactref element="PH2" pad="9"/>
+</signal>
+<signal name="UART4_TXD">
+<contactref element="PH2" pad="13"/>
+</signal>
+<signal name="SPIO_CSO">
+<contactref element="PH2" pad="17"/>
+</signal>
+<signal name="SPIO_DO">
+<contactref element="PH2" pad="21"/>
+</signal>
+<signal name="GPIO_117">
+<contactref element="PH2" pad="25"/>
+</signal>
+<signal name="SP11_DO">
+<contactref element="PH2" pad="29"/>
+</signal>
+<signal name="AIN4">
+<contactref element="PH2" pad="33"/>
+</signal>
+<signal name="AIN2">
+<contactref element="PH2" pad="37"/>
+</signal>
+<signal name="GPIO_20">
+<contactref element="PH2" pad="41"/>
+</signal>
+<signal name="GPIO_60">
+<contactref element="PH2" pad="12"/>
+</signal>
+<signal name="EHRPWM1B">
+<contactref element="PH2" pad="16"/>
+</signal>
+<signal name="I2C_SDA">
+<contactref element="PH2" pad="20"/>
+</signal>
+<signal name="UART1_TXD">
+<contactref element="PH2" pad="24"/>
+</signal>
+<signal name="SP11_CSO">
+<contactref element="PH2" pad="28"/>
+</signal>
+<signal name="VDD_ADC">
+<contactref element="PH2" pad="32"/>
+</signal>
+<signal name="AIN5">
+<contactref element="PH2" pad="36"/>
+</signal>
+<signal name="AIN1">
+<contactref element="PH2" pad="40"/>
 </signal>
 </signals>
 </board>

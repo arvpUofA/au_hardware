@@ -5,7 +5,7 @@
 <description></description>
 <attributes>
 <attribute name="AIRWIRES" value="YES"/>
-<attribute name="BOARDSIZE" value="937 x 1093 mil"/>
+<attribute name="BOARDSIZE" value="822 x 801 mil"/>
 <attribute name="LAYERS" value="1: 1"/>
 </attributes>
 <drawings>
@@ -7914,9 +7914,9 @@ reflow soldering</description>
 <instance part="D1" gate="G$1" x="50.8" y="63.5" rot="MR270"/>
 <instance part="U2" gate="G$1" x="63.5" y="33.02"/>
 <instance part="C2" gate="C" x="78.74" y="60.96"/>
-<instance part="U1" gate="G1" x="38.1" y="63.5"/>
-<instance part="U1" gate="G2" x="88.9" y="66.04"/>
 <instance part="U1" gate="G3" x="124.46" y="60.96"/>
+<instance part="U1" gate="G1" x="38.1" y="63.5" rot="MR180"/>
+<instance part="U1" gate="G2" x="88.9" y="66.04" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -7935,7 +7935,7 @@ reflow soldering</description>
 <wire x1="58.42" y1="55.88" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C2" gate="C" pin="+"/>
 <junction x="78.74" y="63.5"/>
-<pinref part="U1" gate="G2" pin="-IN"/>
+<pinref part="U1" gate="G2" pin="+IN"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7950,7 +7950,7 @@ reflow soldering</description>
 <pinref part="D1" gate="G$1" pin="A1"/>
 <wire x1="50.8" y1="68.58" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G1" pin="+IN"/>
+<pinref part="U1" gate="G1" pin="-IN"/>
 </segment>
 </net>
 <net name="OUT" class="0">
@@ -7967,7 +7967,7 @@ reflow soldering</description>
 <junction x="83.82" y="78.74"/>
 <wire x1="96.52" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <label x="99.06" y="66.04" size="1.778" layer="95"/>
-<pinref part="U1" gate="G2" pin="+IN"/>
+<pinref part="U1" gate="G2" pin="-IN"/>
 <pinref part="U1" gate="G2" pin="OUT"/>
 </segment>
 </net>
@@ -8012,7 +8012,7 @@ reflow soldering</description>
 <segment>
 <wire x1="33.02" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
 <label x="27.94" y="60.96" size="1.778" layer="95"/>
-<pinref part="U1" gate="G1" pin="-IN"/>
+<pinref part="U1" gate="G1" pin="+IN"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -9672,10 +9672,10 @@ design rules under a new name.</description>
 <wire x1="5.334" y1="2.286" x2="5.334" y2="2.86" width="0.2032" layer="1"/>
 <wire x1="0.635" y1="-2.54" x2="0.635" y2="1.27" width="0.2032" layer="1"/>
 <contactref element="C2" pad="P$1"/>
-<contactref element="U1" pad="6"/>
-<wire x1="-0.4826" y1="1.27" x2="-1.1176" y2="1.905" width="0.2032" layer="1"/>
 <wire x1="7.62" y1="2.86" x2="9.398" y2="1.082" width="0.2032" layer="1"/>
 <wire x1="9.398" y1="1.082" x2="9.398" y2="-1.143" width="0.2032" layer="1"/>
+<contactref element="U1" pad="5"/>
+<wire x1="-0.4826" y1="1.27" x2="-1.1176" y2="0.635" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="1"/>
@@ -9683,33 +9683,34 @@ design rules under a new name.</description>
 <wire x1="-0.32" y1="-1.44" x2="-1.506" y2="-0.254" width="0.2032" layer="1"/>
 <wire x1="-1.506" y1="-0.254" x2="-1.778" y2="-0.254" width="0.2032" layer="1"/>
 <wire x1="-1.778" y1="-0.254" x2="-2.5908" y2="0.5588" width="0.2032" layer="1"/>
-<wire x1="-2.5908" y1="0.5588" x2="-2.5908" y2="1.905" width="0.2032" layer="1"/>
-<wire x1="-2.5908" y1="1.905" x2="-2.5908" y2="2.5043875" width="0.2032" layer="1"/>
+<wire x1="-2.5908" y1="0.5588" x2="-2.5908" y2="2.5043875" width="0.2032" layer="1"/>
 <wire x1="-2.5908" y1="2.5043875" x2="-2.1844" y2="2.9107875" width="0.2032" layer="1"/>
 <wire x1="-2.1844" y1="2.9107875" x2="-2.1844" y2="3.60605" width="0.2032" layer="1"/>
 <wire x1="0.69525" y1="4.76" x2="2.54" y2="4.76" width="0.2032" layer="1"/>
 <wire x1="-0.22935" y1="3.8354" x2="0.69525" y2="4.76" width="0.2032" layer="1"/>
 <wire x1="-2.1844" y1="3.60605" x2="-1.95505" y2="3.8354" width="0.2032" layer="1"/>
 <wire x1="-1.95505" y1="3.8354" x2="-0.22935" y2="3.8354" width="0.2032" layer="1"/>
-<contactref element="U1" pad="3"/>
-<wire x1="-6.5024" y1="1.905" x2="-2.5908" y2="1.905" width="0.2032" layer="1"/>
+<contactref element="U1" pad="2"/>
+<wire x1="-7.3590875" y1="3.9116" x2="-7.493" y2="4.0455125" width="0.2032" layer="1"/>
+<wire x1="-7.493" y1="4.0455125" x2="-7.493" y2="4.8444875" width="0.2032" layer="1"/>
+<wire x1="-7.493" y1="4.8444875" x2="-7.3590875" y2="4.9784" width="0.2032" layer="1"/>
+<wire x1="-7.3590875" y1="4.9784" x2="-5.6457125" y2="4.9784" width="0.2032" layer="1"/>
+<wire x1="-4.2733625" y1="3.60605" x2="-2.1844" y2="3.60605" width="0.2032" layer="1"/>
+<wire x1="-5.6457125" y1="4.9784" x2="-4.2733625" y2="3.60605" width="0.2032" layer="1"/>
+<wire x1="-6.5024" y1="3.175" x2="-7.239" y2="3.9116" width="0.2032" layer="1"/>
+<wire x1="-7.239" y1="3.9116" x2="-7.3590875" y2="3.9116" width="0.2032" layer="1"/>
 </signal>
 <signal name="OUT">
 <contactref element="R2" pad="1"/>
 <contactref element="R1" pad="2"/>
 <wire x1="2.54" y1="2.86" x2="3.18" y2="2.86" width="0.2032" layer="1"/>
 <wire x1="3.18" y1="2.86" x2="5.08" y2="4.76" width="0.2032" layer="1"/>
-<contactref element="U1" pad="5"/>
+<wire x1="2.225" y1="3.175" x2="2.446" y2="2.954" width="0.2032" layer="1"/>
+<contactref element="U1" pad="6"/>
 <contactref element="U1" pad="7"/>
-<wire x1="-1.1176" y1="3.175" x2="2.225" y2="3.175" width="0.2032" layer="1"/>
-<wire x1="2.225" y1="3.175" x2="2.54" y2="2.86" width="0.2032" layer="1"/>
-<wire x1="-1.9848125" y1="1.3462" x2="-2.1336" y2="1.4949875" width="0.2032" layer="1"/>
-<wire x1="-2.1336" y1="1.4949875" x2="-2.1336" y2="2.3150125" width="0.2032" layer="1"/>
-<wire x1="-2.1336" y1="2.3150125" x2="-1.9848125" y2="2.4638" width="0.2032" layer="1"/>
-<wire x1="-1.1176" y1="0.635" x2="-1.8288" y2="1.3462" width="0.2032" layer="1"/>
-<wire x1="-1.8288" y1="1.3462" x2="-1.9848125" y2="1.3462" width="0.2032" layer="1"/>
-<wire x1="-1.9848125" y1="2.4638" x2="-1.8288" y2="2.4638" width="0.2032" layer="1"/>
-<wire x1="-1.8288" y1="2.4638" x2="-1.1176" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="2.446" y1="2.954" x2="2.54" y2="2.86" width="0.2032" layer="1"/>
+<wire x1="-1.1176" y1="1.905" x2="-1.1176" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="-1.1176" y1="3.175" x2="2.225" y2="3.175" width="0.1524" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="C1" pad="2"/>
@@ -9724,18 +9725,12 @@ design rules under a new name.</description>
 <wire x1="-2.4652" y1="-2.4448" x2="-2.84625" y2="-2.4448" width="0.2032" layer="1"/>
 <wire x1="-2.84625" y1="-2.4448" x2="-4.572" y2="-0.97305" width="0.2032" layer="1"/>
 <wire x1="-4.572" y1="-0.97305" x2="-4.572" y2="1.27" width="0.2032" layer="1"/>
-<wire x1="-7.39065" y1="1.2954" x2="-7.5692" y2="1.47395" width="0.2032" layer="1"/>
-<wire x1="-7.5692" y1="1.47395" x2="-7.5692" y2="2.33605" width="0.2032" layer="1"/>
-<wire x1="-5.61415" y1="2.5654" x2="-5.4356" y2="2.74395" width="0.2032" layer="1"/>
-<wire x1="-5.4356" y1="2.74395" x2="-5.4356" y2="3.60605" width="0.2032" layer="1"/>
-<wire x1="-5.4356" y1="3.60605" x2="-5.61415" y2="3.7846" width="0.2032" layer="1"/>
 <wire x1="-5.61415" y1="3.7846" x2="-5.842" y2="3.7846" width="0.2032" layer="1"/>
-<wire x1="-4.572" y1="1.27" x2="-4.5974" y2="1.2954" width="0.2032" layer="1"/>
-<wire x1="-4.5974" y1="1.2954" x2="-7.39065" y2="1.2954" width="0.2032" layer="1"/>
-<wire x1="-7.5692" y1="2.33605" x2="-7.33985" y2="2.5654" width="0.2032" layer="1"/>
-<wire x1="-7.33985" y1="2.5654" x2="-5.61415" y2="2.5654" width="0.2032" layer="1"/>
 <contactref element="U1" pad="1"/>
-<wire x1="-5.842" y1="3.7846" x2="-6.5024" y2="4.445" width="0.2032" layer="1"/>
+<wire x1="-5.842" y1="3.7846" x2="-6.5024" y2="4.445" width="0.1524" layer="1"/>
+<wire x1="-4.572" y1="1.27" x2="-5.4864" y2="2.1844" width="0.2032" layer="1"/>
+<wire x1="-5.4864" y1="2.1844" x2="-5.4864" y2="3.65685" width="0.2032" layer="1"/>
+<wire x1="-5.4864" y1="3.65685" x2="-5.61415" y2="3.7846" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R3" pad="1"/>
@@ -9755,11 +9750,11 @@ design rules under a new name.</description>
 <wire x1="5.334" y1="-1.143" x2="4.511" y2="-0.32" width="0.2032" layer="1"/>
 <wire x1="4.511" y1="-0.32" x2="2.54" y2="-0.32" width="0.2032" layer="1"/>
 </signal>
-<signal name="IN">
-<contactref element="U1" pad="2"/>
-</signal>
 <signal name="+5V">
 <contactref element="U1" pad="8"/>
+</signal>
+<signal name="IN">
+<contactref element="U1" pad="3"/>
 </signal>
 </signals>
 </board>

@@ -2,7 +2,7 @@
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
 <eagle version="8.7.0">
 <designblock>
-<description>Amplifier with variable gain control for ARVP's sonar board </description>
+<description></description>
 <attributes>
 <attribute name="BOARDSIZE" value="25.6 x 30.4 mm"/>
 <attribute name="LAYERS" value="2: 1, 16"/>
@@ -13344,7 +13344,7 @@ Total Gain = VGAIN + Pre-Amp Gain
 <dimension x1="20" y1="20" x2="20" y2="0" x3="23.5" y3="10" textsize="1.778" layer="23" dtype="horizontal" visible="yes"/>
 <dimension x1="0" y1="20" x2="20" y2="20" x3="10" y3="22" textsize="1.778" layer="23" visible="yes"/>
 <dimension x1="7.1" y1="2.2" x2="7.1" y2="17.5" x3="6.200003125" y3="9.85" textsize="1.778" layer="23"/>
-<dimension x1="18" y1="2.2" x2="7.1" y2="2.2" x3="12.55" y3="-3.299996875" textsize="1.778" layer="23"/>
+<dimension x1="18.6" y1="2.2" x2="7.1" y2="2.2" x3="12.85" y3="-3.299996875" textsize="1.778" layer="23"/>
 <wire x1="0" y1="0" x2="0" y2="20" width="0.01" layer="20"/>
 </plain>
 <libraries>
@@ -15818,24 +15818,24 @@ design rules under a new name.</description>
 <element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="13.95" y="8.81">
 <attribute name="SPICEPREFIX" value="C" x="13.95" y="8.81" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1nF" x="12.57" y="12.68" rot="R90">
-<attribute name="SPICEPREFIX" value="C" x="12.57" y="12.68" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1nF" x="13.2" y="12.7" rot="R90">
+<attribute name="SPICEPREFIX" value="C" x="13.2" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C1206" package3d_urn="urn:adsk.eagle:package:26140/1" value="10uF" x="14.01" y="3.75" rot="R180"/>
-<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="9.9" y="13.1" rot="R180">
-<attribute name="SPICEPREFIX" value="C" x="9.9" y="13.1" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="10.69" y="13.2" rot="R180">
+<attribute name="SPICEPREFIX" value="C" x="10.69" y="13.2" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C1206" package3d_urn="urn:adsk.eagle:package:26140/1" value="10uF" x="16.65" y="13.67" rot="R270"/>
-<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1nF" x="14.61" y="12.68" rot="R90">
-<attribute name="SPICEPREFIX" value="C" x="14.61" y="12.68" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C1206" package3d_urn="urn:adsk.eagle:package:26140/1" value="10uF" x="17.25" y="13.7" rot="R270"/>
+<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1nF" x="15.22" y="12.7" rot="R90">
+<attribute name="SPICEPREFIX" value="C" x="15.22" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="L1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="L3225P" package3d_urn="urn:adsk.eagle:package:25930/1" value="120nH" x="14.01" y="6.28"/>
-<element name="L2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="L3225P" package3d_urn="urn:adsk.eagle:package:25930/1" value="120nH" x="13.12" y="15.7"/>
-<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1.9k" x="10.01" y="6.86" rot="R180">
-<attribute name="SPICEPREFIX" value="R" x="10.01" y="6.86" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="L2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="L3225P" package3d_urn="urn:adsk.eagle:package:25930/1" value="120nH" x="13.73" y="15.72"/>
+<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1.9k" x="10.01" y="6.76" rot="R180">
+<attribute name="SPICEPREFIX" value="R" x="10.01" y="6.76" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100" x="10.01" y="4.84">
-<attribute name="SPICEPREFIX" value="R" x="10.01" y="4.84" size="1.778" layer="27" display="off"/>
+<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100" x="10.01" y="4.74">
+<attribute name="SPICEPREFIX" value="R" x="10.01" y="4.74" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U1" library="Amplifier-Sonar-LBR" package="CP_16_4" value="AD8336ACPZ-R7" x="10" y="10">
 <attribute name="MANUFACTURER_PART_NUMBER" value="AD8336ACPZR7" x="10" y="10" size="1.778" layer="27" display="off"/>
@@ -15883,14 +15883,12 @@ design rules under a new name.</description>
 <via x="9.4" y="9.3" extent="1-16" drill="0.26"/>
 <wire x1="9.05" y1="11.8903" x2="9.025" y2="11.8653" width="0.3048" layer="1"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="17.9" y="16.4"/>
-<vertex x="15.8" y="16.4"/>
-<vertex x="15.8" y="17.4"/>
-<vertex x="10.3" y="17.4"/>
-<vertex x="10.3" y="15.2"/>
-<vertex x="9.4" y="14.3"/>
-<vertex x="8.2" y="14.3"/>
-<vertex x="8.2" y="12.4"/>
+<vertex x="18.5" y="11.3"/>
+<vertex x="18.5" y="17"/>
+<vertex x="10.8" y="17"/>
+<vertex x="10.7" y="14.7"/>
+<vertex x="9" y="14.3"/>
+<vertex x="9" y="12.4"/>
 <vertex x="7.2" y="11.6"/>
 <vertex x="7.2" y="8.1"/>
 <vertex x="8.3" y="7.2"/>
@@ -15898,16 +15896,15 @@ design rules under a new name.</description>
 <vertex x="11.3" y="3.6"/>
 <vertex x="11.3" y="2.5"/>
 <vertex x="16.7" y="2.5"/>
-<vertex x="16.7" y="9.9"/>
-<vertex x="17.9" y="11.1"/>
+<vertex x="16.7" y="9.8"/>
 </polygon>
 </signal>
 <signal name="+5V">
 <contactref element="L2" pad="2"/>
 <contactref element="C5" pad="1"/>
-<wire x1="16.65" y1="15.07" x2="16.07" y2="15.21" width="1.016" layer="1"/>
-<wire x1="16.07" y1="15.21" x2="15.21" y2="15.22" width="1.016" layer="1"/>
-<wire x1="15.21" y1="15.22" x2="14.52" y2="15.7" width="1.016" layer="1"/>
+<wire x1="15.13" y1="15.72" x2="15.52" y2="15.3" width="1.016" layer="1"/>
+<wire x1="17.02" y1="15.3" x2="17.25" y2="15.1" width="1.016" layer="1"/>
+<wire x1="15.52" y1="15.3" x2="17.02" y2="15.3" width="1.016" layer="1"/>
 </signal>
 <signal name="-5V">
 <contactref element="L1" pad="2"/>
@@ -15919,7 +15916,7 @@ design rules under a new name.</description>
 <contactref element="U1" pad="PRAO"/>
 <contactref element="U1" pad="VGAI"/>
 <wire x1="11.8653" y1="9.025" x2="10.975" y2="8.1347" width="0.2" layer="1"/>
-<wire x1="10.86" y1="6.86" x2="10.86" y2="7.26" width="0.3048" layer="1"/>
+<wire x1="10.86" y1="6.76" x2="10.86" y2="7.26" width="0.3048" layer="1"/>
 <wire x1="10.86" y1="7.26" x2="11" y2="7.4" width="0.3048" layer="1"/>
 <wire x1="11" y1="7.4" x2="11" y2="8.1097" width="0.3048" layer="1"/>
 <wire x1="11" y1="8.1097" x2="10.975" y2="8.1347" width="0.3048" layer="1"/>
@@ -15939,12 +15936,12 @@ design rules under a new name.</description>
 <contactref element="C4" pad="1"/>
 <contactref element="L2" pad="1"/>
 <contactref element="U1" pad="VPOS"/>
-<wire x1="10.75" y1="13.1" x2="10.975" y2="12.875" width="0.3048" layer="1"/>
-<wire x1="10.975" y1="12.875" x2="10.975" y2="11.8653" width="0.3048" layer="1"/>
-<wire x1="11.72" y1="15.7" x2="11.72" y2="15.32" width="1.016" layer="1"/>
-<wire x1="11.72" y1="15.32" x2="10.8" y2="14.4" width="1.016" layer="1"/>
-<wire x1="10.8" y1="14.4" x2="10.8" y2="13.15" width="1.016" layer="1"/>
-<wire x1="10.8" y1="13.15" x2="10.75" y2="13.1" width="1.016" layer="1"/>
+<wire x1="11.54" y1="13.2" x2="12" y2="14.86" width="1.016" layer="1"/>
+<wire x1="12.72" y1="15.23" x2="12.33" y2="15.72" width="1.016" layer="1"/>
+<wire x1="12" y1="14.86" x2="12.72" y2="15.23" width="1.016" layer="1"/>
+<wire x1="11.54" y1="13.2" x2="11.45" y2="12.75" width="0.4064" layer="1"/>
+<wire x1="10.975" y1="12.275" x2="10.975" y2="11.8653" width="0.4064" layer="1"/>
+<wire x1="11.45" y1="12.75" x2="10.975" y2="12.275" width="0.4064" layer="1"/>
 </signal>
 <signal name="VOUT">
 <contactref element="U1" pad="VOUT"/>
@@ -15952,10 +15949,7 @@ design rules under a new name.</description>
 <signal name="GAIN_NEG">
 <contactref element="C2" pad="1"/>
 <contactref element="U1" pad="GNEG"/>
-<wire x1="12.57" y1="11.83" x2="11.8653" y2="11.1153" width="0.3048" layer="1"/>
 <wire x1="11.8653" y1="11.1153" x2="11.8653" y2="10.975" width="0.3048" layer="1"/>
-<wire x1="12.57" y1="11.83" x2="12.57" y2="11.43" width="0.254" layer="1"/>
-<wire x1="12.57" y1="11.43" x2="12.9" y2="11.1" width="0.254" layer="1"/>
 <via x="12.9" y="11.1" extent="1-16" drill="0.35"/>
 <wire x1="12.9" y1="11.1" x2="13.2" y2="10.8" width="0.254" layer="16"/>
 <wire x1="14.3068" y1="10.8" x2="14.4" y2="10.7068" width="0.254" layer="16"/>
@@ -15963,14 +15957,21 @@ design rules under a new name.</description>
 <wire x1="14.4" y1="10.7068" x2="14.4068" y2="10.7" width="0.254" layer="1"/>
 <wire x1="14.4068" y1="10.7" x2="15" y2="10.7" width="0.254" layer="1"/>
 <wire x1="13.2" y1="10.8" x2="14.3068" y2="10.8" width="0.254" layer="16"/>
+<wire x1="11.8653" y1="10.975" x2="12.775" y2="10.975" width="0.254" layer="1"/>
+<wire x1="12.775" y1="10.975" x2="12.9" y2="11.1" width="0.254" layer="1"/>
+<wire x1="12.9" y1="11.1" x2="13.17" y2="11.37" width="0.254" layer="1"/>
+<wire x1="13.17" y1="11.37" x2="13.2" y2="11.85" width="0.254" layer="1"/>
 </signal>
 <signal name="GAIN_POS">
 <contactref element="C6" pad="1"/>
 <contactref element="U1" pad="GPOS"/>
-<wire x1="14.61" y1="11.83" x2="13.105" y2="10.325" width="0.254" layer="1"/>
-<wire x1="13.105" y1="10.325" x2="11.8653" y2="10.325" width="0.254" layer="1"/>
-<wire x1="13.105" y1="10.325" x2="13.33" y2="10.1" width="0.254" layer="1"/>
+<wire x1="12.905" y1="10.325" x2="11.8653" y2="10.325" width="0.254" layer="1"/>
+<wire x1="12.905" y1="10.325" x2="13.33" y2="10.1" width="0.254" layer="1"/>
 <wire x1="13.33" y1="10.1" x2="15" y2="10.1" width="0.254" layer="1"/>
+<wire x1="12.905" y1="10.325" x2="13.125" y2="10.325" width="0.254" layer="1"/>
+<wire x1="15.18" y1="11.4" x2="15.22" y2="11.85" width="0.254" layer="1"/>
+<wire x1="13.125" y1="10.325" x2="14.2" y2="11.4" width="0.254" layer="1"/>
+<wire x1="14.2" y1="11.4" x2="15.18" y2="11.4" width="0.254" layer="1"/>
 </signal>
 <signal name="INPUT">
 <contactref element="U1" pad="INPP"/>
@@ -15979,11 +15980,11 @@ design rules under a new name.</description>
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="1"/>
 <contactref element="U1" pad="INPN"/>
-<wire x1="9.16" y1="6.86" x2="9.16" y2="7.24" width="0.3048" layer="1"/>
+<wire x1="9.16" y1="6.76" x2="9.16" y2="7.24" width="0.3048" layer="1"/>
 <wire x1="9.16" y1="7.24" x2="9" y2="7.4" width="0.3048" layer="1"/>
 <wire x1="9" y1="7.4" x2="9" y2="8.1097" width="0.3048" layer="1"/>
 <wire x1="9" y1="8.1097" x2="9.025" y2="8.1347" width="0.3048" layer="1"/>
-<wire x1="9.16" y1="4.84" x2="9.16" y2="6.86" width="1.016" layer="1"/>
+<wire x1="9.16" y1="4.74" x2="9.16" y2="6.76" width="1.016" layer="1"/>
 </signal>
 </signals>
 </board>

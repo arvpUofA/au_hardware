@@ -22,8 +22,8 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -158,16 +158,33 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="1.27" y1="27.94" x2="40.64" y2="27.94" x3="20.955" y3="26.67" textsize="1.778" layer="51" unit="inch"/>
-<dimension x1="45.72" y1="73.66" x2="45.72" y2="29.21" x3="48.26" y3="51.435" textsize="1.778" layer="51" unit="inch"/>
+<wire x1="-19.05" y1="-22.86" x2="21.26" y2="-22.86" width="0" layer="20"/>
+<wire x1="21.26" y1="-22.86" x2="21.26" y2="17.77" width="0" layer="20"/>
+<wire x1="21.26" y1="17.77" x2="-19.05" y2="17.77" width="0" layer="20"/>
+<wire x1="-19.05" y1="17.77" x2="-19.05" y2="-22.86" width="0" layer="20"/>
+<dimension x1="-18.288" y1="-19.05" x2="14.732" y2="-19.05" x3="-1.778" y3="-20.32" textsize="1.778" layer="51" unit="inch"/>
+<dimension x1="15.748" y1="15.621" x2="15.875" y2="-17.145" x3="18.35148125" y3="-0.752153125" textsize="1.778" layer="51" unit="inch"/>
 </plain>
 <libraries>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
 <packages>
+<package name="C0603" library_version="1">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 <package name="C1206K" library_version="1">
 <description>&lt;b&gt;Ceramic Chip Capacitor KEMET 1206 Reflow solder&lt;/b&gt;&lt;p&gt;
 Metric Code Size 3216</description>
@@ -180,22 +197,22 @@ Metric Code Size 3216</description>
 <rectangle x1="-1.6" y1="-0.8" x2="-1.1" y2="0.8" layer="51"/>
 <rectangle x1="1.1" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
 </package>
-<package name="M3216" library_version="1">
+<package name="R0603" library_version="1">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-MELF 0.25 W</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="1.143" y1="0.8382" x2="-1.143" y2="0.8382" width="0.1524" layer="51"/>
-<wire x1="1.143" y1="-0.8382" x2="-1.143" y2="-0.8382" width="0.1524" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.9144" x2="-1.1176" y2="0.9144" layer="51"/>
-<rectangle x1="1.1176" y1="-0.9144" x2="1.7018" y2="0.9144" layer="51"/>
-<rectangle x1="-0.3" y1="-0.8001" x2="0.3" y2="0.8001" layer="35"/>
+chip</description>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.889" y="0.889" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 </packages>
 </library>
@@ -230,41 +247,22 @@ MELF 0.25 W</description>
 <text x="-3.81" y="3.175" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="NS7X7">
-<smd name="P$1" x="-3" y="0" dx="1.8" dy="2.4" layer="1"/>
-<smd name="P$2" x="3" y="0" dx="1.8" dy="2.4" layer="1"/>
-<wire x1="-3.5" y1="-3.5" x2="3" y2="-3.5" width="0.127" layer="51"/>
-<wire x1="3" y1="-3.5" x2="3.5" y2="-3" width="0.127" layer="51"/>
-<wire x1="3.5" y1="-3" x2="3.5" y2="3.5" width="0.127" layer="51"/>
-<wire x1="-3" y1="3.5" x2="-3.5" y2="3" width="0.127" layer="51"/>
-<wire x1="-3.5" y1="3" x2="-3.5" y2="-3.5" width="0.127" layer="51"/>
-<wire x1="3.5" y1="3.5" x2="-3" y2="3.5" width="0.127" layer="51"/>
-<wire x1="3.5" y1="3.5" x2="-3" y2="3.5" width="0.2032" layer="21"/>
-<wire x1="-3" y1="3.5" x2="-3.5" y2="3" width="0.2032" layer="21"/>
-<wire x1="-3.5" y1="-3.5" x2="3" y2="-3.5" width="0.2032" layer="21"/>
-<wire x1="3" y1="-3.5" x2="3.5" y2="-3" width="0.2032" layer="21"/>
-<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="-2" width="0.2" layer="21"/>
-<wire x1="-3.5" y1="3" x2="-3.5" y2="2" width="0.2032" layer="21"/>
-<wire x1="3.5" y1="2" x2="3.5" y2="3.5" width="0.2" layer="21"/>
-<wire x1="3.5" y1="-2" x2="3.5" y2="-3" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.83980625" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="2.5" width="0.127" layer="51"/>
-<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
-<text x="0" y="-1.27" size="1.27" layer="51" rot="R90">220</text>
-</package>
-<package name="NS6X6">
-<smd name="P$1" x="-2.1" y="0" dx="1.9" dy="5.1" layer="1"/>
-<smd name="P$2" x="2.1" y="0" dx="1.9" dy="5.1" layer="1"/>
-<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="51"/>
-<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
-<wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="51"/>
-<wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="51"/>
-<wire x1="3" y1="3" x2="-3" y2="3" width="0.2032" layer="21"/>
-<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.2032" layer="21"/>
-<circle x="-2.54" y="0" radius="0.2" width="0.4064" layer="51"/>
-<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<package name="NS5X5">
+<smd name="P$1" x="-1.8" y="0" dx="1.5" dy="4" layer="1"/>
+<smd name="P$2" x="1.8" y="0" dx="1.5" dy="4" layer="1"/>
+<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2" x2="2" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2" x2="2.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2" x2="2" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2" y1="-2.5" x2="-2.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2" x2="-2.5" y2="2" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="2" x2="-2" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.2032" layer="21"/>
+<circle x="-1.778" y="0" radius="0.2" width="0.4064" layer="51"/>
+<text x="-2.54" y="3.175" size="1.016" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-4.445" size="1.016" layer="27">&gt;VALUE</text>
 </package>
 <package name="10-WFDFN">
 <smd name="P$1" x="-1.4125" y="1" dx="0.675" dy="0.25" layer="1"/>
@@ -319,7 +317,7 @@ MELF 0.25 W</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default *">
+<designrules name="JLCPCB4Layer">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -334,9 +332,11 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<param name="layerSetup" value="(((1*2)*3)*4)"/>
-<param name="mtCopper" value="0.035mm 0.0175mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="0.1702mm 47mil 0.1702mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<description language="zh">&lt;b&gt;Seeed Studio EAGLE Design Rules&lt;/b&gt;
+</description>
+<param name="layerSetup" value="(1*2*15*16)"/>
+<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
+<param name="mtIsolate" value="0.1702mm 47mil 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.1702mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
@@ -346,7 +346,7 @@ design rules under a new name.</description>
 <param name="mdSmdPad" value="0mil"/>
 <param name="mdSmdVia" value="0mil"/>
 <param name="mdSmdSmd" value="0mil"/>
-<param name="mdViaViaSameLayer" value="6mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="10mil"/>
 <param name="mdDrill" value="10mil"/>
@@ -378,7 +378,7 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="-1"/>
+<param name="psFirst" value="0"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
@@ -396,7 +396,7 @@ design rules under a new name.</description>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="1"/>
+<param name="checkRestrict" value="0"/>
 <param name="checkStop" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
@@ -498,40 +498,100 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="10uF" x="6.985" y="43.053" rot="R270"/>
-<element name="C10" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="0.33pF" x="13.97" y="44.45" rot="R90"/>
-<element name="C11" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="4.7uF" x="10.033" y="64.77" rot="R90"/>
-<element name="C12" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="1uF" x="36.068" y="60.833" rot="R90"/>
-<element name="C13" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="0.1uF" x="19.939" y="44.069" rot="R270"/>
-<element name="C14" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="68pF" x="25.781" y="44.323" rot="R270"/>
-<element name="C15" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="10uF" x="29.21" y="50.8" rot="R90"/>
-<element name="C2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="10uF" x="24.13" y="35.56"/>
-<element name="C3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="10uF" x="6.35" y="52.07" rot="R180"/>
-<element name="C4" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="10uF" x="14.986" y="35.052" rot="R270"/>
-<element name="C5" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="10uF" x="26.797" y="69.088" rot="R90"/>
-<element name="C6" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="1uF" x="33.147" y="40.132"/>
-<element name="C7" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="10uF" x="19.05" y="59.69" rot="R90"/>
-<element name="C8" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="0.33uF" x="22.86" y="64.77" rot="R90"/>
-<element name="C9" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="0.33uF" x="15.24" y="64.77" rot="R90"/>
-<element name="D3" library="Moira" package="DO-216AA" value="MBRM120" x="35.941" y="70.485" rot="R270"/>
-<element name="D4" library="Moira" package="DO-216AA" value="MBRM120" x="6.858" y="61.976" rot="R270"/>
-<element name="L4" library="Moira" package="NS4.9X4.9" value="2.2uH" x="10.668" y="57.785" rot="R180"/>
-<element name="L5" library="Moira" package="NS7X7" value="10uH" x="29.083" y="58.674"/>
-<element name="L6" library="Moira" package="NS6X6" value="15uH" x="31.75" y="66.04" rot="R180"/>
-<element name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="49.9kOhm" x="3.683" y="43.434" rot="R270"/>
-<element name="R10" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="15kOhm" x="21.971" y="49.403" rot="R180"/>
-<element name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="33.2kOhm" x="24.13" y="31.75"/>
-<element name="R3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="150kOhm" x="35.56" y="43.18" rot="R180"/>
-<element name="R4" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="47.5kOhm" x="30.48" y="43.18" rot="R180"/>
-<element name="R5" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="4.7kOhm" x="22.86" y="59.69" rot="R270"/>
-<element name="R6" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="4.7kOhm" x="15.24" y="59.69" rot="R270"/>
-<element name="R7" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="90.9kOhm" x="16.51" y="44.45" rot="R270"/>
-<element name="R8" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="15kOhm" x="15.24" y="49.53"/>
-<element name="R9" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M3216" value="105kOhm" x="23.241" y="44.323" rot="R90"/>
-<element name="U1" library="Moira" package="10-WFDFN" value="LT3471'" x="19.05" y="53.34" rot="R90"/>
-<element name="U2" library="Moira" package="10-WFDFN" value="LT3045" x="7.62" y="48.26" rot="R270"/>
-<element name="U3" library="Moira" package="10-WFDFN" value="LT3045" x="19.05" y="35.56"/>
-<element name="U4" library="Moira" package="8-SOIC" value="LT1175" x="35.56" y="48.26"/>
+<element name="C1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="10uF" x="-13.716" y="-9.271" smashed="yes" rot="R270">
+<attribute name="NAME" x="-11.854" y="-9.068" size="1.016" layer="25" rot="R270"/>
+</element>
+<element name="C10" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="0.33pF" x="-5.207" y="-1.778" smashed="yes">
+<attribute name="NAME" x="-6.985" y="-3.175" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="C11" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="4.7uF" x="-8.89" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="-10.287" y="1.905" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="C12" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="1uF" x="7.747" y="2.921" smashed="yes">
+<attribute name="NAME" x="6.477" y="3.556" size="1.27" layer="25"/>
+</element>
+<element name="C13" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="0.1uF" x="0.381" y="-4.826" smashed="yes" rot="R270">
+<attribute name="NAME" x="-1.397" y="-9.271" size="1.27" layer="25"/>
+</element>
+<element name="C14" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="68pF" x="4.826" y="0.381" smashed="yes">
+<attribute name="NAME" x="3.175" y="1.524" size="1.27" layer="25"/>
+</element>
+<element name="C15" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="10uF" x="4.699" y="-4.318" smashed="yes">
+<attribute name="NAME" x="2.413" y="-6.985" size="1.27" layer="25"/>
+</element>
+<element name="C2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C1206K" value="10uF" x="-5.842" y="-13.335" smashed="yes" rot="R270">
+<attribute name="NAME" x="-4.107" y="-13.386" size="1.016" layer="25" rot="R270"/>
+</element>
+<element name="C3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="4.7uF" x="-12.192" y="-0.635" smashed="yes" rot="R180">
+<attribute name="NAME" x="-11.43" y="1.778" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="C4" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="4.7uF" x="-8.509" y="-6.604" smashed="yes" rot="R270">
+<attribute name="NAME" x="-7.112" y="-9.144" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="C5" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="10uF" x="10.668" y="11.557" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.081" y="14.859" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="C6" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="1uF" x="6.731" y="-12.192" smashed="yes">
+<attribute name="NAME" x="5.842" y="-14.732" size="1.27" layer="25"/>
+</element>
+<element name="C7" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="10uF" x="0" y="10.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="-0.762" y="9.271" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="C8" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="0.33uF" x="5.969" y="13.335" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.398" y="14.986" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="C9" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="C0603" value="0.33uF" x="-5.969" y="13.335" smashed="yes" rot="R90">
+<attribute name="NAME" x="-7.112" y="12.446" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="D3" library="Moira" package="DO-216AA" value="MBRM120" x="10.922" y="1.397" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.097" y="0.127" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="D4" library="Moira" package="DO-216AA" value="MBRM120" x="-5.461" y="1.27" smashed="yes">
+<attribute name="NAME" x="-10.033" y="0" size="1.27" layer="25"/>
+</element>
+<element name="L4" library="Moira" package="NS4.9X4.9" value="2.2uH" x="-4.445" y="6.477" smashed="yes" rot="R270">
+<attribute name="NAME" x="-8.509" y="8.382" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="L5" library="Moira" package="NS5X5" value="10uH" x="4.191" y="6.731" smashed="yes" rot="R270">
+<attribute name="NAME" x="4.826" y="7.747" size="1.016" layer="25"/>
+</element>
+<element name="L6" library="Moira" package="NS5X5" value="15uH" x="10.668" y="6.858" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.7" y="5.715" size="1.016" layer="25" rot="R180"/>
+</element>
+<element name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="49.9kOhm" x="-16.764" y="-7.112" smashed="yes" rot="R270">
+<attribute name="NAME" x="-17.272" y="-3.429" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="R10" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="15kOhm" x="1.27" y="-2.032" smashed="yes" rot="R180">
+<attribute name="NAME" x="2.159" y="-1.651" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="33.2kOhm" x="-8.636" y="-11.049" smashed="yes" rot="R270">
+<attribute name="NAME" x="-8.89" y="-13.97" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="R3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="150kOhm" x="10.922" y="-9.906" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.859" y="-9.398" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="R4" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="47.5kOhm" x="6.731" y="-9.906" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.604" y="-7.493" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="R5" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="4.7kOhm" x="3.81" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="1.651" y="13.335" size="1.27" layer="25"/>
+</element>
+<element name="R6" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="4.7kOhm" x="-3.81" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="-6.858" y="9.906" size="1.27" layer="25"/>
+</element>
+<element name="R7" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="90.9kOhm" x="-5.207" y="-3.937" smashed="yes" rot="R180">
+<attribute name="NAME" x="-4.191" y="-5.08" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="R8" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="15kOhm" x="-2.159" y="-2.667" smashed="yes" rot="R90">
+<attribute name="NAME" x="-3.175" y="-6.731" size="1.27" layer="25"/>
+</element>
+<element name="R9" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0603" value="105kOhm" x="4.826" y="-1.778" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.763" y="-1.27" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="U1" library="Moira" package="10-WFDFN" value="LT3471'" x="0" y="1.27" rot="R90"/>
+<element name="U2" library="Moira" package="10-WFDFN" value="LT3045" x="-13.081" y="-4.064" rot="R270"/>
+<element name="U3" library="Moira" package="10-WFDFN" value="LT3045" x="-5.08" y="-8.128" rot="R270"/>
+<element name="U4" library="Moira" package="8-SOIC" value="LT1175" x="10.541" y="-5.969"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -558,225 +618,301 @@ design rules under a new name.</description>
 <contactref element="C13" pad="2"/>
 <contactref element="U1" pad="P$5"/>
 <contactref element="C15" pad="1"/>
-<wire x1="7.62" y1="46.8475" x2="7.62" y2="48.26" width="0.1524" layer="1"/>
-<wire x1="6.62" y1="49.6725" x2="6.62" y2="49.26" width="0.1524" layer="1"/>
-<wire x1="6.62" y1="49.26" x2="7.62" y2="48.26" width="0.1524" layer="1"/>
-<wire x1="17.6375" y1="34.56" x2="17.7331" y2="34.6556" width="0.1524" layer="1"/>
-<wire x1="17.7331" y1="34.6556" x2="18.09073125" y2="34.6556" width="0.1524" layer="1"/>
-<wire x1="18.99513125" y1="35.56" x2="19.05" y2="35.56" width="0.1524" layer="1"/>
-<wire x1="18.09073125" y1="34.6556" x2="18.99513125" y2="35.56" width="0.1524" layer="1"/>
-<wire x1="20.4625" y1="35.56" x2="19.05" y2="35.56" width="0.1524" layer="1"/>
-<wire x1="20.05" y1="52.34" x2="20.05" y2="51.9275" width="0.1524" layer="1"/>
-<wire x1="20.05" y1="52.34" x2="19.05" y2="53.34" width="0.1524" layer="1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="8.636" y="68.199"/>
-<vertex x="8.636" y="65.024"/>
-<vertex x="11.43" y="65.024"/>
-<vertex x="11.43" y="68.199"/>
+<wire x1="1" y1="0.27" x2="1" y2="-0.1425" width="0.1524" layer="1"/>
+<wire x1="1" y1="0.27" x2="0" y2="1.27" width="0.1524" layer="1"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-0.762" y="13.081"/>
+<vertex x="-1.016" y="12.827"/>
+<vertex x="-1.016" y="10.795"/>
+<vertex x="-0.762" y="10.541"/>
+<vertex x="0.762" y="10.541"/>
+<vertex x="1.016" y="10.795"/>
+<vertex x="1.016" y="12.827"/>
+<vertex x="0.762" y="13.081"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="17.653" y="63.754"/>
-<vertex x="17.653" y="60.071"/>
-<vertex x="20.447" y="60.071"/>
-<vertex x="20.447" y="63.754"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-14.986" y="0.127"/>
+<vertex x="-14.986" y="-1.397"/>
+<vertex x="-14.732" y="-1.651"/>
+<vertex x="-12.827" y="-1.651"/>
+<vertex x="-12.573" y="-1.397"/>
+<vertex x="-12.573" y="0.127"/>
+<vertex x="-12.827" y="0.381"/>
+<vertex x="-14.732" y="0.381"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="25.4" y="73.025"/>
-<vertex x="25.4" y="69.469"/>
-<vertex x="28.194" y="69.469"/>
-<vertex x="28.194" y="73.025"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-7.747" y="-6.985"/>
+<vertex x="-9.271" y="-6.985"/>
+<vertex x="-9.525" y="-7.239"/>
+<vertex x="-9.525" y="-9.017"/>
+<vertex x="-9.271" y="-9.271"/>
+<vertex x="-7.747" y="-9.271"/>
+<vertex x="-7.493" y="-9.017"/>
+<vertex x="-7.493" y="-7.239"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="32.131" y="72.898"/>
-<vertex x="32.131" y="69.723"/>
-<vertex x="37.592" y="69.723"/>
-<vertex x="37.592" y="72.898"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="4.445" y="-5.08"/>
+<vertex x="4.445" y="-3.556"/>
+<vertex x="4.191" y="-3.302"/>
+<vertex x="2.413" y="-3.302"/>
+<vertex x="2.032" y="-3.683"/>
+<vertex x="2.032" y="-4.953"/>
+<vertex x="2.413" y="-5.334"/>
+<vertex x="4.191" y="-5.334"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="2.54" y="53.213"/>
-<vertex x="2.54" y="50.673"/>
-<vertex x="5.969" y="50.673"/>
-<vertex x="5.969" y="53.213"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-15.113" y="-9.906"/>
+<vertex x="-15.113" y="-12.7"/>
+<vertex x="-14.859" y="-12.954"/>
+<vertex x="-12.573" y="-12.954"/>
+<vertex x="-12.319" y="-12.7"/>
+<vertex x="-12.319" y="-9.906"/>
+<vertex x="-12.573" y="-9.652"/>
+<vertex x="-14.859" y="-9.652"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="16.383" y="34.671"/>
-<vertex x="12.319" y="34.671"/>
-<vertex x="12.319" y="32.385"/>
-<vertex x="16.383" y="32.385"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="30.734" y="50.419"/>
-<vertex x="27.686" y="50.419"/>
-<vertex x="27.686" y="48.006"/>
-<vertex x="28.321" y="47.498"/>
-<vertex x="30.099" y="47.498"/>
-<vertex x="30.734" y="48.133"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="5.588" y="42.672"/>
-<vertex x="5.588" y="39.37"/>
-<vertex x="8.382" y="39.37"/>
-<vertex x="8.382" y="42.672"/>
-</polygon>
-<via x="6.985" y="40.005" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="3.302" y="52.07" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="13.081" y="33.401" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="29.21" y="48.006" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="10.033" y="67.818" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="19.05" y="62.992" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="26.797" y="72.39" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="33.274" y="71.501" extent="1-2" drill="0.35" shape="octagon"/>
+<via x="-13.716" y="-12.319" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="-14.224" y="-0.635" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="-8.509" y="-8.636" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="2.54" y="-4.318" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="0" y="12.446" extent="1-16" drill="0.35" shape="octagon"/>
 <polygon width="0.1524" layer="2">
-<vertex x="1.27" y="73.66"/>
-<vertex x="40.64" y="73.66"/>
-<vertex x="40.64" y="29.21"/>
-<vertex x="1.27" y="29.21"/>
+<vertex x="-18.288" y="15.494"/>
+<vertex x="14.478" y="15.621"/>
+<vertex x="14.605" y="-17.145"/>
+<vertex x="-18.161" y="-17.145"/>
+</polygon>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-4.445" y="-13.716"/>
+<vertex x="-4.445" y="-16.51"/>
+<vertex x="-4.699" y="-16.764"/>
+<vertex x="-6.985" y="-16.764"/>
+<vertex x="-7.239" y="-16.51"/>
+<vertex x="-7.239" y="-13.716"/>
+<vertex x="-6.985" y="-13.462"/>
+<vertex x="-4.699" y="-13.462"/>
+</polygon>
+<via x="-5.842" y="-16.129" extent="1-16" drill="0.35" shape="octagon"/>
+<polygon width="0.1524" layer="1">
+<vertex x="-7.62" y="-11.303"/>
+<vertex x="-7.874" y="-11.049"/>
+<vertex x="-9.398" y="-11.049"/>
+<vertex x="-9.652" y="-11.303"/>
+<vertex x="-9.652" y="-13.462"/>
+<vertex x="-9.398" y="-13.716"/>
+<vertex x="-7.874" y="-13.716"/>
+<vertex x="-7.62" y="-13.462"/>
+</polygon>
+<via x="-8.636" y="-13.081" extent="1-16" drill="0.35" shape="octagon"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-2.54" y="2.032"/>
+<vertex x="-2.54" y="0.508"/>
+<vertex x="-2.286" y="0.254"/>
+<vertex x="2.413" y="0.254"/>
+<vertex x="2.667" y="0.508"/>
+<vertex x="2.667" y="2.032"/>
+<vertex x="2.413" y="2.286"/>
+<vertex x="-2.286" y="2.286"/>
+</polygon>
+<via x="-2.032" y="1.397" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="2.032" y="1.397" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="-2.159" y="-4.826" extent="1-16" drill="0.35" shape="octagon"/>
+<polygon width="0.1524" layer="1">
+<vertex x="-3.048" y="-3.048"/>
+<vertex x="-1.27" y="-3.048"/>
+<vertex x="-1.27" y="-5.334"/>
+<vertex x="-3.048" y="-5.334"/>
 </polygon>
 <polygon width="0.1524" layer="1">
-<vertex x="24.511" y="37.084"/>
-<vertex x="27.813" y="37.084"/>
-<vertex x="27.813" y="34.036"/>
-<vertex x="24.511" y="34.036"/>
+<vertex x="-6.858" y="14.859"/>
+<vertex x="-6.858" y="13.843"/>
+<vertex x="-6.604" y="13.589"/>
+<vertex x="-3.81" y="13.589"/>
+<vertex x="-3.556" y="13.843"/>
+<vertex x="-3.556" y="14.859"/>
+<vertex x="-3.81" y="15.113"/>
+<vertex x="-6.604" y="15.113"/>
 </polygon>
-<via x="27.178" y="35.56" extent="1-2" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="1">
-<vertex x="24.384" y="33.147"/>
-<vertex x="24.384" y="30.226"/>
-<vertex x="27.94" y="30.226"/>
-<vertex x="27.94" y="33.147"/>
+<via x="-4.191" y="14.351" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="-3.048" y="-8.128" extent="1-16" drill="0.35" shape="octagon"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-2.667" y="-7.239"/>
+<vertex x="-6.096" y="-7.239"/>
+<vertex x="-6.35" y="-7.493"/>
+<vertex x="-6.35" y="-8.763"/>
+<vertex x="-6.096" y="-9.017"/>
+<vertex x="-2.667" y="-9.017"/>
+<vertex x="-2.413" y="-8.763"/>
+<vertex x="-2.413" y="-7.493"/>
 </polygon>
-<via x="27.178" y="31.75" extent="1-2" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="1">
-<vertex x="16.51" y="54.356"/>
-<vertex x="16.51" y="52.324"/>
-<vertex x="21.717" y="52.324"/>
-<vertex x="21.717" y="54.356"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-14.351" y="-3.429"/>
+<vertex x="-14.351" y="-4.699"/>
+<vertex x="-14.097" y="-4.953"/>
+<vertex x="-10.795" y="-4.953"/>
+<vertex x="-10.541" y="-4.699"/>
+<vertex x="-10.541" y="-3.429"/>
+<vertex x="-10.795" y="-3.175"/>
+<vertex x="-14.097" y="-3.175"/>
 </polygon>
-<via x="17.018" y="53.467" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="21.082" y="53.467" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="13.716" y="51.562" extent="1-2" drill="0.35" shape="octagon"/>
+<via x="-11.049" y="-4.064" extent="1-16" drill="0.35" shape="octagon"/>
 <polygon width="0.1524" layer="1">
-<vertex x="14.986" y="52.197"/>
-<vertex x="14.986" y="48.006"/>
-<vertex x="12.446" y="48.006"/>
-<vertex x="12.446" y="52.197"/>
+<vertex x="-0.508" y="-5.08"/>
+<vertex x="-0.508" y="-7.366"/>
+<vertex x="1.27" y="-7.366"/>
+<vertex x="1.27" y="-5.08"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="13.843" y="68.834"/>
-<vertex x="13.843" y="65.151"/>
-<vertex x="16.637" y="65.151"/>
-<vertex x="16.637" y="68.834"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="21.463" y="68.834"/>
-<vertex x="21.463" y="65.151"/>
-<vertex x="24.257" y="65.151"/>
-<vertex x="24.257" y="68.834"/>
-</polygon>
-<via x="15.24" y="68.072" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="22.86" y="68.072" extent="1-2" drill="0.35" shape="octagon"/>
-<via x="19.05" y="37.592" extent="1-2" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="1">
-<vertex x="18.161" y="38.227"/>
-<vertex x="18.161" y="34.29"/>
-<vertex x="19.939" y="34.29"/>
-<vertex x="19.939" y="38.227"/>
+<via x="0.381" y="-6.985" extent="1-16" drill="0.35" shape="octagon"/>
+<polygon width="0.1524" layer="16" rank="2">
+<vertex x="-18.288" y="15.494"/>
+<vertex x="-18.288" y="-17.145"/>
+<vertex x="14.605" y="-17.145"/>
+<vertex x="14.478" y="15.621"/>
 </polygon>
 <polygon width="0.1524" layer="1">
-<vertex x="6.35" y="49.149"/>
-<vertex x="6.35" y="47.371"/>
-<vertex x="10.16" y="47.371"/>
-<vertex x="10.16" y="49.149"/>
+<vertex x="-17.78" y="-7.366"/>
+<vertex x="-17.78" y="-9.525"/>
+<vertex x="-17.526" y="-9.779"/>
+<vertex x="-16.002" y="-9.779"/>
+<vertex x="-15.748" y="-9.525"/>
+<vertex x="-15.748" y="-7.366"/>
+<vertex x="-16.002" y="-7.112"/>
+<vertex x="-17.526" y="-7.112"/>
 </polygon>
-<via x="9.652" y="48.26" extent="1-2" drill="0.35" shape="octagon"/>
+<via x="-16.764" y="-9.144" extent="1-16" drill="0.35" shape="octagon"/>
 <polygon width="0.1524" layer="1">
-<vertex x="18.542" y="43.815"/>
-<vertex x="18.542" y="40.132"/>
-<vertex x="21.336" y="40.132"/>
-<vertex x="21.336" y="43.815"/>
+<vertex x="4.191" y="15.113"/>
+<vertex x="3.937" y="14.859"/>
+<vertex x="3.937" y="13.843"/>
+<vertex x="4.191" y="13.589"/>
+<vertex x="6.858" y="13.589"/>
+<vertex x="7.112" y="13.843"/>
+<vertex x="7.112" y="14.859"/>
+<vertex x="6.858" y="15.113"/>
 </polygon>
-<via x="19.939" y="41.021" extent="1-2" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="4">
-<vertex x="1.27" y="73.66"/>
-<vertex x="1.27" y="29.21"/>
-<vertex x="40.64" y="29.21"/>
-<vertex x="40.64" y="73.66"/>
+<via x="4.572" y="14.351" extent="1-16" drill="0.35" shape="octagon"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="13.208" y="12.065"/>
+<vertex x="13.208" y="13.081"/>
+<vertex x="12.954" y="13.335"/>
+<vertex x="8.382" y="13.335"/>
+<vertex x="8.128" y="13.081"/>
+<vertex x="8.128" y="12.065"/>
+<vertex x="8.382" y="11.811"/>
+<vertex x="12.954" y="11.811"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="2.286" y="43.307"/>
-<vertex x="2.286" y="39.497"/>
-<vertex x="5.08" y="39.497"/>
-<vertex x="5.08" y="43.307"/>
+<via x="8.89" y="12.573" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="12.446" y="12.573" extent="1-16" drill="0.35" shape="octagon"/>
+<wire x1="-5.08" y1="-9.5405" x2="-5.08" y2="-8.128" width="0.254" layer="1"/>
+<wire x1="-5.08" y1="-8.128" x2="-6.08" y2="-7.128" width="0.254" layer="1"/>
+<wire x1="-6.08" y1="-7.128" x2="-6.08" y2="-6.7155" width="0.254" layer="1"/>
+<wire x1="-13.081" y1="-5.4765" x2="-13.081" y2="-4.064" width="0.254" layer="1"/>
+<wire x1="-13.081" y1="-4.064" x2="-14.081" y2="-3.064" width="0.254" layer="1"/>
+<wire x1="-14.081" y1="-3.064" x2="-14.081" y2="-2.6515" width="0.254" layer="1"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-9.525" y="5.715"/>
+<vertex x="-8.255" y="5.715"/>
+<vertex x="-8.001" y="5.461"/>
+<vertex x="-8.001" y="3.556"/>
+<vertex x="-8.255" y="3.302"/>
+<vertex x="-9.525" y="3.302"/>
+<vertex x="-9.779" y="3.556"/>
+<vertex x="-9.779" y="5.461"/>
 </polygon>
-<via x="3.683" y="40.259" extent="1-2" drill="0.35" shape="octagon"/>
+<via x="-8.89" y="5.207" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="10.922" y="-1.143" extent="1-16" drill="0.35" shape="octagon"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="9.271" y="1.905"/>
+<vertex x="9.652" y="2.159"/>
+<vertex x="12.319" y="2.159"/>
+<vertex x="12.573" y="1.905"/>
+<vertex x="12.573" y="-1.524"/>
+<vertex x="12.319" y="-1.778"/>
+<vertex x="9.525" y="-1.778"/>
+<vertex x="9.271" y="-1.524"/>
+</polygon>
+<via x="-0.762" y="1.397" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="0.508" y="1.397" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="-12.319" y="-4.064" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="-13.589" y="-4.064" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="-4.318" y="-8.128" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="-5.588" y="-8.128" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="9.652" y="-1.143" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="12.192" y="-1.143" extent="1-16" drill="0.35" shape="octagon"/>
 </signal>
 <signal name="5V">
 <contactref element="U2" pad="P$10"/>
 <contactref element="C1" pad="1"/>
 <contactref element="U2" pad="P$9"/>
-<polygon width="0.1524" layer="1">
-<vertex x="11.557" y="46.99"/>
-<vertex x="8.001" y="46.99"/>
-<vertex x="8.001" y="45.72"/>
-<vertex x="5.461" y="45.72"/>
-<vertex x="5.461" y="43.434"/>
-<vertex x="11.557" y="43.434"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-10.414" y="-5.588"/>
+<vertex x="-10.668" y="-5.334"/>
+<vertex x="-12.7" y="-5.334"/>
+<vertex x="-12.7" y="-6.35"/>
+<vertex x="-12.954" y="-6.604"/>
+<vertex x="-14.986" y="-6.604"/>
+<vertex x="-15.24" y="-6.858"/>
+<vertex x="-15.24" y="-8.636"/>
+<vertex x="-14.986" y="-8.89"/>
+<vertex x="-12.065" y="-8.89"/>
+<vertex x="-11.811" y="-9.144"/>
+<vertex x="-11.811" y="-12.7"/>
+<vertex x="-11.557" y="-12.954"/>
+<vertex x="-10.668" y="-12.954"/>
+<vertex x="-10.414" y="-12.7"/>
 </polygon>
 </signal>
 <signal name="N$6">
 <contactref element="U2" pad="P$7"/>
 <contactref element="R1" pad="1"/>
-<wire x1="3.683" y1="44.834" x2="4.95" y2="46.101" width="0.1524" layer="1"/>
-<wire x1="6.858" y1="46.101" x2="7.12" y2="46.363" width="0.1524" layer="1"/>
-<wire x1="7.12" y1="46.363" x2="7.12" y2="46.8475" width="0.1524" layer="1"/>
-<wire x1="4.95" y1="46.101" x2="6.858" y2="46.101" width="0.1524" layer="1"/>
+<wire x1="-16.764" y1="-6.262" x2="-13.882" y2="-6.262" width="0.254" layer="1"/>
+<wire x1="-13.882" y1="-6.262" x2="-13.589" y2="-5.969" width="0.254" layer="1"/>
+<wire x1="-13.589" y1="-5.969" x2="-13.589" y2="-5.4845" width="0.254" layer="1"/>
+<wire x1="-13.589" y1="-5.4845" x2="-13.581" y2="-5.4765" width="0.254" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="U3" pad="P$10"/>
 <contactref element="C2" pad="1"/>
 <contactref element="U3" pad="P$9"/>
-<polygon width="0.1524" layer="1">
-<vertex x="20.32" y="39.497"/>
-<vertex x="20.32" y="35.941"/>
-<vertex x="21.59" y="35.941"/>
-<vertex x="21.59" y="33.401"/>
-<vertex x="23.876" y="33.401"/>
-<vertex x="23.876" y="39.497"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-2.413" y="-9.652"/>
+<vertex x="-2.667" y="-9.398"/>
+<vertex x="-4.699" y="-9.398"/>
+<vertex x="-4.699" y="-10.414"/>
+<vertex x="-4.953" y="-10.668"/>
+<vertex x="-6.985" y="-10.668"/>
+<vertex x="-7.239" y="-10.922"/>
+<vertex x="-7.239" y="-12.7"/>
+<vertex x="-6.985" y="-12.954"/>
+<vertex x="-4.318" y="-12.954"/>
+<vertex x="-4.064" y="-13.208"/>
+<vertex x="-4.064" y="-16.51"/>
+<vertex x="-3.81" y="-16.764"/>
+<vertex x="-2.667" y="-16.764"/>
+<vertex x="-2.413" y="-16.51"/>
 </polygon>
 </signal>
 <signal name="N$4">
 <contactref element="U3" pad="P$7"/>
 <contactref element="R2" pad="1"/>
-<wire x1="22.73" y1="31.75" x2="21.209" y2="33.271" width="0.1524" layer="1"/>
-<wire x1="21.209" y1="33.271" x2="21.209" y2="34.671" width="0.1524" layer="1"/>
-<wire x1="21.209" y1="34.671" x2="21.0794" y2="34.8006" width="0.1524" layer="1"/>
-<wire x1="21.0794" y1="34.8006" x2="21.0794" y2="34.80073125" width="0.1524" layer="1"/>
-<wire x1="21.0794" y1="34.80073125" x2="20.82013125" y2="35.06" width="0.1524" layer="1"/>
-<wire x1="20.82013125" y1="35.06" x2="20.4625" y2="35.06" width="0.1524" layer="1"/>
+<wire x1="-8.636" y1="-10.199" x2="-5.754" y2="-10.199" width="0.254" layer="1"/>
+<wire x1="-5.58" y1="-10.025" x2="-5.58" y2="-9.5405" width="0.254" layer="1"/>
+<wire x1="-5.754" y1="-10.199" x2="-5.58" y2="-10.025" width="0.254" layer="1"/>
 </signal>
 <signal name="-5V">
 <contactref element="U4" pad="P$3"/>
 <contactref element="R4" pad="2"/>
 <contactref element="C6" pad="1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="27.94" y="44.704"/>
-<vertex x="27.94" y="38.735"/>
-<vertex x="32.893" y="38.735"/>
-<vertex x="32.893" y="41.275"/>
-<vertex x="30.226" y="41.275"/>
-<vertex x="30.226" y="44.704"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="33.528" y="47.879"/>
-<vertex x="31.242" y="47.879"/>
-<vertex x="29.972" y="46.609"/>
-<vertex x="28.575" y="45.339"/>
-<vertex x="27.94" y="44.704"/>
-<vertex x="27.94" y="41.91"/>
-<vertex x="30.353" y="42.037"/>
-<vertex x="30.353" y="46.101"/>
-<vertex x="31.623" y="47.371"/>
-<vertex x="33.528" y="47.371"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="8.509" y="-6.35"/>
+<vertex x="6.223" y="-6.35"/>
+<vertex x="3.302" y="-7.62"/>
+<vertex x="3.302" y="-12.954"/>
+<vertex x="3.556" y="-13.208"/>
+<vertex x="6.604" y="-13.208"/>
+<vertex x="6.858" y="-12.954"/>
+<vertex x="6.858" y="-7.112"/>
+<vertex x="7.112" y="-6.858"/>
+<vertex x="8.509" y="-6.858"/>
 </polygon>
 </signal>
 <signal name="N$9">
@@ -784,12 +920,10 @@ design rules under a new name.</description>
 <contactref element="R3" pad="2"/>
 <contactref element="R4" pad="1"/>
 <polygon width="0.1524" layer="1">
-<vertex x="30.734" y="41.656"/>
-<vertex x="35.433" y="41.656"/>
-<vertex x="35.433" y="46.99"/>
-<vertex x="31.877" y="46.99"/>
-<vertex x="31.877" y="44.704"/>
-<vertex x="30.734" y="44.704"/>
+<vertex x="7.239" y="-10.922"/>
+<vertex x="10.414" y="-10.922"/>
+<vertex x="10.414" y="-7.239"/>
+<vertex x="7.239" y="-7.239"/>
 </polygon>
 </signal>
 <signal name="N$10">
@@ -797,21 +931,18 @@ design rules under a new name.</description>
 <contactref element="U4" pad="P$5"/>
 <contactref element="C6" pad="2"/>
 <polygon width="0.1524" layer="1">
-<vertex x="35.56" y="41.275"/>
-<vertex x="35.814" y="41.529"/>
-<vertex x="35.814" y="44.323"/>
-<vertex x="37.211" y="45.72"/>
-<vertex x="37.211" y="46.99"/>
-<vertex x="39.116" y="46.99"/>
-<vertex x="39.116" y="45.72"/>
-<vertex x="38.1" y="44.45"/>
-<vertex x="38.1" y="41.91"/>
-<vertex x="37.846" y="41.656"/>
-<vertex x="36.703" y="41.656"/>
-<vertex x="35.814" y="40.513"/>
-<vertex x="35.814" y="38.735"/>
-<vertex x="33.401" y="38.735"/>
-<vertex x="33.401" y="41.275"/>
+<vertex x="10.541" y="-11.303"/>
+<vertex x="10.795" y="-11.049"/>
+<vertex x="10.795" y="-9.017"/>
+<vertex x="12.192" y="-8.509"/>
+<vertex x="12.192" y="-7.239"/>
+<vertex x="14.097" y="-7.239"/>
+<vertex x="14.097" y="-8.89"/>
+<vertex x="12.7" y="-9.779"/>
+<vertex x="12.7" y="-11.049"/>
+<vertex x="10.541" y="-13.081"/>
+<vertex x="7.239" y="-13.081"/>
+<vertex x="7.239" y="-11.303"/>
 </polygon>
 </signal>
 <signal name="SS2">
@@ -819,143 +950,73 @@ design rules under a new name.</description>
 <contactref element="C8" pad="1"/>
 <contactref element="R5" pad="1"/>
 <polygon width="0.1524" layer="1">
-<vertex x="21.336" y="64.516"/>
-<vertex x="21.336" y="59.817"/>
-<vertex x="24.257" y="59.817"/>
-<vertex x="24.257" y="64.516"/>
+<vertex x="1.651" y="12.954"/>
+<vertex x="1.651" y="11.811"/>
+<vertex x="1.905" y="11.557"/>
+<vertex x="6.731" y="11.557"/>
+<vertex x="6.985" y="11.811"/>
+<vertex x="6.985" y="12.954"/>
+<vertex x="6.731" y="13.208"/>
+<vertex x="1.905" y="13.208"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="20.193" y="56.134"/>
-<vertex x="19.431" y="56.134"/>
-<vertex x="19.431" y="55.118"/>
-<vertex x="20.193" y="55.118"/>
-</polygon>
-<via x="19.812" y="55.753" extent="1-3" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="3">
-<vertex x="25.781" y="62.484"/>
-<vertex x="25.781" y="61.722"/>
-<vertex x="24.003" y="59.69"/>
-<vertex x="21.59" y="59.69"/>
-<vertex x="20.193" y="58.166"/>
-<vertex x="20.193" y="56.261"/>
-<vertex x="20.32" y="56.134"/>
-<vertex x="20.32" y="55.499"/>
-<vertex x="20.193" y="55.372"/>
-<vertex x="19.431" y="55.372"/>
-<vertex x="19.304" y="55.499"/>
-<vertex x="19.304" y="58.801"/>
-<vertex x="21.336" y="60.833"/>
-<vertex x="21.336" y="64.135"/>
-<vertex x="21.717" y="64.516"/>
-<vertex x="23.876" y="64.516"/>
-</polygon>
-<via x="25.146" y="62.23" extent="1-3" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="1">
-<vertex x="23.876" y="60.96"/>
-<vertex x="23.876" y="63.119"/>
-<vertex x="24.257" y="63.119"/>
-<vertex x="24.638" y="62.865"/>
-<vertex x="25.527" y="62.865"/>
-<vertex x="25.781" y="62.484"/>
-<vertex x="25.781" y="61.595"/>
-<vertex x="25.527" y="61.341"/>
-<vertex x="24.638" y="61.341"/>
-<vertex x="24.257" y="60.96"/>
-</polygon>
-<wire x1="19.55" y1="54.7525" x2="19.55" y2="55.491" width="0.1524" layer="1"/>
-<wire x1="19.55" y1="55.491" x2="19.812" y2="55.753" width="0.1524" layer="1"/>
+<wire x1="0.5" y1="2.6825" x2="0.5" y2="3.421" width="0.2032" layer="1"/>
+<wire x1="0.5" y1="3.421" x2="0.762" y2="3.683" width="0.2032" layer="1"/>
+<via x="0.762" y="3.683" extent="1-16" drill="0.35" shape="octagon"/>
+<wire x1="0.762" y1="3.683" x2="0.762" y2="10.922" width="0.2032" layer="15"/>
+<wire x1="2.032" y1="12.192" x2="2.413" y2="12.192" width="0.2032" layer="15"/>
+<wire x1="0.762" y1="10.922" x2="2.032" y2="12.192" width="0.2032" layer="15"/>
+<wire x1="3.81" y1="12.28" x2="2.501" y2="12.28" width="0.2032" layer="1"/>
+<wire x1="2.501" y1="12.28" x2="2.413" y2="12.192" width="0.2032" layer="1"/>
+<via x="2.413" y="12.192" extent="1-16" drill="0.35" shape="octagon"/>
 </signal>
 <signal name="SS1">
 <contactref element="C9" pad="1"/>
 <contactref element="R6" pad="1"/>
 <contactref element="U1" pad="P$9"/>
 <polygon width="0.1524" layer="1">
-<vertex x="13.843" y="64.516"/>
-<vertex x="13.843" y="59.817"/>
-<vertex x="16.764" y="59.817"/>
-<vertex x="16.764" y="64.516"/>
+<vertex x="-6.604" y="13.208"/>
+<vertex x="-6.858" y="12.954"/>
+<vertex x="-6.858" y="11.811"/>
+<vertex x="-6.604" y="11.557"/>
+<vertex x="-1.778" y="11.557"/>
+<vertex x="-1.524" y="11.811"/>
+<vertex x="-1.524" y="12.954"/>
+<vertex x="-1.778" y="13.208"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="18.669" y="56.134"/>
-<vertex x="17.907" y="56.134"/>
-<vertex x="17.907" y="55.118"/>
-<vertex x="18.669" y="55.118"/>
-</polygon>
-<via x="18.288" y="55.753" extent="1-3" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="3">
-<vertex x="16.764" y="64.262"/>
-<vertex x="16.383" y="64.516"/>
-<vertex x="13.843" y="64.516"/>
-<vertex x="12.192" y="62.865"/>
-<vertex x="12.192" y="61.595"/>
-<vertex x="13.843" y="59.69"/>
-<vertex x="16.51" y="59.69"/>
-<vertex x="18.161" y="58.039"/>
-<vertex x="18.161" y="56.261"/>
-<vertex x="17.78" y="56.007"/>
-<vertex x="17.78" y="55.499"/>
-<vertex x="18.034" y="55.245"/>
-<vertex x="18.542" y="55.245"/>
-<vertex x="18.796" y="55.499"/>
-<vertex x="18.796" y="58.674"/>
-<vertex x="16.764" y="60.579"/>
-</polygon>
-<via x="12.827" y="62.23" extent="1-3" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="1">
-<vertex x="14.097" y="63.246"/>
-<vertex x="14.097" y="60.96"/>
-<vertex x="13.716" y="60.96"/>
-<vertex x="13.335" y="61.341"/>
-<vertex x="12.446" y="61.341"/>
-<vertex x="12.192" y="61.722"/>
-<vertex x="12.192" y="62.611"/>
-<vertex x="12.446" y="62.865"/>
-<vertex x="13.462" y="62.865"/>
-<vertex x="13.843" y="63.246"/>
-</polygon>
-<wire x1="18.55" y1="54.7525" x2="18.55" y2="55.491" width="0.1524" layer="1"/>
-<wire x1="18.55" y1="55.491" x2="18.288" y2="55.753" width="0.1524" layer="1"/>
+<wire x1="-0.5" y1="2.6825" x2="-0.5" y2="3.421" width="0.2032" layer="1"/>
+<wire x1="-0.5" y1="3.421" x2="-0.762" y2="3.683" width="0.2032" layer="1"/>
+<via x="-0.762" y="3.683" extent="1-16" drill="0.35" shape="octagon"/>
+<wire x1="-0.762" y1="3.683" x2="-0.762" y2="10.922" width="0.2032" layer="15"/>
+<wire x1="-0.762" y1="10.922" x2="-2.159" y2="12.319" width="0.2032" layer="15"/>
+<via x="-2.159" y="12.319" extent="1-16" drill="0.35" shape="octagon"/>
+<wire x1="-2.159" y1="12.319" x2="-3.771" y2="12.319" width="0.2032" layer="1"/>
+<wire x1="-3.771" y1="12.319" x2="-3.81" y2="12.28" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="U1" pad="P$10"/>
 <contactref element="L4" pad="P$2"/>
 <contactref element="D4" pad="P$2"/>
-<polygon width="0.1524" layer="1">
-<vertex x="5.842" y="55.245"/>
-<vertex x="10.16" y="55.245"/>
-<vertex x="10.16" y="60.833"/>
-<vertex x="5.842" y="60.833"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-1.016" y="6.223"/>
+<vertex x="-1.016" y="2.921"/>
+<vertex x="-1.27" y="2.667"/>
+<vertex x="-2.667" y="2.667"/>
+<vertex x="-2.921" y="2.413"/>
+<vertex x="-2.921" y="0.508"/>
+<vertex x="-3.175" y="0.254"/>
+<vertex x="-3.937" y="0.254"/>
+<vertex x="-4.191" y="0.508"/>
+<vertex x="-4.191" y="3.048"/>
+<vertex x="-4.445" y="3.302"/>
+<vertex x="-6.604" y="3.302"/>
+<vertex x="-6.858" y="3.556"/>
+<vertex x="-6.858" y="6.223"/>
+<vertex x="-6.604" y="6.477"/>
+<vertex x="-1.27" y="6.477"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="17.399" y="55.753"/>
-<vertex x="17.399" y="54.737"/>
-<vertex x="16.256" y="54.737"/>
-<vertex x="16.256" y="55.753"/>
-</polygon>
-<via x="16.764" y="55.245" extent="1-3" drill="0.35" shape="octagon"/>
-<wire x1="18.05" y1="54.7525" x2="17.5575" y2="55.245" width="0.1524" layer="1"/>
-<wire x1="17.5575" y1="55.245" x2="16.764" y2="55.245" width="0.1524" layer="1"/>
-<polygon width="0.1524" layer="3">
-<vertex x="6.604" y="60.833"/>
-<vertex x="9.525" y="60.833"/>
-<vertex x="10.16" y="60.198"/>
-<vertex x="10.16" y="55.88"/>
-<vertex x="11.557" y="54.61"/>
-<vertex x="15.24" y="54.61"/>
-<vertex x="16.129" y="55.88"/>
-<vertex x="17.145" y="55.88"/>
-<vertex x="17.399" y="55.626"/>
-<vertex x="17.399" y="54.864"/>
-<vertex x="17.145" y="54.61"/>
-<vertex x="16.256" y="54.61"/>
-<vertex x="15.621" y="53.721"/>
-<vertex x="11.049" y="53.721"/>
-<vertex x="9.525" y="55.245"/>
-<vertex x="6.477" y="55.245"/>
-<vertex x="5.842" y="55.88"/>
-<vertex x="5.842" y="60.198"/>
-</polygon>
-<via x="6.604" y="57.785" extent="1-3" drill="0.35" shape="octagon"/>
+<wire x1="-1" y1="2.6825" x2="-3.6985" y2="2.6825" width="0.254" layer="1"/>
+<wire x1="-3.6985" y1="2.6825" x2="-4.445" y2="3.429" width="0.254" layer="1"/>
+<wire x1="-4.445" y1="3.429" x2="-4.445" y2="4.652" width="0.254" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="U1" pad="P$1"/>
@@ -963,15 +1024,18 @@ design rules under a new name.</description>
 <contactref element="R7" pad="1"/>
 <contactref element="R8" pad="2"/>
 <polygon width="0.1524" layer="1">
-<vertex x="12.573" y="44.704"/>
-<vertex x="18.034" y="44.704"/>
-<vertex x="18.034" y="50.927"/>
-<vertex x="15.494" y="50.927"/>
-<vertex x="15.494" y="47.117"/>
-<vertex x="12.573" y="47.117"/>
+<vertex x="-4.826" y="-0.762"/>
+<vertex x="-4.826" y="-5.08"/>
+<vertex x="-3.429" y="-5.08"/>
+<vertex x="-3.429" y="-2.667"/>
+<vertex x="-1.143" y="-2.667"/>
+<vertex x="-1.143" y="-0.762"/>
 </polygon>
-<wire x1="18.05" y1="51.9275" x2="16.64" y2="50.5175" width="0.1524" layer="1"/>
-<wire x1="16.64" y1="50.5175" x2="16.64" y2="49.53" width="0.1524" layer="1"/>
+<wire x1="-2.159" y1="-1.817" x2="-2.12" y2="-1.778" width="0.254" layer="1"/>
+<wire x1="-2.12" y1="-1.778" x2="-1.27" y2="-1.778" width="0.254" layer="1"/>
+<wire x1="-1.27" y1="-1.778" x2="-1.016" y2="-1.524" width="0.254" layer="1"/>
+<wire x1="-1.016" y1="-0.1585" x2="-1" y2="-0.1425" width="0.254" layer="1"/>
+<wire x1="-1.016" y1="-1.524" x2="-1.016" y2="-0.1585" width="0.254" layer="1"/>
 </signal>
 <signal name="7.5V">
 <contactref element="C10" pad="1"/>
@@ -988,90 +1052,67 @@ design rules under a new name.</description>
 <contactref element="U3" pad="P$2"/>
 <contactref element="U3" pad="P$6"/>
 <contactref element="C4" pad="1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="11.557" y="61.214"/>
-<vertex x="11.557" y="64.516"/>
-<vertex x="5.08" y="64.516"/>
-<vertex x="5.08" y="61.214"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-11.811" y="0"/>
+<vertex x="-11.811" y="-1.397"/>
+<vertex x="-11.557" y="-1.651"/>
+<vertex x="-10.795" y="-1.651"/>
+<vertex x="-9.906" y="-2.159"/>
+<vertex x="-9.906" y="0.762"/>
+<vertex x="-10.795" y="0.254"/>
+<vertex x="-11.557" y="0.254"/>
 </polygon>
-<wire x1="8.62" y1="49.6725" x2="8.12" y2="49.6725" width="0.1524" layer="1"/>
-<wire x1="8.12" y1="49.6725" x2="7.62" y2="49.6725" width="0.1524" layer="1"/>
-<wire x1="7.5244" y1="50.12573125" x2="7.36073125" y2="50.2894" width="0.1524" layer="1"/>
-<wire x1="7.62" y1="49.6725" x2="7.5244" y2="49.7681" width="0.1524" layer="1"/>
-<wire x1="7.5244" y1="49.7681" x2="7.5244" y2="50.12573125" width="0.1524" layer="1"/>
-<wire x1="7.36073125" y1="50.2894" x2="6.2204" y2="50.2894" width="0.1524" layer="1"/>
-<wire x1="6.2204" y1="50.2894" x2="5.715" y2="49.784" width="0.1524" layer="1"/>
-<wire x1="5.715" y1="49.784" x2="5.715" y2="47.117" width="0.1524" layer="1"/>
-<wire x1="6.1115" y1="46.8475" x2="6.62" y2="46.8475" width="0.1524" layer="1"/>
-<wire x1="5.715" y1="47.117" x2="6.1115" y2="46.8475" width="0.1524" layer="1"/>
-<wire x1="17.6375" y1="36.56" x2="17.6375" y2="36.06" width="0.1524" layer="1"/>
-<wire x1="17.6375" y1="36.06" x2="17.6375" y2="35.56" width="0.1524" layer="1"/>
-<wire x1="17.18426875" y1="35.4644" x2="17.0206" y2="35.30073125" width="0.1524" layer="1"/>
-<wire x1="17.6375" y1="35.56" x2="17.5419" y2="35.4644" width="0.1524" layer="1"/>
-<wire x1="17.5419" y1="35.4644" x2="17.18426875" y2="35.4644" width="0.1524" layer="1"/>
-<wire x1="20.46013125" y1="34.56" x2="20.4625" y2="34.56" width="0.1524" layer="1"/>
-<wire x1="17.0206" y1="35.30073125" x2="17.0206" y2="34.19226875" width="0.1524" layer="1"/>
-<wire x1="17.0206" y1="34.19226875" x2="17.50326875" y2="33.7096" width="0.1524" layer="1"/>
-<wire x1="17.50326875" y1="33.7096" x2="19.73673125" y2="33.7096" width="0.1524" layer="1"/>
-<wire x1="19.73673125" y1="33.7096" x2="20.46013125" y2="34.433" width="0.1524" layer="1"/>
-<wire x1="20.46013125" y1="34.433" x2="20.46013125" y2="34.56" width="0.1524" layer="1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="12.573" y="44.196"/>
-<vertex x="12.573" y="40.513"/>
-<vertex x="18.034" y="40.513"/>
-<vertex x="18.034" y="44.196"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-4.826" y="2.921"/>
+<vertex x="-9.906" y="2.921"/>
+<vertex x="-10.16" y="2.667"/>
+<vertex x="-10.16" y="-4.826"/>
+<vertex x="-9.906" y="-5.08"/>
+<vertex x="-5.461" y="-5.08"/>
+<vertex x="-5.207" y="-4.826"/>
+<vertex x="-5.207" y="-0.635"/>
+<vertex x="-4.953" y="-0.381"/>
+<vertex x="-4.826" y="-0.381"/>
+<vertex x="-4.572" y="-0.127"/>
+<vertex x="-4.572" y="2.667"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="6.731" y="53.213"/>
-<vertex x="6.731" y="50.673"/>
-<vertex x="9.779" y="50.673"/>
-<vertex x="9.779" y="53.213"/>
+<wire x1="-5.08" y1="-6.7155" x2="-5.1756" y2="-6.6199" width="0.254" layer="1"/>
+<wire x1="-5.1756" y1="-6.6199" x2="-5.1756" y2="-6.26226875" width="0.254" layer="1"/>
+<wire x1="-5.1756" y1="-6.26226875" x2="-5.34186875" y2="-6.096" width="0.254" layer="1"/>
+<wire x1="-5.34186875" y1="-6.096" x2="-6.604" y2="-6.096" width="0.254" layer="1"/>
+<wire x1="-6.858" y1="-6.35" x2="-6.604" y2="-6.096" width="0.254" layer="1"/>
+<wire x1="-6.858" y1="-6.35" x2="-6.858" y2="-9.017" width="0.254" layer="1"/>
+<wire x1="-6.858" y1="-9.017" x2="-6.3345" y2="-9.5405" width="0.254" layer="1"/>
+<wire x1="-6.3345" y1="-9.5405" x2="-6.08" y2="-9.5405" width="0.254" layer="1"/>
+<wire x1="-4.08" y1="-6.7155" x2="-4.58" y2="-6.7155" width="0.254" layer="1"/>
+<wire x1="-4.58" y1="-6.7155" x2="-5.08" y2="-6.7155" width="0.254" layer="1"/>
+<wire x1="-14.081" y1="-5.4765" x2="-14.5895" y2="-5.4765" width="0.254" layer="1"/>
+<wire x1="-14.5895" y1="-5.4765" x2="-14.986" y2="-5.08" width="0.254" layer="1"/>
+<wire x1="-14.986" y1="-5.08" x2="-14.986" y2="-2.667" width="0.254" layer="1"/>
+<wire x1="-14.986" y1="-2.667" x2="-14.478" y2="-2.159" width="0.254" layer="1"/>
+<wire x1="-14.478" y1="-2.159" x2="-14.44613125" y2="-2.159" width="0.254" layer="1"/>
+<wire x1="-14.44613125" y1="-2.159" x2="-14.32173125" y2="-2.0346" width="0.254" layer="1"/>
+<wire x1="-13.3376" y1="-2.0346" x2="-13.335" y2="-2.032" width="0.254" layer="1"/>
+<wire x1="-14.32173125" y1="-2.0346" x2="-13.3376" y2="-2.0346" width="0.254" layer="1"/>
+<wire x1="-13.335" y1="-2.032" x2="-13.208" y2="-2.032" width="0.254" layer="1"/>
+<wire x1="-13.208" y1="-2.032" x2="-13.081" y2="-2.159" width="0.254" layer="1"/>
+<wire x1="-13.081" y1="-2.159" x2="-13.081" y2="-2.6515" width="0.254" layer="1"/>
+<wire x1="-13.081" y1="-2.6515" x2="-12.581" y2="-2.6515" width="0.254" layer="1"/>
+<wire x1="-12.581" y1="-2.6515" x2="-12.081" y2="-2.6515" width="0.254" layer="1"/>
+<wire x1="-12.081" y1="-2.6515" x2="-12.081" y2="-1.374" width="0.254" layer="1"/>
+<wire x1="-12.081" y1="-1.374" x2="-11.342" y2="-0.635" width="0.254" layer="1"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-9.525" y="-6.35"/>
+<vertex x="-9.271" y="-6.604"/>
+<vertex x="-7.874" y="-6.604"/>
+<vertex x="-7.62" y="-6.35"/>
+<vertex x="-7.62" y="-5.588"/>
+<vertex x="-7.112" y="-4.699"/>
+<vertex x="-10.16" y="-4.826"/>
+<vertex x="-9.525" y="-5.588"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="16.764" y="37.719"/>
-<vertex x="16.764" y="35.179"/>
-<vertex x="12.319" y="35.306"/>
-<vertex x="12.319" y="37.719"/>
-</polygon>
-<wire x1="14.986" y1="36.552" x2="14.994" y2="36.56" width="0.1524" layer="1"/>
-<wire x1="14.994" y1="36.56" x2="17.6375" y2="36.56" width="0.1524" layer="1"/>
-<wire x1="7.85" y1="52.07" x2="8.62" y2="51.3" width="0.1524" layer="1"/>
-<wire x1="8.62" y1="51.3" x2="8.62" y2="49.6725" width="0.1524" layer="1"/>
-<via x="16.383" y="41.148" extent="1-4" drill="0.35" shape="octagon"/>
-<via x="9.398" y="52.07" extent="1-4" drill="0.35" shape="octagon"/>
-<via x="10.033" y="61.722" extent="1-4" drill="0.35" shape="octagon"/>
-<via x="12.954" y="36.576" extent="1-4" drill="0.35" shape="octagon"/>
-<via x="13.843" y="41.148" extent="1-4" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="4">
-<vertex x="6.731" y="51.308"/>
-<vertex x="6.731" y="52.705"/>
-<vertex x="7.366" y="53.34"/>
-<vertex x="8.89" y="53.34"/>
-<vertex x="10.16" y="54.61"/>
-<vertex x="10.16" y="59.69"/>
-<vertex x="8.89" y="60.96"/>
-<vertex x="6.35" y="60.96"/>
-<vertex x="5.08" y="62.23"/>
-<vertex x="5.08" y="63.5"/>
-<vertex x="6.35" y="64.77"/>
-<vertex x="10.16" y="64.77"/>
-<vertex x="11.43" y="63.5"/>
-<vertex x="11.43" y="45.72"/>
-<vertex x="12.7" y="44.45"/>
-<vertex x="16.51" y="44.45"/>
-<vertex x="17.78" y="43.18"/>
-<vertex x="17.78" y="40.64"/>
-<vertex x="16.51" y="39.37"/>
-<vertex x="16.51" y="35.56"/>
-<vertex x="15.24" y="34.29"/>
-<vertex x="13.97" y="34.29"/>
-<vertex x="12.7" y="35.56"/>
-<vertex x="12.7" y="40.64"/>
-<vertex x="10.16" y="43.18"/>
-<vertex x="10.16" y="49.53"/>
-<vertex x="8.89" y="50.8"/>
-<vertex x="7.62" y="50.8"/>
-</polygon>
+<wire x1="-8.509" y1="-5.754" x2="-7.454" y2="-5.754" width="0.254" layer="1"/>
+<wire x1="-7.454" y1="-5.754" x2="-6.858" y2="-6.35" width="0.254" layer="1"/>
 </signal>
 <signal name="VIN">
 <contactref element="L4" pad="P$1"/>
@@ -1080,80 +1121,70 @@ design rules under a new name.</description>
 <contactref element="C7" pad="1"/>
 <contactref element="R5" pad="2"/>
 <contactref element="L5" pad="P$1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="13.843" y="55.372"/>
-<vertex x="13.716" y="56.515"/>
-<vertex x="27.305" y="56.515"/>
-<vertex x="27.432" y="60.325"/>
-<vertex x="24.765" y="60.325"/>
-<vertex x="24.765" y="59.436"/>
-<vertex x="13.462" y="59.436"/>
-<vertex x="13.462" y="60.198"/>
-<vertex x="11.176" y="60.198"/>
-<vertex x="11.176" y="55.372"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-6.985" y="10.922"/>
+<vertex x="-6.985" y="7.112"/>
+<vertex x="-6.731" y="6.858"/>
+<vertex x="6.477" y="6.858"/>
+<vertex x="6.731" y="7.239"/>
+<vertex x="6.731" y="10.922"/>
+<vertex x="6.477" y="11.176"/>
+<vertex x="2.54" y="11.176"/>
+<vertex x="1.651" y="10.16"/>
+<vertex x="-1.651" y="10.16"/>
+<vertex x="-2.54" y="11.176"/>
+<vertex x="-6.731" y="11.176"/>
 </polygon>
-<wire x1="19.05" y1="54.7525" x2="19.05" y2="58.19" width="0.1524" layer="1"/>
-<via x="17.399" y="57.023" extent="1-4" drill="0.35" shape="octagon"/>
-<via x="20.828" y="56.896" extent="1-4" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="4">
-<vertex x="13.97" y="58.928"/>
-<vertex x="13.97" y="56.642"/>
-<vertex x="14.224" y="56.515"/>
-<vertex x="26.67" y="56.642"/>
-<vertex x="27.432" y="57.404"/>
-<vertex x="27.432" y="59.309"/>
-<vertex x="26.67" y="60.325"/>
-<vertex x="25.4" y="60.325"/>
-<vertex x="24.511" y="59.436"/>
-<vertex x="14.351" y="59.436"/>
+<wire x1="0" y1="2.6825" x2="0" y2="9.31" width="0.254" layer="1"/>
+<polygon width="0.254" layer="1">
+<vertex x="-0.508" y="6.604"/>
+<vertex x="-0.508" y="4.572"/>
+<vertex x="-0.127" y="4.191"/>
+<vertex x="0.127" y="4.191"/>
+<vertex x="0.508" y="4.572"/>
+<vertex x="0.508" y="6.604"/>
+<vertex x="0.889" y="6.985"/>
+<vertex x="0.889" y="9.906"/>
+<vertex x="-0.762" y="9.906"/>
+<vertex x="-0.889" y="9.779"/>
+<vertex x="-0.889" y="6.985"/>
 </polygon>
 </signal>
 <signal name="N$20">
 <contactref element="U1" pad="P$6"/>
 <contactref element="C12" pad="1"/>
 <contactref element="L5" pad="P$2"/>
-<polygon width="0.1524" layer="1">
-<vertex x="30.734" y="56.769"/>
-<vertex x="37.592" y="56.769"/>
-<vertex x="37.592" y="60.579"/>
-<vertex x="30.734" y="60.579"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="7.62" y="5.969"/>
+<vertex x="7.62" y="2.286"/>
+<vertex x="7.366" y="2.032"/>
+<vertex x="6.096" y="2.032"/>
+<vertex x="5.461" y="2.667"/>
+<vertex x="1.27" y="2.667"/>
+<vertex x="1.016" y="2.921"/>
+<vertex x="1.016" y="5.969"/>
+<vertex x="1.27" y="6.223"/>
+<vertex x="7.366" y="6.223"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="21.844" y="55.753"/>
-<vertex x="21.844" y="54.737"/>
-<vertex x="20.701" y="54.737"/>
-<vertex x="20.701" y="55.753"/>
-</polygon>
-<via x="21.336" y="55.245" extent="1-3" drill="0.35" shape="octagon"/>
-<wire x1="20.05" y1="54.7525" x2="20.5425" y2="55.245" width="0.1524" layer="1"/>
-<wire x1="20.5425" y1="55.245" x2="21.336" y2="55.245" width="0.1524" layer="1"/>
-<polygon width="0.1524" layer="3">
-<vertex x="20.701" y="55.626"/>
-<vertex x="20.701" y="54.991"/>
-<vertex x="20.955" y="54.61"/>
-<vertex x="29.845" y="54.61"/>
-<vertex x="31.496" y="56.642"/>
-<vertex x="36.957" y="56.642"/>
-<vertex x="37.592" y="57.277"/>
-<vertex x="37.592" y="59.944"/>
-<vertex x="36.957" y="60.579"/>
-<vertex x="31.242" y="60.579"/>
-<vertex x="30.48" y="59.944"/>
-<vertex x="30.48" y="57.15"/>
-<vertex x="29.21" y="56.007"/>
-<vertex x="20.955" y="55.88"/>
-</polygon>
-<via x="34.417" y="57.785" extent="1-3" drill="0.35" shape="octagon"/>
+<wire x1="1" y1="2.6825" x2="3.0635" y2="2.6825" width="0.254" layer="1"/>
+<wire x1="3.0635" y1="2.6825" x2="4.191" y2="3.81" width="0.254" layer="1"/>
+<wire x1="4.191" y1="3.81" x2="4.191" y2="4.931" width="0.254" layer="1"/>
 </signal>
 <signal name="N$21">
 <contactref element="C12" pad="2"/>
 <contactref element="D3" pad="P$2"/>
 <contactref element="L6" pad="P$1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="32.258" y="61.341"/>
-<vertex x="37.592" y="61.341"/>
-<vertex x="37.592" y="69.342"/>
-<vertex x="32.258" y="69.342"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="8.001" y="5.969"/>
+<vertex x="8.001" y="2.54"/>
+<vertex x="8.255" y="2.286"/>
+<vertex x="9.271" y="2.286"/>
+<vertex x="9.525" y="2.54"/>
+<vertex x="13.208" y="2.54"/>
+<vertex x="13.462" y="2.794"/>
+<vertex x="13.462" y="5.969"/>
+<vertex x="13.208" y="6.223"/>
+<vertex x="8.255" y="6.223"/>
 </polygon>
 </signal>
 <signal name="VREF">
@@ -1161,14 +1192,15 @@ design rules under a new name.</description>
 <contactref element="C13" pad="1"/>
 <contactref element="U1" pad="P$2"/>
 <contactref element="R10" pad="2"/>
-<wire x1="18.55" y1="51.9275" x2="19.05" y2="51.9275" width="0.1524" layer="1"/>
+<wire x1="-0.5" y1="-0.1425" x2="0" y2="-0.1425" width="0.1524" layer="1"/>
 <polygon width="0.1524" layer="1">
-<vertex x="18.542" y="50.8"/>
-<vertex x="18.542" y="44.45"/>
-<vertex x="21.336" y="44.45"/>
-<vertex x="21.336" y="50.8"/>
+<vertex x="-0.508" y="-1.143"/>
+<vertex x="-0.508" y="-4.699"/>
+<vertex x="1.27" y="-4.699"/>
+<vertex x="1.27" y="-1.143"/>
 </polygon>
-<wire x1="19.05" y1="51.9275" x2="19.05" y2="50.8" width="0.1524" layer="1"/>
+<wire x1="0" y1="-0.1425" x2="0" y2="-1.358" width="0.254" layer="1"/>
+<wire x1="0" y1="-1.358" x2="0.42" y2="-2.032" width="0.254" layer="1"/>
 </signal>
 <signal name="-7.5V">
 <contactref element="R9" pad="1"/>
@@ -1180,94 +1212,83 @@ design rules under a new name.</description>
 <contactref element="U4" pad="P$2"/>
 <contactref element="U4" pad="P$7"/>
 <contactref element="C5" pad="1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="25.273" y="63.246"/>
-<vertex x="31.115" y="63.119"/>
-<vertex x="31.115" y="68.961"/>
-<vertex x="25.273" y="69.088"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="6.731" y="-3.175"/>
+<vertex x="6.731" y="-5.969"/>
+<vertex x="13.716" y="-5.969"/>
+<vertex x="13.97" y="-5.715"/>
+<vertex x="13.97" y="-3.429"/>
+<vertex x="13.716" y="-3.175"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="31.75" y="51.054"/>
-<vertex x="31.75" y="48.26"/>
-<vertex x="39.37" y="48.26"/>
-<vertex x="39.37" y="51.054"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="8.128" y="11.176"/>
+<vertex x="8.128" y="7.62"/>
+<vertex x="8.382" y="7.366"/>
+<vertex x="12.954" y="7.366"/>
+<vertex x="13.208" y="7.62"/>
+<vertex x="13.208" y="11.176"/>
+<vertex x="12.954" y="11.43"/>
+<vertex x="8.382" y="11.43"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="21.844" y="44.069"/>
-<vertex x="27.178" y="44.069"/>
-<vertex x="27.178" y="40.386"/>
-<vertex x="21.844" y="40.386"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="4.826" y="1.016"/>
+<vertex x="4.826" y="-5.08"/>
+<vertex x="5.08" y="-5.334"/>
+<vertex x="6.096" y="-5.334"/>
+<vertex x="6.604" y="-5.969"/>
+<vertex x="8.382" y="-5.969"/>
+<vertex x="8.382" y="-3.175"/>
+<vertex x="7.747" y="-2.54"/>
+<vertex x="7.747" y="1.016"/>
+<vertex x="7.493" y="1.27"/>
+<vertex x="5.08" y="1.27"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="27.686" y="54.356"/>
-<vertex x="27.686" y="51.181"/>
-<vertex x="30.607" y="51.181"/>
-<vertex x="30.607" y="54.356"/>
+<via x="6.858" y="0.381" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="8.89" y="10.922" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="12.446" y="10.922" extent="1-16" drill="0.35" shape="octagon"/>
+<polygon width="0.254" layer="16" thermals="no">
+<vertex x="8.128" y="9.017"/>
+<vertex x="8.128" y="11.43"/>
+<vertex x="13.208" y="11.43"/>
+<vertex x="13.208" y="7.366"/>
+<vertex x="8.636" y="7.366"/>
+<vertex x="7.62" y="6.35"/>
+<vertex x="7.62" y="-5.08"/>
+<vertex x="7.366" y="-5.334"/>
+<vertex x="5.08" y="-5.334"/>
+<vertex x="4.826" y="-5.08"/>
+<vertex x="4.826" y="1.016"/>
+<vertex x="5.08" y="1.27"/>
+<vertex x="5.969" y="1.27"/>
+<vertex x="6.477" y="1.778"/>
+<vertex x="6.604" y="7.62"/>
 </polygon>
-<via x="24.511" y="41.275" extent="1-4" drill="0.35" shape="octagon"/>
-<via x="26.797" y="65.151" extent="1-4" drill="0.35" shape="octagon"/>
-<via x="29.083" y="53.848" extent="1-4" drill="0.35" shape="octagon"/>
-<polygon width="0.1524" layer="4">
-<vertex x="26.67" y="68.58"/>
-<vertex x="30.48" y="68.58"/>
-<vertex x="31.75" y="67.31"/>
-<vertex x="31.75" y="63.5"/>
-<vertex x="30.48" y="62.23"/>
-<vertex x="30.48" y="52.07"/>
-<vertex x="29.718" y="51.181"/>
-<vertex x="28.575" y="51.181"/>
-<vertex x="27.178" y="49.911"/>
-<vertex x="27.178" y="41.402"/>
-<vertex x="25.4" y="40.386"/>
-<vertex x="22.86" y="40.386"/>
-<vertex x="21.59" y="41.529"/>
-<vertex x="21.59" y="43.18"/>
-<vertex x="22.86" y="44.45"/>
-<vertex x="25.273" y="44.45"/>
-<vertex x="26.035" y="45.085"/>
-<vertex x="26.162" y="50.165"/>
-<vertex x="27.686" y="51.689"/>
-<vertex x="27.686" y="54.483"/>
-<vertex x="29.337" y="55.626"/>
-<vertex x="29.337" y="62.357"/>
-<vertex x="27.94" y="63.5"/>
-<vertex x="26.67" y="63.5"/>
-<vertex x="25.4" y="64.77"/>
-<vertex x="25.4" y="67.31"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="27.686" y="53.34"/>
-<vertex x="27.686" y="51.181"/>
-<vertex x="30.607" y="51.181"/>
-<vertex x="31.75" y="50.546"/>
-<vertex x="31.75" y="49.53"/>
-<vertex x="34.29" y="49.53"/>
-<vertex x="34.29" y="50.8"/>
-<vertex x="33.147" y="50.8"/>
-<vertex x="30.607" y="52.324"/>
-<vertex x="30.607" y="53.34"/>
-</polygon>
+<via x="6.731" y="-4.572" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="6.858" y="-2.159" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="8.89" y="9.906" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="12.446" y="9.906" extent="1-16" drill="0.35" shape="octagon"/>
 </signal>
 <signal name="N$26">
 <contactref element="U1" pad="P$4"/>
 <contactref element="R10" pad="1"/>
 <contactref element="R9" pad="2"/>
 <contactref element="C14" pad="1"/>
-<wire x1="23.371" y1="45.853" x2="23.241" y2="45.723" width="0.1524" layer="1"/>
 <polygon width="0.1524" layer="1">
-<vertex x="21.844" y="50.8"/>
-<vertex x="21.844" y="44.45"/>
-<vertex x="27.178" y="44.45"/>
-<vertex x="27.178" y="47.117"/>
-<vertex x="24.511" y="47.117"/>
-<vertex x="24.511" y="50.8"/>
+<vertex x="1.651" y="-0.889"/>
+<vertex x="1.651" y="-2.921"/>
+<vertex x="4.445" y="-2.921"/>
+<vertex x="4.445" y="1.397"/>
+<vertex x="3.048" y="1.397"/>
+<vertex x="3.048" y="-0.635"/>
+<vertex x="2.794" y="-0.889"/>
 </polygon>
-<wire x1="21.974" y1="51.054" x2="20.32" y2="51.054" width="0.1524" layer="1"/>
-<wire x1="20.32" y1="51.054" x2="20.0634" y2="51.0566" width="0.1524" layer="1"/>
-<wire x1="20.0634" y1="51.0566" x2="19.55526875" y2="51.3106" width="0.1524" layer="1"/>
-<wire x1="19.55526875" y1="51.3106" x2="19.55" y2="51.56986875" width="0.1524" layer="1"/>
-<wire x1="19.55" y1="51.56986875" x2="19.55" y2="51.9275" width="0.1524" layer="1"/>
-<wire x1="23.371" y1="49.403" x2="21.974" y2="51.054" width="0.1524" layer="1"/>
+<wire x1="0.5" y1="-0.1425" x2="0.508" y2="-0.1505" width="0.254" layer="1"/>
+<wire x1="0.508" y1="-0.1505" x2="0.508" y2="-0.635" width="0.254" layer="1"/>
+<wire x1="0.508" y1="-0.635" x2="0.635" y2="-0.762" width="0.254" layer="1"/>
+<wire x1="1.778" y1="-0.762" x2="2.159" y2="-1.143" width="0.254" layer="1"/>
+<wire x1="2.159" y1="-1.143" x2="2.12" y2="-1.182" width="0.254" layer="1"/>
+<wire x1="2.12" y1="-1.182" x2="2.12" y2="-2.032" width="0.254" layer="1"/>
+<wire x1="0.635" y1="-0.762" x2="1.778" y2="-0.762" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>

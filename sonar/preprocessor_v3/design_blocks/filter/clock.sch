@@ -145,6 +145,7 @@
 <wire x1="-1" y1="-2.5" x2="5.5" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="5.5" y1="-2.5" x2="5.5" y2="0.5" width="0.127" layer="21"/>
 <wire x1="5.5" y1="0.5" x2="-1" y2="0.5" width="0.127" layer="21"/>
+<circle x="-1.27" y="0.762" radius="0.254" width="0.127" layer="21"/>
 </package>
 <package name="FA-238">
 <smd name="P$4" x="0" y="0" dx="1.4" dy="1.2" layer="1"/>

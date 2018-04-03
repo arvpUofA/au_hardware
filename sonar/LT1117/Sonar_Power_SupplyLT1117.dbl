@@ -4910,6 +4910,7 @@ Metric Code Size 5664</description>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C1210" value="100uF"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4956,6 +4957,7 @@ Metric Code Size 5664</description>
 <instance part="GND2" gate="1" x="38.1" y="7.62" rot="MR0"/>
 <instance part="C2" gate="G$1" x="48.26" y="27.94"/>
 <instance part="GND3" gate="1" x="48.26" y="17.78" rot="MR0"/>
+<instance part="GND4" gate="1" x="86.36" y="-33.02" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -5027,6 +5029,18 @@ Metric Code Size 5664</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="48.26" y1="22.86" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="-22.86" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
+<wire x1="86.36" y1="-22.86" x2="86.36" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="-30.48" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-30.48" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="86.36" y="-22.86"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<junction x="86.36" y="-30.48"/>
+</segment>
 </net>
 <net name="-5V" class="0">
 <segment>
@@ -5052,18 +5066,6 @@ Metric Code Size 5664</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="-22.86" x2="55.88" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="55.88" y="-22.86"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="-22.86" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="GND"/>
-<wire x1="86.36" y1="-22.86" x2="86.36" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="-30.48" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-30.48" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="86.36" y="-22.86"/>
 </segment>
 </net>
 <net name="SS2" class="0">
@@ -6053,6 +6055,24 @@ design rules under a new name.</description>
 <via x="-6.858" y="-11.303" extent="1-16" drill="0.35" shape="octagon"/>
 <via x="-5.461" y="-11.303" extent="1-16" drill="0.35" shape="octagon"/>
 <via x="-11.811" y="-1.778" extent="1-16" drill="0.35" shape="octagon"/>
+<contactref element="R3" pad="1"/>
+<contactref element="U4" pad="P$5"/>
+<contactref element="C6" pad="2"/>
+<via x="13.335" y="-9.271" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="12.827" y="-12.065" extent="1-16" drill="0.35" shape="octagon"/>
+<via x="9.271" y="-12.065" extent="1-16" drill="0.35" shape="octagon"/>
+<polygon width="0.1524" layer="1">
+<vertex x="10.541" y="-11.303"/>
+<vertex x="10.795" y="-11.049"/>
+<vertex x="10.795" y="-9.017"/>
+<vertex x="12.192" y="-8.509"/>
+<vertex x="12.192" y="-7.239"/>
+<vertex x="14.097" y="-7.239"/>
+<vertex x="14.097" y="-12.827"/>
+<vertex x="13.843" y="-13.081"/>
+<vertex x="7.239" y="-13.081"/>
+<vertex x="7.239" y="-11.303"/>
+</polygon>
 </signal>
 <signal name="3.3V">
 <contactref element="U2" pad="P$2"/>
@@ -6103,25 +6123,6 @@ design rules under a new name.</description>
 <vertex x="10.414" y="-10.922"/>
 <vertex x="10.414" y="-7.239"/>
 <vertex x="7.239" y="-7.239"/>
-</polygon>
-</signal>
-<signal name="N$10">
-<contactref element="R3" pad="1"/>
-<contactref element="U4" pad="P$5"/>
-<contactref element="C6" pad="2"/>
-<polygon width="0.1524" layer="1">
-<vertex x="10.541" y="-11.303"/>
-<vertex x="10.795" y="-11.049"/>
-<vertex x="10.795" y="-9.017"/>
-<vertex x="12.192" y="-8.509"/>
-<vertex x="12.192" y="-7.239"/>
-<vertex x="14.097" y="-7.239"/>
-<vertex x="14.097" y="-8.89"/>
-<vertex x="12.7" y="-9.779"/>
-<vertex x="12.7" y="-11.049"/>
-<vertex x="10.541" y="-13.081"/>
-<vertex x="7.239" y="-13.081"/>
-<vertex x="7.239" y="-11.303"/>
 </polygon>
 </signal>
 <signal name="SS2">

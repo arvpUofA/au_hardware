@@ -4916,6 +4916,7 @@ Metric Code Size 5664</description>
 <part name="C3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0603" value="1uF"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4964,6 +4965,7 @@ Metric Code Size 5664</description>
 <instance part="C3" gate="G$1" x="86.36" y="27.94" rot="MR0"/>
 <instance part="GND3" gate="1" x="33.02" y="17.78" rot="MR0"/>
 <instance part="GND4" gate="1" x="86.36" y="17.78" rot="MR0"/>
+<instance part="GND5" gate="1" x="86.36" y="-33.02" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -5042,6 +5044,18 @@ Metric Code Size 5664</description>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="86.36" y1="22.86" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="-22.86" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
+<wire x1="86.36" y1="-22.86" x2="86.36" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="-30.48" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-30.48" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="86.36" y="-22.86"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<junction x="86.36" y="-30.48"/>
+</segment>
 </net>
 <net name="-5V" class="0">
 <segment>
@@ -5067,18 +5081,6 @@ Metric Code Size 5664</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="-22.86" x2="55.88" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="55.88" y="-22.86"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="-22.86" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="GND"/>
-<wire x1="86.36" y1="-22.86" x2="86.36" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="-30.48" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-30.48" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="86.36" y="-22.86"/>
 </segment>
 </net>
 <net name="SS2" class="0">

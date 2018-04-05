@@ -1,0 +1,29 @@
+* SpiceNetList
+* 
+* Exported from Sonar-Three-Amp-Block.sch at 2018-03-30 3:55 PM
+* 
+* EAGLE Version 8.7.1 Copyright (c) 1988-2018 Autodesk, Inc.
+* 
+.TEMP=25.000000
+* --------- .OPTIONS ---------
+* --------- .PARAMS ---------
+
+* --------- devices ---------
+
+* --------- models ---------
+
+* --------- simulation ---------
+.print DC 
+.print AC 
+.print TRAN 
+.END
+
+
+
+
+
+
+
+
+
+

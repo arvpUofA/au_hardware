@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9845,9 +9845,6 @@ distributor Farnell 149-452</description>
 M/A COM
 www.macom.com
 distributor Farnell 149-452</description>
-<packageinstances>
-<packageinstance name="B35N61"/>
-</packageinstances>
 </package3d>
 </packages3d>
 <symbols>
@@ -10863,37 +10860,40 @@ Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WCAP-AS5H?m"&gt;http
 <rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 </package>
+<package name="1X01" urn="urn:adsk.eagle:footprint:22382/1" library_version="3">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X05" urn="urn:adsk.eagle:package:22469/2" type="model" library_version="3">
 <description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="1X05"/>
-</packageinstances>
 </package3d>
 <package3d name="1X05/90" urn="urn:adsk.eagle:package:22467/2" type="model" library_version="3">
 <description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="1X05/90"/>
-</packageinstances>
 </package3d>
 <package3d name="1_05X2MM" urn="urn:adsk.eagle:package:22466/2" type="model" library_version="3">
 <description>CON-M-1X5-200</description>
-<packageinstances>
-<packageinstance name="1_05X2MM"/>
-</packageinstances>
 </package3d>
 <package3d name="1X02" urn="urn:adsk.eagle:package:22435/2" type="model" library_version="3">
 <description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="1X02"/>
-</packageinstances>
 </package3d>
 <package3d name="1X02/90" urn="urn:adsk.eagle:package:22437/2" type="model" library_version="3">
 <description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="1X02/90"/>
-</packageinstances>
+</package3d>
+<package3d name="1X01" urn="urn:adsk.eagle:package:22485/2" type="model" library_version="3">
+<description>PIN HEADER</description>
 </package3d>
 </packages3d>
 <symbols>
@@ -10919,6 +10919,15 @@ Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WCAP-AS5H?m"&gt;http
 <text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="PINHD1" urn="urn:adsk.eagle:symbol:22381/1" library_version="3">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11000,6 +11009,25 @@ Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WCAP-AS5H?m"&gt;http
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22437/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-1X1" urn="urn:adsk.eagle:component:22540/2" prefix="JP" uservalue="yes" library_version="3">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22485/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -20360,597 +20388,339 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <packages3d>
 <package3d name="R0402" urn="urn:adsk.eagle:package:26058/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R0402"/>
-</packageinstances>
 </package3d>
 <package3d name="R0603" urn="urn:adsk.eagle:package:26057/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R0603"/>
-</packageinstances>
 </package3d>
 <package3d name="R0805" urn="urn:adsk.eagle:package:26059/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R0805"/>
-</packageinstances>
 </package3d>
 <package3d name="R0805W" urn="urn:adsk.eagle:package:26060/1" type="box" library_version="1">
 <description>RESISTOR wave soldering</description>
-<packageinstances>
-<packageinstance name="R0805W"/>
-</packageinstances>
 </package3d>
 <package3d name="R1206" urn="urn:adsk.eagle:package:26062/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R1206"/>
-</packageinstances>
 </package3d>
 <package3d name="R1206W" urn="urn:adsk.eagle:package:26064/1" type="box" library_version="1">
 <description>RESISTOR
 wave soldering</description>
-<packageinstances>
-<packageinstance name="R1206W"/>
-</packageinstances>
 </package3d>
 <package3d name="R1210" urn="urn:adsk.eagle:package:26063/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R1210"/>
-</packageinstances>
 </package3d>
 <package3d name="R1210W" urn="urn:adsk.eagle:package:26065/1" type="box" library_version="1">
 <description>RESISTOR
 wave soldering</description>
-<packageinstances>
-<packageinstance name="R1210W"/>
-</packageinstances>
 </package3d>
 <package3d name="R2010" urn="urn:adsk.eagle:package:26066/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R2010"/>
-</packageinstances>
 </package3d>
 <package3d name="R2010W" urn="urn:adsk.eagle:package:26068/1" type="box" library_version="1">
 <description>RESISTOR
 wave soldering</description>
-<packageinstances>
-<packageinstance name="R2010W"/>
-</packageinstances>
 </package3d>
 <package3d name="R2012" urn="urn:adsk.eagle:package:26067/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R2012"/>
-</packageinstances>
 </package3d>
 <package3d name="R2012W" urn="urn:adsk.eagle:package:26069/1" type="box" library_version="1">
 <description>RESISTOR
 wave soldering</description>
-<packageinstances>
-<packageinstance name="R2012W"/>
-</packageinstances>
 </package3d>
 <package3d name="R2512" urn="urn:adsk.eagle:package:26070/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R2512"/>
-</packageinstances>
 </package3d>
 <package3d name="R2512W" urn="urn:adsk.eagle:package:26072/1" type="box" library_version="1">
 <description>RESISTOR
 wave soldering</description>
-<packageinstances>
-<packageinstance name="R2512W"/>
-</packageinstances>
 </package3d>
 <package3d name="R3216" urn="urn:adsk.eagle:package:26071/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R3216"/>
-</packageinstances>
 </package3d>
 <package3d name="R3216W" urn="urn:adsk.eagle:package:26074/1" type="box" library_version="1">
 <description>RESISTOR
 wave soldering</description>
-<packageinstances>
-<packageinstance name="R3216W"/>
-</packageinstances>
 </package3d>
 <package3d name="R3225" urn="urn:adsk.eagle:package:26073/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R3225"/>
-</packageinstances>
 </package3d>
 <package3d name="R3225W" urn="urn:adsk.eagle:package:26075/1" type="box" library_version="1">
 <description>RESISTOR
 wave soldering</description>
-<packageinstances>
-<packageinstance name="R3225W"/>
-</packageinstances>
 </package3d>
 <package3d name="R5025" urn="urn:adsk.eagle:package:26080/1" type="box" library_version="1">
 <description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R5025"/>
-</packageinstances>
 </package3d>
 <package3d name="R5025W" urn="urn:adsk.eagle:package:26077/1" type="box" library_version="1">
 <description>RESISTOR
 wave soldering</description>
-<packageinstances>
-<packageinstance name="R5025W"/>
-</packageinstances>
 </package3d>
 <package3d name="R6332" urn="urn:adsk.eagle:package:26076/1" type="box" library_version="1">
 <description>RESISTOR
 Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor/dcrcwfre.pdf</description>
-<packageinstances>
-<packageinstance name="R6332"/>
-</packageinstances>
 </package3d>
 <package3d name="R6332W" urn="urn:adsk.eagle:package:26078/1" type="box" library_version="1">
 <description>RESISTOR wave soldering
 Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor/dcrcwfre.pdf</description>
-<packageinstances>
-<packageinstance name="R6332W"/>
-</packageinstances>
 </package3d>
 <package3d name="M0805" urn="urn:adsk.eagle:package:26079/1" type="box" library_version="1">
 <description>RESISTOR
 MELF 0.10 W</description>
-<packageinstances>
-<packageinstance name="M0805"/>
-</packageinstances>
 </package3d>
 <package3d name="M1206" urn="urn:adsk.eagle:package:26088/1" type="box" library_version="1">
 <description>RESISTOR
 MELF 0.25 W</description>
-<packageinstances>
-<packageinstance name="M1206"/>
-</packageinstances>
 </package3d>
 <package3d name="M1406" urn="urn:adsk.eagle:package:26081/1" type="box" library_version="1">
 <description>RESISTOR
 MELF 0.12 W</description>
-<packageinstances>
-<packageinstance name="M1406"/>
-</packageinstances>
 </package3d>
 <package3d name="M2012" urn="urn:adsk.eagle:package:26082/1" type="box" library_version="1">
 <description>RESISTOR
 MELF 0.10 W</description>
-<packageinstances>
-<packageinstance name="M2012"/>
-</packageinstances>
 </package3d>
 <package3d name="M2309" urn="urn:adsk.eagle:package:26085/1" type="box" library_version="1">
 <description>RESISTOR
 MELF 0.25 W</description>
-<packageinstances>
-<packageinstance name="M2309"/>
-</packageinstances>
 </package3d>
 <package3d name="M3216" urn="urn:adsk.eagle:package:26083/1" type="box" library_version="1">
 <description>RESISTOR
 MELF 0.25 W</description>
-<packageinstances>
-<packageinstance name="M3216"/>
-</packageinstances>
 </package3d>
 <package3d name="M3516" urn="urn:adsk.eagle:package:26086/1" type="box" library_version="1">
 <description>RESISTOR
 MELF 0.12 W</description>
-<packageinstances>
-<packageinstance name="M3516"/>
-</packageinstances>
 </package3d>
 <package3d name="M5923" urn="urn:adsk.eagle:package:26084/1" type="box" library_version="1">
 <description>RESISTOR
 MELF 0.25 W</description>
-<packageinstances>
-<packageinstance name="M5923"/>
-</packageinstances>
 </package3d>
 <package3d name="0204/5" urn="urn:adsk.eagle:package:25955@1/1" type="box" library_version="1">
 <description>RESISTOR
 type 0204, grid 5 mm</description>
-<packageinstances>
-<packageinstance name="0204/5"/>
-</packageinstances>
 </package3d>
 <package3d name="0204/7" urn="urn:adsk.eagle:package:25945@1/1" type="box" library_version="1">
 <description>RESISTOR
 type 0204, grid 7.5 mm</description>
-<packageinstances>
-<packageinstance name="0204/7"/>
-</packageinstances>
 </package3d>
 <package3d name="0204V" urn="urn:adsk.eagle:package:25948@1/1" type="box" library_version="1">
 <description>RESISTOR
 type 0204, grid 2.5 mm</description>
-<packageinstances>
-<packageinstance name="0204V"/>
-</packageinstances>
 </package3d>
 <package3d name="0207/10" urn="urn:adsk.eagle:package:25939@1/1" type="box" library_version="1">
 <description>RESISTOR
 type 0207, grid 10 mm</description>
-<packageinstances>
-<packageinstance name="0207/10"/>
-</packageinstances>
 </package3d>
 <package3d name="0207/12" urn="urn:adsk.eagle:package:25938@1/1" type="box" library_version="1">
 <description>RESISTOR
 type 0207, grid 12 mm</description>
-<packageinstances>
-<packageinstance name="0207/12"/>
-</packageinstances>
 </package3d>
 <package3d name="0207/15" urn="urn:adsk.eagle:package:25947@1/1" type="box" library_version="1">
 <description>RESISTOR
 type 0207, grid 15mm</description>
-<packageinstances>
-<packageinstance name="0207/15"/>
-</packageinstances>
 </package3d>
 <package3d name="0207/2V" urn="urn:adsk.eagle:package:25941@1/1" type="box" library_version="1">
 <description>RESISTOR
 type 0207, grid 2.5 mm</description>
-<packageinstances>
-<packageinstance name="0207/2V"/>
-</packageinstances>
 </package3d>
 <package3d name="0207/5V" urn="urn:adsk.eagle:package:25944@1/1" type="box" library_version="1">
 <description>RESISTOR
 type 0207, grid 5 mm</description>
-<packageinstances>
-<packageinstance name="0207/5V"/>
-</packageinstances>
 </package3d>
 <package3d name="0207/7" urn="urn:adsk.eagle:package:25942@1/1" type="box" library_version="1">
 <description>RESISTOR
 type 0207, grid 7.5 mm</description>
-<packageinstances>
-<packageinstance name="0207/7"/>
-</packageinstances>
 </package3d>
 <package3d name="0309/10" urn="urn:adsk.eagle:package:26087/1" type="box" library_version="1">
 <description>RESISTOR
 type 0309, grid 10mm</description>
-<packageinstances>
-<packageinstance name="0309/10"/>
-</packageinstances>
 </package3d>
 <package3d name="0309/12" urn="urn:adsk.eagle:package:26089/1" type="box" library_version="1">
 <description>RESISTOR
 type 0309, grid 12.5 mm</description>
-<packageinstances>
-<packageinstance name="0309/12"/>
-</packageinstances>
 </package3d>
 <package3d name="0309V" urn="urn:adsk.eagle:package:26090/1" type="box" library_version="1">
 <description>RESISTOR
 type 0309, grid 2.5 mm</description>
-<packageinstances>
-<packageinstance name="0309V"/>
-</packageinstances>
 </package3d>
 <package3d name="0411/12" urn="urn:adsk.eagle:package:26091/1" type="box" library_version="1">
 <description>RESISTOR
 type 0411, grid 12.5 mm</description>
-<packageinstances>
-<packageinstance name="0411/12"/>
-</packageinstances>
 </package3d>
 <package3d name="0411/15" urn="urn:adsk.eagle:package:26093/1" type="box" library_version="1">
 <description>RESISTOR
 type 0411, grid 15 mm</description>
-<packageinstances>
-<packageinstance name="0411/15"/>
-</packageinstances>
 </package3d>
 <package3d name="0411V" urn="urn:adsk.eagle:package:26092/1" type="box" library_version="1">
 <description>RESISTOR
 type 0411, grid 3.81 mm</description>
-<packageinstances>
-<packageinstance name="0411V"/>
-</packageinstances>
 </package3d>
 <package3d name="0414/15" urn="urn:adsk.eagle:package:26094/1" type="box" library_version="1">
 <description>RESISTOR
 type 0414, grid 15 mm</description>
-<packageinstances>
-<packageinstance name="0414/15"/>
-</packageinstances>
 </package3d>
 <package3d name="0414V" urn="urn:adsk.eagle:package:26095/1" type="box" library_version="1">
 <description>RESISTOR
 type 0414, grid 5 mm</description>
-<packageinstances>
-<packageinstance name="0414V"/>
-</packageinstances>
 </package3d>
 <package3d name="0617/17" urn="urn:adsk.eagle:package:26096/1" type="box" library_version="1">
 <description>RESISTOR
 type 0617, grid 17.5 mm</description>
-<packageinstances>
-<packageinstance name="0617/17"/>
-</packageinstances>
 </package3d>
 <package3d name="0617/22" urn="urn:adsk.eagle:package:26103/1" type="box" library_version="1">
 <description>RESISTOR
 type 0617, grid 22.5 mm</description>
-<packageinstances>
-<packageinstance name="0617/22"/>
-</packageinstances>
 </package3d>
 <package3d name="0617V" urn="urn:adsk.eagle:package:26097/1" type="box" library_version="1">
 <description>RESISTOR
 type 0617, grid 5 mm</description>
-<packageinstances>
-<packageinstance name="0617V"/>
-</packageinstances>
 </package3d>
 <package3d name="0922/22" urn="urn:adsk.eagle:package:26107/1" type="box" library_version="1">
 <description>RESISTOR
 type 0922, grid 22.5 mm</description>
-<packageinstances>
-<packageinstance name="0922/22"/>
-</packageinstances>
 </package3d>
 <package3d name="P0613V" urn="urn:adsk.eagle:package:26106/1" type="box" library_version="1">
 <description>RESISTOR
 type 0613, grid 5 mm</description>
-<packageinstances>
-<packageinstance name="P0613V"/>
-</packageinstances>
 </package3d>
 <package3d name="P0613/15" urn="urn:adsk.eagle:package:26098/1" type="box" library_version="1">
 <description>RESISTOR
 type 0613, grid 15 mm</description>
-<packageinstances>
-<packageinstance name="P0613/15"/>
-</packageinstances>
 </package3d>
 <package3d name="P0817/22" urn="urn:adsk.eagle:package:26099/1" type="box" library_version="1">
 <description>RESISTOR
 type 0817, grid 22.5 mm</description>
-<packageinstances>
-<packageinstance name="P0817/22"/>
-</packageinstances>
 </package3d>
 <package3d name="P0817V" urn="urn:adsk.eagle:package:26100/1" type="box" library_version="1">
 <description>RESISTOR
 type 0817, grid 6.35 mm</description>
-<packageinstances>
-<packageinstance name="P0817V"/>
-</packageinstances>
 </package3d>
 <package3d name="V234/12" urn="urn:adsk.eagle:package:26108/1" type="box" library_version="1">
 <description>RESISTOR
 type V234, grid 12.5 mm</description>
-<packageinstances>
-<packageinstance name="V234/12"/>
-</packageinstances>
 </package3d>
 <package3d name="V235/17" urn="urn:adsk.eagle:package:26102/1" type="box" library_version="1">
 <description>RESISTOR
 type V235, grid 17.78 mm</description>
-<packageinstances>
-<packageinstance name="V235/17"/>
-</packageinstances>
 </package3d>
 <package3d name="V526-0" urn="urn:adsk.eagle:package:26101/1" type="box" library_version="1">
 <description>RESISTOR
 type V526-0, grid 2.5 mm</description>
-<packageinstances>
-<packageinstance name="V526-0"/>
-</packageinstances>
 </package3d>
 <package3d name="MINI_MELF-0102R" urn="urn:adsk.eagle:package:26104/1" type="box" library_version="1">
 <description>CECC Size RC2211 Reflow Soldering
 source Beyschlag</description>
-<packageinstances>
-<packageinstance name="MINI_MELF-0102R"/>
-</packageinstances>
 </package3d>
 <package3d name="MINI_MELF-0102W" urn="urn:adsk.eagle:package:26105/1" type="box" library_version="1">
 <description>CECC Size RC2211 Wave Soldering
 source Beyschlag</description>
-<packageinstances>
-<packageinstance name="MINI_MELF-0102W"/>
-</packageinstances>
 </package3d>
 <package3d name="MINI_MELF-0204R" urn="urn:adsk.eagle:package:26109/1" type="box" library_version="1">
 <description>CECC Size RC3715 Reflow Soldering
 source Beyschlag</description>
-<packageinstances>
-<packageinstance name="MINI_MELF-0204R"/>
-</packageinstances>
 </package3d>
 <package3d name="MINI_MELF-0204W" urn="urn:adsk.eagle:package:26111/1" type="box" library_version="1">
 <description>CECC Size RC3715 Wave Soldering
 source Beyschlag</description>
-<packageinstances>
-<packageinstance name="MINI_MELF-0204W"/>
-</packageinstances>
 </package3d>
 <package3d name="MINI_MELF-0207R" urn="urn:adsk.eagle:package:26113/1" type="box" library_version="1">
 <description>CECC Size RC6123 Reflow Soldering
 source Beyschlag</description>
-<packageinstances>
-<packageinstance name="MINI_MELF-0207R"/>
-</packageinstances>
 </package3d>
 <package3d name="MINI_MELF-0207W" urn="urn:adsk.eagle:package:26112/1" type="box" library_version="1">
 <description>CECC Size RC6123 Wave Soldering
 source Beyschlag</description>
-<packageinstances>
-<packageinstance name="MINI_MELF-0207W"/>
-</packageinstances>
 </package3d>
 <package3d name="0922V" urn="urn:adsk.eagle:package:26110/1" type="box" library_version="1">
 <description>RESISTOR
 type 0922, grid 7.5 mm</description>
-<packageinstances>
-<packageinstance name="0922V"/>
-</packageinstances>
 </package3d>
 <package3d name="RDH/15" urn="urn:adsk.eagle:package:26114/1" type="box" library_version="1">
 <description>RESISTOR
 type RDH, grid 15 mm</description>
-<packageinstances>
-<packageinstance name="RDH/15"/>
-</packageinstances>
 </package3d>
 <package3d name="MINI_MELF-0102AX" urn="urn:adsk.eagle:package:26115/1" type="box" library_version="1">
 <description>Mini MELF 0102 Axial</description>
-<packageinstances>
-<packageinstance name="MINI_MELF-0102AX"/>
-</packageinstances>
 </package3d>
 <package3d name="R0201" urn="urn:adsk.eagle:package:26117/1" type="box" library_version="1">
 <description>RESISTOR chip
 Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
-<packageinstances>
-<packageinstance name="R0201"/>
-</packageinstances>
 </package3d>
 <package3d name="VTA52" urn="urn:adsk.eagle:package:26116/1" type="box" library_version="1">
 <description>Bulk Metal® Foil Technology, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements
 MIL SIZE RBR52
 Source: VISHAY .. vta56.pdf</description>
-<packageinstances>
-<packageinstance name="VTA52"/>
-</packageinstances>
 </package3d>
 <package3d name="VTA53" urn="urn:adsk.eagle:package:26118/1" type="box" library_version="1">
 <description>Bulk Metal® Foil Technology, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements
 MIL SIZE RBR53
 Source: VISHAY .. vta56.pdf</description>
-<packageinstances>
-<packageinstance name="VTA53"/>
-</packageinstances>
 </package3d>
 <package3d name="VTA54" urn="urn:adsk.eagle:package:26119/1" type="box" library_version="1">
 <description>Bulk Metal® Foil Technology, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements
 MIL SIZE RBR54
 Source: VISHAY .. vta56.pdf</description>
-<packageinstances>
-<packageinstance name="VTA54"/>
-</packageinstances>
 </package3d>
 <package3d name="VTA55" urn="urn:adsk.eagle:package:26120/1" type="box" library_version="1">
 <description>Bulk Metal® Foil Technology, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements
 MIL SIZE RBR55
 Source: VISHAY .. vta56.pdf</description>
-<packageinstances>
-<packageinstance name="VTA55"/>
-</packageinstances>
 </package3d>
 <package3d name="VTA56" urn="urn:adsk.eagle:package:26129/1" type="box" library_version="1">
 <description>Bulk Metal® Foil Technology, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements
 MIL SIZE RBR56
 Source: VISHAY .. vta56.pdf</description>
-<packageinstances>
-<packageinstance name="VTA56"/>
-</packageinstances>
 </package3d>
 <package3d name="VMTA55" urn="urn:adsk.eagle:package:26121/1" type="box" library_version="1">
 <description>Bulk Metal® Foil Technology, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements
 MIL SIZE RNC55
 Source: VISHAY .. vta56.pdf</description>
-<packageinstances>
-<packageinstance name="VMTA55"/>
-</packageinstances>
 </package3d>
 <package3d name="VMTB60" urn="urn:adsk.eagle:package:26122/1" type="box" library_version="1">
 <description>Bulk Metal® Foil Technology, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements
 MIL SIZE RNC60
 Source: VISHAY .. vta56.pdf</description>
-<packageinstances>
-<packageinstance name="VMTB60"/>
-</packageinstances>
 </package3d>
 <package3d name="R4527" urn="urn:adsk.eagle:package:26124/1" type="box" library_version="1">
 <description>Package 4527
 Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
-<packageinstances>
-<packageinstance name="R4527"/>
-</packageinstances>
 </package3d>
 <package3d name="WSC0001" urn="urn:adsk.eagle:package:26123/1" type="box" library_version="1">
 <description>Wirewound Resistors, Precision Power
 Source: VISHAY wscwsn.pdf</description>
-<packageinstances>
-<packageinstance name="WSC0001"/>
-</packageinstances>
 </package3d>
 <package3d name="WSC0002" urn="urn:adsk.eagle:package:26125/1" type="box" library_version="1">
 <description>Wirewound Resistors, Precision Power
 Source: VISHAY wscwsn.pdf</description>
-<packageinstances>
-<packageinstance name="WSC0002"/>
-</packageinstances>
 </package3d>
 <package3d name="WSC01/2" urn="urn:adsk.eagle:package:26127/1" type="box" library_version="1">
 <description>Wirewound Resistors, Precision Power
 Source: VISHAY wscwsn.pdf</description>
-<packageinstances>
-<packageinstance name="WSC01/2"/>
-</packageinstances>
 </package3d>
 <package3d name="WSC2515" urn="urn:adsk.eagle:package:26134/1" type="box" library_version="1">
 <description>Wirewound Resistors, Precision Power
 Source: VISHAY wscwsn.pdf</description>
-<packageinstances>
-<packageinstance name="WSC2515"/>
-</packageinstances>
 </package3d>
 <package3d name="WSC4527" urn="urn:adsk.eagle:package:26126/1" type="box" library_version="1">
 <description>Wirewound Resistors, Precision Power
 Source: VISHAY wscwsn.pdf</description>
-<packageinstances>
-<packageinstance name="WSC4527"/>
-</packageinstances>
 </package3d>
 <package3d name="WSC6927" urn="urn:adsk.eagle:package:26128/1" type="box" library_version="1">
 <description>Wirewound Resistors, Precision Power
 Source: VISHAY wscwsn.pdf</description>
-<packageinstances>
-<packageinstance name="WSC6927"/>
-</packageinstances>
 </package3d>
 <package3d name="R1218" urn="urn:adsk.eagle:package:26131/1" type="box" library_version="1">
 <description>CRCW1218 Thick Film, Rectangular Chip Resistors
 Source: http://www.vishay.com .. dcrcw.pdf</description>
-<packageinstances>
-<packageinstance name="R1218"/>
-</packageinstances>
 </package3d>
 <package3d name="1812X7R" urn="urn:adsk.eagle:package:26130/1" type="box" library_version="1">
 <description>Chip Monolithic Ceramic Capacitors Medium Voltage High Capacitance for General Use
 Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
-<packageinstances>
-<packageinstance name="1812X7R"/>
-</packageinstances>
 </package3d>
 <package3d name="PRL1632" urn="urn:adsk.eagle:package:26132/1" type="box" library_version="1">
 <description>PRL1632 are realized as 1W for 3.2 × 1.6mm(1206)
 Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
-<packageinstances>
-<packageinstance name="PRL1632"/>
-</packageinstances>
 </package3d>
 <package3d name="R01005" urn="urn:adsk.eagle:package:26133/1" type="box" library_version="1">
-<packageinstances>
-<packageinstance name="R01005"/>
-</packageinstances>
 </package3d>
 <package3d name="C0805" urn="urn:adsk.eagle:package:26137/1" type="box" library_version="1">
 <description>CAPACITOR</description>
@@ -23949,9 +23719,6 @@ Based on the following sources:
 <packages3d>
 <package3d name="SOT23" urn="urn:adsk.eagle:package:43389/2" type="model" library_version="2">
 <description>DIODE</description>
-<packageinstances>
-<packageinstance name="SOT23"/>
-</packageinstances>
 </package3d>
 </packages3d>
 <symbols>
@@ -24922,231 +24689,117 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <packages3d>
 <package3d name="B1,27" urn="urn:adsk.eagle:package:27944/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="B1,27"/>
-</packageinstances>
 </package3d>
 <package3d name="B2,54" urn="urn:adsk.eagle:package:27948/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="B2,54"/>
-</packageinstances>
 </package3d>
 <package3d name="P1-13" urn="urn:adsk.eagle:package:27946/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="P1-13"/>
-</packageinstances>
 </package3d>
 <package3d name="P1-13Y" urn="urn:adsk.eagle:package:27947/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="P1-13Y"/>
-</packageinstances>
 </package3d>
 <package3d name="P1-17" urn="urn:adsk.eagle:package:27949/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="P1-17"/>
-</packageinstances>
 </package3d>
 <package3d name="P1-17Y" urn="urn:adsk.eagle:package:27953/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="P1-17Y"/>
-</packageinstances>
 </package3d>
 <package3d name="P1-20" urn="urn:adsk.eagle:package:27950/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="P1-20"/>
-</packageinstances>
 </package3d>
 <package3d name="P1-20Y" urn="urn:adsk.eagle:package:27951/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="P1-20Y"/>
-</packageinstances>
 </package3d>
 <package3d name="TP06R" urn="urn:adsk.eagle:package:27954/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP06R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP06SQ" urn="urn:adsk.eagle:package:27952/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP06SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP07R" urn="urn:adsk.eagle:package:27970/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP07R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP07SQ" urn="urn:adsk.eagle:package:27955/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP07SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP08R" urn="urn:adsk.eagle:package:27956/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP08R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP08SQ" urn="urn:adsk.eagle:package:27960/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP08SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP09R" urn="urn:adsk.eagle:package:27958/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP09R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP09SQ" urn="urn:adsk.eagle:package:27957/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP09SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP10R" urn="urn:adsk.eagle:package:27959/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP10R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP10SQ" urn="urn:adsk.eagle:package:27962/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP10SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP11R" urn="urn:adsk.eagle:package:27961/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP11R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP11SQ" urn="urn:adsk.eagle:package:27965/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP11SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP12SQ" urn="urn:adsk.eagle:package:27964/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP12SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP12R" urn="urn:adsk.eagle:package:27963/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP12R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP13R" urn="urn:adsk.eagle:package:27967/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP13R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP14R" urn="urn:adsk.eagle:package:27966/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP14R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP15R" urn="urn:adsk.eagle:package:27968/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP15R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP16R" urn="urn:adsk.eagle:package:27969/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP16R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP17R" urn="urn:adsk.eagle:package:27971/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP17R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP18R" urn="urn:adsk.eagle:package:27981/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP18R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP19R" urn="urn:adsk.eagle:package:27972/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP19R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP20R" urn="urn:adsk.eagle:package:27973/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP20R"/>
-</packageinstances>
 </package3d>
 <package3d name="TP13SQ" urn="urn:adsk.eagle:package:27974/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP13SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP14SQ" urn="urn:adsk.eagle:package:27984/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP14SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP15SQ" urn="urn:adsk.eagle:package:27975/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP15SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP16SQ" urn="urn:adsk.eagle:package:27976/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP16SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP17SQ" urn="urn:adsk.eagle:package:27977/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP17SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP18SQ" urn="urn:adsk.eagle:package:27979/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP18SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP19SQ" urn="urn:adsk.eagle:package:27978/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP19SQ"/>
-</packageinstances>
 </package3d>
 <package3d name="TP20SQ" urn="urn:adsk.eagle:package:27980/1" type="box" library_version="1">
 <description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP20SQ"/>
-</packageinstances>
 </package3d>
 </packages3d>
 <symbols>
@@ -26239,6 +25892,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY36" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="SUPPLY37" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
+<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -27049,6 +26703,7 @@ IC</text>
 <instance part="+3V3" gate="G$1" x="182.88" y="119.38"/>
 <instance part="+3V4" gate="G$1" x="223.52" y="119.38"/>
 <instance part="SUPPLY37" gate="GND" x="149.86" y="88.9"/>
+<instance part="JP5" gate="G$1" x="228.6" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -27243,8 +26898,11 @@ IC</text>
 <net name="CLK1" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="CLK1"/>
-<wire x1="210.82" y1="93.98" x2="218.44" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="93.98" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
 <label x="213.36" y="93.98" size="1.778" layer="95"/>
+<wire x1="220.98" y1="93.98" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="132.08" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">

@@ -26238,6 +26238,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY36" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="SUPPLY37" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -28433,6 +28434,7 @@ IC</text>
 <instance part="JP4" gate="G$1" x="147.32" y="27.94"/>
 <instance part="SUPPLY24" gate="GND" x="137.16" y="17.78"/>
 <instance part="SUPPLY36" gate="1" x="27.94" y="48.26"/>
+<instance part="TP10" gate="G$1" x="167.64" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -28769,6 +28771,11 @@ IC</text>
 <wire x1="96.52" y1="142.24" x2="96.52" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
 <label x="78.74" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TP10" gate="G$1" pin="TP"/>
+<wire x1="167.64" y1="101.6" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
+<label x="167.64" y="96.52" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="GPIO_0" class="0">

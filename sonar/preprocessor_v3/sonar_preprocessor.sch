@@ -26237,6 +26237,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY36" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
+<part name="SUPPLY37" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27046,6 +27047,7 @@ IC</text>
 <instance part="SUPPLY32" gate="GND" x="172.72" y="101.6"/>
 <instance part="+3V3" gate="G$1" x="182.88" y="119.38"/>
 <instance part="+3V4" gate="G$1" x="223.52" y="119.38"/>
+<instance part="SUPPLY37" gate="GND" x="149.86" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -27243,11 +27245,6 @@ IC</text>
 <wire x1="210.82" y1="93.98" x2="218.44" y2="93.98" width="0.1524" layer="91"/>
 <label x="213.36" y="93.98" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="RCLK2" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="53.34" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
-<label x="114.3" y="53.34" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -27317,6 +27314,13 @@ IC</text>
 <pinref part="SUPPLY31" gate="GND" pin="GND"/>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="104.14" x2="228.6" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY37" gate="GND" pin="GND"/>
+<wire x1="149.86" y1="91.44" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="25MHZ1" gate="G$1" pin="GND"/>
+<wire x1="149.86" y1="93.98" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="93.98" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-5V" class="0">
@@ -27453,17 +27457,22 @@ IC</text>
 <wire x1="210.82" y1="78.74" x2="218.44" y2="78.74" width="0.1524" layer="91"/>
 <label x="213.36" y="78.74" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="RCLK1" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="127" x2="116.84" y2="127" width="0.1524" layer="91"/>
+<label x="114.3" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RCLK2" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="53.34" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
+<label x="114.3" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CLK0" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="CLK0"/>
 <wire x1="210.82" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
 <label x="213.36" y="99.06" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="RCLK1" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="127" x2="116.84" y2="127" width="0.1524" layer="91"/>
-<label x="114.3" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">

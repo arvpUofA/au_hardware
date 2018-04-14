@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -27630,10 +27630,10 @@ IC</text>
 <wire x1="86.36" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PEAK_IN" class="0">
+<net name="SIG_OUT_2" class="0">
 <segment>
 <wire x1="86.36" y1="104.14" x2="81.28" y2="104.14" width="0.1524" layer="91"/>
-<label x="76.2" y="104.14" size="1.778" layer="95"/>
+<label x="71.12" y="104.14" size="1.778" layer="95"/>
 <pinref part="U6" gate="G1" pin="+IN"/>
 </segment>
 </net>

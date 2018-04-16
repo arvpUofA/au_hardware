@@ -186,15 +186,16 @@
 <dimension x1="64.77" y1="-2.54" x2="64.77" y2="-45.72" x3="71.12" y3="-24.13" textsize="1.778" layer="48" unit="inch" visible="yes"/>
 <text x="-25.654" y="-25.781" size="1.27" layer="21">GND
 REFS</text>
-<text x="-59.69" y="-10.16" size="1.4224" layer="21">HYDROPHONE SIGNAL
-PROCESSOR V3.0</text>
+<text x="-59.69" y="-6.35" size="1.4224" layer="21" align="top-left">HYDROPHONE SIGNAL
+PROCESSOR V3
+Rev. 1: 04/2018</text>
 <text x="-74.93" y="-12.7" size="1.4224" layer="21">CREDIT:
 NICHOLAS K.
 MOIRA B.
 KOLTIN K.-H.
 DAVID L.
 ALAIN L.</text>
-<text x="1.27" y="-48.26" size="1.4224" layer="21">Rev. 1: 04/2018</text>
+<text x="1.27" y="-48.26" size="1.4224" layer="21"></text>
 <text x="8.89" y="-78.74" size="1.4224" layer="48">Internal sensor board location (2"x2")</text>
 <text x="-2.54" y="25.4" size="1.4224" layer="48">Torpedo board location (3"x2")</text>
 <text x="-7.62" y="-43.18" size="1.27" layer="21" rot="R90" align="center-left">12</text>

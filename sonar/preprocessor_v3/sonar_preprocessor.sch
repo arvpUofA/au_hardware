@@ -28877,11 +28877,11 @@ IC</text>
 </net>
 <net name="PEAK_OUT" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="23/A9/T/PWM"/>
-<wire x1="88.9" y1="142.24" x2="96.52" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="142.24" x2="96.52" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="139.7" x2="96.52" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
 <label x="78.74" y="154.94" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="22/A8/T/PWM"/>
+<wire x1="88.9" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="TP10" gate="G$1" pin="TP"/>
@@ -28975,6 +28975,15 @@ IC</text>
 <pinref part="U1" gate="G$1" pin="12/MISO"/>
 <wire x1="88.9" y1="114.3" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
 <label x="96.52" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PEAK_CLEAR" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="23/A9/T/PWM"/>
+<wire x1="88.9" y1="142.24" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="142.24" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="149.86" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
+<label x="78.74" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

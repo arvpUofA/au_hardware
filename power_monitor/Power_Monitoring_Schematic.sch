@@ -7112,6 +7112,69 @@ type 0309, grid 2.5 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ARVP">
+<packages>
+<package name="ARVP">
+<description>Logo</description>
+<wire x1="7.4676" y1="2.4384" x2="7.4676" y2="0.7874" width="0.127" layer="21"/>
+<wire x1="11.0998" y1="2.413" x2="11.0998" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="11.0998" y1="1.2192" x2="11.0998" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="14.2494" y1="2.413" x2="14.4272" y2="2.2606" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="14.4272" y1="1.397" x2="14.2748" y2="1.2192" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="14.2494" y1="2.413" x2="11.0998" y2="2.413" width="0.127" layer="21"/>
+<wire x1="14.4272" y1="2.2606" x2="14.4272" y2="1.397" width="0.127" layer="21"/>
+<wire x1="14.4272" y1="1.397" x2="14.4272" y2="1.3716" width="0.127" layer="21"/>
+<wire x1="14.2494" y1="1.2192" x2="11.0998" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="10.7188" y1="2.413" x2="7.4676" y2="0.7874" width="0.127" layer="21"/>
+<wire x1="3.7338" y1="2.413" x2="3.7338" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="3.7338" y1="1.2192" x2="3.7338" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="6.8834" y1="2.413" x2="7.0612" y2="2.2606" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="7.0612" y1="1.397" x2="6.9088" y2="1.2192" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="6.8834" y1="2.413" x2="3.7338" y2="2.413" width="0.127" layer="21"/>
+<wire x1="7.0612" y1="2.2606" x2="7.0612" y2="1.397" width="0.127" layer="21"/>
+<wire x1="7.0612" y1="1.397" x2="7.0612" y2="1.3716" width="0.127" layer="21"/>
+<wire x1="6.8834" y1="1.2192" x2="6.858" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="6.858" y1="1.2192" x2="3.7338" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="6.858" y1="1.2192" x2="7.0358" y2="1.0668" width="0.127" layer="21" curve="-83.388121"/>
+<wire x1="7.0358" y1="1.0922" x2="7.0358" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="3.3528" y1="2.413" x2="0.2286" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="3.4036" y1="2.4384" x2="3.4036" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="3.3528" y1="1.2192" x2="1.143" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="0.8382" y1="1.7018" x2="0.7366" y2="1.2954" width="0.0508" layer="21"/>
+<wire x1="0.254" y1="1.7018" x2="0.3556" y2="1.2954" width="0.0508" layer="21"/>
+<wire x1="0.6858" y1="1.6256" x2="0.8382" y2="1.7018" width="0.0508" layer="21"/>
+<wire x1="0.254" y1="1.7018" x2="0.4318" y2="1.6256" width="0.0508" layer="21"/>
+<wire x1="0.5588" y1="1.905" x2="0.6858" y2="1.6256" width="0.0508" layer="21"/>
+<wire x1="0.5588" y1="1.905" x2="0.4318" y2="1.6256" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="1.4732" x2="0.3556" y2="1.2954" width="0.0508" layer="21"/>
+<wire x1="-0.127" y1="1.1684" x2="0.1778" y2="0.9398" width="0.0508" layer="21"/>
+<wire x1="0" y1="1.2192" x2="-0.127" y2="1.1684" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="1.4732" x2="0.127" y2="1.3462" width="0.0508" layer="21"/>
+<wire x1="-0.0762" y1="1.397" x2="0" y2="1.2192" width="0.0508" layer="21"/>
+<wire x1="-0.0762" y1="1.397" x2="0.127" y2="1.3462" width="0.0508" layer="21"/>
+<text x="0" y="0" size="0.508" layer="21">autonomous robotic vehicle project</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ARVP">
+<text x="-2.54" y="0" size="2.54" layer="94">ARVP</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ARVP_LOGO" prefix="ARVP">
+<gates>
+<gate name="G$1" symbol="ARVP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ARVP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7133,14 +7196,15 @@ type 0309, grid 2.5 mm</description>
 <part name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R1206" value="0.004Ohm"/>
 <part name="I2C" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
-<part name="PAD2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
-<part name="PAD3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
-<part name="PAD4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
-<part name="PAD6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
-<part name="PAD7" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
-<part name="PAD8" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
-<part name="PAD9" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="GND-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="12V+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="5V+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="3.3V+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="GND+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="12V-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="5V-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="3.3V-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="ARVP1" library="ARVP" deviceset="ARVP_LOGO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7157,14 +7221,15 @@ type 0309, grid 2.5 mm</description>
 <instance part="R2" gate="G$1" x="-27.94" y="12.7" rot="R270"/>
 <instance part="I2C" gate="A" x="-20.32" y="30.48"/>
 <instance part="GND1" gate="1" x="-35.56" y="25.4"/>
-<instance part="PAD1" gate="G$1" x="-43.18" y="-22.86"/>
-<instance part="PAD2" gate="G$1" x="-43.18" y="-30.48"/>
-<instance part="PAD3" gate="G$1" x="-43.18" y="-38.1"/>
-<instance part="PAD4" gate="G$1" x="-43.18" y="-45.72"/>
-<instance part="PAD6" gate="G$1" x="53.34" y="-22.86" rot="R180"/>
-<instance part="PAD7" gate="G$1" x="53.34" y="-30.48" rot="R180"/>
-<instance part="PAD8" gate="G$1" x="53.34" y="-38.1" rot="R180"/>
-<instance part="PAD9" gate="G$1" x="53.34" y="-45.72" rot="R180"/>
+<instance part="GND-" gate="G$1" x="-43.18" y="-22.86"/>
+<instance part="12V+" gate="G$1" x="-43.18" y="-30.48"/>
+<instance part="5V+" gate="G$1" x="-43.18" y="-38.1"/>
+<instance part="3.3V+" gate="G$1" x="-43.18" y="-45.72"/>
+<instance part="GND+" gate="G$1" x="53.34" y="-22.86" rot="R180"/>
+<instance part="12V-" gate="G$1" x="53.34" y="-30.48" rot="R180"/>
+<instance part="5V-" gate="G$1" x="53.34" y="-38.1" rot="R180"/>
+<instance part="3.3V-" gate="G$1" x="53.34" y="-45.72" rot="R180"/>
+<instance part="ARVP1" gate="G$1" x="2.54" y="-30.48"/>
 </instances>
 <busses>
 </busses>
@@ -7184,12 +7249,12 @@ type 0309, grid 2.5 mm</description>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PAD1" gate="G$1" pin="P"/>
+<pinref part="GND-" gate="G$1" pin="P"/>
 <wire x1="-40.64" y1="-22.86" x2="-30.48" y2="-22.86" width="0.1524" layer="91"/>
 <label x="-30.48" y="-22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PAD6" gate="G$1" pin="P"/>
+<pinref part="GND+" gate="G$1" pin="P"/>
 <wire x1="50.8" y1="-22.86" x2="40.64" y2="-22.86" width="0.1524" layer="91"/>
 <label x="40.64" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7206,7 +7271,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="40.64" y1="10.16" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PAD4" gate="G$1" pin="P"/>
+<pinref part="3.3V+" gate="G$1" pin="P"/>
 <wire x1="-40.64" y1="-45.72" x2="-30.48" y2="-45.72" width="0.1524" layer="91"/>
 <label x="-30.48" y="-45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -7250,7 +7315,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="2.54" y1="25.4" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PAD3" gate="G$1" pin="P"/>
+<pinref part="5V+" gate="G$1" pin="P"/>
 <wire x1="-40.64" y1="-38.1" x2="-30.48" y2="-38.1" width="0.1524" layer="91"/>
 <label x="-30.48" y="-38.1" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -7267,7 +7332,7 @@ type 0309, grid 2.5 mm</description>
 <junction x="40.64" y="0"/>
 </segment>
 <segment>
-<pinref part="PAD9" gate="G$1" pin="P"/>
+<pinref part="3.3V-" gate="G$1" pin="P"/>
 <wire x1="50.8" y1="-45.72" x2="40.64" y2="-45.72" width="0.1524" layer="91"/>
 <label x="40.64" y="-45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7284,7 +7349,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="12.7" y1="25.4" x2="17.78" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PAD8" gate="G$1" pin="P"/>
+<pinref part="5V-" gate="G$1" pin="P"/>
 <wire x1="50.8" y1="-38.1" x2="40.64" y2="-38.1" width="0.1524" layer="91"/>
 <label x="40.64" y="-38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7342,7 +7407,7 @@ type 0309, grid 2.5 mm</description>
 <label x="-35.56" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PAD2" gate="G$1" pin="P"/>
+<pinref part="12V+" gate="G$1" pin="P"/>
 <wire x1="-40.64" y1="-30.48" x2="-30.48" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-30.48" y="-30.48" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -7359,7 +7424,7 @@ type 0309, grid 2.5 mm</description>
 <label x="-35.56" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PAD7" gate="G$1" pin="P"/>
+<pinref part="12V-" gate="G$1" pin="P"/>
 <wire x1="50.8" y1="-30.48" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
 <label x="40.64" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>

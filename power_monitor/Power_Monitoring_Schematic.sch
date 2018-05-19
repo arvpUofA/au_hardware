@@ -7205,6 +7205,10 @@ type 0309, grid 2.5 mm</description>
 <part name="5V-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
 <part name="3.3V-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
 <part name="ARVP1" library="ARVP" deviceset="ARVP_LOGO" device=""/>
+<part name="GND-1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="GND-2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="GND-3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
+<part name="GND-4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,81/1,4" package3d_urn="urn:adsk.eagle:package:30835/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -7223,13 +7227,17 @@ type 0309, grid 2.5 mm</description>
 <instance part="GND1" gate="1" x="-35.56" y="25.4"/>
 <instance part="GND-" gate="G$1" x="-43.18" y="-22.86"/>
 <instance part="12V+" gate="G$1" x="-43.18" y="-30.48"/>
-<instance part="5V+" gate="G$1" x="-43.18" y="-38.1"/>
-<instance part="3.3V+" gate="G$1" x="-43.18" y="-45.72"/>
+<instance part="5V+" gate="G$1" x="-43.18" y="-45.72"/>
+<instance part="3.3V+" gate="G$1" x="-43.18" y="-60.96"/>
 <instance part="GND+" gate="G$1" x="53.34" y="-22.86" rot="R180"/>
 <instance part="12V-" gate="G$1" x="53.34" y="-30.48" rot="R180"/>
-<instance part="5V-" gate="G$1" x="53.34" y="-38.1" rot="R180"/>
-<instance part="3.3V-" gate="G$1" x="53.34" y="-45.72" rot="R180"/>
+<instance part="5V-" gate="G$1" x="53.34" y="-45.72" rot="R180"/>
+<instance part="3.3V-" gate="G$1" x="53.34" y="-60.96" rot="R180"/>
 <instance part="ARVP1" gate="G$1" x="2.54" y="-30.48"/>
+<instance part="GND-1" gate="G$1" x="-43.18" y="-53.34"/>
+<instance part="GND-2" gate="G$1" x="-43.18" y="-38.1"/>
+<instance part="GND-3" gate="G$1" x="53.34" y="-38.1" rot="R180"/>
+<instance part="GND-4" gate="G$1" x="53.34" y="-53.34" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7258,6 +7266,26 @@ type 0309, grid 2.5 mm</description>
 <wire x1="50.8" y1="-22.86" x2="40.64" y2="-22.86" width="0.1524" layer="91"/>
 <label x="40.64" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="GND-1" gate="G$1" pin="P"/>
+<wire x1="-40.64" y1="-53.34" x2="-30.48" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-30.48" y="-53.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="GND-2" gate="G$1" pin="P"/>
+<wire x1="-40.64" y1="-38.1" x2="-30.48" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-30.48" y="-38.1" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="GND-3" gate="G$1" pin="P"/>
+<wire x1="50.8" y1="-38.1" x2="40.64" y2="-38.1" width="0.1524" layer="91"/>
+<label x="40.64" y="-38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="GND-4" gate="G$1" pin="P"/>
+<wire x1="50.8" y1="-53.34" x2="40.64" y2="-53.34" width="0.1524" layer="91"/>
+<label x="40.64" y="-53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="3.3V+" class="0">
 <segment>
@@ -7272,8 +7300,8 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="3.3V+" gate="G$1" pin="P"/>
-<wire x1="-40.64" y1="-45.72" x2="-30.48" y2="-45.72" width="0.1524" layer="91"/>
-<label x="-30.48" y="-45.72" size="1.778" layer="95" xref="yes"/>
+<wire x1="-40.64" y1="-60.96" x2="-30.48" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-30.48" y="-60.96" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="WARNING_OUT" class="0">
@@ -7316,8 +7344,8 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="5V+" gate="G$1" pin="P"/>
-<wire x1="-40.64" y1="-38.1" x2="-30.48" y2="-38.1" width="0.1524" layer="91"/>
-<label x="-30.48" y="-38.1" size="1.778" layer="95" xref="yes"/>
+<wire x1="-40.64" y1="-45.72" x2="-30.48" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-30.48" y="-45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V-" class="0">
@@ -7333,8 +7361,8 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="3.3V-" gate="G$1" pin="P"/>
-<wire x1="50.8" y1="-45.72" x2="40.64" y2="-45.72" width="0.1524" layer="91"/>
-<label x="40.64" y="-45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="50.8" y1="-60.96" x2="40.64" y2="-60.96" width="0.1524" layer="91"/>
+<label x="40.64" y="-60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="5V-" class="0">
@@ -7350,8 +7378,8 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="5V-" gate="G$1" pin="P"/>
-<wire x1="50.8" y1="-38.1" x2="40.64" y2="-38.1" width="0.1524" layer="91"/>
-<label x="40.64" y="-38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="50.8" y1="-45.72" x2="40.64" y2="-45.72" width="0.1524" layer="91"/>
+<label x="40.64" y="-45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VS"/>

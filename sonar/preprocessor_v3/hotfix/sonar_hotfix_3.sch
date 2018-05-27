@@ -6351,9 +6351,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="X4" library="ARVP" deviceset="BN35N61-HALF" device=""/>
 <part name="X5" library="ARVP" deviceset="BN35N61-HALF" device=""/>
 <part name="X6" library="ARVP" deviceset="BN35N61-HALF" device=""/>
-<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
-<part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
-<part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
+<part name="H3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
+<part name="H2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
+<part name="H1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -6419,9 +6419,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="X4" gate="G$1" x="35.56" y="0" rot="MR0"/>
 <instance part="X5" gate="G$1" x="35.56" y="-66.04" rot="MR0"/>
 <instance part="X6" gate="G$1" x="35.56" y="-134.62" rot="MR0"/>
-<instance part="TP1" gate="G$1" x="33.02" y="12.7"/>
-<instance part="TP2" gate="G$1" x="33.02" y="-53.34"/>
-<instance part="TP3" gate="G$1" x="33.02" y="-121.92"/>
+<instance part="H3" gate="G$1" x="33.02" y="12.7"/>
+<instance part="H2" gate="G$1" x="33.02" y="-53.34"/>
+<instance part="H1" gate="G$1" x="33.02" y="-121.92"/>
 </instances>
 <busses>
 </busses>
@@ -6446,7 +6446,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-22.86" y1="2.54" x2="-17.78" y2="2.54" width="0.1524" layer="91"/>
 <junction x="27.94" y="0"/>
 <pinref part="X4" gate="G$1" pin="1"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
+<pinref part="H3" gate="G$1" pin="TP"/>
 <wire x1="33.02" y1="10.16" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
 <junction x="27.94" y="7.62"/>
@@ -6685,7 +6685,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-22.86" y1="-63.5" x2="-17.78" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="27.94" y="-66.04"/>
 <pinref part="X5" gate="G$1" pin="1"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="H2" gate="G$1" pin="TP"/>
 <wire x1="33.02" y1="-55.88" x2="33.02" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-58.42" x2="27.94" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="27.94" y="-58.42"/>
@@ -6711,7 +6711,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-22.86" y1="-132.08" x2="-17.78" y2="-132.08" width="0.1524" layer="91"/>
 <junction x="27.94" y="-134.62"/>
 <pinref part="X6" gate="G$1" pin="1"/>
-<pinref part="TP3" gate="G$1" pin="TP"/>
+<pinref part="H1" gate="G$1" pin="TP"/>
 <wire x1="33.02" y1="-124.46" x2="33.02" y2="-127" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-127" x2="27.94" y2="-127" width="0.1524" layer="91"/>
 <junction x="27.94" y="-127"/>

@@ -1622,7 +1622,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <clearance class="0" value="0.2032"/>
 </class>
 </classes>
-<designrules name="ITEADstudioDRC *">
+<designrules name="JLCPCB2Layer">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 

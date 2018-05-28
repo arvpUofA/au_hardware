@@ -1827,7 +1827,7 @@ design rules under a new name.</description>
 <element name="3+" library="Moira" package="3,81/1,5" value="" x="-8.89" y="-13.97"/>
 <element name="2+" library="Moira" package="3,81/1,5" value="" x="-8.89" y="-3.81"/>
 <element name="1+" library="Moira" package="3,81/1,5" value="" x="-8.89" y="6.35"/>
-<element name="3-" library="Moira" package="3,81/1,5" value="" x="8.89" y="-12.7"/>
+<element name="3-" library="Moira" package="3,81/1,5" value="" x="8.89" y="-13.97"/>
 <element name="2-" library="Moira" package="3,81/1,5" value="" x="8.89" y="-3.81"/>
 <element name="1-" library="Moira" package="3,81/1,5" value="" x="8.89" y="6.35"/>
 <element name="ARVP1" library="ARVP" package="ARVP" value="ARVP_LOGO" x="-6.35" y="-18.415"/>
@@ -2085,16 +2085,9 @@ design rules under a new name.</description>
 <wire x1="4.3402" y1="17.0348" x2="4.3402" y2="16.90375" width="0.3048" layer="1"/>
 <wire x1="6.8453" y1="14.39865" x2="7.27395" y2="13.97" width="0.3048" layer="1"/>
 <wire x1="7.27395" y1="13.97" x2="10.16" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="4.07186875" y1="12.7028" x2="3.54813125" y2="12.7028" width="0.3048" layer="1"/>
 <wire x1="7.27395" y1="13.97" x2="6.8453" y2="13.97" width="0.3048" layer="1"/>
 <wire x1="6.8453" y1="13.97" x2="6.689725" y2="13.97" width="0.3048" layer="1"/>
 <wire x1="6.689725" y1="13.97" x2="6.53415" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="6.53415" y1="13.97" x2="5.33906875" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="2.28093125" y1="13.97" x2="1.27" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="5.33906875" y1="13.97" x2="4.07186875" y2="12.7028" width="0.3048" layer="1"/>
-<wire x1="3.54813125" y1="12.7028" x2="2.28093125" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="1.27" y1="13.97" x2="0.975" y2="14.265" width="0.3048" layer="1"/>
-<wire x1="0.975" y1="14.265" x2="0.975" y2="14.71" width="0.3048" layer="1"/>
 <wire x1="4.3402" y1="16.90375" x2="6.689725" y2="14.554225" width="0.3048" layer="1"/>
 <wire x1="6.689725" y1="14.554225" x2="6.689725" y2="13.97" width="0.3048" layer="1"/>
 <wire x1="6.689725" y1="14.554225" x2="6.8103875" y2="14.4335625" width="0.3048" layer="1"/>
@@ -2102,6 +2095,11 @@ design rules under a new name.</description>
 <wire x1="6.8453" y1="14.39865" x2="6.8453" y2="13.97" width="0.3048" layer="1"/>
 <wire x1="6.8103875" y1="14.4335625" x2="6.8103875" y2="14.2462375" width="0.3048" layer="1"/>
 <wire x1="6.8103875" y1="14.2462375" x2="6.53415" y2="13.97" width="0.3048" layer="1"/>
+<wire x1="6.53415" y1="13.97" x2="6.35" y2="13.97" width="0.3048" layer="1"/>
+<wire x1="0.975" y1="12.995" x2="0.975" y2="14.71" width="0.3048" layer="1"/>
+<wire x1="6.35" y1="13.97" x2="4.670425" y2="12.290425" width="0.3048" layer="1"/>
+<wire x1="4.670425" y1="12.290425" x2="1.679575" y2="12.290425" width="0.3048" layer="1"/>
+<wire x1="1.679575" y1="12.290425" x2="0.975" y2="12.995" width="0.3048" layer="1"/>
 </signal>
 </signals>
 </board>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3822,6 +3822,17 @@ distributor Farnell 149-452</description>
 <pad name="5" x="3.13" y="-3.13" drill="1.6"/>
 <text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="B35N61-HALF">
+<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt;&lt;p&gt;
+M/A COM&lt;p&gt;
+www.macom.com&lt;p&gt;
+distributor Farnell 149-452</description>
+<pad name="1" x="0" y="0" drill="1.2"/>
+<pad name="2" x="3.0988" y="3.0988" drill="1.3"/>
+<pad name="3" x="-3.0988" y="3.0988" drill="1.3"/>
+<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -7764,6 +7775,26 @@ distributor Farnell 149-452</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2 3 4 5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BN35N61-HALF" prefix="X" uservalue="yes">
+<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt;&lt;p&gt;
+M/A COM&lt;p&gt;
+www.macom.com&lt;p&gt;
+distributor Farnell 149-452</description>
+<gates>
+<gate name="G$1" symbol="BU-BNC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B35N61-HALF">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2 3"/>
 </connects>
 <technologies>
 <technology name=""/>

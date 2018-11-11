@@ -17025,6 +17025,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
+<part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17169,6 +17171,8 @@ Amber LED for +3v3
 <instance part="TP2" gate="G$1" x="353.06" y="127" rot="R180"/>
 <instance part="P+10" gate="1" x="337.82" y="139.7"/>
 <instance part="+3V2" gate="G$1" x="353.06" y="139.7"/>
+<instance part="TP3" gate="G$1" x="368.3" y="129.54"/>
+<instance part="GND33" gate="1" x="368.3" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -17357,6 +17361,11 @@ Amber LED for +3v3
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="GND32" gate="1" pin="GND"/>
 <wire x1="345.44" y1="78.74" x2="345.44" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TP3" gate="G$1" pin="TP"/>
+<wire x1="368.3" y1="127" x2="368.3" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="GND33" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+3V3" class="0">

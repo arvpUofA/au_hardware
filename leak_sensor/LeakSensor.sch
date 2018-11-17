@@ -5677,18 +5677,21 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </classes>
 <parts>
 <part name="CON4" library="ARVP" deviceset="SM02B-GHS-TB" device=""/>
-<part name="LED1" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1"/>
+<part name="PWR" library="adafruit" deviceset="LED" device="SMT1206" value="1.8V"/>
+<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="37.5"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="CON4" gate="-1" x="58.42" y="27.94"/>
+<instance part="CON4" gate="-1" x="58.42" y="55.88"/>
 <instance part="CON4" gate="-2" x="58.42" y="63.5"/>
 <instance part="CON4" gate="-TABS" x="17.78" y="63.5" rot="R180"/>
-<instance part="LED1" gate="G$1" x="30.48" y="68.58" rot="R270"/>
+<instance part="PWR" gate="G$1" x="30.48" y="68.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="25.908" y="65.024" size="1.778" layer="95"/>
+<attribute name="VALUE" x="25.908" y="62.865" size="1.778" layer="96"/>
+</instance>
 <instance part="R1" gate="G$1" x="45.72" y="68.58"/>
 </instances>
 <busses>
@@ -5696,18 +5699,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="PWR" gate="G$1" pin="A"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="PATH" class="0">
 <segment>
 <pinref part="CON4" gate="-1" pin="S"/>
-<wire x1="58.42" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="PATH1" class="0">
 <segment>
 <pinref part="CON4" gate="-2" pin="S"/>
 <wire x1="58.42" y1="63.5" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
@@ -5717,9 +5720,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="50.8" y="63.5"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$2" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
 <wire x1="25.4" y1="68.58" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="CON4" gate="-TABS" pin="S"/>
 <wire x1="17.78" y1="68.58" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
@@ -5728,6 +5731,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,58.42,27.94,PATH,,,,,"/>
+<approved hash="113,1,29.21,68.2583,PWR,,,,,"/>
+<approved hash="113,1,45.72,69.6697,37.5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

@@ -5732,9 +5732,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="106,1,58.42,27.94,PATH,,,,,"/>
-<approved hash="113,1,29.21,68.2583,PWR,,,,,"/>
-<approved hash="113,1,45.72,69.6697,37.5,,,,,"/>
+<approved hash="106,1,58.42,55.88,PATH,,,,,"/>
 </errors>
 </schematic>
 </drawing>

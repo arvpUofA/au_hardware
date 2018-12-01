@@ -1819,17 +1819,12 @@ design rules under a new name.</description>
 <approved hash="23,1,d584fc7cfe7fd787"/>
 <approved hash="23,1,d5c4fc3cffbfd647"/>
 <approved hash="23,1,d524fcdcf89fd167"/>
-<approved hash="23,1,d5a4fc5cfd9fd467"/>
-<approved hash="23,1,d4a4fd5cf8dfd127"/>
-<approved hash="23,1,e478dd80df16e6ee"/>
 <approved hash="23,1,ab3e91c691dbab23"/>
 <approved hash="23,1,4d6f3497305149a9"/>
 <approved hash="23,1,d024f9dcf75fdea7"/>
 <approved hash="23,1,4db7344f34494db1"/>
 <approved hash="23,1,482731decfd8b621"/>
 <approved hash="23,1,4d97346f36e94f11"/>
-<approved hash="23,1,4eaf3757291150e9"/>
-<approved hash="23,1,4d67349f37994e61"/>
 <approved hash="23,1,46af3f573f5146a9"/>
 <approved hash="23,1,015960a16465059d"/>
 <approved hash="23,1,4c2f35d736114fe9"/>
@@ -1837,6 +1832,7 @@ design rules under a new name.</description>
 <approved hash="23,1,d6a4ff5cf19fd867"/>
 <approved hash="23,1,d4a4fd5cf79fde67"/>
 <approved hash="23,1,d424fddcfddfd427"/>
+<approved hash="23,1,50f7290f2f895671"/>
 </errors>
 </board>
 </drawing>

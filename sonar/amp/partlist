@@ -1,92 +1,60 @@
 Partlist
 
-Exported from sonar_amp.sch at 2018-02-14 12:05 AM
+Exported from sonar_amp.sch at 2017-12-07 8:45 PM
 
-EAGLE Version 8.6.1 Copyright (c) 1988-2018 Autodesk, Inc.
+EAGLE Version 8.4.3 Copyright (c) 1988-2017 Autodesk, Inc.
 
 Assembly variant: 
 
-Part     Value                Device               Package          Library             Sheet
+Part     Value            Device               Package  Library             Sheet
 
-C1       CC0805KRX7R7BB104    CC0805KRX7R7BB104    CC0805N          CC0805KRX7R7BB104   1
-C2       CC0805KRX7R7BB104    CC0805KRX7R7BB104    CC0805N          CC0805KRX7R7BB104   1
-C3       CC0805KRX7R7BB104    CC0805KRX7R7BB104    CC0805N          CC0805KRX7R7BB104   1
-C7       CC0805ZKY5V6BB106    CC0805ZKY5V6BB106    YAG_CC0805       CC0805ZKY5V6BB106   1
-C8       CC0805ZKY5V6BB106    CC0805ZKY5V6BB106    YAG_CC0805       CC0805ZKY5V6BB106   1
-C9       CC0805ZKY5V6BB106    CC0805ZKY5V6BB106    YAG_CC0805       CC0805ZKY5V6BB106   1
-C10      1u                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C11      1u                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C12      1u                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C13      1u                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C15      1u                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C17      1u                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C19      5p                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C20      5p                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C21      5p                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C22      470p                 1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C23      470p                 1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C24      470p                 1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C25      56p                  1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C26      56p                  1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C27      56p                  1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C28      1n                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C29      1n                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C30      1n                   1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C31      10n                  1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C32      10n                  1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-C33      10n                  1UF-25V-10%(0805)"   0805-CAP         SparkFun-Capacitors 1
-CR1      L4941BDT-TR          L4941BDT-TR          DPAK             L4941BDT-TR         1
-IC1                           ADR510               SOT23            SONAR               1
-J1       1-1337543-0          1-1337543-0          CONN_1-1337543-0 1-1337543-0         1
-J2       1-1337543-0          1-1337543-0          CONN_1-1337543-0 1-1337543-0         1
-J3       1-1337543-0          1-1337543-0          CONN_1-1337543-0 1-1337543-0         1
-JMP1     0R-JUMPC             0R-JUMPC             C0R-JMP          jump-0r-smd         1
-JP1                           PINHD-2X5            2X05             pinhead             1
-LED2                          LEDSMT1206           1206             led                 1
-LED3                          LEDSMT1206           1206             led                 1
-LED4                          LEDSMT1206           1206             led                 1
-LED5                          LEDSMT1206           1206             led                 1
-LED6                          LEDSMT1206           1206             led                 1
-OA1      OPA2354AIDGKR        OPA2354AIDGKR        DGK8             OPA2354AIDGKR_Rev   1
-OA2      OPA2354AIDGKR        OPA2354AIDGKR        DGK8             OPA2354AIDGKR_Rev   1
-OA3      OPA2354AIDGKR        OPA2354AIDGKR        DGK8             OPA2354AIDGKR_Rev   1
-OA4      OPA2354AIDGKR        OPA2354AIDGKR        DGK8             OPA2354AIDGKR_Rev   1
-OA5      OPA2354AIDGKR        OPA2354AIDGKR        DGK8             OPA2354AIDGKR_Rev   1
-OA6      OPA2354AIDGKR        OPA2354AIDGKR        DGK8             OPA2354AIDGKR_Rev   1
-P8       PINHD-2X23_2.54      PINHD-2X23_2.54      2X23             pinhead-1           1
-P9       PINHD-2X23_2.54      PINHD-2X23_2.54      2X23             pinhead-1           1
-R1       4.7k                 0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R3       3k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R4       1.5k                 0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R5       100                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R6       100                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R7       100                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R8       300                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R9       300                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R10      300                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R11      20k                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R12      20k                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R13      20k                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R14      10k                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R15      10k                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R16      10k                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R17      1k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R18      1k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R19      1k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R20      20k                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R21      20k                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R22      20k                  0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R23      5k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R24      5k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R25      5k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R26      5k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R27      5k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-R28      5k                   0.3OHM-1/8W-1%(0805) 0805             SparkFun-Resistors  1
-SIG_OUT                       PINHD-2X3            2X03             pinhead             1
-U1       AD5272BRMZ-20RM_10-L AD5272BRMZ-20RM_10-L RM_10-L          AD5272BRMZ-100      1
-U2       AD5272BRMZ-20RM_10-L AD5272BRMZ-20RM_10-L RM_10-L          AD5272BRMZ-100      1
-U3       AD5272BRMZ-20RM_10-L AD5272BRMZ-20RM_10-L RM_10-L          AD5272BRMZ-100      1
-U4                            CZRF52C2CZRF-M       CZRF-M           CZRF52C2            1
-U5                            CZRF52C2CZRF-M       CZRF-M           CZRF52C2            1
-U6                            CZRF52C2CZRF-M       CZRF-M           CZRF52C2            1
-X1       87438-02             87438-02             87438-02         con-molex           1
+1V-TIE   0R-JUMPC         0R-JUMPC             C0R-JMP  jump-0r-smd         1
+ANALOGIN                  PINHD-2X5            2X05     pinhead             1
+C1       1u               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C2       5p               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C4       56p              1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C5       470p             1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C6       1n               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C7       10n              1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C8       1u               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C9       5p               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C10      56p              1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C11      470p             1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C12      1n               1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+C13      10n              1UF-25V-10%(0805)"   0805-CAP SparkFun-Capacitors 1
+GNDTIE                    SJ                   SJ       jumper              1
+I2C2_SDA                  LEDSMT1206           1206     led                 1
+IC2                       LMV797               TSSOP8   SONAR               1
+IC3                       LMV797               TSSOP8   SONAR               1
+IC4                       LMV797               TSSOP8   SONAR               1
+IC5      LMV797           LMV797               TSSOP8   SONAR               1
+IC6                       ADR510               SOT23    SONAR               1
+OUT                       PINHD-1X2            1X02     pinhead             1
+P8       PINHD-2X23       PINHD-2X23           2X23     pinhead             1
+P9       PINHD-2X23       PINHD-2X23           2X23     pinhead             1
+R1       1k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R2       2k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R3       10k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R4       20k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R5       20k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R6       1k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R7       1k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R8       760              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R9       10k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R10      20k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R11      20k              0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R12      1k               0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R13      4.7k             0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R14      1.5k             0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+R15      1.5k             0.3OHM-1/8W-1%(0805) 0805     SparkFun-Resistors  1
+SERVO1                    PINHD-1X3            1X03     pinhead             1
+SERVO2                    PINHD-1X3            1X03     pinhead             1
+SYS_5V                    LEDSMT1206           1206     led                 1
+U$5      MCP4561          MCP4561              MSOP8    SONAR               1
+U$8      MOLEX-0731000105 MOLEX-0731000105     BNC-CONN SONAR               1
+U$9      MCP4561          MCP4561              MSOP8    SONAR               1
+U$12     MOLEX-0731000105 MOLEX-0731000105     BNC-CONN SONAR               1
+VCC_5V                    LEDSMT1206           1206     led                 1
+VDD_3V3                   LEDSMT1206           1206     led                 1
+ZD1      CDZV2.0B         CDZV2.0B             SOD-923  SONAR               1
+ZD2      CDZV2.0B         CDZV2.0B             SOD-923  SONAR               1

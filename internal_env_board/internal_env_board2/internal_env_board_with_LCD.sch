@@ -23917,7 +23917,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R16" library="rcl" deviceset="R-US_" device="M2012" value="560"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="R22" library="pot" deviceset="TRIM_US-" device="SM-42/43W" value="30k"/>
+<part name="R22" library="pot" deviceset="TRIM_US-" device="SM-42/43W" value="10k"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>

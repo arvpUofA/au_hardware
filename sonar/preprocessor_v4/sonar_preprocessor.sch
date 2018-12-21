@@ -10312,6 +10312,23 @@ distributor Farnell 149-452</description>
 <text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="RESC2012X65N">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-1.69" y1="0.96" x2="1.69" y2="0.96" width="0.05" layer="39"/>
+<wire x1="1.69" y1="0.96" x2="1.69" y2="-0.96" width="0.05" layer="39"/>
+<wire x1="1.69" y1="-0.96" x2="-1.69" y2="-0.96" width="0.05" layer="39"/>
+<wire x1="-1.69" y1="-0.96" x2="-1.69" y2="0.96" width="0.05" layer="39"/>
+<wire x1="-1.08" y1="0.7" x2="1.08" y2="0.7" width="0.127" layer="51"/>
+<wire x1="-1.08" y1="-0.7" x2="1.08" y2="-0.7" width="0.127" layer="51"/>
+<text x="-1.78586875" y="1.56733125" size="0.6657125" layer="25">&gt;NAME</text>
+<text x="-1.79806875" y="-2.148390625" size="0.669034375" layer="27">&gt;VALUE</text>
+<wire x1="1.08" y1="0.7" x2="1.08" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-1.08" y1="0.7" x2="-1.08" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.89" x2="1" y2="0.89" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.89" x2="1" y2="-0.89" width="0.127" layer="21"/>
+<smd name="1" x="-0.935" y="0" dx="1" dy="1.42" layer="1" roundness="25"/>
+<smd name="2" x="0.935" y="0" dx="1" dy="1.42" layer="1" roundness="25"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M">
@@ -10449,6 +10466,21 @@ distributor Farnell 149-452</description>
 <pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180" cap="flat"/>
+</symbol>
+<symbol name="RCT-0C">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81616875" y="1.50103125" size="1.78088125" layer="95">&gt;NAME</text>
+<text x="-3.811590625" y="-3.30338125" size="1.778740625" layer="96">&gt;VALUE</text>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10740,6 +10772,36 @@ distributor Farnell 149-452</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RCT-0C" prefix="R">
+<description>0805 PROBE PAD</description>
+<gates>
+<gate name="G$1" symbol="RCT-0C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RESC2012X65N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COMMENT" value="1625854-2"/>
+<attribute name="DESCRIPTION" value=" 0805 PROBE PAD "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="A106144CT-ND"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.ca/product-detail/en/te-connectivity-amp-connectors/RCT-0C/A106144CT-ND/3477801?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
+<attribute name="EU_ROHS_COMPLIANCE" value="Compliant"/>
+<attribute name="MF" value="TE Connectivity"/>
+<attribute name="MP" value="RCT-0C"/>
+<attribute name="PACKAGE" value="0805"/>
+<attribute name="POWER_RATING" value="0 W"/>
+<attribute name="RESISTANCE" value="&lt;.05 "/>
+<attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-1625854-2.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493"/>
+<attribute name="TOLERANCE" value="0%"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -26792,6 +26854,9 @@ Source: www.kingbright.com</description>
 <part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
 <part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
 <part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
+<part name="R35" library="ARVP" deviceset="RCT-0C" device=""/>
+<part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -29525,6 +29590,7 @@ IC</text>
 <sheet>
 <description>Microcontroller and General Interconnect</description>
 <plain>
+<text x="208.28" y="147.32" size="1.778" layer="91">Ground test loop/pad.</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">
@@ -29697,6 +29763,16 @@ IC</text>
 <attribute name="NAME" x="146.05" y="20.955" size="1.778" layer="95"/>
 <attribute name="VALUE" x="146.05" y="10.16" size="1.778" layer="96"/>
 </instance>
+<instance part="R35" gate="G$1" x="218.44" y="160.02" smashed="yes">
+<attribute name="NAME" x="214.62383125" y="161.52103125" size="1.78088125" layer="95"/>
+<attribute name="VALUE" x="214.628409375" y="156.71661875" size="1.778740625" layer="96"/>
+</instance>
+<instance part="SUPPLY4" gate="GND" x="208.28" y="154.94" smashed="yes">
+<attribute name="VALUE" x="206.375" y="151.765" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="GND" x="228.6" y="154.94" smashed="yes">
+<attribute name="VALUE" x="226.695" y="151.765" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -29811,6 +29887,18 @@ IC</text>
 <pinref part="JP2" gate="A" pin="1"/>
 <wire x1="144.78" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 <label x="127" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R35" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="160.02" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="160.02" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R35" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="160.02" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="160.02" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">

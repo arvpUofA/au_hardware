@@ -10283,21 +10283,34 @@ wide body 7.5 mm/JEDEC MO-119AA</description>
 <wire x1="-1" y1="-2.4" x2="-1" y2="0.8" width="0.1524" layer="21"/>
 <circle x="-1.27" y="-2.54" radius="0.254" width="0.1524" layer="21"/>
 </package>
-<package name="CONN_BNC_R/A">
-<pad name="GND1" x="0" y="0" drill="1.8" shape="square"/>
-<pad name="GND2\" x="7.6" y="0" drill="1.8" shape="square"/>
-<pad name="SIG" x="3.8" y="7.8" drill="0.92" shape="square"/>
-<circle x="-1.05" y="-1.1" radius="0.180275" width="0" layer="21"/>
-<wire x1="-1.35" y1="3.9" x2="-1.35" y2="-17.9" width="0.127" layer="51"/>
-<wire x1="-1.35" y1="-17.9" x2="8.95" y2="-17.9" width="0.127" layer="51"/>
-<wire x1="8.95" y1="-17.9" x2="8.95" y2="3.9" width="0.127" layer="51"/>
-<wire x1="8.95" y1="3.9" x2="-1.35" y2="3.9" width="0.127" layer="51"/>
-<wire x1="-1.35" y1="3.9" x2="-1.35" y2="-17.9" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="-17.9" x2="8.95" y2="-17.9" width="0.127" layer="21"/>
-<wire x1="8.95" y1="-17.9" x2="8.95" y2="3.9" width="0.127" layer="21"/>
-<wire x1="8.95" y1="3.9" x2="-1.35" y2="3.9" width="0.127" layer="21"/>
-<text x="-2.75" y="-13.27" size="1.778" layer="25" rot="R90">&gt;NAME</text>
-<text x="11.85" y="-13.62" size="1.778" layer="25" rot="R90">&gt;VALUE</text>
+<package name="TE_5-1634503-1">
+<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt;&lt;p&gt;
+M/A COM&lt;p&gt;
+www.macom.com&lt;p&gt;
+distributor Farnell 149-452</description>
+<wire x1="-1.5" y1="0.5" x2="1.5" y2="0.5" width="0.3048" layer="21" curve="-143.130102"/>
+<wire x1="-1.5" y1="-0.5" x2="1.5" y2="-0.5" width="0.3048" layer="21" curve="143.130102"/>
+<wire x1="-4.572" y1="1.016" x2="-5.461" y2="1.016" width="0.254" layer="21"/>
+<wire x1="-5.461" y1="1.016" x2="-5.461" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="-5.461" y1="-1.016" x2="-4.572" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="4.572" y1="-1.016" x2="5.461" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="5.461" y1="-1.016" x2="5.461" y2="1.016" width="0.254" layer="21"/>
+<wire x1="5.461" y1="1.016" x2="4.572" y2="1.016" width="0.254" layer="21"/>
+<wire x1="-4.1" y1="2.1" x2="-2.1" y2="4.1" width="0.254" layer="51" curve="-35.757393"/>
+<wire x1="-4.1" y1="-2.1" x2="-4.1" y2="2.1" width="0.254" layer="21" curve="-54.242607"/>
+<wire x1="-4.1" y1="-2.1" x2="-2.1" y2="-4.1" width="0.254" layer="51" curve="35.757393"/>
+<wire x1="-2.1" y1="-4.1" x2="2.1" y2="-4.1" width="0.254" layer="21" curve="54.242607"/>
+<wire x1="2.1" y1="-4.1" x2="4.1" y2="-2.1" width="0.254" layer="51" curve="35.757393"/>
+<wire x1="4.1" y1="2.1" x2="4.1" y2="-2.1" width="0.254" layer="21" curve="-54.242607"/>
+<wire x1="2.1" y1="4.1" x2="4.1" y2="2.1" width="0.254" layer="51" curve="-35.757393"/>
+<wire x1="-2.1" y1="4.1" x2="2.1" y2="4.1" width="0.254" layer="21" curve="-54.242607"/>
+<pad name="1" x="0" y="0" drill="1.1"/>
+<pad name="2" x="3.13" y="3.13" drill="1.6"/>
+<pad name="3" x="-3.13" y="3.13" drill="1.6"/>
+<pad name="4" x="-3.13" y="-3.13" drill="1.6"/>
+<pad name="5" x="3.13" y="-3.13" drill="1.6"/>
+<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -10423,7 +10436,7 @@ wide body 7.5 mm/JEDEC MO-119AA</description>
 <wire x1="-8.89" y1="0" x2="-7.62" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="-7.62" y1="-1.27" x2="-6.35" y2="0" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="CONN_BNC_R/A">
+<symbol name="BU-BNC">
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180" cap="flat"/>
 <wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
@@ -10433,8 +10446,8 @@ wide body 7.5 mm/JEDEC MO-119AA</description>
 <wire x1="-0.762" y1="-0.254" x2="-2.54" y2="-0.254" width="0.254" layer="94"/>
 <text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
-<pin name="SIG" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="GND" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180" cap="flat"/>
 </symbol>
 </symbols>
@@ -10711,17 +10724,19 @@ wide body 7.5 mm/JEDEC MO-119AA</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONN_BNC_R/A" prefix="J" uservalue="yes">
-<description>BNC Connector Jack, Female Socket 50 Ohm Through Hole, Right Angle Solder&lt;br/&gt;
-&lt;a href="https://www.digikey.ca/product-detail/en/molex-llc/0731000105/WM5524-ND/1465146"&gt;0731000105 Datasheet&lt;/a&gt;</description>
+<deviceset name="TE_5-1634503-1" prefix="X">
+<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt;&lt;p&gt;
+M/A COM&lt;p&gt;
+www.macom.com&lt;p&gt;
+distributor Farnell 149-452</description>
 <gates>
-<gate name="G$1" symbol="CONN_BNC_R/A" x="2.54" y="2.54"/>
+<gate name="G$1" symbol="BU-BNC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CONN_BNC_R/A">
+<device name="TE" package="TE_5-1634503-1">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND1 GND2\"/>
-<connect gate="G$1" pin="SIG" pad="SIG"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2 3 4 5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -26771,9 +26786,9 @@ Source: www.kingbright.com</description>
 <part name="H3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
 <part name="H2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
 <part name="H1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
-<part name="J1" library="ARVP" deviceset="CONN_BNC_R/A" device=""/>
-<part name="J2" library="ARVP" deviceset="CONN_BNC_R/A" device=""/>
-<part name="J3" library="ARVP" deviceset="CONN_BNC_R/A" device=""/>
+<part name="J1" library="ARVP" deviceset="TE_5-1634503-1" device="TE"/>
+<part name="J2" library="ARVP" deviceset="TE_5-1634503-1" device="TE"/>
+<part name="J3" library="ARVP" deviceset="TE_5-1634503-1" device="TE"/>
 <part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
 <part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
 <part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
@@ -30257,15 +30272,12 @@ IC</text>
 <attribute name="TP_SIGNAL_NAME" x="-26.67" y="13.97" size="1.778" layer="97"/>
 </instance>
 <instance part="J1" gate="G$1" x="-35.56" y="7.62" smashed="yes">
-<attribute name="VALUE" x="-38.1" y="2.54" size="1.778" layer="96"/>
 <attribute name="NAME" x="-38.1" y="10.922" size="1.778" layer="95"/>
 </instance>
 <instance part="J2" gate="G$1" x="-35.56" y="76.2" smashed="yes">
-<attribute name="VALUE" x="-38.1" y="71.12" size="1.778" layer="96"/>
 <attribute name="NAME" x="-38.1" y="79.502" size="1.778" layer="95"/>
 </instance>
 <instance part="J3" gate="G$1" x="-35.56" y="142.24" smashed="yes">
-<attribute name="VALUE" x="-38.1" y="137.16" size="1.778" layer="96"/>
 <attribute name="NAME" x="-38.1" y="145.542" size="1.778" layer="95"/>
 </instance>
 <instance part="R32" gate="G$1" x="-17.78" y="142.24" smashed="yes">
@@ -30392,7 +30404,7 @@ IC</text>
 <wire x1="-33.02" y1="139.7" x2="-30.48" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="139.7" x2="-30.48" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND31" gate="1" pin="GND"/>
-<pinref part="J3" gate="G$1" pin="GND"/>
+<pinref part="J3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C50" gate="G$1" pin="2"/>
@@ -30418,7 +30430,7 @@ IC</text>
 <wire x1="-33.02" y1="73.66" x2="-30.48" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="73.66" x2="-30.48" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="GND48" gate="1" pin="GND"/>
-<pinref part="J2" gate="G$1" pin="GND"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C54" gate="G$1" pin="2"/>
@@ -30444,7 +30456,7 @@ IC</text>
 <wire x1="-33.02" y1="5.08" x2="-30.48" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="5.08" x2="-30.48" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="GND54" gate="1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C58" gate="G$1" pin="2"/>
@@ -30469,7 +30481,7 @@ IC</text>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="J3" gate="G$1" pin="SIG"/>
+<pinref part="J3" gate="G$1" pin="1"/>
 <pinref part="R32" gate="G$1" pin="1"/>
 <wire x1="-33.02" y1="142.24" x2="-27.94" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="H3" gate="G$1" pin="TP"/>
@@ -30487,7 +30499,7 @@ IC</text>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="SIG"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <pinref part="R33" gate="G$1" pin="1"/>
 <wire x1="-33.02" y1="76.2" x2="-27.94" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="H2" gate="G$1" pin="TP"/>
@@ -30513,7 +30525,7 @@ IC</text>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R34" gate="G$1" pin="1"/>
-<pinref part="J1" gate="G$1" pin="SIG"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="-22.86" y1="7.62" x2="-27.94" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="H1" gate="G$1" pin="TP"/>
 <wire x1="-27.94" y1="7.62" x2="-33.02" y2="7.62" width="0.1524" layer="91"/>

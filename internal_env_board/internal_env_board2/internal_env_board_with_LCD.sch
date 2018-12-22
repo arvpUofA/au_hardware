@@ -26990,9 +26990,21 @@ and be placed away from the board</text>
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,224.79,30.48,HIH71201,VCC,+3V3,,,"/>
+<approved hash="104,1,63.5,147.32,U1,3.3V,+3V3,,,"/>
+<approved hash="204,1,63.5,165.1,U1,AGND,,,,"/>
+<approved hash="104,1,314.96,231.14,IC1P,VCC,+5V,,,"/>
+<approved hash="113,1,127.237,28.1356,JP4,,,,,"/>
 <approved hash="113,1,60.0117,91.4661,DANGER,,,,,"/>
 <approved hash="113,1,71.4417,91.44,3V3,,,,,"/>
 <approved hash="113,1,103.192,91.44,5V,,,,,"/>
+<approved hash="113,1,90.1277,224.986,JP2,,,,,"/>
+<approved hash="113,1,45.9156,136.923,JP1,,,,,"/>
+<approved hash="113,1,136.964,229.828,JP3,,,,,"/>
+<approved hash="113,1,200.538,133.228,FRAME1,,,,,"/>
+<approved hash="113,1,370.603,83.6244,JP5,,,,,"/>
+<approved hash="113,1,266.073,142.631,Q1,,,,,"/>
+<approved hash="113,1,290.788,139.896,JP6,,,,,"/>
 <approved hash="115,1,45.72,140.97,VIN,,,,,"/>
 </errors>
 </schematic>

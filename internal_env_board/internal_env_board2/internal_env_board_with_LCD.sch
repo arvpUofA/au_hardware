@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -26990,9 +26990,14 @@ and be placed away from the board</text>
 </sheet>
 </sheets>
 <errors>
+<approved hash="113,1,127.237,28.1661,JP4,,,,,"/>
 <approved hash="113,1,60.0117,91.4661,DANGER,,,,,"/>
 <approved hash="113,1,71.4417,91.44,3V3,,,,,"/>
 <approved hash="113,1,103.192,91.44,5V,,,,,"/>
+<approved hash="113,1,90.1277,225.016,JP2,,,,,"/>
+<approved hash="113,1,45.9461,136.923,JP1,,,,,"/>
+<approved hash="113,1,136.934,229.828,JP3,,,,,"/>
+<approved hash="113,1,360.443,88.6739,JP5,,,,,"/>
 <approved hash="115,1,45.72,140.97,VIN,,,,,"/>
 </errors>
 </schematic>

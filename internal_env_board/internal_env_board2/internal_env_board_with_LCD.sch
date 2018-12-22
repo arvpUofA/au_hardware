@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -26990,7 +26990,6 @@ and be placed away from the board</text>
 </sheet>
 </sheets>
 <errors>
-<<<<<<< HEAD
 <approved hash="104,1,224.79,30.48,HIH71201,VCC,+3V3,,,"/>
 <approved hash="104,1,63.5,147.32,U1,3.3V,+3V3,,,"/>
 <approved hash="204,1,63.5,165.1,U1,AGND,,,,"/>
@@ -27006,16 +27005,6 @@ and be placed away from the board</text>
 <approved hash="113,1,370.603,83.6244,JP5,,,,,"/>
 <approved hash="113,1,266.073,142.631,Q1,,,,,"/>
 <approved hash="113,1,290.788,139.896,JP6,,,,,"/>
-=======
-<approved hash="113,1,127.237,28.1661,JP4,,,,,"/>
-<approved hash="113,1,60.0117,91.4661,DANGER,,,,,"/>
-<approved hash="113,1,71.4417,91.44,3V3,,,,,"/>
-<approved hash="113,1,103.192,91.44,5V,,,,,"/>
-<approved hash="113,1,90.1277,225.016,JP2,,,,,"/>
-<approved hash="113,1,45.9461,136.923,JP1,,,,,"/>
-<approved hash="113,1,136.934,229.828,JP3,,,,,"/>
-<approved hash="113,1,360.443,88.6739,JP5,,,,,"/>
->>>>>>> parent of b3b3326... Added new components for LCD
 <approved hash="115,1,45.72,140.97,VIN,,,,,"/>
 </errors>
 </schematic>

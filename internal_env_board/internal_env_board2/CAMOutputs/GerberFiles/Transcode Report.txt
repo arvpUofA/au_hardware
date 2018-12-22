@@ -1,0 +1,224 @@
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\copper_top.gbr' ----   Fri Dec 21 16:37:05 2018
+
+D12   --> D100
+D13   --> D101
+D14   --> D102
+D15   --> D103
+D16   --> D104
+D18   --> D105
+D19   --> D106
+D20   --> D107
+D21   --> D108
+D22   --> D109
+D23   --> D110
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\profile.gbr' ----   Fri Dec 21 16:37:05 2018
+
+D10   --> D111
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\silkscreen_bottom.gbr' ----   Fri Dec 21 16:37:05 2018
+
+D10   --> D112
+D11   --> D113
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\silkscreen_top.gbr' ----   Fri Dec 21 16:37:06 2018
+
+D10   --> D114
+D11   --> D115
+D12   --> D116
+D13   --> D117
+D14   --> D118
+D15   --> D119
+D16   --> D120
+D17   --> D121
+D18   --> D122
+D19   --> D123
+D20   --> D124
+D21   --> D125
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\soldermask_bottom.gbr' ----   Fri Dec 21 16:37:06 2018
+
+D10   --> D126
+D11   --> D127
+D12   --> D128
+D13   --> D129
+D14   --> D130
+D15   --> D131
+D16   --> D132
+D17   --> D133
+D18   --> D134
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\soldermask_top.gbr' ----   Fri Dec 21 16:37:06 2018
+
+D10   --> D135
+D11   --> D136
+D12   --> D137
+D13   --> D138
+D14   --> D139
+D15   --> D140
+D16   --> D141
+D17   --> D142
+D18   --> D143
+D19   --> D144
+D20   --> D145
+D21   --> D146
+D22   --> D147
+D23   --> D148
+D24   --> D149
+D25   --> D150
+D26   --> D151
+D27   --> D152
+D28   --> D153
+D29   --> D154
+D30   --> D155
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\solderpaste_bottom.gbr' ----   Fri Dec 21 16:37:06 2018
+
+D10   --> D156
+D11   --> D157
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\solderpaste_top.gbr' ----   Fri Dec 21 16:37:06 2018
+
+D10   --> D158
+D11   --> D159
+D12   --> D160
+D13   --> D161
+D14   --> D162
+D15   --> D163
+D16   --> D164
+D17   --> D165
+D18   --> D166
+D19   --> D167
+D20   --> D168
+D21   --> D169
+D22   --> D170
+D23   --> D171
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\copper_top.gbr' ----   Fri Dec 21 16:52:00 2018
+
+D12   --> D100
+D13   --> D101
+D14   --> D102
+D15   --> D103
+D16   --> D104
+D18   --> D105
+D19   --> D106
+D20   --> D107
+D21   --> D108
+D22   --> D109
+D23   --> D110
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\profile.gbr' ----   Fri Dec 21 16:52:00 2018
+
+D10   --> D111
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\silkscreen_bottom.gbr' ----   Fri Dec 21 16:52:00 2018
+
+D10   --> D112
+D11   --> D113
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\silkscreen_top.gbr' ----   Fri Dec 21 16:52:00 2018
+
+D10   --> D114
+D11   --> D115
+D12   --> D116
+D13   --> D117
+D14   --> D118
+D15   --> D119
+D16   --> D120
+D17   --> D121
+D18   --> D122
+D19   --> D123
+D20   --> D124
+D21   --> D125
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\soldermask_bottom.gbr' ----   Fri Dec 21 16:52:00 2018
+
+D10   --> D126
+D11   --> D127
+D12   --> D128
+D13   --> D129
+D14   --> D130
+D15   --> D131
+D16   --> D132
+D17   --> D133
+D18   --> D134
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\soldermask_top.gbr' ----   Fri Dec 21 16:52:00 2018
+
+D10   --> D135
+D11   --> D136
+D12   --> D137
+D13   --> D138
+D14   --> D139
+D15   --> D140
+D16   --> D141
+D17   --> D142
+D18   --> D143
+D19   --> D144
+D20   --> D145
+D21   --> D146
+D22   --> D147
+D23   --> D148
+D24   --> D149
+D25   --> D150
+D26   --> D151
+D27   --> D152
+D28   --> D153
+D29   --> D154
+D30   --> D155
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\solderpaste_bottom.gbr' ----   Fri Dec 21 16:52:00 2018
+
+D10   --> D156
+D11   --> D157
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\internal_env_board\internal_env_board2\CAMOutputs\GerberFiles\solderpaste_top.gbr' ----   Fri Dec 21 16:52:00 2018
+
+D10   --> D158
+D11   --> D159
+D12   --> D160
+D13   --> D161
+D14   --> D162
+D15   --> D163
+D16   --> D164
+D17   --> D165
+D18   --> D166
+D19   --> D167
+D20   --> D168
+D21   --> D169
+D22   --> D170
+D23   --> D171
+-----------------------------------------------------------------

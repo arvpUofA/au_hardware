@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2018-12-22T20:04:22Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "communication-hub"
+        },
+        "Owner": "UNKNOWN Schroeder <aschroed@ualberta.ca>",
+        "Size": {
+            "X": 82.55,
+            "Y": 53.975
+        }
+    }
+}

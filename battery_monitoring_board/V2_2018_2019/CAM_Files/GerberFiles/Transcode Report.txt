@@ -1,0 +1,145 @@
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\battery_monitoring_board\V2_2018_2019\CAM_Files\GerberFiles\copper_top.gbr' ----   Wed Dec 26 14:42:52 2018
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+D13   --> D103
+D14   --> D104
+D15   --> D105
+D16   --> D106
+D17   --> D107
+D18   --> D108
+D19   --> D109
+D20   --> D110
+D21   --> D111
+D22   --> D112
+D23   --> D113
+D24   --> D114
+D25   --> D115
+D26   --> D116
+D27   --> D117
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\battery_monitoring_board\V2_2018_2019\CAM_Files\GerberFiles\profile.gbr' ----   Wed Dec 26 14:42:52 2018
+
+D10   --> D118
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\battery_monitoring_board\V2_2018_2019\CAM_Files\GerberFiles\silkscreen_bottom.gbr' ----   Wed Dec 26 14:42:52 2018
+
+D10   --> D119
+D11   --> D120
+D12   --> D121
+D13   --> D122
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\battery_monitoring_board\V2_2018_2019\CAM_Files\GerberFiles\silkscreen_top.gbr' ----   Wed Dec 26 14:42:52 2018
+
+D10   --> D123
+D11   --> D124
+D12   --> D125
+D13   --> D126
+D14   --> D127
+D15   --> D128
+D16   --> D129
+D17   --> D130
+D18   --> D131
+D19   --> D132
+D20   --> D133
+D21   --> D134
+D22   --> D135
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\battery_monitoring_board\V2_2018_2019\CAM_Files\GerberFiles\soldermask_bottom.gbr' ----   Wed Dec 26 14:42:52 2018
+
+D10   --> D136
+D11   --> D137
+D12   --> D138
+D13   --> D139
+D14   --> D140
+D15   --> D141
+D16   --> D142
+D17   --> D143
+D18   --> D144
+D19   --> D145
+D20   --> D146
+D21   --> D147
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\battery_monitoring_board\V2_2018_2019\CAM_Files\GerberFiles\soldermask_top.gbr' ----   Wed Dec 26 14:42:52 2018
+
+D10   --> D148
+D11   --> D149
+D12   --> D150
+D13   --> D151
+D14   --> D152
+D15   --> D153
+D16   --> D154
+D17   --> D155
+D18   --> D156
+D19   --> D157
+D20   --> D158
+D21   --> D159
+D22   --> D160
+D23   --> D161
+D24   --> D162
+D25   --> D163
+D26   --> D164
+D27   --> D165
+D28   --> D166
+D29   --> D167
+D30   --> D168
+D31   --> D169
+D32   --> D170
+D33   --> D171
+D34   --> D172
+D35   --> D173
+D36   --> D174
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\battery_monitoring_board\V2_2018_2019\CAM_Files\GerberFiles\solderpaste_bottom.gbr' ----   Wed Dec 26 14:42:52 2018
+
+D10   --> D175
+D11   --> D176
+D12   --> D177
+D13   --> D178
+D14   --> D179
+D15   --> D180
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\battery_monitoring_board\V2_2018_2019\CAM_Files\GerberFiles\solderpaste_top.gbr' ----   Wed Dec 26 14:42:52 2018
+
+D10   --> D181
+D11   --> D182
+D12   --> D183
+D13   --> D184
+D14   --> D185
+D15   --> D186
+D16   --> D187
+D17   --> D188
+D18   --> D189
+D19   --> D190
+D20   --> D191
+D21   --> D192
+D22   --> D193
+D23   --> D194
+D24   --> D195
+D25   --> D196
+D26   --> D197
+D27   --> D198
+D28   --> D199
+D29   --> D200
+D30   --> D201
+D31   --> D202
+D32   --> D203
+D33   --> D204
+-----------------------------------------------------------------

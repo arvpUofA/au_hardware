@@ -1,0 +1,36 @@
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\leak_sensor\LeakSensor\outputs\solderpaste_top.gbr' ----   Wed Dec 26 13:48:07 2018
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\leak_sensor\LeakSensor\outputs\soldermask_top.gbr' ----   Wed Dec 26 13:48:07 2018
+
+D10   --> D103
+D11   --> D104
+D12   --> D105
+D13   --> D106
+D14   --> D107
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\leak_sensor\LeakSensor\outputs\copper_top.gbr' ----   Wed Dec 26 13:48:07 2018
+
+D10   --> D108
+D11   --> D109
+D12   --> D110
+D13   --> D111
+D14   --> D112
+D15   --> D113
+D16   --> D114
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\leak_sensor\LeakSensor\outputs\profile.gbr' ----   Wed Dec 26 13:48:07 2018
+
+D10   --> D115
+-----------------------------------------------------------------

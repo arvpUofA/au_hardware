@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2018-12-21T23:50:54Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "internal_env_board_with_LCD"
+        },
+        "Owner": "UNKNOWN Schroeder <aschroed@ualberta.ca>",
+        "Size": {
+            "X": 50.8,
+            "Y": 50.8
+        }
+    }
+}

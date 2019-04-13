@@ -22787,8 +22787,6 @@ Source: www.kingbright.com</description>
 <part name="Q13" library="Moira" deviceset="SI7145DP" device=""/>
 <part name="C10" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.1u"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C11" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:6240335/1" value="33uF"/>
-<part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J9" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -24128,6 +24126,12 @@ flow to the motors.   </text>
 </sheet>
 <sheet>
 <plain>
+<text x="-58.42" y="101.6" size="1.778" layer="91">Bi-Directional PMOS Switch</text>
+<text x="-60.96" y="58.42" size="1.778" layer="91">Bi-Directional PMOS Switch</text>
+<text x="-2.54" y="88.9" size="1.778" layer="91">datasheet recommend an output cap;
+however, due to the large capacitance on the power conversion board 
+there is a large in-rush current that causes issues with the lab power 
+supplies or low current sources. Therefore, the cap has been removed</text>
 </plain>
 <instances>
 <instance part="U5" gate="G$1" x="0" y="0" smashed="yes" rot="R90">
@@ -24251,13 +24255,6 @@ flow to the motors.   </text>
 <instance part="GND25" gate="1" x="-55.88" y="22.86" smashed="yes">
 <attribute name="VALUE" x="-58.42" y="20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="C11" gate="G$1" x="0" y="93.98" smashed="yes">
-<attribute name="NAME" x="1.016" y="94.615" size="1.778" layer="95"/>
-<attribute name="VALUE" x="1.016" y="89.789" size="1.778" layer="96"/>
-</instance>
-<instance part="GND26" gate="1" x="0" y="83.82" smashed="yes">
-<attribute name="VALUE" x="-2.54" y="81.28" size="1.778" layer="96"/>
-</instance>
 <instance part="FRAME2" gate="G$1" x="-205.74" y="-101.6" smashed="yes">
 <attribute name="DRAWING_NAME" x="138.43" y="-86.36" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="138.43" y="-91.44" size="2.286" layer="94"/>
@@ -24322,11 +24319,6 @@ flow to the motors.   </text>
 <pinref part="C10" gate="G$1" pin="2"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="-55.88" y1="27.94" x2="-55.88" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C11" gate="G$1" pin="2"/>
-<pinref part="GND26" gate="1" pin="GND"/>
-<wire x1="0" y1="88.9" x2="0" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="WALL" class="0">
@@ -24577,16 +24569,11 @@ flow to the motors.   </text>
 <pinref part="Q13" gate="G$1" pin="D"/>
 <wire x1="-33.02" y1="55.88" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="99.06" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="99.06" x2="0" y2="99.06" width="0.1524" layer="91"/>
 <junction x="-10.16" y="99.06"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="0" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="0" y1="96.52" x2="0" y2="99.06" width="0.1524" layer="91"/>
-<junction x="0" y="99.06"/>
+<wire x1="-10.16" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
 <label x="66.04" y="99.06" size="1.778" layer="95" xref="yes"/>
 <pinref part="U5" gate="G$1" pin="VOUT"/>
-<wire x1="-10.16" y1="22.86" x2="-10.16" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="30.48" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-10.16" y="55.88"/>
 </segment>
 </net>

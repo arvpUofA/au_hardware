@@ -233,7 +233,7 @@ Source Step = 93.9394%
 Source Step = 100%
 Source Step = 100%
 Source stepping aborted.
-Pseudo Transient failed in finding the operating point at 85.5366 ms.
+Pseudo Transient failed in finding the operating point at 27.2101 ms.
 Trouble finding operating point....skipping operating point for Transient analysis.
 Changing Tseed to 1e-007
 Changing Tseed to 1e-009
@@ -840,21 +840,21 @@ to 4.125e-008
 Heightened Def Con from 4.125e-008 +++++++++++++++++++++++++++++++to 4.125e-008
 Heightened Def Con from 4.125e-008 to 4.15176e-008
 
-Date: Sat Feb 16 11:08:04 2019
-Total elapsed time: 8.466 seconds.
+Date: Fri Mar 22 17:23:17 2019
+Total elapsed time: 8.200 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 202534
+totiter = 125444
 traniter = 73922
 tranpoints = 16301
 accept = 11826
-rejected = 6985
+rejected = 4934
 matrix size = 160
 fillins = 159
 solver = Normal
-Thread vector: 23.9/13.1[8] 18.1/12.0[8] 7.5/3.4[8] 0.4/3.2[1]  2592/500
-Matrix Compiler1: 18.60 KB object code size  5.0/2.9/[1.4]
-Matrix Compiler2: 13.02 KB object code size  2.5/3.1/[0.8]
+Thread vector: 31.8/19.0[8] 20.0/7.4[8] 9.2/4.7[8] 0.6/2.4[1]  2592/500
+Matrix Compiler1: 18.60 KB object code size  5.5/3.2/[1.5]
+Matrix Compiler2: 13.02 KB object code size  2.7/4.8/[1.0]
 

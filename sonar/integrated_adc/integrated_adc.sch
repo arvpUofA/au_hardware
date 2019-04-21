@@ -9226,7 +9226,7 @@ Power, clock, bypassing, etc. for MCU, as well as CAN bus.</description>
 but on further research that isn't necessarily the best idea.
 Split grounds can "force" return paths in weird ways, so it's
 generally a better idea to just do careful routing.</text>
-<text x="111.76" y="48.26" size="1.778" layer="97">4-Layer PCB from JLCPCB.
+<text x="109.22" y="71.12" size="1.778" layer="97">4-Layer PCB from JLCPCB.
 
 Stackup: JLC7628</text>
 </plain>
@@ -9642,7 +9642,7 @@ Stackup: JLC7628</text>
 <net name="SWDIO" class="0">
 <segment>
 <wire x1="129.54" y1="139.7" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
-<label x="137.16" y="139.7" size="1.778" layer="95"/>
+<label x="144.78" y="139.7" size="1.778" layer="95" rot="R180"/>
 <pinref part="U$3" gate="G$1" pin="PA13"/>
 </segment>
 <segment>
@@ -9666,57 +9666,57 @@ Stackup: JLC7628</text>
 <net name="ADC1" class="0">
 <segment>
 <wire x1="129.54" y1="172.72" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
-<label x="134.62" y="172.72" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="PA0"/>
+<label x="134.62" y="172.72" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ADC2" class="0">
 <segment>
 <wire x1="129.54" y1="162.56" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
-<label x="134.62" y="162.56" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="PA4"/>
+<label x="134.62" y="162.56" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ADC3" class="0">
 <segment>
 <wire x1="182.88" y1="139.7" x2="190.5" y2="139.7" width="0.1524" layer="91"/>
-<label x="190.5" y="139.7" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$2" pin="PB13"/>
+<label x="190.5" y="139.7" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ADC4" class="0">
 <segment>
 <wire x1="182.88" y1="137.16" x2="190.5" y2="137.16" width="0.1524" layer="91"/>
-<label x="190.5" y="137.16" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$2" pin="PB14"/>
+<label x="190.5" y="137.16" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_RX" class="0">
 <segment>
 <pinref part="U$3" gate="G$2" pin="PB8"/>
 <wire x1="182.88" y1="152.4" x2="195.58" y2="152.4" width="0.1524" layer="91"/>
-<label x="195.58" y="152.4" size="1.778" layer="95"/>
+<label x="195.58" y="152.4" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_TX" class="0">
 <segment>
 <pinref part="U$3" gate="G$2" pin="PB9"/>
 <wire x1="182.88" y1="149.86" x2="195.58" y2="149.86" width="0.1524" layer="91"/>
-<label x="195.58" y="149.86" size="1.778" layer="95"/>
+<label x="195.58" y="149.86" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <wire x1="129.54" y1="149.86" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
-<label x="137.16" y="149.86" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="PA9"/>
+<label x="137.16" y="149.86" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <wire x1="129.54" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
-<label x="137.16" y="147.32" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="PA10"/>
+<label x="137.16" y="147.32" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SWCLK" class="0">
@@ -9727,7 +9727,7 @@ Stackup: JLC7628</text>
 </segment>
 <segment>
 <wire x1="129.54" y1="137.16" x2="137.16" y2="137.16" width="0.1524" layer="91"/>
-<label x="137.16" y="137.16" size="1.778" layer="95"/>
+<label x="144.78" y="137.16" size="1.778" layer="95" rot="R180"/>
 <pinref part="U$3" gate="G$1" pin="PA14"/>
 </segment>
 </net>
@@ -9752,21 +9752,21 @@ Stackup: JLC7628</text>
 <segment>
 <pinref part="U$3" gate="G$4" pin="PD9"/>
 <wire x1="129.54" y1="101.6" x2="137.16" y2="101.6" width="0.1524" layer="91"/>
-<label x="137.16" y="101.6" size="1.778" layer="95"/>
+<label x="137.16" y="101.6" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="USB_D_N" class="1">
 <segment>
 <wire x1="129.54" y1="144.78" x2="137.16" y2="144.78" width="0.1524" layer="91"/>
-<label x="137.16" y="144.78" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="PA11"/>
+<label x="137.16" y="144.78" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="USB_D_P" class="1">
 <segment>
 <wire x1="129.54" y1="142.24" x2="137.16" y2="142.24" width="0.1524" layer="91"/>
-<label x="137.16" y="142.24" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="PA12"/>
+<label x="137.16" y="142.24" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -9791,63 +9791,63 @@ Stackup: JLC7628</text>
 <segment>
 <pinref part="U$3" gate="G$2" pin="PB7"/>
 <wire x1="182.88" y1="154.94" x2="190.5" y2="154.94" width="0.1524" layer="91"/>
-<label x="190.5" y="154.94" size="1.778" layer="95"/>
+<label x="190.5" y="154.94" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="UART1_TX" class="0">
 <segment>
 <pinref part="U$3" gate="G$2" pin="PB6"/>
 <wire x1="182.88" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
-<label x="190.5" y="157.48" size="1.778" layer="95"/>
+<label x="190.5" y="157.48" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="UART3_TX" class="0">
 <segment>
 <pinref part="U$3" gate="G$4" pin="PD8"/>
 <wire x1="129.54" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
-<label x="137.16" y="104.14" size="1.778" layer="95"/>
+<label x="137.16" y="104.14" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO_0" class="0">
 <segment>
 <pinref part="U$3" gate="G$4" pin="PD0"/>
 <wire x1="129.54" y1="124.46" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
-<label x="134.62" y="124.46" size="1.778" layer="95"/>
+<label x="134.62" y="124.46" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO_1" class="0">
 <segment>
 <pinref part="U$3" gate="G$4" pin="PD1"/>
 <wire x1="129.54" y1="121.92" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
-<label x="134.62" y="121.92" size="1.778" layer="95"/>
+<label x="134.62" y="121.92" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO_2" class="0">
 <segment>
 <pinref part="U$3" gate="G$4" pin="PD2"/>
 <wire x1="129.54" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
-<label x="134.62" y="119.38" size="1.778" layer="95"/>
+<label x="134.62" y="119.38" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO_3" class="0">
 <segment>
 <pinref part="U$3" gate="G$4" pin="PD3"/>
 <wire x1="129.54" y1="116.84" x2="134.62" y2="116.84" width="0.1524" layer="91"/>
-<label x="134.62" y="116.84" size="1.778" layer="95"/>
+<label x="134.62" y="116.84" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO_4" class="0">
 <segment>
 <pinref part="U$3" gate="G$4" pin="PD4"/>
 <wire x1="129.54" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<label x="134.62" y="114.3" size="1.778" layer="95"/>
+<label x="134.62" y="114.3" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GAIN_CTL" class="0">
 <segment>
 <pinref part="U$3" gate="G$4" pin="PD5"/>
 <wire x1="129.54" y1="111.76" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
-<label x="134.62" y="111.76" size="1.778" layer="95"/>
+<label x="134.62" y="111.76" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -9993,7 +9993,7 @@ Has the external ADC, as well as all the connections required for reading the hy
 <segment>
 <pinref part="U2" gate="G$1" pin="D23/A9"/>
 <wire x1="66.04" y1="165.1" x2="76.2" y2="165.1" width="0.1524" layer="91"/>
-<label x="76.2" y="165.1" size="1.778" layer="95"/>
+<label x="76.2" y="165.1" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="UART3_RX" class="0">
@@ -10094,7 +10094,7 @@ Has the external ADC, as well as all the connections required for reading the hy
 <segment>
 <pinref part="U2" gate="G$1" pin="D22/A8"/>
 <wire x1="66.04" y1="162.56" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
-<label x="76.2" y="162.56" size="1.778" layer="95"/>
+<label x="76.2" y="162.56" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="AIN"/>
@@ -10149,11 +10149,11 @@ Has the external ADC, as well as all the connections required for reading the hy
 <sheet>
 <description>&lt;h1&gt;Communications&lt;/h1&gt;</description>
 <plain>
-<text x="5.08" y="144.78" size="1.778" layer="94">From SiLabs app note:
+<text x="7.62" y="144.78" size="1.778" layer="94">From SiLabs app note:
 - Route as short as possible
 - 90 ohm impedance
 - 15 ohm serial resistors on D+/D-</text>
-<text x="78.74" y="162.56" size="1.778" layer="97">+VBUS shouldn't be connected.
+<text x="81.28" y="162.56" size="1.778" layer="97">+VBUS shouldn't be connected.
 
 According to spec, ID should be disconnected if it is a device.</text>
 <text x="20.32" y="96.52" size="1.778" layer="94">CAN Bus</text>
@@ -10161,11 +10161,11 @@ According to spec, ID should be disconnected if it is a device.</text>
 <wire x1="2.54" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="93.98" y1="91.44" x2="93.98" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="93.98" y1="139.7" x2="2.54" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
-<text x="7.62" y="177.8" size="1.778" layer="94">USB</text>
+<text x="10.16" y="177.8" size="1.778" layer="94">USB</text>
 <wire x1="2.54" y1="182.88" x2="2.54" y2="142.24" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="2.54" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="142.24" y1="142.24" x2="142.24" y2="182.88" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="142.24" y1="182.88" x2="2.54" y2="182.88" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="144.78" y1="142.24" x2="144.78" y2="182.88" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="144.78" y1="182.88" x2="2.54" y2="182.88" width="0.1524" layer="94" style="shortdash"/>
 <text x="45.72" y="76.2" size="1.778" layer="94">Extra UART pinout.
 
 Meant to mate with those FTDI usb dongles.</text>
@@ -10173,9 +10173,14 @@ Meant to mate with those FTDI usb dongles.</text>
 <wire x1="93.98" y1="88.9" x2="93.98" y2="66.04" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="93.98" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="2.54" y1="66.04" x2="2.54" y2="88.9" width="0.1524" layer="94" style="shortdash"/>
-<text x="15.24" y="38.1" size="2.54" layer="97">All UART pins are 5V tolerant.</text>
-<text x="78.74" y="152.4" size="1.778" layer="97">From JLCPCB calculator, for 90ohm differential pair:
+<text x="5.08" y="60.96" size="2.54" layer="97">All UART pins are 5V tolerant.</text>
+<text x="81.28" y="152.4" size="1.778" layer="97">From JLCPCB calculator, for 90ohm differential pair:
 8 mil spacing, 10 mil trace width.</text>
+<wire x1="96.52" y1="139.7" x2="127" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="127" y1="139.7" x2="127" y2="111.76" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="127" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="96.52" y1="111.76" x2="96.52" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
+<text x="99.06" y="137.16" size="1.778" layer="94" rot="R270">I2C Pullups</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -10184,20 +10189,20 @@ Meant to mate with those FTDI usb dongles.</text>
 <attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="U$4" gate="G$1" x="60.96" y="157.48" smashed="yes"/>
-<instance part="R2" gate="G$1" x="25.4" y="170.18" smashed="yes">
-<attribute name="NAME" x="21.59" y="171.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="21.59" y="166.878" size="1.778" layer="96"/>
+<instance part="U$4" gate="G$1" x="63.5" y="157.48" smashed="yes"/>
+<instance part="R2" gate="G$1" x="27.94" y="170.18" smashed="yes">
+<attribute name="NAME" x="24.13" y="171.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.13" y="166.878" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="25.4" y="162.56" smashed="yes">
-<attribute name="NAME" x="21.59" y="164.0586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="21.59" y="159.258" size="1.778" layer="96"/>
+<instance part="R3" gate="G$1" x="27.94" y="162.56" smashed="yes">
+<attribute name="NAME" x="24.13" y="164.0586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.13" y="159.258" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="48.26" y="149.86" smashed="yes">
-<attribute name="VALUE" x="45.72" y="147.32" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="50.8" y="149.86" smashed="yes">
+<attribute name="VALUE" x="48.26" y="147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="71.12" y="147.32" smashed="yes">
-<attribute name="VALUE" x="68.58" y="144.78" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="73.66" y="147.32" smashed="yes">
+<attribute name="VALUE" x="71.12" y="144.78" size="1.778" layer="96"/>
 </instance>
 <instance part="CON1" gate="G$1" x="88.9" y="119.38" smashed="yes" rot="MR0"/>
 <instance part="CON2" gate="G$1" x="88.9" y="93.98" smashed="yes" rot="MR0"/>
@@ -10224,19 +10229,19 @@ Meant to mate with those FTDI usb dongles.</text>
 <instance part="P+2" gate="VCC" x="10.16" y="137.16" smashed="yes">
 <attribute name="VALUE" x="7.62" y="134.62" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="129.54" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="128.0414" y="110.49" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="132.842" y="110.49" size="1.778" layer="96" rot="R90"/>
+<instance part="R4" gate="G$1" x="109.22" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="107.7214" y="120.65" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="112.522" y="120.65" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R5" gate="G$1" x="149.86" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.3614" y="110.49" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="153.162" y="110.49" size="1.778" layer="96" rot="R90"/>
+<instance part="R5" gate="G$1" x="121.92" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.4214" y="120.65" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="125.222" y="120.65" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V13" gate="G$1" x="129.54" y="127" smashed="yes">
-<attribute name="VALUE" x="127" y="121.92" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V13" gate="G$1" x="109.22" y="137.16" smashed="yes">
+<attribute name="VALUE" x="106.68" y="132.08" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V14" gate="G$1" x="149.86" y="127" smashed="yes">
-<attribute name="VALUE" x="147.32" y="121.92" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V14" gate="G$1" x="121.92" y="137.16" smashed="yes">
+<attribute name="VALUE" x="119.38" y="132.08" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -10245,41 +10250,41 @@ Meant to mate with those FTDI usb dongles.</text>
 <net name="USB_D-" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="D-"/>
-<wire x1="55.88" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="167.64" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="167.64" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="167.64" x2="43.18" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="170.18" x2="30.48" y2="170.18" width="0.1524" layer="91"/>
-<label x="30.48" y="170.18" size="1.778" layer="95"/>
+<wire x1="43.18" y1="170.18" x2="33.02" y2="170.18" width="0.1524" layer="91"/>
+<label x="33.02" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_D+" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="D+"/>
-<wire x1="55.88" y1="165.1" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="165.1" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="165.1" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="165.1" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="162.56" x2="30.48" y2="162.56" width="0.1524" layer="91"/>
-<label x="30.48" y="162.56" size="1.778" layer="95"/>
+<wire x1="43.18" y1="162.56" x2="33.02" y2="162.56" width="0.1524" layer="91"/>
+<label x="33.02" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_D_N" class="1">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="170.18" x2="12.7" y2="170.18" width="0.1524" layer="91"/>
-<label x="12.7" y="170.18" size="1.778" layer="95" rot="R180"/>
+<wire x1="22.86" y1="170.18" x2="15.24" y2="170.18" width="0.1524" layer="91"/>
+<label x="15.24" y="170.18" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="55.88" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="160.02" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="160.02" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="160.02" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="TABS"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="71.12" y1="152.4" x2="71.12" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="152.4" x2="73.66" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="STBY"/>
@@ -10323,12 +10328,12 @@ Meant to mate with those FTDI usb dongles.</text>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="119.38" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="129.54" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="119.38" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="129.54" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="+3V14" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
@@ -10336,14 +10341,14 @@ Meant to mate with those FTDI usb dongles.</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="RXD"/>
 <wire x1="22.86" y1="109.22" x2="15.24" y2="109.22" width="0.1524" layer="91"/>
-<label x="15.24" y="109.22" size="1.778" layer="95" rot="R180"/>
+<label x="15.24" y="109.22" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_TX" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TXD"/>
 <wire x1="22.86" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
-<label x="15.24" y="114.3" size="1.778" layer="95" rot="R180"/>
+<label x="15.24" y="114.3" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CANH" class="0">
@@ -10398,15 +10403,15 @@ Meant to mate with those FTDI usb dongles.</text>
 <net name="UART1_TX" class="0">
 <segment>
 <wire x1="35.56" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
-<label x="22.86" y="76.2" size="1.778" layer="95" rot="R180"/>
 <pinref part="JP3" gate="A" pin="3"/>
+<label x="22.86" y="76.2" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART1_RX" class="0">
 <segment>
 <wire x1="35.56" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
-<label x="22.86" y="73.66" size="1.778" layer="95" rot="R180"/>
 <pinref part="JP3" gate="A" pin="2"/>
+<label x="22.86" y="73.66" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -10418,8 +10423,8 @@ Meant to mate with those FTDI usb dongles.</text>
 <net name="USB_D_P" class="1">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="162.56" x2="12.7" y2="162.56" width="0.1524" layer="91"/>
-<label x="12.7" y="162.56" size="1.778" layer="95" rot="R180"/>
+<wire x1="22.86" y1="162.56" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
+<label x="15.24" y="162.56" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -10432,18 +10437,18 @@ Meant to mate with those FTDI usb dongles.</text>
 </net>
 <net name="SCL" class="0">
 <segment>
-<wire x1="119.38" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="114.3" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="104.14" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
-<label x="119.38" y="104.14" size="1.778" layer="95"/>
+<wire x1="109.22" y1="114.3" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
+<label x="99.06" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<wire x1="142.24" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="104.14" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
-<label x="142.24" y="104.14" size="1.778" layer="95"/>
+<wire x1="121.92" y1="114.3" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
+<label x="114.3" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

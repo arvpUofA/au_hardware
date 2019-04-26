@@ -9087,6 +9087,69 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ARVP">
+<packages>
+<package name="ARVP">
+<description>Logo</description>
+<wire x1="7.4676" y1="2.4384" x2="7.4676" y2="0.7874" width="0.127" layer="21"/>
+<wire x1="11.0998" y1="2.413" x2="11.0998" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="11.0998" y1="1.2192" x2="11.0998" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="14.2494" y1="2.413" x2="14.4272" y2="2.2606" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="14.4272" y1="1.397" x2="14.2748" y2="1.2192" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="14.2494" y1="2.413" x2="11.0998" y2="2.413" width="0.127" layer="21"/>
+<wire x1="14.4272" y1="2.2606" x2="14.4272" y2="1.397" width="0.127" layer="21"/>
+<wire x1="14.4272" y1="1.397" x2="14.4272" y2="1.3716" width="0.127" layer="21"/>
+<wire x1="14.2494" y1="1.2192" x2="11.0998" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="10.7188" y1="2.413" x2="7.4676" y2="0.7874" width="0.127" layer="21"/>
+<wire x1="3.7338" y1="2.413" x2="3.7338" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="3.7338" y1="1.2192" x2="3.7338" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="6.8834" y1="2.413" x2="7.0612" y2="2.2606" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="7.0612" y1="1.397" x2="6.9088" y2="1.2192" width="0.127" layer="21" curve="-83.331124"/>
+<wire x1="6.8834" y1="2.413" x2="3.7338" y2="2.413" width="0.127" layer="21"/>
+<wire x1="7.0612" y1="2.2606" x2="7.0612" y2="1.397" width="0.127" layer="21"/>
+<wire x1="7.0612" y1="1.397" x2="7.0612" y2="1.3716" width="0.127" layer="21"/>
+<wire x1="6.8834" y1="1.2192" x2="6.858" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="6.858" y1="1.2192" x2="3.7338" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="6.858" y1="1.2192" x2="7.0358" y2="1.0668" width="0.127" layer="21" curve="-83.388121"/>
+<wire x1="7.0358" y1="1.0922" x2="7.0358" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="3.3528" y1="2.413" x2="0.2286" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="3.4036" y1="2.4384" x2="3.4036" y2="0.7366" width="0.127" layer="21"/>
+<wire x1="3.3528" y1="1.2192" x2="1.143" y2="1.2192" width="0.127" layer="21"/>
+<wire x1="0.8382" y1="1.7018" x2="0.7366" y2="1.2954" width="0.0508" layer="21"/>
+<wire x1="0.254" y1="1.7018" x2="0.3556" y2="1.2954" width="0.0508" layer="21"/>
+<wire x1="0.6858" y1="1.6256" x2="0.8382" y2="1.7018" width="0.0508" layer="21"/>
+<wire x1="0.254" y1="1.7018" x2="0.4318" y2="1.6256" width="0.0508" layer="21"/>
+<wire x1="0.5588" y1="1.905" x2="0.6858" y2="1.6256" width="0.0508" layer="21"/>
+<wire x1="0.5588" y1="1.905" x2="0.4318" y2="1.6256" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="1.4732" x2="0.3556" y2="1.2954" width="0.0508" layer="21"/>
+<wire x1="-0.127" y1="1.1684" x2="0.1778" y2="0.9398" width="0.0508" layer="21"/>
+<wire x1="0" y1="1.2192" x2="-0.127" y2="1.1684" width="0.0508" layer="21"/>
+<wire x1="0.1524" y1="1.4732" x2="0.127" y2="1.3462" width="0.0508" layer="21"/>
+<wire x1="-0.0762" y1="1.397" x2="0" y2="1.2192" width="0.0508" layer="21"/>
+<wire x1="-0.0762" y1="1.397" x2="0.127" y2="1.3462" width="0.0508" layer="21"/>
+<text x="0" y="0" size="0.508" layer="21">autonomous robotic vehicle project</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ARVP">
+<text x="-2.54" y="0" size="2.54" layer="94">ARVP</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ARVP_LOGO" prefix="ARVP">
+<gates>
+<gate name="G$1" symbol="ARVP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ARVP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9103,8 +9166,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="U$1" library="integrated_adc" deviceset="MCP3021" device=""/>
 <part name="Y1" library="integrated_adc" deviceset="NX5032" device=""/>
-<part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
-<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
+<part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="8pF"/>
+<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="8pF"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -9178,6 +9241,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="C23" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0u1"/>
+<part name="C24" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0u1"/>
+<part name="+3V15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="ARVP1" library="ARVP" deviceset="ARVP_LOGO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9187,7 +9256,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 Power, clock, bypassing, etc. for MCU, as well as CAN bus.</description>
 <plain>
 <text x="20.32" y="160.02" size="1.778" layer="94">12MHz</text>
-<text x="40.64" y="129.54" size="1.778" layer="94">22pF loading capacitors not verified for 12MHz!</text>
 <text x="144.78" y="172.72" size="1.778" layer="94">ADC1_IN1</text>
 <text x="144.78" y="162.56" size="1.778" layer="94">ADC2_IN1</text>
 <text x="203.2" y="139.7" size="1.778" layer="94">ADC3_IN5</text>
@@ -9229,6 +9297,8 @@ generally a better idea to just do careful routing.</text>
 <text x="109.22" y="71.12" size="1.778" layer="97">4-Layer PCB from JLCPCB.
 
 Stackup: JLC7628</text>
+<text x="48.26" y="175.26" size="1.778" layer="97">Load Capacitance calculated using ST AN2867.
+Using Cs = 4pF, and Cl = 8pF.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -9401,6 +9471,7 @@ Stackup: JLC7628</text>
 <instance part="GND4" gate="1" x="104.14" y="142.24" smashed="yes">
 <attribute name="VALUE" x="101.6" y="139.7" size="1.778" layer="96"/>
 </instance>
+<instance part="ARVP1" gate="G$1" x="127" y="38.1" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -10158,9 +10229,9 @@ Has the external ADC, as well as all the connections required for reading the hy
 According to spec, ID should be disconnected if it is a device.</text>
 <text x="20.32" y="96.52" size="1.778" layer="94">CAN Bus</text>
 <wire x1="2.54" y1="139.7" x2="2.54" y2="91.44" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="2.54" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="93.98" y1="91.44" x2="93.98" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="93.98" y1="139.7" x2="2.54" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="124.46" y1="91.44" x2="124.46" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="124.46" y1="139.7" x2="2.54" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
 <text x="10.16" y="177.8" size="1.778" layer="94">USB</text>
 <wire x1="2.54" y1="182.88" x2="2.54" y2="142.24" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="2.54" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="94" style="shortdash"/>
@@ -10176,11 +10247,11 @@ Meant to mate with those FTDI usb dongles.</text>
 <text x="5.08" y="60.96" size="2.54" layer="97">All UART pins are 5V tolerant.</text>
 <text x="81.28" y="152.4" size="1.778" layer="97">From JLCPCB calculator, for 90ohm differential pair:
 8 mil spacing, 10 mil trace width.</text>
-<wire x1="96.52" y1="139.7" x2="127" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="127" y1="139.7" x2="127" y2="111.76" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="127" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="96.52" y1="111.76" x2="96.52" y2="139.7" width="0.1524" layer="94" style="shortdash"/>
-<text x="99.06" y="137.16" size="1.778" layer="94" rot="R270">I2C Pullups</text>
+<wire x1="96.52" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="127" y1="88.9" x2="127" y2="60.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="127" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="96.52" y1="60.96" x2="96.52" y2="88.9" width="0.1524" layer="94" style="shortdash"/>
+<text x="99.06" y="86.36" size="1.778" layer="94" rot="R270">I2C Pullups</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -10229,19 +10300,36 @@ Meant to mate with those FTDI usb dongles.</text>
 <instance part="P+2" gate="VCC" x="10.16" y="137.16" smashed="yes">
 <attribute name="VALUE" x="7.62" y="134.62" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="109.22" y="124.46" smashed="yes" rot="R90">
-<attribute name="NAME" x="107.7214" y="120.65" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="112.522" y="120.65" size="1.778" layer="96" rot="R90"/>
+<instance part="R4" gate="G$1" x="109.22" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="107.7214" y="69.85" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="112.522" y="69.85" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R5" gate="G$1" x="121.92" y="124.46" smashed="yes" rot="R90">
-<attribute name="NAME" x="120.4214" y="120.65" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="125.222" y="120.65" size="1.778" layer="96" rot="R90"/>
+<instance part="R5" gate="G$1" x="121.92" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.4214" y="69.85" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="125.222" y="69.85" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V13" gate="G$1" x="109.22" y="137.16" smashed="yes">
-<attribute name="VALUE" x="106.68" y="132.08" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V13" gate="G$1" x="109.22" y="86.36" smashed="yes">
+<attribute name="VALUE" x="106.68" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V14" gate="G$1" x="121.92" y="137.16" smashed="yes">
-<attribute name="VALUE" x="119.38" y="132.08" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V14" gate="G$1" x="121.92" y="86.36" smashed="yes">
+<attribute name="VALUE" x="119.38" y="81.28" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C23" gate="G$1" x="96.52" y="116.84" smashed="yes">
+<attribute name="NAME" x="98.044" y="117.221" size="1.778" layer="95"/>
+<attribute name="VALUE" x="98.044" y="112.141" size="1.778" layer="96"/>
+</instance>
+<instance part="C24" gate="G$1" x="111.76" y="116.84" smashed="yes">
+<attribute name="NAME" x="113.284" y="117.221" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.284" y="112.141" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V15" gate="G$1" x="96.52" y="129.54" smashed="yes">
+<attribute name="VALUE" x="93.98" y="124.46" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+5" gate="VCC" x="111.76" y="129.54" smashed="yes">
+<attribute name="VALUE" x="109.22" y="127" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND20" gate="1" x="111.76" y="104.14" smashed="yes">
+<attribute name="VALUE" x="109.22" y="101.6" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10318,6 +10406,16 @@ Meant to mate with those FTDI usb dongles.</text>
 <pinref part="GND19" gate="1" pin="GND"/>
 <junction x="73.66" y="96.52"/>
 </segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="111.76" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="109.22" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="111.76" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
+<junction x="111.76" y="109.22"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -10328,13 +10426,18 @@ Meant to mate with those FTDI usb dongles.</text>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="129.54" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="78.74" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="129.54" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="78.74" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="+3V14" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="+3V15" gate="G$1" pin="+3V3"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="127" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAN_RX" class="0">
@@ -10434,21 +10537,26 @@ Meant to mate with those FTDI usb dongles.</text>
 <wire x1="10.16" y1="119.38" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="127" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<wire x1="99.06" y1="114.3" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="114.3" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
-<label x="99.06" y="114.3" size="1.778" layer="95"/>
+<wire x1="109.22" y1="63.5" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
+<label x="99.06" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<wire x1="114.3" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="63.5" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="114.3" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
-<label x="114.3" y="114.3" size="1.778" layer="95"/>
+<wire x1="121.92" y1="63.5" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
+<label x="114.3" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

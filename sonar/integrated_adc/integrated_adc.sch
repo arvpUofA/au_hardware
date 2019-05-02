@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10041,6 +10041,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k5"/>
 <part name="+3V17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10263,14 +10264,20 @@ Using Cs = 4pF, and Cl = 8pF.</text>
 <attribute name="VALUE" x="101.6" y="139.7" size="1.778" layer="96"/>
 </instance>
 <instance part="ARVP1" gate="G$1" x="101.6" y="22.86" smashed="yes"/>
-<instance part="JP4" gate="A" x="111.76" y="50.8"/>
+<instance part="JP4" gate="A" x="111.76" y="50.8" smashed="yes">
+<attribute name="NAME" x="105.41" y="56.515" size="1.778" layer="95"/>
+<attribute name="VALUE" x="105.41" y="43.18" size="1.778" layer="96"/>
+</instance>
 <instance part="GND3" gate="1" x="101.6" y="40.64" smashed="yes">
 <attribute name="VALUE" x="99.06" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V16" gate="G$1" x="101.6" y="60.96" smashed="yes">
 <attribute name="VALUE" x="99.06" y="55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S1" gate="G$1" x="55.88" y="30.48"/>
+<instance part="S1" gate="G$1" x="55.88" y="30.48" smashed="yes">
+<attribute name="NAME" x="55.88" y="32.004" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="55.88" y="29.972" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
 <instance part="GND21" gate="1" x="45.72" y="25.4" smashed="yes">
 <attribute name="VALUE" x="43.18" y="22.86" size="1.778" layer="96"/>
 </instance>
@@ -10626,15 +10633,15 @@ Using Cs = 4pF, and Cl = 8pF.</text>
 <wire x1="91.44" y1="144.78" x2="91.44" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="137.16" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
 <label x="83.82" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
-<label x="60.96" y="88.9" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C18" gate="G$1" pin="1"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="86.36" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
-<junction x="68.58" y="86.36"/>
 <wire x1="68.58" y1="88.9" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="88.9" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
+<junction x="68.58" y="86.36"/>
+<label x="60.96" y="88.9" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART3_RX" class="0">
@@ -10752,6 +10759,13 @@ Using Cs = 4pF, and Cl = 8pF.</text>
 <label x="45.72" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="PEAK_RESET" class="0">
+<segment>
+<pinref part="U$3" gate="G$4" pin="PD6"/>
+<wire x1="129.54" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
+<label x="134.62" y="109.22" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -10767,7 +10781,6 @@ Has the external ADC, as well as all the connections required for reading the hy
 <wire x1="109.22" y1="71.12" x2="109.22" y2="114.3" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="109.22" y1="114.3" x2="2.54" y2="114.3" width="0.1524" layer="94" style="shortdash"/>
 <text x="25.4" y="40.64" size="1.778" layer="94">ADC Input Connections</text>
-<text x="58.42" y="10.16" size="5.08" layer="94">Also need to add 3v3 rail</text>
 <text x="93.98" y="124.46" size="1.778" layer="97">Important Signals from the Preprocessor
 - D23: Peak detector reset
 - D22: peak detector signal
@@ -10834,6 +10847,9 @@ Has the external ADC, as well as all the connections required for reading the hy
 <instance part="JP2" gate="A" x="27.94" y="55.88" smashed="yes" rot="MR180">
 <attribute name="NAME" x="21.59" y="45.085" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="21.59" y="68.58" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="GND22" gate="1" x="104.14" y="160.02" smashed="yes">
+<attribute name="VALUE" x="101.6" y="157.48" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10947,6 +10963,12 @@ Has the external ADC, as well as all the connections required for reading the hy
 <junction x="93.98" y="86.36"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="AGND"/>
+<wire x1="66.04" y1="170.18" x2="104.14" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="170.18" x2="104.14" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="GAIN_CTL" class="0">
 <segment>
@@ -11037,13 +11059,6 @@ Has the external ADC, as well as all the connections required for reading the hy
 <pinref part="U2" gate="G$1" pin="D12"/>
 <wire x1="27.94" y1="139.7" x2="15.24" y2="139.7" width="0.1524" layer="91"/>
 <label x="15.24" y="139.7" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="AGND"/>
-<wire x1="66.04" y1="170.18" x2="104.14" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="170.18" x2="104.14" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -11162,7 +11177,10 @@ Meant to mate with those FTDI usb dongles.</text>
 <instance part="GND20" gate="1" x="111.76" y="104.14" smashed="yes">
 <attribute name="VALUE" x="109.22" y="101.6" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="G$1" x="50.8" y="175.26" rot="R90"/>
+<instance part="R6" gate="G$1" x="50.8" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="49.3014" y="171.45" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="54.102" y="171.45" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="+3V17" gate="G$1" x="58.42" y="180.34" smashed="yes" rot="R270">
 <attribute name="VALUE" x="53.34" y="182.88" size="1.778" layer="96"/>
 </instance>
@@ -11170,7 +11188,7 @@ Meant to mate with those FTDI usb dongles.</text>
 <busses>
 </busses>
 <nets>
-<net name="USB_D-" class="0">
+<net name="USB_D-" class="1">
 <segment>
 <pinref part="U$4" gate="G$1" pin="D-"/>
 <wire x1="58.42" y1="167.64" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
@@ -11180,7 +11198,7 @@ Meant to mate with those FTDI usb dongles.</text>
 <label x="33.02" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USB_D+" class="0">
+<net name="USB_D+" class="1">
 <segment>
 <pinref part="U$4" gate="G$1" pin="D+"/>
 <wire x1="58.42" y1="165.1" x2="50.8" y2="165.1" width="0.1524" layer="91"/>
@@ -11222,6 +11240,7 @@ Meant to mate with those FTDI usb dongles.</text>
 <wire x1="22.86" y1="132.08" x2="15.24" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="132.08" x2="15.24" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<junction x="22.86" y="132.08"/>
 </segment>
 <segment>
 <wire x1="35.56" y1="83.82" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
@@ -11324,15 +11343,6 @@ Meant to mate with those FTDI usb dongles.</text>
 <pinref part="CON2" gate="G$1" pin="CANL"/>
 <wire x1="66.04" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
 <label x="53.34" y="109.22" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="CON2" gate="G$1" pin="+5V"/>
-<wire x1="76.2" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="109.22" x2="71.12" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="CON1" gate="G$1" pin="+5V"/>
-<wire x1="71.12" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">

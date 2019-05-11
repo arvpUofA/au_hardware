@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2018-12-26T23:13:37Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.6392,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "sonar_preprocessor"
+        },
+        "Owner": "UNKNOWN Schroeder <aschroed@ualberta.ca>",
+        "Size": {
+            "X": 130.81,
+            "Y": 50.8
+        }
+    }
+}

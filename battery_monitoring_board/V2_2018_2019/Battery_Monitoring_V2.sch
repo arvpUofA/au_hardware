@@ -22815,7 +22815,7 @@ Source: www.kingbright.com</description>
 <text x="-76.2" y="-104.14" size="1.778" layer="91" rot="MR0">Kill switch</text>
 <text x="-132.08" y="-25.4" size="1.778" layer="91" rot="MR0">motor GND</text>
 <text x="109.22" y="76.2" size="1.778" layer="91">INA3221 MONITORING</text>
-<text x="-86.36" y="-40.64" size="1.778" layer="91" rot="MR0">Otoisolators</text>
+<text x="-91.44" y="68.58" size="1.778" layer="91" rot="MR0">Otoisolators</text>
 <text x="-12.7" y="58.42" size="1.778" layer="91" rot="MR270">OUTPUTS</text>
 <text x="-134.62" y="60.96" size="1.778" layer="91" rot="MR0">MOSFET Kill</text>
 <text x="73.66" y="33.02" size="1.778" layer="91">to SDA PIN</text>
@@ -22851,7 +22851,7 @@ must be connected using a Kelvin connection for the best results. </text>
 <wire x1="-172.72" y1="86.36" x2="-172.72" y2="-33.02" width="0.1524" layer="101"/>
 <wire x1="-172.72" y1="-33.02" x2="-220.98" y2="-33.02" width="0.1524" layer="101"/>
 <text x="-220.98" y="-50.8" size="1.778" layer="91">Reverse polarity protection:
-The source of a PMOS is connecterd to the 
+The source of a PMOS is connected to the 
 battery terminal (18V); since the gate (0V) 
 must be less than the source by at least the 
 threshold voltage to conduct, the PMOS is 

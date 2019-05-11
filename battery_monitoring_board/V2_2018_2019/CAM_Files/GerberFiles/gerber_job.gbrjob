@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2018-12-26T21:36:52Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Battery_Monitoring_V2"
+        },
+        "Owner": "UNKNOWN Schroeder <aschroed@ualberta.ca>",
+        "Size": {
+            "X": 57.15,
+            "Y": 127
+        }
+    }
+}

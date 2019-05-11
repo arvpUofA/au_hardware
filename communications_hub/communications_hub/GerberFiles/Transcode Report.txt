@@ -1,0 +1,77 @@
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\communications_hub\CAMOutputs\GerberFiles\copper_top.gbr' ----   Sat Dec 22 13:05:03 2018
+
+D12   --> D100
+D13   --> D101
+D14   --> D102
+D15   --> D103
+D16   --> D104
+D17   --> D105
+D18   --> D106
+D19   --> D107
+D20   --> D108
+D21   --> D109
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\communications_hub\CAMOutputs\GerberFiles\profile.gbr' ----   Sat Dec 22 13:05:03 2018
+
+D10   --> D110
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\communications_hub\CAMOutputs\GerberFiles\silkscreen_top.gbr' ----   Sat Dec 22 13:05:03 2018
+
+D10   --> D111
+D11   --> D112
+D12   --> D113
+D13   --> D114
+D14   --> D115
+D15   --> D116
+D16   --> D117
+D17   --> D118
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\communications_hub\CAMOutputs\GerberFiles\soldermask_bottom.gbr' ----   Sat Dec 22 13:05:03 2018
+
+D10   --> D119
+D11   --> D120
+D12   --> D121
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\communications_hub\CAMOutputs\GerberFiles\soldermask_top.gbr' ----   Sat Dec 22 13:05:03 2018
+
+D10   --> D122
+D11   --> D123
+D12   --> D124
+D13   --> D125
+D14   --> D126
+D15   --> D127
+D16   --> D128
+D17   --> D129
+D18   --> D130
+D19   --> D131
+D20   --> D132
+D21   --> D133
+D22   --> D134
+D23   --> D135
+D24   --> D136
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Andrew\Documents\Business\ARVP\au_hardware\communications_hub\CAMOutputs\GerberFiles\solderpaste_top.gbr' ----   Sat Dec 22 13:05:03 2018
+
+D10   --> D137
+D11   --> D138
+D12   --> D139
+D13   --> D140
+D14   --> D141
+D15   --> D142
+D16   --> D143
+D17   --> D144
+D18   --> D145
+D19   --> D146
+-----------------------------------------------------------------

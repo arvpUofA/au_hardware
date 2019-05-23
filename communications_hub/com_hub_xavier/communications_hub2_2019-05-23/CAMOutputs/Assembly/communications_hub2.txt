@@ -1,4 +1,4 @@
-Partlist exported from C:/Users/king/Desktop/repo/au_hardware/communications_hub/com_hub_xavier/communications_hub2.sch at 5/20/2019 8:01 PM
+Partlist exported from C:/Users/king/Desktop/repo/au_hardware/communications_hub/com_hub_xavier/communications_hub2.sch at 5/23/2019 4:02 PM
 
 Qty Value        Device       Package      Parts              Description                SPICEMODEL SPICEPREFIX SPICETYPE TP_SIGNAL_NAME
 2                LEDSMT1206   1206         LED1, LED2         LED                                                                       

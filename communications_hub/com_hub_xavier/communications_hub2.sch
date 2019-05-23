@@ -17342,38 +17342,38 @@ Amber LED for +3v3
 </net>
 <net name="CAN0_RX_T" class="0">
 <segment>
-<pinref part="JP21" gate="A" pin="31"/>
-<wire x1="-71.12" y1="17.78" x2="-78.74" y2="17.78" width="0.1524" layer="91"/>
-<label x="-78.74" y="17.78" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="99.06" x2="0" y2="99.06" width="0.1524" layer="91"/>
 <label x="0" y="99.06" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP21" gate="A" pin="29"/>
+<wire x1="-71.12" y1="20.32" x2="-78.74" y2="20.32" width="0.1524" layer="91"/>
+<label x="-78.74" y="20.32" size="1.778" layer="95" rot="MR0"/>
+</segment>
 </net>
 <net name="CAN1_TX_T" class="0">
-<segment>
-<pinref part="JP21" gate="A" pin="37"/>
-<wire x1="-71.12" y1="10.16" x2="-78.74" y2="10.16" width="0.1524" layer="91"/>
-<label x="-78.74" y="10.16" size="1.778" layer="95" rot="MR0"/>
-</segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="66.04" x2="0" y2="66.04" width="0.1524" layer="91"/>
 <label x="0" y="66.04" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
-</net>
-<net name="CAN1_RX_T" class="0">
 <segment>
 <pinref part="JP21" gate="A" pin="33"/>
 <wire x1="-71.12" y1="15.24" x2="-78.74" y2="15.24" width="0.1524" layer="91"/>
 <label x="-78.74" y="15.24" size="1.778" layer="95" rot="MR0"/>
 </segment>
+</net>
+<net name="CAN1_RX_T" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="58.42" x2="0" y2="58.42" width="0.1524" layer="91"/>
 <label x="0" y="58.42" size="1.778" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP21" gate="A" pin="37"/>
+<wire x1="-71.12" y1="10.16" x2="-78.74" y2="10.16" width="0.1524" layer="91"/>
+<label x="-78.74" y="10.16" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="I2C_GP1_SDA" class="0">
@@ -17554,14 +17554,14 @@ Amber LED for +3v3
 </net>
 <net name="CAN0_TX_T" class="0">
 <segment>
-<pinref part="JP21" gate="A" pin="29"/>
-<wire x1="-71.12" y1="20.32" x2="-78.74" y2="20.32" width="0.1524" layer="91"/>
-<label x="-78.74" y="20.32" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="106.68" x2="0" y2="106.68" width="0.1524" layer="91"/>
 <label x="0" y="106.68" size="1.778" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP21" gate="A" pin="31"/>
+<wire x1="-71.12" y1="17.78" x2="-78.74" y2="17.78" width="0.1524" layer="91"/>
+<label x="-78.74" y="17.78" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="N$3" class="0">

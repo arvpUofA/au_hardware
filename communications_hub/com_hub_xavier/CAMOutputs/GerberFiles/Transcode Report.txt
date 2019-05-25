@@ -1,0 +1,75 @@
+
+
+   ---- Transcoding 'C:\Users\b59mi\Documents\Business\ARVP\au_hardware\communications_hub\com_hub_xavier\CAMOutputs\GerberFiles\copper_top.gbr' ----   Sat May 25 09:58:01 2019
+
+D10   --> D100
+D12   --> D101
+D13   --> D102
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\b59mi\Documents\Business\ARVP\au_hardware\communications_hub\com_hub_xavier\CAMOutputs\GerberFiles\profile.gbr' ----   Sat May 25 09:58:01 2019
+
+D10   --> D103
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\b59mi\Documents\Business\ARVP\au_hardware\communications_hub\com_hub_xavier\CAMOutputs\GerberFiles\silkscreen_bottom.gbr' ----   Sat May 25 09:58:01 2019
+
+D10   --> D104
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\b59mi\Documents\Business\ARVP\au_hardware\communications_hub\com_hub_xavier\CAMOutputs\GerberFiles\silkscreen_top.gbr' ----   Sat May 25 09:58:01 2019
+
+D10   --> D105
+D11   --> D106
+D12   --> D107
+D13   --> D108
+D14   --> D109
+D15   --> D110
+D16   --> D111
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\b59mi\Documents\Business\ARVP\au_hardware\communications_hub\com_hub_xavier\CAMOutputs\GerberFiles\soldermask_bottom.gbr' ----   Sat May 25 09:58:01 2019
+
+D10   --> D112
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\b59mi\Documents\Business\ARVP\au_hardware\communications_hub\com_hub_xavier\CAMOutputs\GerberFiles\soldermask_top.gbr' ----   Sat May 25 09:58:01 2019
+
+D10   --> D113
+D11   --> D114
+D12   --> D115
+D13   --> D116
+D14   --> D117
+D15   --> D118
+D16   --> D119
+D17   --> D120
+D18   --> D121
+D19   --> D122
+D20   --> D123
+D21   --> D124
+D22   --> D125
+D23   --> D126
+D24   --> D127
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\b59mi\Documents\Business\ARVP\au_hardware\communications_hub\com_hub_xavier\CAMOutputs\GerberFiles\solderpaste_top.gbr' ----   Sat May 25 09:58:01 2019
+
+D10   --> D128
+D11   --> D129
+D12   --> D130
+D13   --> D131
+D14   --> D132
+D15   --> D133
+D16   --> D134
+D17   --> D135
+D18   --> D136
+D19   --> D137
+D20   --> D138
+D21   --> D139
+-----------------------------------------------------------------

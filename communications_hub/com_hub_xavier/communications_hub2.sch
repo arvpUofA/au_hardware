@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16628,8 +16628,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="10K"/>
 <part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="10K"/>
 <part name="+3V311" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="GPIO_EXP_P17" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1" value="XZM2ACR55W-3"/>
-<part name="GPIO_EXP_P16" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1" value="XZDG55W-3"/>
+<part name="P_LED2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1" value="XZM2ACR55W-3"/>
+<part name="P_LED1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1" value="XZDG55W-3"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="140"/>
@@ -16774,11 +16774,11 @@ Amber LED for +3v3
 <instance part="+3V311" gate="G$1" x="45.72" y="7.62" smashed="yes">
 <attribute name="VALUE" x="43.18" y="2.54" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GPIO_EXP_P17" gate="G$1" x="86.36" y="0" smashed="yes">
+<instance part="P_LED2" gate="G$1" x="86.36" y="0" smashed="yes">
 <attribute name="NAME" x="89.916" y="-4.572" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="92.075" y="-4.572" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GPIO_EXP_P16" gate="G$1" x="121.92" y="0" smashed="yes">
+<instance part="P_LED1" gate="G$1" x="121.92" y="0" smashed="yes">
 <attribute name="NAME" x="125.476" y="-4.572" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="127.635" y="-4.572" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -17566,7 +17566,7 @@ Amber LED for +3v3
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="GPIO_EXP_P17" gate="G$1" pin="A"/>
+<pinref part="P_LED2" gate="G$1" pin="A"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="2.54" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="5.08" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
@@ -17575,7 +17575,7 @@ Amber LED for +3v3
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="GPIO_EXP_P16" gate="G$1" pin="A"/>
+<pinref part="P_LED1" gate="G$1" pin="A"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="2.54" x2="121.92" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="5.08" x2="116.84" y2="5.08" width="0.1524" layer="91"/>
@@ -17771,14 +17771,14 @@ Amber LED for +3v3
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="GPIO_EXP_P17" gate="G$1" pin="C"/>
+<pinref part="P_LED2" gate="G$1" pin="C"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="86.36" y1="-5.08" x2="86.36" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="GPIO_EXP_P16" gate="G$1" pin="C"/>
+<pinref part="P_LED1" gate="G$1" pin="C"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="121.92" y1="-5.08" x2="121.92" y2="-7.62" width="0.1524" layer="91"/>
 </segment>

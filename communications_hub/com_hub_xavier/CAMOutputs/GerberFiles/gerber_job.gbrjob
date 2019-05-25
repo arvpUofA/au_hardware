@@ -1,11 +1,11 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-05-23T22:02:24Z",
+        "CreationDate": "2019-05-25T15:57:10Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
-            "Version": "9.4.0"
+            "Version": "9.2.2"
         },
         "Part": "Single"
     },
@@ -15,7 +15,7 @@
         "Name": {
             "ProjectId": "communications_hub2"
         },
-        "Owner": "Lai Yang <lai3@ualberta.ca>",
+        "Owner": "UNKNOWN Schroeder <aschroed@ualberta.ca>",
         "Size": {
             "X": 68,
             "Y": 33

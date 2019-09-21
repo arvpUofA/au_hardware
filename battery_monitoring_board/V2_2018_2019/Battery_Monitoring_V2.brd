@@ -1680,27 +1680,27 @@ Source: PHOENIX CONTACT .. PRINTKLEMME_MKDS_5_3_6_35.pdf</description>
 <wire x1="-0.536" y1="0.85" x2="-0.536" y2="-0.85" width="0.2032" layer="21"/>
 </package>
 <package name="20-QFN(4X4)">
-<smd name="TMR" x="-1.9" y="1" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="UV1" x="-1.9" y="0.5" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="OV1" x="-1.9" y="0" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="UV2" x="-1.9" y="-0.5" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="OV2" x="-1.9" y="-1" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="!VALID1" x="-1" y="-1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="!VALID2" x="-0.5" y="-1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="GND@1" x="0" y="-1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="CAS" x="0.5" y="-1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="INTVCC" x="1" y="-1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="G2" x="1.9" y="-1" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="VS2" x="1.9" y="-0.5" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="G1" x="1.9" y="0" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="VS1" x="1.9" y="0.5" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="VOUT" x="1.9" y="1" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="V2" x="1" y="1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="V1" x="0.5" y="1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="EN" x="0" y="1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="!SHDN" x="-0.5" y="1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="HYS" x="-1" y="1.9" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="GND@2" x="0" y="0" dx="2.45" dy="2.45" layer="1" stop="no"/>
+<smd name="TMR" x="-1.9" y="1" dx="0.7" dy="0.25" layer="1"/>
+<smd name="UV1" x="-1.9" y="0.5" dx="0.7" dy="0.25" layer="1"/>
+<smd name="OV1" x="-1.9" y="0" dx="0.7" dy="0.25" layer="1"/>
+<smd name="UV2" x="-1.9" y="-0.5" dx="0.7" dy="0.25" layer="1"/>
+<smd name="OV2" x="-1.9" y="-1" dx="0.7" dy="0.25" layer="1"/>
+<smd name="!VALID1" x="-1" y="-1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="!VALID2" x="-0.5" y="-1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="GND@1" x="0" y="-1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="CAS" x="0.5" y="-1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="INTVCC" x="1" y="-1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="G2" x="1.9" y="-1" dx="0.7" dy="0.25" layer="1"/>
+<smd name="VS2" x="1.9" y="-0.5" dx="0.7" dy="0.25" layer="1"/>
+<smd name="G1" x="1.9" y="0" dx="0.7" dy="0.25" layer="1"/>
+<smd name="VS1" x="1.9" y="0.5" dx="0.7" dy="0.25" layer="1"/>
+<smd name="VOUT" x="1.9" y="1" dx="0.7" dy="0.25" layer="1"/>
+<smd name="V2" x="1" y="1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="V1" x="0.5" y="1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="EN" x="0" y="1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="!SHDN" x="-0.5" y="1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="HYS" x="-1" y="1.9" dx="0.25" dy="0.7" layer="1"/>
+<smd name="GND@2" x="0" y="0" dx="2.45" dy="2.45" layer="1"/>
 <wire x1="2" y1="2" x2="-1.27" y2="2" width="0.127" layer="51"/>
 <wire x1="-1.27" y1="2" x2="-2" y2="1.27" width="0.127" layer="51"/>
 <wire x1="-2" y1="1.27" x2="-2" y2="-2" width="0.127" layer="51"/>

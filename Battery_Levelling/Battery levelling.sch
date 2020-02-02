@@ -21846,11 +21846,11 @@ there to limit peak current suring transient phase to lower than
 <instance part="U1" gate="G$1" x="208.28" y="15.24" rot="R180"/>
 <instance part="P+1" gate="1" x="152.4" y="-7.62"/>
 <instance part="+3V34" gate="G$1" x="284.48" y="45.72"/>
-<instance part="GND6" gate="1" x="325.12" y="27.94"/>
+<instance part="GND6" gate="1" x="325.12" y="17.78"/>
 <instance part="C6" gate="G$1" x="284.48" y="35.56"/>
 <instance part="GND7" gate="1" x="284.48" y="17.78"/>
 <instance part="C5" gate="G$1" x="337.82" y="38.1"/>
-<instance part="GND10" gate="1" x="337.82" y="27.94"/>
+<instance part="GND10" gate="1" x="337.82" y="17.78"/>
 <instance part="R9" gate="G$1" x="292.1" y="27.94" rot="R90"/>
 <instance part="GND11" gate="1" x="292.1" y="17.78"/>
 <instance part="CON2" gate="-1" x="269.24" y="38.1" rot="R180"/>
@@ -21946,14 +21946,14 @@ there to limit peak current suring transient phase to lower than
 </net>
 <net name="IO1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="5/PWM"/>
-<wire x1="231.14" y1="0" x2="254" y2="0" width="0.1524" layer="91"/>
-<label x="254" y="0" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <wire x1="-106.68" y1="33.02" x2="-114.3" y2="33.02" width="0.1524" layer="91"/>
 <label x="-114.3" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U6" gate="G$1" pin="HIN"/>
+</segment>
+<segment>
+<wire x1="231.14" y1="12.7" x2="233.68" y2="12.7" width="0.1524" layer="91"/>
+<label x="233.68" y="12.7" size="1.778" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="10/TX2/PWM"/>
 </segment>
 </net>
 <net name="VBATT1" class="0">
@@ -22058,15 +22058,6 @@ there to limit peak current suring transient phase to lower than
 <label x="83.82" y="-20.32" size="1.778" layer="95" xref="yes"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
 </segment>
-<segment>
-<wire x1="76.2" y1="-106.68" x2="83.82" y2="-106.68" width="0.1524" layer="91"/>
-<label x="91.44" y="-106.68" size="1.778" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="IN"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="-106.68" x2="91.44" y2="-106.68" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="-106.68" x2="83.82" y2="-109.22" width="0.1524" layer="91"/>
-<junction x="83.82" y="-106.68"/>
-</segment>
 </net>
 <net name="GATE3" class="0">
 <segment>
@@ -22131,7 +22122,7 @@ there to limit peak current suring transient phase to lower than
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="322.58" y1="35.56" x2="325.12" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="35.56" x2="325.12" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="35.56" x2="325.12" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U7" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
@@ -22142,7 +22133,7 @@ there to limit peak current suring transient phase to lower than
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="337.82" y1="33.02" x2="337.82" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="33.02" x2="337.82" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -22280,10 +22271,9 @@ there to limit peak current suring transient phase to lower than
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="8/TX3"/>
-<wire x1="231.14" y1="7.62" x2="233.68" y2="7.62" width="0.1524" layer="91"/>
-<label x="233.68" y="7.62" size="1.778" layer="95" xref="yes"/>
-<label x="233.68" y="7.62" size="1.778" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="5/PWM"/>
+<wire x1="231.14" y1="0" x2="254" y2="0" width="0.1524" layer="91"/>
+<label x="254" y="0" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IO3" class="0">
@@ -22295,9 +22285,10 @@ there to limit peak current suring transient phase to lower than
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="7/RX3"/>
-<wire x1="231.14" y1="5.08" x2="254" y2="5.08" width="0.1524" layer="91"/>
-<label x="254" y="5.08" size="1.778" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="8/TX3"/>
+<wire x1="231.14" y1="7.62" x2="233.68" y2="7.62" width="0.1524" layer="91"/>
+<label x="233.68" y="7.62" size="1.778" layer="95" xref="yes"/>
+<label x="233.68" y="7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -22315,7 +22306,12 @@ there to limit peak current suring transient phase to lower than
 <segment>
 <pinref part="+3V34" gate="G$1" pin="+3V3"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="284.48" y1="43.18" x2="284.48" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="43.18" x2="284.48" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U7" gate="G$1" pin="VIO"/>
+<wire x1="284.48" y1="40.64" x2="284.48" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="40.64" x2="287.02" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="40.64" x2="287.02" y2="40.64" width="0.1524" layer="91"/>
+<junction x="284.48" y="40.64"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -22363,6 +22359,11 @@ there to limit peak current suring transient phase to lower than
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="279.4" y1="-8.89" x2="278.13" y2="-8.89" width="0.1524" layer="91"/>
 <label x="278.13" y="-8.89" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="23/A9/T/PWM"/>
+<wire x1="231.14" y1="45.72" x2="236.22" y2="45.72" width="0.1524" layer="91"/>
+<label x="236.22" y="45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -22469,12 +22470,14 @@ there to limit peak current suring transient phase to lower than
 <segment>
 <pinref part="JP6" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="-15.24" x2="165.1" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="165.1" y="-22.86"/>
 </segment>
 </net>
 <net name="VIN1" class="0">
 <segment>
 <pinref part="JP6" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="-22.86" x2="167.64" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="167.64" y="-22.86"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -22553,6 +22556,15 @@ there to limit peak current suring transient phase to lower than
 <label x="0" y="-81.28" size="1.778" layer="95" xref="yes"/>
 <pinref part="J6" gate="G$1" pin="KL1"/>
 </segment>
+<segment>
+<wire x1="76.2" y1="-106.68" x2="83.82" y2="-106.68" width="0.1524" layer="91"/>
+<label x="91.44" y="-106.68" size="1.778" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="IN"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="-106.68" x2="91.44" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="-106.68" x2="83.82" y2="-109.22" width="0.1524" layer="91"/>
+<junction x="83.82" y="-106.68"/>
+</segment>
 </net>
 <net name="GATE4" class="0">
 <segment>
@@ -22577,9 +22589,9 @@ there to limit peak current suring transient phase to lower than
 <label x="20.32" y="-101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="231.14" y1="12.7" x2="233.68" y2="12.7" width="0.1524" layer="91"/>
-<label x="233.68" y="12.7" size="1.778" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="10/TX2/PWM"/>
+<pinref part="U1" gate="G$1" pin="7/RX3"/>
+<wire x1="231.14" y1="5.08" x2="254" y2="5.08" width="0.1524" layer="91"/>
+<label x="254" y="5.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -22599,13 +22611,6 @@ there to limit peak current suring transient phase to lower than
 <wire x1="-55.88" y1="50.8" x2="-55.88" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-55.88" y="38.1"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="VIO"/>
-<wire x1="294.64" y1="40.64" x2="287.02" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="40.64" x2="287.02" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">

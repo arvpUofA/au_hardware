@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11508,16 +11508,6 @@ Source: www.kingbright.com</description>
 <label x="294.64" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="294.64" y1="121.92" x2="304.8" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="CON6" gate="G$2" pin="S"/>
-<label x="297.18" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="294.64" y1="55.88" x2="304.8" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="CON4" gate="G$2" pin="S"/>
-<label x="297.18" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CON4" gate="G$1" pin="S"/>
 <wire x1="297.18" y1="66.04" x2="292.1" y2="66.04" width="0.1524" layer="91"/>
 <label x="294.64" y="68.58" size="1.778" layer="95"/>
@@ -11525,7 +11515,6 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="CON6" gate="G$1" pin="S"/>
 <wire x1="302.26" y1="132.08" x2="299.72" y2="132.08" width="0.1524" layer="91"/>
-<label x="302.26" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -11756,7 +11745,7 @@ Source: www.kingbright.com</description>
 <junction x="279.4" y="35.56"/>
 </segment>
 </net>
-<net name="TRP_RETURN1" class="0">
+<net name="TRP1_RETURN" class="0">
 <segment>
 <pinref part="Q2" gate="A" pin="D"/>
 <wire x1="289.56" y1="55.88" x2="289.56" y2="48.26" width="0.1524" layer="91"/>
@@ -11768,7 +11757,9 @@ Source: www.kingbright.com</description>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="284.48" y1="55.88" x2="284.48" y2="58.42" width="0.1524" layer="91"/>
 <junction x="289.56" y="48.26"/>
-<wire x1="294.64" y1="55.88" x2="289.56" y2="55.88" width="0.1524" layer="91"/>
+<label x="289.56" y="50.8" size="1.778" layer="95"/>
+<pinref part="CON4" gate="G$2" pin="S"/>
+<wire x1="289.56" y1="55.88" x2="304.8" y2="55.88" width="0.1524" layer="91"/>
 <junction x="289.56" y="55.88"/>
 </segment>
 </net>
@@ -12560,6 +12551,13 @@ Source: www.kingbright.com</description>
 <pinref part="CON3" gate="G$1" pin="S"/>
 <wire x1="25.4" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="G$1" pin="+7V"/>
+</segment>
+</net>
+<net name="TRP0_RETURN" class="0">
+<segment>
+<wire x1="294.64" y1="121.92" x2="304.8" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="CON6" gate="G$2" pin="S"/>
+<label x="289.56" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -23565,6 +23565,11 @@ flow to the motors.   </text>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="10.16" y1="-86.36" x2="10.16" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R34" gate="G$1" pin="1"/>
+<label x="-60.96" y="-50.8" size="1.778" layer="95" xref="yes"/>
+<wire x1="-68.58" y1="-50.8" x2="-60.96" y2="-50.8" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="MOTOR1" class="0">
 <segment>
@@ -24217,7 +24222,7 @@ flow to the motors.   </text>
 <pinref part="R31" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="BATT5GND" class="0">
 <segment>
 <pinref part="J10" gate="G$1" pin="KL"/>
 <pinref part="R31" gate="G$1" pin="1"/>
@@ -24236,7 +24241,7 @@ flow to the motors.   </text>
 <junction x="-165.1" y="-71.12"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="MG4" class="0">
 <segment>
 <pinref part="Q15" gate="G$1" pin="G"/>
 <wire x1="-154.94" y1="-66.04" x2="-154.94" y2="-55.88" width="0.1524" layer="91"/>
@@ -24286,13 +24291,6 @@ flow to the motors.   </text>
 <pinref part="Q16" gate="G$1" pin="A"/>
 <pinref part="R34" gate="G$1" pin="2"/>
 <wire x1="-86.36" y1="-50.8" x2="-78.74" y2="-50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+5V/2.6D" class="0">
-<segment>
-<pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="-68.58" y1="-50.8" x2="-66.04" y2="-50.8" width="0.1524" layer="91"/>
-<label x="-66.04" y="-50.8" size="1.778" layer="95" ratio="9" xref="yes"/>
 </segment>
 </net>
 <net name="MOTOR4" class="0">

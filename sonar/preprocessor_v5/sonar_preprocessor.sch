@@ -30069,13 +30069,6 @@ Gain Control</text>
 <junction x="129.54" y="76.2"/>
 <label x="134.62" y="76.2" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U19" gate="G$1" pin="-IN"/>
-<wire x1="86.36" y1="10.16" x2="81.28" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="10.16" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="25.4" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="25.4" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$8" class="0">
 <segment>
@@ -30098,8 +30091,14 @@ Gain Control</text>
 <net name="INPUT4" class="0">
 <segment>
 <pinref part="U19" gate="G$1" pin="OUT"/>
-<wire x1="121.92" y1="7.62" x2="134.62" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="7.62" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
 <label x="134.62" y="7.62" size="1.778" layer="95"/>
+<wire x1="129.54" y1="7.62" x2="134.62" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="7.62" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="25.4" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="25.4" x2="81.28" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U19" gate="G$1" pin="-IN"/>
+<wire x1="81.28" y1="10.16" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

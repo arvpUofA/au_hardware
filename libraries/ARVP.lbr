@@ -2802,7 +2802,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
-<<<<<<< HEAD
 <package name="SOT23-6">
 <description>&lt;b&gt;5-Lead Small Outline Transistor&lt;/b&gt; Package SOT-23&lt;p&gt;
 Source: http://www.analog.com/UploadedFiles/Data_Sheets/346131962AD8067_a.pdf</description>
@@ -2936,8 +2935,6 @@ distributor Farnell 149-452</description>
 <smd name="1" x="-0.935" y="0" dx="1" dy="1.42" layer="1" roundness="25"/>
 <smd name="2" x="0.935" y="0" dx="1" dy="1.42" layer="1" roundness="25"/>
 </package>
-=======
->>>>>>> origin/develop
 </packages>
 <symbols>
 <symbol name="STBC08">
@@ -4405,7 +4402,6 @@ distributor Farnell 149-452</description>
 <text x="3.556" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
-<<<<<<< HEAD
 <symbol name="LTC6088HGNPBF">
 <pin name="OUTA" x="2.54" y="0" length="middle" direction="out"/>
 <pin name="-INA" x="2.54" y="-2.54" length="middle" direction="in"/>
@@ -4561,7 +4557,7 @@ distributor Farnell 149-452</description>
 <text x="-3.811590625" y="-3.30338125" size="1.778740625" layer="96">&gt;VALUE</text>
 <pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-=======
+</symbol>
 <symbol name="NUP2105">
 <pin name="P$2" x="-3.81" y="-2.032" length="point"/>
 <pin name="P$1" x="-3.81" y="2.032" length="point"/>
@@ -4597,7 +4593,6 @@ distributor Farnell 149-452</description>
 <wire x1="1.524" y1="-3.048" x2="0" y2="-2.032" width="0.254" layer="94"/>
 <wire x1="1.524" y1="-2.032" x2="3.81" y2="-2.032" width="0.254" layer="94"/>
 <wire x1="3.81" y1="0" x2="6.858" y2="0" width="0.254" layer="94"/>
->>>>>>> origin/develop
 </symbol>
 </symbols>
 <devicesets>

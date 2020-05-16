@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1851,19 +1851,20 @@ Source: http://www.molex.com</description>
 <rectangle x1="1.8034" y1="-0.8128" x2="2.8194" y2="-0.4572" layer="51"/>
 <rectangle x1="1.8034" y1="-2.0828" x2="2.8194" y2="-1.7272" layer="51"/>
 </package>
-<package name="SM03B-GHS-TB">
-<smd name="P$2" x="0" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
-<smd name="P$1" x="-1.25" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
-<smd name="P$3" x="1.25" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
-<smd name="P$4" x="-3.1" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="P$5" x="3.1" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
-<wire x1="-3.5" y1="0.75" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="3.5" y1="-3.5" x2="3.5" y2="0.75" width="0.127" layer="21"/>
-<wire x1="3.5" y1="0.75" x2="-3.5" y2="0.75" width="0.127" layer="21"/>
-<wire x1="-2" y1="-3.5" x2="-2" y2="-3" width="0.127" layer="51"/>
-<wire x1="-2" y1="-3" x2="2" y2="-3" width="0.127" layer="51"/>
-<wire x1="2" y1="-3" x2="2" y2="-3.5" width="0.127" layer="51"/>
+<package name="SM04B-GHS-TB">
+<smd name="P$3" x="0.625" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$2" x="-0.625" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$5" x="-3.725" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="P$6" x="3.725" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
+<wire x1="-4.125" y1="0.75" x2="-4.125" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-4.125" y1="-3.5" x2="4.125" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="4.125" y1="-3.5" x2="4.125" y2="0.75" width="0.127" layer="21"/>
+<wire x1="4.125" y1="0.75" x2="-4.125" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-2.625" y1="-3.5" x2="-2.625" y2="-3" width="0.127" layer="51"/>
+<wire x1="-2.625" y1="-3" x2="2.625" y2="-3" width="0.127" layer="51"/>
+<wire x1="2.625" y1="-3" x2="2.625" y2="-3.5" width="0.127" layer="51"/>
+<smd name="P$1" x="-1.875" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$4" x="1.875" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
 </package>
 </packages>
 </library>
@@ -2393,8 +2394,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="66.3575" y="38.89375" size="1.27" layer="25" align="center-left"/>
 <attribute name="VALUE" x="63.5" y="36.35375" size="1.27" layer="27"/>
 </element>
-<element name="CON1" library="ARVP" package="SM03B-GHS-TB" value="SM03B-GHS-TB" x="72.0725" y="34.29" smashed="yes" rot="R90"/>
-<element name="CON2" library="ARVP" package="SM03B-GHS-TB" value="SM03B-GHS-TB" x="72.0725" y="34.29" smashed="yes" rot="MR270"/>
 <element name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5k" x="29.845" y="22.38375" smashed="yes">
 <attribute name="VALUE" x="28.575" y="19.84375" size="1.27" layer="27"/>
 </element>
@@ -2409,6 +2408,8 @@ design rules under a new name.</description>
 <attribute name="NAME" x="53.34" y="4.064" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="64.77" y="2.794" size="1.27" layer="27" rot="R90"/>
 </element>
+<element name="CON1" library="ARVP" package="SM04B-GHS-TB" value="SM04B-GHS-TB" x="72.136" y="34.798" smashed="yes" rot="R90"/>
+<element name="CON2" library="ARVP" package="SM04B-GHS-TB" value="SM04B-GHS-TB" x="72.136" y="34.798" smashed="yes" rot="MR270"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -2575,10 +2576,6 @@ design rules under a new name.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="R13" pad="1"/>
-<contactref element="CON1" pad="P$5"/>
-<contactref element="CON1" pad="P$4"/>
-<contactref element="CON2" pad="P$5"/>
-<contactref element="CON2" pad="P$4"/>
 <via x="61.75375" y="31.27375" extent="1-16" drill="0.35"/>
 <via x="61.75375" y="30.63875" extent="1-16" drill="0.35"/>
 <via x="60.96" y="35.8775" extent="1-16" drill="0.35"/>
@@ -2598,6 +2595,12 @@ design rules under a new name.</description>
 <via x="42.06875" y="44.45" extent="1-16" drill="0.35"/>
 <via x="64.77" y="25.0825" extent="1-16" drill="0.35"/>
 <via x="52.22875" y="44.45" extent="1-16" drill="0.35"/>
+<contactref element="CON2" pad="P$6"/>
+<contactref element="CON2" pad="P$5"/>
+<contactref element="CON1" pad="P$1"/>
+<contactref element="CON2" pad="P$1"/>
+<contactref element="CON1" pad="P$6"/>
+<contactref element="CON1" pad="P$5"/>
 </signal>
 <signal name="+5V">
 <contactref element="JP1" pad="3"/>
@@ -3596,38 +3599,28 @@ design rules under a new name.</description>
 </signal>
 <signal name="CANH">
 <contactref element="U3" pad="7"/>
-<contactref element="CON1" pad="P$3"/>
 <contactref element="CON2" pad="P$3"/>
-<wire x1="64.9224" y1="35.56" x2="71.2025" y2="35.56" width="0.6096" layer="1"/>
-<wire x1="71.2025" y1="35.56" x2="71.2225" y2="35.54" width="0.6096" layer="1"/>
-<wire x1="71.2225" y1="35.54" x2="72.41" y2="35.54" width="0.6096" layer="1"/>
-<wire x1="72.41" y1="35.54" x2="72.7075" y2="35.2425" width="0.6096" layer="1"/>
-<wire x1="72.7075" y1="35.2425" x2="72.7075" y2="34.29" width="0.6096" layer="1"/>
-<via x="72.7075" y="34.29" extent="1-16" drill="0.35"/>
-<wire x1="72.7075" y1="34.29" x2="72.7075" y2="33.3375" width="0.6096" layer="16"/>
-<wire x1="72.7075" y1="33.3375" x2="72.39" y2="33.02" width="0.6096" layer="16"/>
-<wire x1="72.39" y1="33.02" x2="71.2425" y2="33.02" width="0.6096" layer="16"/>
-<wire x1="71.2425" y1="33.02" x2="71.2225" y2="33.04" width="0.6096" layer="16"/>
+<contactref element="CON1" pad="P$3"/>
+<wire x1="64.9224" y1="35.56" x2="68.834" y2="35.56" width="0.6096" layer="1"/>
+<wire x1="68.834" y1="35.56" x2="71.149" y2="35.56" width="0.6096" layer="1"/>
+<wire x1="71.149" y1="35.56" x2="71.286" y2="35.423" width="0.6096" layer="1"/>
+<via x="68.834" y="35.56" extent="1-16" drill="0.35"/>
+<wire x1="68.834" y1="35.56" x2="70.221" y2="34.173" width="0.6096" layer="16"/>
+<wire x1="70.221" y1="34.173" x2="71.286" y2="34.173" width="0.6096" layer="16"/>
 </signal>
 <signal name="CANL">
 <contactref element="U3" pad="6"/>
-<contactref element="CON1" pad="P$2"/>
-<contactref element="CON2" pad="P$2"/>
 <wire x1="64.9224" y1="34.29" x2="67.31" y2="34.29" width="0.6096" layer="1"/>
-<wire x1="67.31" y1="34.29" x2="71.2225" y2="34.29" width="0.6096" layer="1"/>
-<wire x1="71.2225" y1="34.29" x2="67.31" y2="34.29" width="0.6096" layer="16"/>
 <via x="67.31" y="34.29" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="CANSH">
-<contactref element="CON1" pad="P$1"/>
-<contactref element="CON2" pad="P$1"/>
-<wire x1="71.2225" y1="33.04" x2="72.9279" y2="33.04" width="0.6096" layer="1"/>
-<wire x1="72.9279" y1="33.04" x2="73.5429" y2="33.655" width="0.6096" layer="1"/>
-<via x="73.5429" y="33.655" extent="1-16" drill="0.35"/>
-<wire x1="73.5429" y1="33.655" x2="73.5429" y2="34.88335" width="0.6096" layer="16"/>
-<wire x1="73.5429" y1="34.88335" x2="72.86625" y2="35.56" width="0.6096" layer="16"/>
-<wire x1="72.86625" y1="35.56" x2="71.2425" y2="35.56" width="0.6096" layer="16"/>
-<wire x1="71.2425" y1="35.56" x2="71.2225" y2="35.54" width="0.6096" layer="16"/>
+<contactref element="CON2" pad="P$2"/>
+<contactref element="CON1" pad="P$2"/>
+<wire x1="67.31" y1="34.29" x2="71.169" y2="34.29" width="0.6096" layer="1"/>
+<wire x1="71.169" y1="34.29" x2="71.286" y2="34.173" width="0.6096" layer="1"/>
+<wire x1="67.31" y1="34.29" x2="67.31" y2="35.306" width="0.6096" layer="16"/>
+<wire x1="67.31" y1="35.306" x2="68.58" y2="36.576" width="0.6096" layer="16"/>
+<wire x1="68.58" y1="36.576" x2="69.342" y2="36.576" width="0.6096" layer="16"/>
+<wire x1="70.495" y1="35.423" x2="71.286" y2="35.423" width="0.6096" layer="16"/>
+<wire x1="69.342" y1="36.576" x2="70.495" y2="35.423" width="0.6096" layer="16"/>
 </signal>
 <signal name="TRP1_ALT">
 <contactref element="R11" pad="2"/>
@@ -3678,6 +3671,20 @@ design rules under a new name.</description>
 </signal>
 <signal name="TRP0_RETURN">
 <contactref element="CON6" pad="2"/>
+</signal>
+<signal name="+5V_CAN">
+<contactref element="CON1" pad="P$4"/>
+<contactref element="CON2" pad="P$4"/>
+<wire x1="71.286" y1="32.923" x2="69.753" y2="32.923" width="0.6096" layer="16"/>
+<wire x1="69.753" y1="32.923" x2="69.088" y2="32.258" width="0.6096" layer="16"/>
+<via x="69.088" y="32.258" extent="1-16" drill="0.35"/>
+<wire x1="70.22558125" y1="32.115" x2="72.34641875" y2="32.115" width="0.6096" layer="1"/>
+<wire x1="72.34641875" y1="32.115" x2="72.644" y2="32.41258125" width="0.6096" layer="1"/>
+<wire x1="69.088" y1="32.258" x2="70.08258125" y2="32.258" width="0.6096" layer="1"/>
+<wire x1="70.08258125" y1="32.258" x2="70.22558125" y2="32.115" width="0.6096" layer="1"/>
+<wire x1="72.644" y1="32.41258125" x2="72.644" y2="36.576" width="0.6096" layer="1"/>
+<wire x1="72.547" y1="36.673" x2="71.286" y2="36.673" width="0.6096" layer="1"/>
+<wire x1="72.644" y1="36.576" x2="72.547" y2="36.673" width="0.6096" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

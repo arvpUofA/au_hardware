@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14414,20 +14414,6 @@ Source: http://www.molex.com</description>
 <rectangle x1="1.8034" y1="-0.8128" x2="2.8194" y2="-0.4572" layer="51"/>
 <rectangle x1="1.8034" y1="-2.0828" x2="2.8194" y2="-1.7272" layer="51"/>
 </package>
-<package name="SM03B-GHS-TB">
-<smd name="P$2" x="0" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
-<smd name="P$1" x="-1.25" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
-<smd name="P$3" x="1.25" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
-<smd name="P$4" x="-3.1" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="P$5" x="3.1" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
-<wire x1="-3.5" y1="0.75" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="3.5" y1="-3.5" x2="3.5" y2="0.75" width="0.127" layer="21"/>
-<wire x1="3.5" y1="0.75" x2="-3.5" y2="0.75" width="0.127" layer="21"/>
-<wire x1="-2" y1="-3.5" x2="-2" y2="-3" width="0.127" layer="51"/>
-<wire x1="-2" y1="-3" x2="2" y2="-3" width="0.127" layer="51"/>
-<wire x1="2" y1="-3" x2="2" y2="-3.5" width="0.127" layer="51"/>
-</package>
 <package name="SM02B-GHS-TB">
 <smd name="P$2" x="0.625" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
 <smd name="P$1" x="-0.625" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
@@ -14440,6 +14426,21 @@ Source: http://www.molex.com</description>
 <wire x1="-1.375" y1="-3.5" x2="-1.375" y2="-3" width="0.127" layer="51"/>
 <wire x1="-1.375" y1="-3" x2="1.375" y2="-3" width="0.127" layer="51"/>
 <wire x1="1.375" y1="-3" x2="1.375" y2="-3.5" width="0.127" layer="51"/>
+</package>
+<package name="SM04B-GHS-TB">
+<smd name="P$3" x="0.625" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$2" x="-0.625" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$5" x="-3.725" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="P$6" x="3.725" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
+<wire x1="-4.125" y1="0.75" x2="-4.125" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-4.125" y1="-3.5" x2="4.125" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="4.125" y1="-3.5" x2="4.125" y2="0.75" width="0.127" layer="21"/>
+<wire x1="4.125" y1="0.75" x2="-4.125" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-2.625" y1="-3.5" x2="-2.625" y2="-3" width="0.127" layer="51"/>
+<wire x1="-2.625" y1="-3" x2="2.625" y2="-3" width="0.127" layer="51"/>
+<wire x1="2.625" y1="-3" x2="2.625" y2="-3.5" width="0.127" layer="51"/>
+<smd name="P$1" x="-1.875" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$4" x="1.875" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -14505,27 +14506,6 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SM03B-GHS-TB" prefix="CON">
-<gates>
-<gate name="-1" symbol="M" x="0" y="5.08"/>
-<gate name="-2" symbol="M" x="0" y="2.54"/>
-<gate name="-3" symbol="M" x="0" y="0"/>
-<gate name="-TABS" symbol="M" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="SM03B-GHS-TB">
-<connects>
-<connect gate="-1" pin="S" pad="P$1"/>
-<connect gate="-2" pin="S" pad="P$2"/>
-<connect gate="-3" pin="S" pad="P$3"/>
-<connect gate="-TABS" pin="S" pad="P$4 P$5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SM02B-GHS-TB" prefix="CON">
 <gates>
 <gate name="-1" symbol="M" x="0" y="2.54"/>
@@ -14538,6 +14518,29 @@ Source: http://www.molex.com</description>
 <connect gate="-1" pin="S" pad="P$1"/>
 <connect gate="-2" pin="S" pad="P$2"/>
 <connect gate="-TABS" pin="S" pad="P$3 P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SM04B-GHS-TB" prefix="CON">
+<gates>
+<gate name="-1" symbol="M" x="0" y="7.62"/>
+<gate name="-2" symbol="M" x="0" y="5.08"/>
+<gate name="-3" symbol="M" x="0" y="2.54"/>
+<gate name="-TABS" symbol="M" x="0" y="-2.54"/>
+<gate name="-4" symbol="M" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SM04B-GHS-TB">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+<connect gate="-TABS" pin="S" pad="P$5 P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -24095,9 +24098,6 @@ http://www.zetex.com&lt;p&gt;
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CON2" library="ARVP" deviceset="SM03B-GHS-TB" device=""/>
-<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CON3" library="ARVP" deviceset="SM03B-GHS-TB" device=""/>
 <part name="+3V32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -24137,6 +24137,9 @@ http://www.zetex.com&lt;p&gt;
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="62"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="CON2" library="ARVP" deviceset="SM04B-GHS-TB" device=""/>
+<part name="CON3" library="ARVP" deviceset="SM04B-GHS-TB" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24311,33 +24314,6 @@ through a PWM signal from the Teensy for variable brightness.</text>
 <instance part="GND3" gate="1" x="205.74" y="172.72" smashed="yes">
 <attribute name="VALUE" x="203.2" y="170.18" size="1.778" layer="96"/>
 </instance>
-<instance part="CON2" gate="-1" x="264.16" y="215.9" smashed="yes">
-<attribute name="NAME" x="269.24" y="215.138" size="1.524" layer="95"/>
-</instance>
-<instance part="CON2" gate="-2" x="264.16" y="203.2" smashed="yes">
-<attribute name="NAME" x="269.24" y="202.438" size="1.524" layer="95"/>
-</instance>
-<instance part="CON2" gate="-3" x="264.16" y="205.74" smashed="yes">
-<attribute name="NAME" x="269.24" y="204.978" size="1.524" layer="95"/>
-</instance>
-<instance part="CON2" gate="-TABS" x="264.16" y="200.66" smashed="yes">
-<attribute name="NAME" x="269.24" y="199.898" size="1.524" layer="95"/>
-</instance>
-<instance part="GND7" gate="1" x="261.62" y="193.04" smashed="yes">
-<attribute name="VALUE" x="259.08" y="190.5" size="1.778" layer="96"/>
-</instance>
-<instance part="CON3" gate="-1" x="264.16" y="213.36" smashed="yes">
-<attribute name="NAME" x="269.24" y="212.598" size="1.524" layer="95"/>
-</instance>
-<instance part="CON3" gate="-2" x="264.16" y="210.82" smashed="yes">
-<attribute name="NAME" x="269.24" y="210.058" size="1.524" layer="95"/>
-</instance>
-<instance part="CON3" gate="-3" x="264.16" y="208.28" smashed="yes">
-<attribute name="NAME" x="269.24" y="207.518" size="1.524" layer="95"/>
-</instance>
-<instance part="CON3" gate="-TABS" x="264.16" y="198.12" smashed="yes">
-<attribute name="NAME" x="269.24" y="197.358" size="1.524" layer="95"/>
-</instance>
 <instance part="+3V32" gate="G$1" x="39.37" y="44.45" smashed="yes">
 <attribute name="VALUE" x="36.83" y="39.37" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -24501,6 +24477,39 @@ through a PWM signal from the Teensy for variable brightness.</text>
 <instance part="GND21" gate="1" x="264.16" y="144.78" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="266.7" y="142.24" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<instance part="CON2" gate="-1" x="276.86" y="190.5" smashed="yes">
+<attribute name="NAME" x="281.94" y="189.738" size="1.524" layer="95"/>
+</instance>
+<instance part="CON2" gate="-2" x="269.24" y="203.2" smashed="yes">
+<attribute name="NAME" x="274.32" y="202.438" size="1.524" layer="95"/>
+</instance>
+<instance part="CON2" gate="-3" x="269.24" y="205.74" smashed="yes">
+<attribute name="NAME" x="274.32" y="204.978" size="1.524" layer="95"/>
+</instance>
+<instance part="CON2" gate="-TABS" x="276.86" y="187.96" smashed="yes">
+<attribute name="NAME" x="281.94" y="187.198" size="1.524" layer="95"/>
+</instance>
+<instance part="CON2" gate="-4" x="269.24" y="215.9" smashed="yes">
+<attribute name="NAME" x="274.32" y="215.138" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-1" x="276.86" y="185.42" smashed="yes">
+<attribute name="NAME" x="281.94" y="184.658" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-2" x="269.24" y="198.12" smashed="yes">
+<attribute name="NAME" x="274.32" y="197.358" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-3" x="269.24" y="200.66" smashed="yes">
+<attribute name="NAME" x="274.32" y="199.898" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-TABS" x="276.86" y="182.88" smashed="yes">
+<attribute name="NAME" x="281.94" y="182.118" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-4" x="269.24" y="213.36" smashed="yes">
+<attribute name="NAME" x="274.32" y="212.598" size="1.524" layer="95"/>
+</instance>
+<instance part="GND7" gate="1" x="276.86" y="175.26" smashed="yes">
+<attribute name="VALUE" x="274.32" y="172.72" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24597,16 +24606,6 @@ through a PWM signal from the Teensy for variable brightness.</text>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="261.62" y1="195.58" x2="261.62" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="CON2" gate="-TABS" pin="S"/>
-<wire x1="261.62" y1="198.12" x2="261.62" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="200.66" x2="264.16" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="CON3" gate="-TABS" pin="S"/>
-<wire x1="261.62" y1="198.12" x2="264.16" y2="198.12" width="0.1524" layer="91"/>
-<junction x="261.62" y="198.12"/>
-</segment>
-<segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="CON4" gate="-TABS" pin="S"/>
 <wire x1="213.36" y1="72.39" x2="213.36" y2="74.93" width="0.1524" layer="91"/>
@@ -24675,6 +24674,20 @@ through a PWM signal from the Teensy for variable brightness.</text>
 <wire x1="254" y1="152.4" x2="264.16" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="152.4" x2="264.16" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="CON2" gate="-1" pin="S"/>
+<pinref part="CON2" gate="-TABS" pin="S"/>
+<wire x1="276.86" y1="190.5" x2="276.86" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="CON3" gate="-1" pin="S"/>
+<wire x1="276.86" y1="187.96" x2="276.86" y2="185.42" width="0.1524" layer="91"/>
+<junction x="276.86" y="187.96"/>
+<pinref part="CON3" gate="-TABS" pin="S"/>
+<wire x1="276.86" y1="182.88" x2="276.86" y2="185.42" width="0.1524" layer="91"/>
+<junction x="276.86" y="185.42"/>
+<wire x1="276.86" y1="182.88" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
+<junction x="276.86" y="182.88"/>
+<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -25056,32 +25069,27 @@ through a PWM signal from the Teensy for variable brightness.</text>
 <net name="CANH1" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="CANH"/>
+<wire x1="238.76" y1="205.74" x2="266.7" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="CON2" gate="-3" pin="S"/>
-<wire x1="238.76" y1="205.74" x2="261.62" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="205.74" x2="269.24" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="205.74" x2="266.7" y2="200.66" width="0.1524" layer="91"/>
+<junction x="266.7" y="205.74"/>
 <pinref part="CON3" gate="-3" pin="S"/>
-<wire x1="261.62" y1="205.74" x2="264.16" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="208.28" x2="261.62" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="208.28" x2="261.62" y2="205.74" width="0.1524" layer="91"/>
-<junction x="261.62" y="205.74"/>
+<wire x1="266.7" y1="200.66" x2="269.24" y2="200.66" width="0.1524" layer="91"/>
+<label x="246.38" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANL1" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="CANL"/>
+<wire x1="238.76" y1="203.2" x2="264.16" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="CON2" gate="-2" pin="S"/>
-<wire x1="238.76" y1="203.2" x2="259.08" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="203.2" x2="269.24" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="203.2" x2="264.16" y2="198.12" width="0.1524" layer="91"/>
+<junction x="264.16" y="203.2"/>
 <pinref part="CON3" gate="-2" pin="S"/>
-<wire x1="259.08" y1="203.2" x2="264.16" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="210.82" x2="259.08" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="210.82" x2="259.08" y2="203.2" width="0.1524" layer="91"/>
-<junction x="259.08" y="203.2"/>
-</segment>
-</net>
-<net name="CANSH1" class="0">
-<segment>
-<pinref part="CON2" gate="-1" pin="S"/>
-<pinref part="CON3" gate="-1" pin="S"/>
-<wire x1="264.16" y1="215.9" x2="264.16" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="198.12" x2="269.24" y2="198.12" width="0.1524" layer="91"/>
+<label x="246.38" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL_3V1" class="0">
@@ -25335,6 +25343,16 @@ through a PWM signal from the Teensy for variable brightness.</text>
 <wire x1="233.68" y1="152.4" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="152.4" x2="246.38" y2="152.4" width="0.1524" layer="91"/>
 <junction x="233.68" y="152.4"/>
+</segment>
+</net>
+<net name="+5V_CAN" class="0">
+<segment>
+<pinref part="CON2" gate="-4" pin="S"/>
+<wire x1="269.24" y1="215.9" x2="266.7" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="215.9" x2="266.7" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="CON3" gate="-4" pin="S"/>
+<wire x1="266.7" y1="213.36" x2="269.24" y2="213.36" width="0.1524" layer="91"/>
+<label x="266.7" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

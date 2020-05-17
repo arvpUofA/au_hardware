@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4997,19 +4997,20 @@ Source: http://www.molex.com</description>
 <rectangle x1="1.8034" y1="-0.8128" x2="2.8194" y2="-0.4572" layer="51"/>
 <rectangle x1="1.8034" y1="-2.0828" x2="2.8194" y2="-1.7272" layer="51"/>
 </package>
-<package name="SM03B-GHS-TB">
-<smd name="P$2" x="0" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
-<smd name="P$1" x="-1.25" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
-<smd name="P$3" x="1.25" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
-<smd name="P$4" x="-3.1" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="P$5" x="3.1" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
-<wire x1="-3.5" y1="0.75" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="3.5" y1="-3.5" x2="3.5" y2="0.75" width="0.127" layer="21"/>
-<wire x1="3.5" y1="0.75" x2="-3.5" y2="0.75" width="0.127" layer="21"/>
-<wire x1="-2" y1="-3.5" x2="-2" y2="-3" width="0.127" layer="51"/>
-<wire x1="-2" y1="-3" x2="2" y2="-3" width="0.127" layer="51"/>
-<wire x1="2" y1="-3" x2="2" y2="-3.5" width="0.127" layer="51"/>
+<package name="SM04B-GHS-TB">
+<smd name="P$3" x="0.625" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$2" x="-0.625" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$5" x="-3.725" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
+<smd name="P$6" x="3.725" y="-2.35" dx="2.7" dy="1" layer="1" rot="R90"/>
+<wire x1="-4.125" y1="0.75" x2="-4.125" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-4.125" y1="-3.5" x2="4.125" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="4.125" y1="-3.5" x2="4.125" y2="0.75" width="0.127" layer="21"/>
+<wire x1="4.125" y1="0.75" x2="-4.125" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-2.625" y1="-3.5" x2="-2.625" y2="-3" width="0.127" layer="51"/>
+<wire x1="-2.625" y1="-3" x2="2.625" y2="-3" width="0.127" layer="51"/>
+<wire x1="2.625" y1="-3" x2="2.625" y2="-3.5" width="0.127" layer="51"/>
+<smd name="P$1" x="-1.875" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
+<smd name="P$4" x="1.875" y="0.85" dx="0.6" dy="1.7" layer="1" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -5090,20 +5091,22 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SM03B-GHS-TB" prefix="CON">
+<deviceset name="SM04B-GHS-TB" prefix="CON">
 <gates>
-<gate name="-1" symbol="M" x="0" y="5.08"/>
-<gate name="-2" symbol="M" x="0" y="2.54"/>
-<gate name="-3" symbol="M" x="0" y="0"/>
+<gate name="-1" symbol="M" x="0" y="7.62"/>
+<gate name="-2" symbol="M" x="0" y="5.08"/>
+<gate name="-3" symbol="M" x="0" y="2.54"/>
 <gate name="-TABS" symbol="M" x="0" y="-2.54"/>
+<gate name="-4" symbol="M" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SM03B-GHS-TB">
+<device name="" package="SM04B-GHS-TB">
 <connects>
 <connect gate="-1" pin="S" pad="P$1"/>
 <connect gate="-2" pin="S" pad="P$2"/>
 <connect gate="-3" pin="S" pad="P$3"/>
-<connect gate="-TABS" pin="S" pad="P$4 P$5"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+<connect gate="-TABS" pin="S" pad="P$5 P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -22729,9 +22732,6 @@ Source: www.kingbright.com</description>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CON2" library="ARVP" deviceset="SM03B-GHS-TB" device=""/>
-<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CON3" library="ARVP" deviceset="SM03B-GHS-TB" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
@@ -22826,6 +22826,9 @@ Source: www.kingbright.com</description>
 <part name="R34" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:6240566/1" value="1k"/>
 <part name="J11" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
 <part name="R35" library="Moira" deviceset="HCS3920" device="FT1L00" value="0.001Ohm"/>
+<part name="CON2" library="ARVP" deviceset="SM04B-GHS-TB" device=""/>
+<part name="CON3" library="ARVP" deviceset="SM04B-GHS-TB" device=""/>
+<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23144,33 +23147,6 @@ flow to the motors.   </text>
 <instance part="GND17" gate="1" x="154.94" y="-101.6" smashed="yes">
 <attribute name="VALUE" x="152.4" y="-104.14" size="1.778" layer="96"/>
 </instance>
-<instance part="CON2" gate="-1" x="213.36" y="-58.42" smashed="yes">
-<attribute name="NAME" x="218.44" y="-59.182" size="1.524" layer="95"/>
-</instance>
-<instance part="CON2" gate="-2" x="213.36" y="-71.12" smashed="yes">
-<attribute name="NAME" x="218.44" y="-71.882" size="1.524" layer="95"/>
-</instance>
-<instance part="CON2" gate="-3" x="213.36" y="-68.58" smashed="yes">
-<attribute name="NAME" x="218.44" y="-69.342" size="1.524" layer="95"/>
-</instance>
-<instance part="CON2" gate="-TABS" x="213.36" y="-73.66" smashed="yes">
-<attribute name="NAME" x="218.44" y="-74.422" size="1.524" layer="95"/>
-</instance>
-<instance part="GND20" gate="1" x="210.82" y="-81.28" smashed="yes">
-<attribute name="VALUE" x="208.28" y="-83.82" size="1.778" layer="96"/>
-</instance>
-<instance part="CON3" gate="-1" x="213.36" y="-60.96" smashed="yes">
-<attribute name="NAME" x="218.44" y="-61.722" size="1.524" layer="95"/>
-</instance>
-<instance part="CON3" gate="-2" x="213.36" y="-63.5" smashed="yes">
-<attribute name="NAME" x="218.44" y="-64.262" size="1.524" layer="95"/>
-</instance>
-<instance part="CON3" gate="-3" x="213.36" y="-66.04" smashed="yes">
-<attribute name="NAME" x="218.44" y="-66.802" size="1.524" layer="95"/>
-</instance>
-<instance part="CON3" gate="-TABS" x="213.36" y="-76.2" smashed="yes">
-<attribute name="NAME" x="218.44" y="-76.962" size="1.524" layer="95"/>
-</instance>
 <instance part="GND7" gate="1" x="-35.56" y="106.68" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-38.1" y="109.22" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -23300,6 +23276,39 @@ flow to the motors.   </text>
 <attribute name="NAME" x="34.5186" y="69.85" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="37.338" y="72.39" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="CON2" gate="-1" x="213.36" y="-83.82" smashed="yes">
+<attribute name="NAME" x="218.44" y="-84.582" size="1.524" layer="95"/>
+</instance>
+<instance part="CON2" gate="-2" x="213.36" y="-71.12" smashed="yes">
+<attribute name="NAME" x="218.44" y="-71.882" size="1.524" layer="95"/>
+</instance>
+<instance part="CON2" gate="-3" x="213.36" y="-68.58" smashed="yes">
+<attribute name="NAME" x="218.44" y="-69.342" size="1.524" layer="95"/>
+</instance>
+<instance part="CON2" gate="-TABS" x="213.36" y="-86.36" smashed="yes">
+<attribute name="NAME" x="218.44" y="-87.122" size="1.524" layer="95"/>
+</instance>
+<instance part="CON2" gate="-4" x="213.36" y="-60.96" smashed="yes">
+<attribute name="NAME" x="218.44" y="-61.722" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-1" x="213.36" y="-88.9" smashed="yes">
+<attribute name="NAME" x="218.44" y="-89.662" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-2" x="213.36" y="-76.2" smashed="yes">
+<attribute name="NAME" x="218.44" y="-76.962" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-3" x="213.36" y="-73.66" smashed="yes">
+<attribute name="NAME" x="218.44" y="-74.422" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-TABS" x="213.36" y="-91.44" smashed="yes">
+<attribute name="NAME" x="218.44" y="-92.202" size="1.524" layer="95"/>
+</instance>
+<instance part="CON3" gate="-4" x="213.36" y="-63.5" smashed="yes">
+<attribute name="NAME" x="218.44" y="-64.262" size="1.524" layer="95"/>
+</instance>
+<instance part="GND20" gate="1" x="213.36" y="-99.06" smashed="yes">
+<attribute name="VALUE" x="210.82" y="-101.6" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23375,16 +23384,6 @@ flow to the motors.   </text>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="210.82" y1="-78.74" x2="210.82" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="CON2" gate="-TABS" pin="S"/>
-<wire x1="210.82" y1="-76.2" x2="210.82" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-73.66" x2="213.36" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="CON3" gate="-TABS" pin="S"/>
-<wire x1="210.82" y1="-76.2" x2="213.36" y2="-76.2" width="0.1524" layer="91"/>
-<junction x="210.82" y="-76.2"/>
-</segment>
-<segment>
 <pinref part="J8" gate="G$1" pin="KL1"/>
 <wire x1="-33.02" y1="106.68" x2="-25.4" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -23443,6 +23442,20 @@ flow to the motors.   </text>
 <pinref part="J11" gate="G$1" pin="KL1"/>
 <wire x1="-25.4" y1="-71.12" x2="-139.7" y2="-71.12" width="0.1524" layer="91"/>
 <junction x="-139.7" y="-71.12"/>
+</segment>
+<segment>
+<pinref part="CON2" gate="-1" pin="S"/>
+<pinref part="CON2" gate="-TABS" pin="S"/>
+<wire x1="213.36" y1="-83.82" x2="213.36" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="CON3" gate="-1" pin="S"/>
+<wire x1="213.36" y1="-86.36" x2="213.36" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="213.36" y="-86.36"/>
+<pinref part="CON3" gate="-TABS" pin="S"/>
+<wire x1="213.36" y1="-88.9" x2="213.36" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="213.36" y="-88.9"/>
+<junction x="213.36" y="-91.44"/>
+<wire x1="213.36" y1="-91.44" x2="213.36" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="BATTERY4_IN" class="0">
@@ -23968,35 +23981,30 @@ flow to the motors.   </text>
 <wire x1="154.94" y1="-73.66" x2="154.94" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CANH1" class="0">
+<net name="CANH" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="CANH"/>
+<wire x1="187.96" y1="-68.58" x2="208.28" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="CON2" gate="-3" pin="S"/>
-<wire x1="187.96" y1="-68.58" x2="210.82" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-68.58" x2="213.36" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-68.58" x2="208.28" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="208.28" y="-68.58"/>
 <pinref part="CON3" gate="-3" pin="S"/>
-<wire x1="210.82" y1="-68.58" x2="213.36" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="-66.04" x2="210.82" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-66.04" x2="210.82" y2="-68.58" width="0.1524" layer="91"/>
-<junction x="210.82" y="-68.58"/>
+<wire x1="208.28" y1="-73.66" x2="213.36" y2="-73.66" width="0.1524" layer="91"/>
+<label x="198.12" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CANL1" class="0">
+<net name="CANL" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="CANL"/>
+<wire x1="187.96" y1="-71.12" x2="205.74" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="CON2" gate="-2" pin="S"/>
-<wire x1="187.96" y1="-71.12" x2="208.28" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-71.12" x2="213.36" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-71.12" x2="205.74" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="205.74" y="-71.12"/>
 <pinref part="CON3" gate="-2" pin="S"/>
-<wire x1="208.28" y1="-71.12" x2="213.36" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="-63.5" x2="208.28" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="-63.5" x2="208.28" y2="-71.12" width="0.1524" layer="91"/>
-<junction x="208.28" y="-71.12"/>
-</segment>
-</net>
-<net name="CANSH1" class="0">
-<segment>
-<pinref part="CON2" gate="-1" pin="S"/>
-<pinref part="CON3" gate="-1" pin="S"/>
-<wire x1="213.36" y1="-58.42" x2="213.36" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-76.2" x2="213.36" y2="-76.2" width="0.1524" layer="91"/>
+<label x="198.12" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL_3V1" class="0">
@@ -24308,6 +24316,16 @@ flow to the motors.   </text>
 <wire x1="33.02" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 <junction x="33.02" y="71.12"/>
 <label x="27.94" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="+5V_CAN" class="0">
+<segment>
+<pinref part="CON2" gate="-4" pin="S"/>
+<wire x1="213.36" y1="-60.96" x2="210.82" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="-60.96" x2="210.82" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="CON3" gate="-4" pin="S"/>
+<wire x1="210.82" y1="-63.5" x2="213.36" y2="-63.5" width="0.1524" layer="91"/>
+<label x="210.82" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

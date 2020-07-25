@@ -242,24 +242,6 @@
 <text x="0" y="0" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="6.35" y="0" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
-<package name="CAP27.5MM">
-<pad name="P$1" x="0" y="0" drill="1" shape="square"/>
-<pad name="P$2" x="0" y="27.5" drill="1" shape="square"/>
-<wire x1="-5.5" y1="-2" x2="5.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="5.5" y1="-2" x2="5.5" y2="29.5" width="0.127" layer="21"/>
-<wire x1="5.5" y1="29.5" x2="-5.5" y2="29.5" width="0.127" layer="21"/>
-<wire x1="-5.5" y1="29.5" x2="-5.5" y2="-2" width="0.127" layer="21"/>
-<text x="-6.35" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="7.62" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="CAP15MM">
-<pad name="P$1" x="0" y="0" drill="1" shape="square"/>
-<pad name="P$2" x="0" y="15" drill="1" shape="square"/>
-<wire x1="-3.85" y1="-1.5" x2="-3.85" y2="16.5" width="0.127" layer="21"/>
-<wire x1="-3.85" y1="16.5" x2="3.85" y2="16.5" width="0.127" layer="21"/>
-<wire x1="3.85" y1="16.5" x2="3.85" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="3.85" y1="-1.5" x2="-3.85" y2="-1.5" width="0.127" layer="21"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="DIP14" urn="urn:adsk.eagle:package:39189/1" locally_modified="yes" type="box">
@@ -443,39 +425,6 @@
 </gates>
 <devices>
 <device name="" package="CAP7.2MM*4.5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="B32774X4505K000">
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="CAP27.5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ECW-F6104JL">
-<description>CAP FILM 0.1UF 5% 630VDC RADIAL</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="CAP15MM">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -11099,11 +11048,6 @@ Metric Code Size 5664</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="+5V" urn="urn:adsk.eagle:symbol:26929/1" library_version="1">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -11112,19 +11056,6 @@ Metric Code Size 5664</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="+5V" urn="urn:adsk.eagle:component:26963/1" prefix="P+" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -11222,25 +11153,25 @@ Source: http://www.molex.com</description>
 <part name="C2" library="Ultrasonic Audio Amp" deviceset="FKP2G002201D00JSSD" device="" value="150p"/>
 <part name="SGND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device="" value="SGND"/>
 <part name="SGND3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device="" value="SGND"/>
-<part name="C3" library="Ultrasonic Audio Amp" deviceset="B32774X4505K000" device="" value="5u"/>
 <part name="X_7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R5" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:6240569/1" value="2.7"/>
-<part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1M"/>
 <part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="C5" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="24p"/>
-<part name="C4" library="Ultrasonic Audio Amp" deviceset="ECW-F6104JL" device="" value="0.1u"/>
 <part name="SW1" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="SW_DIP-2" device="" package3d_urn="urn:adsk.eagle:package:26654/2"/>
-<part name="SGND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device="" value="SGND"/>
 <part name="CON1" library="ARVP" deviceset="MOLEX_5566-2" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C6" library="Ultrasonic Audio Amp" deviceset="ECW-F6104JL" device="" value="0.1u"/>
+<part name="5V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C7" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:6240335/1" value="10uF"/>
 <part name="X_11" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C8" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:6240335/1" value="1uF"/>
+<part name="C3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1"/>
+<part name="X_12" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="C4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.1u"/>
+<part name="C6" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -11288,7 +11219,8 @@ R5 and C4 is the output Zobel network.
 2 POS DIP (for some reason cheaper than 1 POS) allows external gain loop to be an option (I don't think the gain needs to be higher than the internally set gain = 50.) 
 Although I don't know what is the effect of having the resistors and capacitors at the IN- floating. Maybe I will tie the AMP_IN- to the switch as well.
 
-Need to remember the heatsink when designing the board. </text>
+Need to remember the heatsink when designing the board. 
+Switched C3 from 5u to 4.7u since the latter is more common and cheap...</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="-38.1" y="-48.26"/>
@@ -11322,26 +11254,26 @@ Need to remember the heatsink when designing the board. </text>
 <instance part="C2" gate="G$1" x="157.48" y="48.26"/>
 <instance part="SGND2" gate="1" x="129.54" y="30.48"/>
 <instance part="SGND3" gate="1" x="157.48" y="30.48"/>
-<instance part="C3" gate="G$1" x="-53.34" y="-33.02" rot="R180"/>
 <instance part="X_7" gate="G$1" x="-66.04" y="-33.02"/>
 <instance part="X_8" gate="G$1" x="-10.16" y="-73.66"/>
 <instance part="X_9" gate="G$1" x="96.52" y="-63.5"/>
 <instance part="R5" gate="G$1" x="10.16" y="-71.12" rot="R90"/>
-<instance part="X_10" gate="G$1" x="10.16" y="-99.06"/>
 <instance part="R6" gate="G$1" x="43.18" y="-88.9" rot="R90"/>
 <instance part="R7" gate="G$1" x="43.18" y="-106.68" rot="R90"/>
 <instance part="C5" gate="G$1" x="60.96" y="-106.68"/>
-<instance part="C4" gate="G$1" x="10.16" y="-88.9"/>
 <instance part="SW1" gate="G$1" x="40.64" y="-71.12" rot="R90"/>
-<instance part="SGND5" gate="1" x="50.8" y="-124.46"/>
 <instance part="CON1" gate="G$1" x="-116.84" y="55.88" rot="R180"/>
 <instance part="CON1" gate="G$2" x="-116.84" y="53.34" rot="R180"/>
-<instance part="P+2" gate="1" x="-114.3" y="63.5"/>
-<instance part="GND5" gate="1" x="-114.3" y="48.26"/>
-<instance part="C6" gate="G$1" x="-12.7" y="-33.02"/>
+<instance part="5V" gate="1" x="-114.3" y="63.5"/>
 <instance part="C7" gate="G$1" x="-2.54" y="-33.02"/>
 <instance part="X_11" gate="G$1" x="-2.54" y="-40.64"/>
 <instance part="C8" gate="G$1" x="7.62" y="-33.02"/>
+<instance part="C3" gate="G$1" x="-53.34" y="-33.02" rot="R180"/>
+<instance part="X_12" gate="G$1" x="-114.3" y="50.8"/>
+<instance part="X_13" gate="G$1" x="50.8" y="-121.92"/>
+<instance part="X_10" gate="G$1" x="10.16" y="-99.06"/>
+<instance part="C4" gate="G$1" x="10.16" y="-86.36"/>
+<instance part="C6" gate="G$1" x="-12.7" y="-33.02"/>
 </instances>
 <busses>
 </busses>
@@ -11429,13 +11361,12 @@ Need to remember the heatsink when designing the board. </text>
 <wire x1="96.52" y1="-55.88" x2="96.52" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="-53.34" y1="-27.94" x2="-66.04" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="X_7" gate="G$1" pin="0"/>
 <wire x1="-66.04" y1="-27.94" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="-38.1" x2="-2.54" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="X_11" gate="G$1" pin="0"/>
@@ -11443,6 +11374,32 @@ Need to remember the heatsink when designing the board. </text>
 <junction x="-2.54" y="-38.1"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="-2.54" y1="-38.1" x2="7.62" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="CON1" gate="G$2" pin="S"/>
+<wire x1="-116.84" y1="53.34" x2="-114.3" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="53.34" x2="-114.3" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="X_12" gate="G$1" pin="0"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="-111.76" x2="43.18" y2="-114.3" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="-114.3" x2="50.8" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-114.3" x2="53.34" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-114.3" x2="60.96" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-114.3" x2="60.96" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-121.92" x2="50.8" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="50.8" y="-114.3"/>
+<pinref part="X_13" gate="G$1" pin="0"/>
+</segment>
+<segment>
+<wire x1="10.16" y1="-91.44" x2="10.16" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-91.44" x2="10.16" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="X_10" gate="G$1" pin="0"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<junction x="10.16" y="-91.44"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -11462,13 +11419,13 @@ Need to remember the heatsink when designing the board. </text>
 <wire x1="-12.7" y1="-27.94" x2="-2.54" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-27.94" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="-20.32" y="-27.94"/>
-<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="-27.94" x2="-12.7" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="-12.7" y="-27.94"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="-30.48" x2="7.62" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-27.94" x2="-2.54" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="-2.54" y="-27.94"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11491,24 +11448,6 @@ Need to remember the heatsink when designing the board. </text>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="SGND3" gate="1" pin="GND"/>
 <wire x1="157.48" y1="43.18" x2="157.48" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="-111.76" x2="43.18" y2="-114.3" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="-114.3" x2="50.8" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-114.3" x2="53.34" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-114.3" x2="60.96" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-114.3" x2="60.96" y2="-111.76" width="0.1524" layer="91"/>
-<pinref part="SGND5" gate="1" pin="GND"/>
-<wire x1="50.8" y1="-121.92" x2="50.8" y2="-114.3" width="0.1524" layer="91"/>
-<junction x="50.8" y="-114.3"/>
-</segment>
-<segment>
-<pinref part="CON1" gate="G$2" pin="S"/>
-<wire x1="-116.84" y1="53.34" x2="-114.3" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="-114.3" y1="53.34" x2="-114.3" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -11538,6 +11477,13 @@ Need to remember the heatsink when designing the board. </text>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="G$1" pin="5V"/>
 <wire x1="33.02" y1="63.5" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="5V" gate="1" pin="+5V"/>
+<wire x1="-114.3" y1="60.96" x2="-114.3" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="CON1" gate="G$1" pin="S"/>
+<wire x1="-116.84" y1="55.88" x2="-114.3" y2="55.88" width="0.1524" layer="91"/>
+<label x="-111.76" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIGNAL_IN" class="0">
@@ -11619,8 +11565,8 @@ Need to remember the heatsink when designing the board. </text>
 <segment>
 <pinref part="U2" gate="G$1" pin="BYPASS"/>
 <wire x1="-53.34" y1="-43.18" x2="-50.8" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-53.34" y1="-43.18" x2="-53.34" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AMP_OUT" class="0">
@@ -11646,16 +11592,10 @@ Need to remember the heatsink when designing the board. </text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="-76.2" x2="10.16" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-76.2" x2="10.16" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="C3" class="0">
-<segment>
-<pinref part="X_10" gate="G$1" pin="0"/>
-<wire x1="10.16" y1="-91.44" x2="10.16" y2="-99.06" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="-91.44" x2="10.16" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-83.82" x2="10.16" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="10.16" y="-83.82"/>
 </segment>
 </net>
 <net name="AMP_IN+" class="0">
@@ -11683,14 +11623,6 @@ Need to remember the heatsink when designing the board. </text>
 <pinref part="SW1" gate="G$1" pin="4"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="-78.74" x2="43.18" y2="-83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="-114.3" y1="60.96" x2="-114.3" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="CON1" gate="G$1" pin="S"/>
-<wire x1="-116.84" y1="55.88" x2="-114.3" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

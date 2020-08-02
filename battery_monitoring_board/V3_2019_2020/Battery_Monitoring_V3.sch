@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22664,30 +22664,30 @@ Source: www.kingbright.com</description>
 </classes>
 <parts>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="U1" library="INA3221" deviceset="INA3221" device="."/>
+<part name="U1" library="INA3221" deviceset="INA3221" device="." override_package3d_urn="urn:adsk.eagle:package:22364101/2" override_package_urn="urn:adsk.eagle:footprint:22364102/1"/>
 <part name="R8" library="Moira" deviceset="HCS3920" device="FT1L00" value="0.001Ohm"/>
 <part name="R4" library="Moira" deviceset="HCS3920" device="FT1L00" value="0.001Ohm"/>
-<part name="U2" library="INA3221" deviceset="INA3221" device="."/>
+<part name="U2" library="INA3221" deviceset="INA3221" device="." override_package3d_urn="urn:adsk.eagle:package:22360385/2" override_package_urn="urn:adsk.eagle:footprint:22360386/1"/>
 <part name="R13" library="Moira" deviceset="HCS3920" device="FT1L00" value="0.001Ohm"/>
 <part name="R12" library="Moira" deviceset="HCS3920" device="FT1L00" value="0.001Ohm"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C2012" package3d_urn="urn:adsk.eagle:package:26145/1" value="0.1microF"/>
 <part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C2012" package3d_urn="urn:adsk.eagle:package:26145/1" value="0.1microF"/>
-<part name="J4" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
-<part name="J3" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
-<part name="J2" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
-<part name="J1" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
-<part name="J5" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
-<part name="J6" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
-<part name="J7" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
-<part name="J8" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
+<part name="J4" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364481/2" override_package_urn="urn:adsk.eagle:footprint:22364482/1"/>
+<part name="J3" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364479/2" override_package_urn="urn:adsk.eagle:footprint:22364480/1"/>
+<part name="J2" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364477/2" override_package_urn="urn:adsk.eagle:footprint:22364478/1"/>
+<part name="J1" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364469/2" override_package_urn="urn:adsk.eagle:footprint:22364470/1"/>
+<part name="J5" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364492/2" override_package_urn="urn:adsk.eagle:footprint:22364493/1"/>
+<part name="J6" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364490/2" override_package_urn="urn:adsk.eagle:footprint:22364491/1"/>
+<part name="J7" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364487/2" override_package_urn="urn:adsk.eagle:footprint:22364488/1"/>
+<part name="J8" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364485/2" override_package_urn="urn:adsk.eagle:footprint:22364486/1"/>
 <part name="ARVP1" library="ARVP" deviceset="ARVP_LOGO" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="Moira" deviceset="TCLD1000CT" device="">
+<part name="Q1" library="Moira" deviceset="TCLD1000CT" device="" override_package3d_urn="urn:adsk.eagle:package:22364319/2" override_package_urn="urn:adsk.eagle:footprint:22364320/1">
 <attribute name="SPICEPREFIX" value="E"/>
 </part>
-<part name="Q2" library="Moira" deviceset="TCLD1000CT" device=""/>
-<part name="Q3" library="Moira" deviceset="TCLD1000CT" device=""/>
+<part name="Q2" library="Moira" deviceset="TCLD1000CT" device="" override_package3d_urn="urn:adsk.eagle:package:22364317/2" override_package_urn="urn:adsk.eagle:footprint:22364318/1"/>
+<part name="Q3" library="Moira" deviceset="TCLD1000CT" device="" override_package3d_urn="urn:adsk.eagle:package:22364315/2" override_package_urn="urn:adsk.eagle:footprint:22364316/1"/>
 <part name="Q4" library="Moira" deviceset="PSMN1R5-30BLE" device=""/>
 <part name="Q5" library="Moira" deviceset="PSMN1R5-30BLE" device=""/>
 <part name="Q6" library="Moira" deviceset="PSMN1R5-30BLE" device=""/>
@@ -22717,7 +22717,7 @@ Source: www.kingbright.com</description>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
 <part name="+3V32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U3" library="Teensy_3_Series_Board_v1.0" deviceset="TEENSY_3.1_BASIC_2" device=""/>
+<part name="U3" library="Teensy_3_Series_Board_v1.0" deviceset="TEENSY_3.1_BASIC_2" device="" override_package3d_urn="urn:adsk.eagle:package:22360382/2" override_package_urn="urn:adsk.eagle:footprint:22360383/1"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
 <part name="U4" library="ARVP" deviceset="TCAN1042HVDR" device=""/>
@@ -22779,35 +22779,35 @@ Source: www.kingbright.com</description>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1" value="2.65"/>
 <part name="C7" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.1u"/>
 <part name="C8" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.1u"/>
-<part name="Q10" library="Moira" deviceset="SI7145DP" device=""/>
-<part name="Q11" library="Moira" deviceset="SI7145DP" device=""/>
+<part name="Q10" library="Moira" deviceset="SI7145DP" device="" override_package3d_urn="urn:adsk.eagle:package:22364330/2" override_package_urn="urn:adsk.eagle:footprint:22364331/1"/>
+<part name="Q11" library="Moira" deviceset="SI7145DP" device="" override_package3d_urn="urn:adsk.eagle:package:22364328/2" override_package_urn="urn:adsk.eagle:footprint:22364329/1"/>
 <part name="C9" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.1u"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q12" library="Moira" deviceset="SI7145DP" device=""/>
-<part name="Q13" library="Moira" deviceset="SI7145DP" device=""/>
+<part name="Q12" library="Moira" deviceset="SI7145DP" device="" override_package3d_urn="urn:adsk.eagle:package:22364326/2" override_package_urn="urn:adsk.eagle:footprint:22364327/1"/>
+<part name="Q13" library="Moira" deviceset="SI7145DP" device="" override_package3d_urn="urn:adsk.eagle:package:22364321/2" override_package_urn="urn:adsk.eagle:footprint:22364322/1"/>
 <part name="C10" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.1u"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J9" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
+<part name="J9" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364475/2" override_package_urn="urn:adsk.eagle:footprint:22364476/1"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
-<part name="Q9" library="Si7145DP" deviceset="SI7145DP" device="">
+<part name="Q9" library="Si7145DP" deviceset="SI7145DP" device="" override_package3d_urn="urn:adsk.eagle:package:22364336/2" override_package_urn="urn:adsk.eagle:footprint:22364337/1">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="SI7145DP-T1-GE3"/>
 <attribute name="OC_NEWARK" value="63R6006"/>
 </part>
-<part name="Q7" library="Si7145DP" deviceset="SI7145DP" device="">
+<part name="Q7" library="Si7145DP" deviceset="SI7145DP" device="" override_package3d_urn="urn:adsk.eagle:package:22364334/2" override_package_urn="urn:adsk.eagle:footprint:22364335/1">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="SI7145DP-T1-GE3"/>
 <attribute name="OC_NEWARK" value="63R6006"/>
 </part>
-<part name="Q14" library="Si7145DP" deviceset="SI7145DP" device="">
+<part name="Q14" library="Si7145DP" deviceset="SI7145DP" device="" override_package3d_urn="urn:adsk.eagle:package:22364332/2" override_package_urn="urn:adsk.eagle:footprint:22364333/1">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="SI7145DP-T1-GE3"/>
 <attribute name="OC_NEWARK" value="63R6006"/>
 </part>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_C_L" device=""/>
-<part name="J10" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
-<part name="Q8" library="Si7145DP" deviceset="SI7145DP" device="">
+<part name="J10" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364483/2" override_package_urn="urn:adsk.eagle:footprint:22364484/1"/>
+<part name="Q8" library="Si7145DP" deviceset="SI7145DP" device="" override_package3d_urn="urn:adsk.eagle:package:22364338/2" override_package_urn="urn:adsk.eagle:footprint:22364339/1">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="SI7145DP-T1-GE3"/>
 <attribute name="OC_NEWARK" value="63R6006"/>
@@ -22822,9 +22822,9 @@ Source: www.kingbright.com</description>
 <part name="R32" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:6240588/1" value="10k"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="R33" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:6240588/1" value="1k"/>
-<part name="Q16" library="Moira" deviceset="TCLD1000CT" device=""/>
+<part name="Q16" library="Moira" deviceset="TCLD1000CT" device="" override_package3d_urn="urn:adsk.eagle:package:22364306/2" override_package_urn="urn:adsk.eagle:footprint:22364307/1"/>
 <part name="R34" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:6240566/1" value="1k"/>
-<part name="J11" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
+<part name="J11" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364494/2" override_package_urn="urn:adsk.eagle:footprint:22364495/1"/>
 <part name="R35" library="Moira" deviceset="HCS3920" device="FT1L00" value="0.001Ohm"/>
 </parts>
 <sheets>
@@ -24816,6 +24816,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

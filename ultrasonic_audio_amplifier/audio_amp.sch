@@ -11463,10 +11463,10 @@ Switched C3 from 5u to 4.7u since the latter is more common and cheap...</text>
 <junction x="78.74" y="71.12"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="55.88" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="96.52" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="5V"/>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="73.66" y1="99.06" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -11500,9 +11500,10 @@ Switched C3 from 5u to 4.7u since the latter is more common and cheap...</text>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="55.88" y1="99.06" x2="63.5" y2="99.06" width="0.1524" layer="91"/>
-<label x="63.5" y="99.06" size="1.778" layer="95" xref="yes"/>
+<label x="71.12" y="96.52" size="1.778" layer="95" xref="yes"/>
+<wire x1="71.12" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="63.5" y1="96.52" x2="55.88" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>

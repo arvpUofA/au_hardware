@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -216,26 +216,6 @@ LETTER landscape</description>
 </library>
 <library name="integrated_adc">
 <packages>
-<package name="SOT23-5" urn="urn:adsk.eagle:footprint:30975/1">
-<description>&lt;b&gt;SOT23-5&lt;/b&gt; Zetex&lt;p&gt;
-Source: http://www.zetex.com/3.0/pdf/ZXSC300.pdf</description>
-<wire x1="-1.45" y1="-0.8" x2="1.45" y2="-0.8" width="0.2032" layer="51"/>
-<wire x1="1.45" y1="-0.8" x2="1.45" y2="0.8" width="0.2032" layer="21"/>
-<wire x1="1.45" y1="0.8" x2="-1.45" y2="0.8" width="0.2032" layer="51"/>
-<wire x1="-1.45" y1="0.8" x2="-1.45" y2="-0.8" width="0.2032" layer="21"/>
-<smd name="2" x="0" y="-1.2" dx="0.5" dy="1" layer="1"/>
-<smd name="1" x="-0.95" y="-1.2" dx="0.5" dy="1" layer="1"/>
-<smd name="3" x="0.95" y="-1.2" dx="0.5" dy="1" layer="1"/>
-<smd name="4" x="0.95" y="1.2" dx="0.5" dy="1" layer="1"/>
-<smd name="5" x="-0.95" y="1.2" dx="0.5" dy="1" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.175" y1="-1.6" x2="-0.725" y2="-0.9" layer="51"/>
-<rectangle x1="-0.225" y1="-1.6" x2="0.225" y2="-0.9" layer="51"/>
-<rectangle x1="0.725" y1="-1.6" x2="1.175" y2="-0.9" layer="51"/>
-<rectangle x1="-1.175" y1="0.9" x2="-0.725" y2="1.6" layer="51" rot="R180"/>
-<rectangle x1="0.725" y1="0.9" x2="1.175" y2="1.6" layer="51" rot="R180"/>
-</package>
 <package name="NX5032">
 <description>&lt;h1&gt;NX5032 XTAL OSC&lt;/h1&gt;</description>
 <smd name="P$1" x="-2" y="0" dx="2" dy="2.4" layer="1"/>
@@ -643,24 +623,6 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="MCP3021">
-<description>MCP3021
-&lt;br/&gt;
-&lt;br/&gt;
-&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20001805C.pdf"&gt;
-Datasheet
-&lt;/a&gt;</description>
-<pin name="SDA" x="-5.08" y="12.7" length="middle"/>
-<pin name="SCL" x="-5.08" y="10.16" length="middle"/>
-<pin name="AIN" x="22.86" y="12.7" length="middle" rot="R180"/>
-<pin name="VSS" x="-5.08" y="2.54" length="middle"/>
-<pin name="VDD" x="-5.08" y="5.08" length="middle"/>
-<wire x1="0" y1="15.24" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="17.78" y2="15.24" width="0.254" layer="94"/>
-<wire x1="17.78" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
-<text x="1.27" y="16.51" size="1.27" layer="95">&gt;NAME</text>
-</symbol>
 <symbol name="XTAL">
 <wire x1="-1.27" y1="2.54" x2="1.397" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="1.397" y1="2.54" x2="1.397" y2="-2.54" width="0.4064" layer="94"/>
@@ -949,34 +911,6 @@ Largely close to what the actual thing looks like, not entirely correct though. 
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP3021">
-<description>&lt;h1&gt;MCP3021&lt;/h1&gt;
-
-&lt;p&gt;
-I2C successive approximation ADC.
-&lt;/p&gt;
-
-&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20001805C.pdf"&gt;
-Datasheet
-&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="MCP3021" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23-5">
-<connects>
-<connect gate="G$1" pin="AIN" pad="3"/>
-<connect gate="G$1" pin="SCL" pad="5"/>
-<connect gate="G$1" pin="SDA" pad="4"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="NX5032" prefix="Y">
 <gates>
 <gate name="G$1" symbol="XTAL" x="0" y="0"/>
@@ -9952,7 +9886,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
-<part name="U$1" library="integrated_adc" deviceset="MCP3021" device=""/>
 <part name="Y1" library="integrated_adc" deviceset="NX5032" device=""/>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="8pF"/>
 <part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="8pF"/>
@@ -10006,7 +9939,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C19" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1u"/>
@@ -10014,11 +9946,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="C21" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10u"/>
-<part name="C22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0u1"/>
-<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="+3V11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X7" device="/90" package3d_urn="urn:adsk.eagle:package:22476/2"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="/90" package3d_urn="urn:adsk.eagle:package:22475/2"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10806,9 +10733,6 @@ Has the external ADC, as well as all the connections required for reading the hy
 <attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="U$1" gate="G$1" x="35.56" y="81.28" smashed="yes">
-<attribute name="NAME" x="36.83" y="97.79" size="1.27" layer="95"/>
-</instance>
 <instance part="U2" gate="G$1" x="33.02" y="121.92" smashed="yes">
 <attribute name="NAME" x="34.29" y="176.53" size="1.778" layer="95"/>
 </instance>
@@ -10824,26 +10748,6 @@ Has the external ADC, as well as all the connections required for reading the hy
 <instance part="GND1" gate="1" x="17.78" y="38.1" smashed="yes">
 <attribute name="VALUE" x="15.24" y="35.56" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="27.94" y="76.2" smashed="yes">
-<attribute name="VALUE" x="25.4" y="73.66" size="1.778" layer="96"/>
-</instance>
-<instance part="C21" gate="G$1" x="83.82" y="91.44" smashed="yes">
-<attribute name="NAME" x="85.344" y="91.821" size="1.778" layer="95"/>
-<attribute name="VALUE" x="85.344" y="86.741" size="1.778" layer="96"/>
-</instance>
-<instance part="C22" gate="G$1" x="93.98" y="91.44" smashed="yes">
-<attribute name="NAME" x="95.504" y="91.821" size="1.778" layer="95"/>
-<attribute name="VALUE" x="95.504" y="86.741" size="1.778" layer="96"/>
-</instance>
-<instance part="GND18" gate="1" x="93.98" y="78.74" smashed="yes">
-<attribute name="VALUE" x="91.44" y="76.2" size="1.778" layer="96"/>
-</instance>
-<instance part="+3V11" gate="G$1" x="10.16" y="93.98" smashed="yes">
-<attribute name="VALUE" x="7.62" y="88.9" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="+3V12" gate="G$1" x="83.82" y="101.6" smashed="yes">
-<attribute name="VALUE" x="81.28" y="96.52" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="JP2" gate="A" x="27.94" y="55.88" smashed="yes" rot="MR180">
 <attribute name="NAME" x="21.59" y="45.085" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="21.59" y="68.58" size="1.778" layer="96" rot="MR180"/>
@@ -10857,7 +10761,6 @@ Has the external ADC, as well as all the connections required for reading the hy
 <nets>
 <net name="SDA" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SDA"/>
 <wire x1="30.48" y1="93.98" x2="22.86" y2="93.98" width="0.1524" layer="91"/>
 <label x="22.86" y="93.98" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -10869,7 +10772,6 @@ Has the external ADC, as well as all the connections required for reading the hy
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SCL"/>
 <wire x1="30.48" y1="91.44" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
 <label x="22.86" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -10950,20 +10852,6 @@ Has the external ADC, as well as all the connections required for reading the hy
 <pinref part="JP2" gate="A" pin="6"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VSS"/>
-<wire x1="30.48" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="83.82" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C21" gate="G$1" pin="2"/>
-<pinref part="C22" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="86.36" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
-<junction x="93.98" y="86.36"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="AGND"/>
 <wire x1="66.04" y1="170.18" x2="104.14" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="170.18" x2="104.14" y2="162.56" width="0.1524" layer="91"/>
@@ -10998,32 +10886,6 @@ Has the external ADC, as well as all the connections required for reading the hy
 <wire x1="66.04" y1="167.64" x2="86.36" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="167.64" x2="86.36" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
-<wire x1="30.48" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="86.36" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="+3V11" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="C22" gate="G$1" pin="1"/>
-<pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="93.98" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
-<junction x="83.82" y="93.98"/>
-<pinref part="+3V12" gate="G$1" pin="+3V3"/>
-</segment>
-</net>
-<net name="PEAK_SIG" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="D22/A8"/>
-<wire x1="66.04" y1="162.56" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
-<label x="76.2" y="162.56" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="AIN"/>
-<wire x1="58.42" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
-<label x="63.5" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_0" class="0">

@@ -30068,21 +30068,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="U6" library="AlbertaSat" deviceset="LM5050-2" device=""/>
 <part name="U7" library="AlbertaSat" deviceset="LM5050-2" device=""/>
 <part name="U8" library="AlbertaSat" deviceset="LM5050-2" device=""/>
-<part name="CON4" library="ARVP" deviceset="MOLEX_5566-2" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="U9" library="Teensy_3_Series_Board_v1.0" deviceset="TEENSY_3.1_BASIC_2" device=""/>
-<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="GND38" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND39" library="SparkFun" deviceset="GND" device=""/>
-<part name="R39" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="240"/>
-<part name="R40" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="240"/>
-<part name="DANGER" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
-<part name="3V3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
-<part name="+3V35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="J12" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -30121,6 +30106,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R45" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:6240569/1" value="5.1"/>
 <part name="R46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k"/>
 <part name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43416/2"/>
+<part name="GND34" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND35" library="SparkFun" deviceset="GND" device=""/>
+<part name="R36" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="240"/>
+<part name="R37" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:26062/1" value="240"/>
+<part name="DANGER1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
+<part name="3V1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
+<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -30214,6 +30206,7 @@ flow to the motors.   </text>
 <text x="-264.16" y="-81.28" size="1.778" layer="91">Motor Battery Terminals</text>
 <text x="-48.26" y="-104.14" size="1.778" layer="91">Motor Terminals</text>
 <text x="-142.24" y="-68.58" size="1.778" layer="91" ratio="9">motor Gnd</text>
+<text x="190.5" y="3.81" size="1.778" layer="91">5V into Teensy</text>
 </plain>
 <instances>
 <instance part="GND6" gate="1" x="40.64" y="50.8" smashed="yes" rot="R270">
@@ -30595,6 +30588,31 @@ flow to the motors.   </text>
 <attribute name="NAME" x="34.5186" y="69.85" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="37.338" y="72.39" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="GND34" gate="1" x="190.5" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="187.96" y="-20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="GND35" gate="1" x="179.07" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="176.53" y="-20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="R36" gate="G$1" x="167.64" y="-1.27" smashed="yes">
+<attribute name="NAME" x="163.83" y="0.2286" size="1.778" layer="95"/>
+<attribute name="VALUE" x="163.83" y="-4.572" size="1.778" layer="96"/>
+</instance>
+<instance part="R37" gate="G$1" x="200.66" y="-1.27" smashed="yes">
+<attribute name="NAME" x="196.85" y="0.2286" size="1.778" layer="95"/>
+<attribute name="VALUE" x="196.85" y="-4.572" size="1.778" layer="96"/>
+</instance>
+<instance part="DANGER1" gate="G$1" x="179.07" y="-6.35" smashed="yes">
+<attribute name="NAME" x="182.626" y="-10.922" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="184.785" y="-10.922" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="3V1" gate="G$1" x="190.5" y="-6.35" smashed="yes">
+<attribute name="NAME" x="194.056" y="-10.922" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="196.215" y="-10.922" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V1" gate="G$1" x="208.28" y="1.27" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="210.82" y="-3.81" size="1.778" layer="96" rot="MR90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -30738,6 +30756,16 @@ flow to the motors.   </text>
 <pinref part="J11" gate="G$1" pin="KL1"/>
 <wire x1="-25.4" y1="-71.12" x2="-139.7" y2="-71.12" width="0.1524" layer="91"/>
 <junction x="-139.7" y="-71.12"/>
+</segment>
+<segment>
+<wire x1="179.07" y1="-11.43" x2="179.07" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="GND35" gate="1" pin="GND"/>
+<pinref part="DANGER1" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<pinref part="3V1" gate="G$1" pin="C"/>
+<pinref part="GND34" gate="1" pin="GND"/>
+<wire x1="190.5" y1="-11.43" x2="190.5" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BATTERY4_IN" class="0">
@@ -31118,6 +31146,11 @@ flow to the motors.   </text>
 <wire x1="165.1" y1="63.5" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
 <label x="165.1" y="71.12" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<wire x1="205.74" y1="-1.27" x2="208.28" y2="-1.27" width="0.1524" layer="91"/>
+<pinref part="R37" gate="G$1" pin="2"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -31131,8 +31164,8 @@ flow to the motors.   </text>
 <wire x1="116.84" y1="-17.78" x2="116.84" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-43.18" x2="99.06" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="18/A4/T/SDA0"/>
-<label x="104.14" y="-43.18" size="1.778" layer="95" xref="yes"/>
-<wire x1="99.06" y1="-43.18" x2="104.14" y2="-43.18" width="0.1524" layer="91"/>
+<label x="106.68" y="-43.18" size="1.778" layer="95" xref="yes"/>
+<wire x1="99.06" y1="-43.18" x2="106.68" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="-17.78" x2="99.06" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="-7.62" x2="99.06" y2="-7.62" width="0.1524" layer="91"/>
@@ -31603,6 +31636,83 @@ flow to the motors.   </text>
 <wire x1="33.02" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 <junction x="33.02" y="71.12"/>
 <label x="27.94" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LED_D" class="0">
+<segment>
+<label x="99.06" y="-30.48" size="1.778" layer="95" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="23/A9/T/PWM"/>
+<wire x1="88.9" y1="-30.48" x2="99.06" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R36" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="-1.27" x2="161.29" y2="-1.27" width="0.1524" layer="91"/>
+<label x="161.29" y="-1.27" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="IO3" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="15/A1/T"/>
+<wire x1="88.9" y1="-50.8" x2="104.14" y2="-50.8" width="0.1524" layer="91"/>
+<label x="104.14" y="-50.8" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="IO6" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="14/A0"/>
+<wire x1="88.9" y1="-53.34" x2="104.14" y2="-53.34" width="0.1524" layer="91"/>
+<label x="104.14" y="-53.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="IO2" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="13/SCK/LED"/>
+<wire x1="88.9" y1="-55.88" x2="104.14" y2="-55.88" width="0.1524" layer="91"/>
+<label x="104.14" y="-55.88" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="IO4" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="12/MISO"/>
+<wire x1="88.9" y1="-58.42" x2="104.14" y2="-58.42" width="0.1524" layer="91"/>
+<label x="104.14" y="-58.42" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="IO5" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="16/A2/T"/>
+<wire x1="88.9" y1="-48.26" x2="106.68" y2="-48.26" width="0.1524" layer="91"/>
+<label x="106.68" y="-48.26" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LEAK_IN" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="11/MOSI"/>
+<wire x1="88.9" y1="-60.96" x2="99.06" y2="-60.96" width="0.1524" layer="91"/>
+<label x="99.06" y="-60.96" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="IO1" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="17/A3/T"/>
+<wire x1="88.9" y1="-45.72" x2="101.6" y2="-45.72" width="0.1524" layer="91"/>
+<label x="101.6" y="-45.72" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<wire x1="195.58" y1="-1.27" x2="190.5" y2="-1.27" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-1.27" x2="190.5" y2="-3.81" width="0.1524" layer="91"/>
+<pinref part="R37" gate="G$1" pin="1"/>
+<pinref part="3V1" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="R36" gate="G$1" pin="2"/>
+<wire x1="179.07" y1="-1.27" x2="172.72" y2="-1.27" width="0.1524" layer="91"/>
+<pinref part="DANGER1" gate="G$1" pin="A"/>
+<wire x1="179.07" y1="-1.27" x2="179.07" y2="-3.81" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -32096,7 +32206,6 @@ supplies or low current sources. Therefore, the cap has been removed</text>
 <wire x1="261.62" y1="76.2" x2="261.62" y2="-119.38" width="0.1524" layer="106"/>
 <wire x1="261.62" y1="-119.38" x2="7.62" y2="-119.38" width="0.1524" layer="106"/>
 <text x="236.22" y="-58.42" size="1.778" layer="94">Teensy and CAN bus</text>
-<text x="187.96" y="-24.13" size="1.778" layer="91">5V into Teensy</text>
 <wire x1="-144.78" y1="76.2" x2="-144.78" y2="-180.34" width="0.1524" layer="105"/>
 <wire x1="-144.78" y1="-180.34" x2="-5.08" y2="-180.34" width="0.1524" layer="105"/>
 <wire x1="-5.08" y1="-180.34" x2="-5.08" y2="76.2" width="0.1524" layer="105"/>
@@ -32137,6 +32246,7 @@ capacitance is also a few times larger than C7. The resistor R4 is
 there to limit peak current suring transient phase to lower than
 3A, which is the max peak pulse current that the diode can take.
 </text>
+<frame x1="-378.46" y1="-259.08" x2="355.6" y2="160.02" columns="8" rows="5" layer="91"/>
 </plain>
 <instances>
 <instance part="GND28" gate="1" x="-124.46" y="30.48" smashed="yes">
@@ -32162,60 +32272,6 @@ there to limit peak current suring transient phase to lower than
 <instance part="U8" gate="G$1" x="-96.52" y="-63.5" smashed="yes">
 <attribute name="NAME" x="-73.3044" y="-54.3814" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="-73.9394" y="-56.9214" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="CON4" gate="G$1" x="43.18" y="38.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="38.1" y="38.862" size="1.524" layer="95" rot="R180"/>
-</instance>
-<instance part="CON4" gate="G$2" x="43.18" y="35.56" smashed="yes" rot="R180">
-<attribute name="NAME" x="38.1" y="36.322" size="1.524" layer="95" rot="R180"/>
-</instance>
-<instance part="P+3" gate="1" x="45.72" y="45.72" smashed="yes">
-<attribute name="VALUE" x="43.18" y="40.64" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND32" gate="1" x="45.72" y="30.48" smashed="yes">
-<attribute name="VALUE" x="43.18" y="27.94" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY3" gate="GND" x="48.26" y="-22.86" smashed="yes">
-<attribute name="VALUE" x="46.355" y="-26.035" size="1.778" layer="96"/>
-</instance>
-<instance part="+3V1" gate="G$1" x="43.18" y="-25.4" smashed="yes">
-<attribute name="VALUE" x="40.64" y="-30.48" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="U9" gate="G$1" x="88.9" y="-5.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.488" y="-39.37" size="1.27" layer="95" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="91.694" y="33.02" size="1.27" layer="96" font="vector" ratio="15" rot="R180"/>
-</instance>
-<instance part="P+4" gate="1" x="33.02" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="30.48" y="-33.02" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="JP7" gate="G$1" x="45.72" y="-45.72" smashed="yes" rot="R270">
-<attribute name="NAME" x="51.435" y="-39.37" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="40.64" y="-39.37" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND38" gate="1" x="187.96" y="-45.72" smashed="yes">
-<attribute name="VALUE" x="185.42" y="-48.26" size="1.778" layer="96"/>
-</instance>
-<instance part="GND39" gate="1" x="176.53" y="-45.72" smashed="yes">
-<attribute name="VALUE" x="173.99" y="-48.26" size="1.778" layer="96"/>
-</instance>
-<instance part="R39" gate="G$1" x="165.1" y="-29.21" smashed="yes">
-<attribute name="NAME" x="161.29" y="-27.7114" size="1.778" layer="95"/>
-<attribute name="VALUE" x="161.29" y="-32.512" size="1.778" layer="96"/>
-</instance>
-<instance part="R40" gate="G$1" x="198.12" y="-29.21" smashed="yes">
-<attribute name="NAME" x="194.31" y="-27.7114" size="1.778" layer="95"/>
-<attribute name="VALUE" x="194.31" y="-32.512" size="1.778" layer="96"/>
-</instance>
-<instance part="DANGER" gate="G$1" x="176.53" y="-34.29" smashed="yes">
-<attribute name="NAME" x="180.086" y="-38.862" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="182.245" y="-38.862" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="3V3" gate="G$1" x="187.96" y="-34.29" smashed="yes">
-<attribute name="NAME" x="191.516" y="-38.862" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="193.675" y="-38.862" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="+3V35" gate="G$1" x="205.74" y="-26.67" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="208.28" y="-31.75" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="J12" gate="G$1" x="-129.54" y="-48.26" smashed="yes">
 <attribute name="NAME" x="-125.73" y="-39.751" size="1.778" layer="95" rot="R180"/>
@@ -32380,11 +32436,6 @@ there to limit peak current suring transient phase to lower than
 <label x="-233.68" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U12" gate="G$1" pin="HIN"/>
 </segment>
-<segment>
-<wire x1="111.76" y1="-7.62" x2="114.3" y2="-7.62" width="0.1524" layer="91"/>
-<label x="114.3" y="-7.62" size="1.778" layer="95" xref="yes"/>
-<pinref part="U9" gate="G$1" pin="10/TX2/PWM"/>
-</segment>
 </net>
 <net name="VBATT1" class="0">
 <segment>
@@ -32442,11 +32493,6 @@ there to limit peak current suring transient phase to lower than
 </segment>
 </net>
 <net name="IO2" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="6/PWM"/>
-<wire x1="111.76" y1="-17.78" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
-<label x="114.3" y="-17.78" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <wire x1="-93.98" y1="-15.24" x2="-96.52" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-96.52" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -32534,30 +32580,6 @@ there to limit peak current suring transient phase to lower than
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="-251.46" y1="58.42" x2="-251.46" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="J15" gate="G$1" pin="KL"/>
-</segment>
-<segment>
-<pinref part="CON4" gate="G$2" pin="S"/>
-<wire x1="43.18" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="45.72" y1="35.56" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="-25.4" x2="55.88" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-25.4" x2="55.88" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-17.78" x2="48.26" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<wire x1="48.26" y1="-17.78" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="U9" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="176.53" y1="-39.37" x2="176.53" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="GND39" gate="1" pin="GND"/>
-<pinref part="DANGER" gate="G$1" pin="C"/>
-</segment>
-<segment>
-<pinref part="3V3" gate="G$1" pin="C"/>
-<pinref part="GND38" gate="1" pin="GND"/>
-<wire x1="187.96" y1="-39.37" x2="187.96" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -32669,11 +32691,6 @@ there to limit peak current suring transient phase to lower than
 <label x="-99.06" y="-63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R41" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="U9" gate="G$1" pin="5/PWM"/>
-<wire x1="111.76" y1="-20.32" x2="134.62" y2="-20.32" width="0.1524" layer="91"/>
-<label x="134.62" y="-20.32" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="IO3" class="0">
 <segment>
@@ -32683,39 +32700,8 @@ there to limit peak current suring transient phase to lower than
 <label x="-99.06" y="-10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R42" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="U9" gate="G$1" pin="8/TX3"/>
-<wire x1="111.76" y1="-12.7" x2="114.3" y2="-12.7" width="0.1524" layer="91"/>
-<label x="114.3" y="-12.7" size="1.778" layer="95" xref="yes"/>
-<label x="114.3" y="-12.7" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="43.18" y1="-27.94" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-30.48" x2="66.04" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="U9" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<wire x1="203.2" y1="-29.21" x2="205.74" y2="-29.21" width="0.1524" layer="91"/>
-<pinref part="R40" gate="G$1" pin="2"/>
-<pinref part="+3V35" gate="G$1" pin="+3V3"/>
-</segment>
 </net>
 <net name="+5V" class="0">
-<segment>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="45.72" y1="43.18" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="CON4" gate="G$1" pin="S"/>
-<wire x1="43.18" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="33.02" y1="-33.02" x2="45.72" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-33.02" x2="45.72" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="33.02" y1="-30.48" x2="33.02" y2="-33.02" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="-99.06" y1="58.42" x2="-99.06" y2="55.88" width="0.1524" layer="91"/>
@@ -32737,61 +32723,6 @@ there to limit peak current suring transient phase to lower than
 <pinref part="R44" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="LEAK_IN" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="14/A0"/>
-<wire x1="111.76" y1="2.54" x2="113.03" y2="2.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LED_D" class="0">
-<segment>
-<pinref part="R39" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="-29.21" x2="158.75" y2="-29.21" width="0.1524" layer="91"/>
-<label x="158.75" y="-29.21" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U9" gate="G$1" pin="23/A9/T/PWM"/>
-<wire x1="111.76" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
-<label x="116.84" y="25.4" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="VIN" class="0">
-<segment>
-<wire x1="48.26" y1="-40.64" x2="48.26" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-33.02" x2="66.04" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="U9" gate="G$1" pin="VIN"/>
-</segment>
-</net>
-<net name="+5V1" class="0">
-<segment>
-<pinref part="JP7" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="-35.56" x2="45.72" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="45.72" y="-43.18"/>
-</segment>
-</net>
-<net name="VIN1" class="0">
-<segment>
-<pinref part="JP7" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-43.18" x2="48.26" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="48.26" y="-43.18"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<wire x1="193.04" y1="-29.21" x2="187.96" y2="-29.21" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="-29.21" x2="187.96" y2="-31.75" width="0.1524" layer="91"/>
-<pinref part="R40" gate="G$1" pin="1"/>
-<pinref part="3V3" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="R39" gate="G$1" pin="2"/>
-<wire x1="176.53" y1="-29.21" x2="170.18" y2="-29.21" width="0.1524" layer="91"/>
-<pinref part="DANGER" gate="G$1" pin="A"/>
-<wire x1="176.53" y1="-29.21" x2="176.53" y2="-31.75" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="IO5" class="0">
 <segment>
 <wire x1="-93.98" y1="43.18" x2="-99.06" y2="43.18" width="0.1524" layer="91"/>
@@ -32799,11 +32730,6 @@ there to limit peak current suring transient phase to lower than
 <wire x1="-99.06" y1="43.18" x2="-99.06" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="R43" gate="G$1" pin="1"/>
 <label x="-99.06" y="43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U9" gate="G$1" pin="9/RX2/PWM"/>
-<wire x1="111.76" y1="-10.16" x2="134.62" y2="-10.16" width="0.1524" layer="91"/>
-<label x="134.62" y="-10.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GATE5" class="0">
@@ -32883,11 +32809,6 @@ there to limit peak current suring transient phase to lower than
 <label x="-99.06" y="-121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R44" gate="G$1" pin="1"/>
 <label x="-99.06" y="-121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U9" gate="G$1" pin="7/RX3"/>
-<wire x1="111.76" y1="-15.24" x2="134.62" y2="-15.24" width="0.1524" layer="91"/>
-<label x="134.62" y="-15.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$18" class="0">

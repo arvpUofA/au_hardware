@@ -29912,10 +29912,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="J3" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364479/2" override_package_urn="urn:adsk.eagle:footprint:22364480/1"/>
 <part name="J2" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364477/2" override_package_urn="urn:adsk.eagle:footprint:22364478/1"/>
 <part name="J1" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364469/2" override_package_urn="urn:adsk.eagle:footprint:22364470/1"/>
-<part name="J5" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364492/2" override_package_urn="urn:adsk.eagle:footprint:22364493/1"/>
-<part name="J6" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364490/2" override_package_urn="urn:adsk.eagle:footprint:22364491/1"/>
-<part name="J7" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364487/2" override_package_urn="urn:adsk.eagle:footprint:22364488/1"/>
-<part name="J8" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364485/2" override_package_urn="urn:adsk.eagle:footprint:22364486/1"/>
 <part name="ARVP1" library="ARVP" deviceset="ARVP_LOGO" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="Moira" deviceset="TCLD1000CT" device="" override_package3d_urn="urn:adsk.eagle:package:22364319/2" override_package_urn="urn:adsk.eagle:footprint:22364320/1">
@@ -29967,7 +29963,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="CON2" library="ARVP" deviceset="SM03B-GHS-TB" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="CON3" library="ARVP" deviceset="SM03B-GHS-TB" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
@@ -30059,31 +30054,24 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R33" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:6240588/1" value="1k"/>
 <part name="Q16" library="Moira" deviceset="TCLD1000CT" device="" override_package3d_urn="urn:adsk.eagle:package:22364306/2" override_package_urn="urn:adsk.eagle:footprint:22364307/1"/>
 <part name="R34" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:6240566/1" value="1k"/>
-<part name="J11" library="Moira" deviceset="MKDS_5/2-6,35" device="2" override_package3d_urn="urn:adsk.eagle:package:22364494/2" override_package_urn="urn:adsk.eagle:footprint:22364495/1"/>
 <part name="R35" library="Moira" deviceset="HCS3920" device="FT1L00" value="0.001Ohm"/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U6" library="AlbertaSat" deviceset="LM5050-2" device=""/>
 <part name="U7" library="AlbertaSat" deviceset="LM5050-2" device=""/>
 <part name="U8" library="AlbertaSat" deviceset="LM5050-2" device=""/>
-<part name="J12" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C13" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.01uF"/>
 <part name="C14" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.01uF"/>
 <part name="C15" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.01uF"/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J13" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
-<part name="J14" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
 <part name="R41" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:6240569/1" value="100k"/>
 <part name="R42" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:6240569/1" value="100k"/>
 <part name="R43" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:6240569/1" value="100k"/>
-<part name="J15" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
 <part name="J16" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -30092,7 +30080,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="Q19" library="AlbertaSat" deviceset="NMOS-TO252" device="" package3d_urn="urn:adsk.eagle:package:28537/2"/>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U10" library="AlbertaSat" deviceset="LM5050-2" device=""/>
-<part name="J17" library="Moira" deviceset="MKDS_5/2-6,35" device="2"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C16" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="0.01uF"/>
 <part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -30113,6 +30100,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="DANGER1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
 <part name="3V1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="SMT1206"/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -30123,7 +30111,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="-132.08" y="-25.4" size="1.778" layer="91" rot="MR0">motor GND</text>
 <text x="109.22" y="76.2" size="1.778" layer="91">INA3221 MONITORING</text>
 <text x="-91.44" y="68.58" size="1.778" layer="91" rot="MR0">Otoisolators</text>
-<text x="-12.7" y="58.42" size="1.778" layer="91" rot="MR270">OUTPUTS</text>
 <text x="-134.62" y="60.96" size="1.778" layer="91" rot="MR0">MOSFET Kill</text>
 <text x="73.66" y="33.02" size="1.778" layer="91">to SDA PIN</text>
 <text x="63.5" y="22.86" size="1.778" layer="91">to SCL PIN</text>
@@ -30194,17 +30181,12 @@ flow to the motors.   </text>
 <wire x1="-264.16" y1="86.36" x2="-264.16" y2="-78.74" width="0.1524" layer="101"/>
 <wire x1="-264.16" y1="-78.74" x2="-223.52" y2="-78.74" width="0.1524" layer="101"/>
 <wire x1="-223.52" y1="-78.74" x2="-223.52" y2="86.36" width="0.1524" layer="101"/>
-<wire x1="-48.26" y1="86.36" x2="-48.26" y2="-101.6" width="0.1524" layer="101"/>
-<wire x1="-48.26" y1="-101.6" x2="-10.16" y2="-101.6" width="0.1524" layer="101"/>
-<wire x1="-10.16" y1="-101.6" x2="-10.16" y2="86.36" width="0.1524" layer="101"/>
-<wire x1="-10.16" y1="86.36" x2="-48.26" y2="86.36" width="0.1524" layer="101"/>
 <wire x1="5.08" y1="15.24" x2="5.08" y2="-106.68" width="0.1524" layer="101"/>
 <wire x1="5.08" y1="-106.68" x2="231.14" y2="-106.68" width="0.1524" layer="101"/>
 <wire x1="231.14" y1="-106.68" x2="231.14" y2="15.24" width="0.1524" layer="101"/>
 <wire x1="231.14" y1="15.24" x2="5.08" y2="15.24" width="0.1524" layer="101"/>
 <text x="7.62" y="12.7" size="1.778" layer="91">UAVCAN Design Block</text>
 <text x="-264.16" y="-81.28" size="1.778" layer="91">Motor Battery Terminals</text>
-<text x="-48.26" y="-104.14" size="1.778" layer="91">Motor Terminals</text>
 <text x="-142.24" y="-68.58" size="1.778" layer="91" ratio="9">motor Gnd</text>
 <text x="190.5" y="3.81" size="1.778" layer="91">5V into Teensy</text>
 </plain>
@@ -30256,22 +30238,6 @@ flow to the motors.   </text>
 <instance part="J1" gate="G$1" x="-259.08" y="96.52" smashed="yes">
 <attribute name="NAME" x="-255.27" y="105.029" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-262.89" y="91.567" size="1.778" layer="96"/>
-</instance>
-<instance part="J5" gate="G$1" x="-20.32" y="63.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="-24.13" y="54.991" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-16.51" y="68.453" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="J6" gate="G$1" x="-20.32" y="20.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="-24.13" y="11.811" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-16.51" y="25.273" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="J7" gate="G$1" x="-20.32" y="-22.86" smashed="yes" rot="R180">
-<attribute name="NAME" x="-24.13" y="-31.369" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-16.51" y="-17.907" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="J8" gate="G$1" x="-20.32" y="111.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="-24.13" y="103.251" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-16.51" y="116.713" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="ARVP1" gate="G$1" x="-5.08" y="0" smashed="yes"/>
 <instance part="GND1" gate="1" x="-243.84" y="96.52" smashed="yes" rot="R90">
@@ -30459,9 +30425,6 @@ flow to the motors.   </text>
 <instance part="CON3" gate="-TABS" x="213.36" y="-76.2" smashed="yes">
 <attribute name="NAME" x="218.44" y="-76.962" size="1.524" layer="95"/>
 </instance>
-<instance part="GND7" gate="1" x="-35.56" y="106.68" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-38.1" y="109.22" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="JP1" gate="G$1" x="-60.96" y="-124.46" smashed="yes">
 <attribute name="NAME" x="-67.31" y="-118.745" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-67.31" y="-129.54" size="1.778" layer="96"/>
@@ -30580,10 +30543,6 @@ flow to the motors.   </text>
 <attribute name="NAME" x="-69.85" y="-49.3014" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-69.85" y="-54.102" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="J11" gate="G$1" x="-20.32" y="-66.04" smashed="yes" rot="R180">
-<attribute name="NAME" x="-24.13" y="-74.549" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-16.51" y="-61.087" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="R35" gate="G$1" x="33.02" y="66.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.5186" y="69.85" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="37.338" y="72.39" size="1.778" layer="96" rot="R270"/>
@@ -30698,11 +30657,6 @@ flow to the motors.   </text>
 <junction x="210.82" y="-76.2"/>
 </segment>
 <segment>
-<pinref part="J8" gate="G$1" pin="KL1"/>
-<wire x1="-33.02" y1="106.68" x2="-25.4" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="3"/>
 <wire x1="-78.74" y1="-147.32" x2="-78.74" y2="-134.62" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -30713,30 +30667,21 @@ flow to the motors.   </text>
 </segment>
 <segment>
 <pinref part="Q5" gate="G$1" pin="D"/>
-<pinref part="J6" gate="G$1" pin="KL1"/>
-<wire x1="-139.7" y1="15.24" x2="-25.4" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="-139.7" y1="15.24" x2="-147.32" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-139.7" y1="15.24" x2="-139.7" y2="12.7" width="0.1524" layer="91"/>
-<junction x="-139.7" y="15.24"/>
 </segment>
 <segment>
 <pinref part="Q6" gate="G$1" pin="D"/>
-<pinref part="J7" gate="G$1" pin="KL1"/>
-<wire x1="-139.7" y1="-27.94" x2="-25.4" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="-139.7" y1="-27.94" x2="-147.32" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-139.7" y1="-27.94" x2="-139.7" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="-139.7" y="-27.94"/>
 </segment>
 <segment>
 <pinref part="Q4" gate="G$1" pin="D"/>
-<pinref part="J5" gate="G$1" pin="KL1"/>
-<wire x1="-139.7" y1="58.42" x2="-25.4" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="-139.7" y1="58.42" x2="-147.32" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-139.7" y1="58.42" x2="-139.7" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-139.7" y="58.42"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="KL"/>
@@ -30753,9 +30698,6 @@ flow to the motors.   </text>
 <wire x1="-147.32" y1="-71.12" x2="-139.7" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="-139.7" y1="-71.12" x2="-139.7" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="J11" gate="G$1" pin="KL1"/>
-<wire x1="-25.4" y1="-71.12" x2="-139.7" y2="-71.12" width="0.1524" layer="91"/>
-<junction x="-139.7" y="-71.12"/>
 </segment>
 <segment>
 <wire x1="179.07" y1="-11.43" x2="179.07" y2="-15.24" width="0.1524" layer="91"/>
@@ -30905,11 +30847,6 @@ flow to the motors.   </text>
 <wire x1="83.82" y1="50.8" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
 <junction x="99.06" y="50.8"/>
 </segment>
-<segment>
-<label x="-30.48" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J5" gate="G$1" pin="KL"/>
-<wire x1="-30.48" y1="63.5" x2="-25.4" y2="63.5" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="MOTOR3" class="0">
 <segment>
@@ -30922,11 +30859,6 @@ flow to the motors.   </text>
 <wire x1="203.2" y1="50.8" x2="208.28" y2="50.8" width="0.1524" layer="91"/>
 <junction x="208.28" y="50.8"/>
 </segment>
-<segment>
-<label x="-33.02" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="KL"/>
-<wire x1="-33.02" y1="-22.86" x2="-25.4" y2="-22.86" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="MOTOR2" class="0">
 <segment>
@@ -30938,11 +30870,6 @@ flow to the motors.   </text>
 <wire x1="71.12" y1="73.66" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
 <junction x="71.12" y="76.2"/>
 <wire x1="71.12" y1="76.2" x2="76.2" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<label x="-30.48" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J6" gate="G$1" pin="KL"/>
-<wire x1="-30.48" y1="20.32" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="POWER_BOARD" class="0">
@@ -30959,11 +30886,6 @@ flow to the motors.   </text>
 <junction x="170.18" y="63.5"/>
 <junction x="182.88" y="73.66"/>
 <wire x1="182.88" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<label x="-33.02" y="111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J8" gate="G$1" pin="KL"/>
-<wire x1="-33.02" y1="111.76" x2="-25.4" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -31623,11 +31545,6 @@ flow to the motors.   </text>
 </net>
 <net name="MOTOR4" class="0">
 <segment>
-<pinref part="J11" gate="G$1" pin="KL"/>
-<wire x1="-25.4" y1="-66.04" x2="-30.48" y2="-66.04" width="0.1524" layer="91"/>
-<label x="-30.48" y="-66.04" size="1.778" layer="95" ratio="9" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="IN-3"/>
 <wire x1="48.26" y1="55.88" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
@@ -31683,13 +31600,6 @@ flow to the motors.   </text>
 <pinref part="U3" gate="G$1" pin="16/A2/T"/>
 <wire x1="88.9" y1="-48.26" x2="106.68" y2="-48.26" width="0.1524" layer="91"/>
 <label x="106.68" y="-48.26" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LEAK_IN" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="11/MOSI"/>
-<wire x1="88.9" y1="-60.96" x2="99.06" y2="-60.96" width="0.1524" layer="91"/>
-<label x="99.06" y="-60.96" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IO1" class="0">
@@ -32258,9 +32168,6 @@ there to limit peak current suring transient phase to lower than
 <instance part="GND30" gate="1" x="-124.46" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="-127" y="-81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="GND31" gate="1" x="-251.46" y="43.18" smashed="yes">
-<attribute name="VALUE" x="-254" y="40.64" size="1.778" layer="96"/>
-</instance>
 <instance part="U6" gate="G$1" x="-96.52" y="43.18" smashed="yes">
 <attribute name="NAME" x="-73.3044" y="52.2986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="-73.9394" y="49.7586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
@@ -32273,18 +32180,11 @@ there to limit peak current suring transient phase to lower than
 <attribute name="NAME" x="-73.3044" y="-54.3814" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="-73.9394" y="-56.9214" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="J12" gate="G$1" x="-129.54" y="-48.26" smashed="yes">
-<attribute name="NAME" x="-125.73" y="-39.751" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-133.35" y="-53.213" size="1.778" layer="96"/>
-</instance>
 <instance part="P+5" gate="1" x="-99.06" y="7.62" smashed="yes">
 <attribute name="VALUE" x="-101.6" y="2.54" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+6" gate="1" x="-99.06" y="-45.72" smashed="yes">
 <attribute name="VALUE" x="-101.6" y="-50.8" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+7" gate="1" x="-99.06" y="60.96" smashed="yes">
-<attribute name="VALUE" x="-101.6" y="55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C13" gate="G$1" x="-35.56" y="-20.32" smashed="yes">
 <attribute name="NAME" x="-34.544" y="-19.685" size="1.778" layer="95"/>
@@ -32307,14 +32207,6 @@ there to limit peak current suring transient phase to lower than
 <instance part="GND42" gate="1" x="-35.56" y="22.86" smashed="yes">
 <attribute name="VALUE" x="-38.1" y="20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="J13" gate="G$1" x="-129.54" y="5.08" smashed="yes">
-<attribute name="NAME" x="-125.73" y="13.589" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-133.35" y="0.127" size="1.778" layer="96"/>
-</instance>
-<instance part="J14" gate="G$1" x="-129.54" y="58.42" smashed="yes">
-<attribute name="NAME" x="-125.73" y="66.929" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-133.35" y="53.467" size="1.778" layer="96"/>
-</instance>
 <instance part="R41" gate="G$1" x="-99.06" y="-55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="-100.5586" y="-59.69" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-95.758" y="-59.69" size="1.778" layer="96" rot="R90"/>
@@ -32326,10 +32218,6 @@ there to limit peak current suring transient phase to lower than
 <instance part="R43" gate="G$1" x="-99.06" y="50.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="-100.5586" y="46.99" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-95.758" y="46.99" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="J15" gate="G$1" x="-256.54" y="58.42" smashed="yes">
-<attribute name="NAME" x="-252.73" y="66.929" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-260.35" y="53.467" size="1.778" layer="96"/>
 </instance>
 <instance part="J16" gate="G$1" x="-182.88" y="63.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-186.69" y="54.991" size="1.778" layer="95"/>
@@ -32359,10 +32247,6 @@ there to limit peak current suring transient phase to lower than
 <instance part="U10" gate="G$1" x="-96.52" y="-121.92" smashed="yes">
 <attribute name="NAME" x="-73.3044" y="-112.8014" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="-73.9394" y="-115.3414" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="J17" gate="G$1" x="-129.54" y="-106.68" smashed="yes">
-<attribute name="NAME" x="-125.73" y="-98.171" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-133.35" y="-111.633" size="1.778" layer="96"/>
 </instance>
 <instance part="P+8" gate="1" x="-99.06" y="-104.14" smashed="yes">
 <attribute name="VALUE" x="-101.6" y="-109.22" size="1.778" layer="96" rot="R90"/>
@@ -32413,6 +32297,9 @@ there to limit peak current suring transient phase to lower than
 <attribute name="NAME" x="-193.04" y="30.9626" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-193.04" y="28.1686" size="1.778" layer="96"/>
 </instance>
+<instance part="P+3" gate="1" x="-99.06" y="63.5" smashed="yes">
+<attribute name="VALUE" x="-101.6" y="58.42" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -32437,12 +32324,7 @@ there to limit peak current suring transient phase to lower than
 <pinref part="U12" gate="G$1" pin="HIN"/>
 </segment>
 </net>
-<net name="VBATT1" class="0">
-<segment>
-<wire x1="-124.46" y1="63.5" x2="-119.38" y2="63.5" width="0.1524" layer="91"/>
-<label x="-119.38" y="63.5" size="1.778" layer="95" xref="yes"/>
-<pinref part="J14" gate="G$1" pin="KL1"/>
-</segment>
+<net name="MOTOR1" class="0">
 <segment>
 <wire x1="-43.18" y1="38.1" x2="-35.56" y2="38.1" width="0.1524" layer="91"/>
 <label x="-27.94" y="38.1" size="1.778" layer="95" xref="yes"/>
@@ -32458,12 +32340,7 @@ there to limit peak current suring transient phase to lower than
 <pinref part="Q17" gate="G$1" pin="S"/>
 </segment>
 </net>
-<net name="VBATT2" class="0">
-<segment>
-<wire x1="-124.46" y1="10.16" x2="-119.38" y2="10.16" width="0.1524" layer="91"/>
-<label x="-119.38" y="10.16" size="1.778" layer="95" xref="yes"/>
-<pinref part="J13" gate="G$1" pin="KL1"/>
-</segment>
+<net name="MOTOR2" class="0">
 <segment>
 <wire x1="-43.18" y1="-15.24" x2="-35.56" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-27.94" y="-15.24" size="1.778" layer="95" xref="yes"/>
@@ -32514,12 +32391,7 @@ there to limit peak current suring transient phase to lower than
 <pinref part="U10" gate="G$1" pin="OFF"/>
 </segment>
 </net>
-<net name="VBATT3" class="0">
-<segment>
-<wire x1="-124.46" y1="-43.18" x2="-119.38" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-119.38" y="-43.18" size="1.778" layer="95" xref="yes"/>
-<pinref part="J12" gate="G$1" pin="KL1"/>
-</segment>
+<net name="MOTOR3" class="0">
 <segment>
 <wire x1="-43.18" y1="-68.58" x2="-35.56" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-27.94" y="-68.58" size="1.778" layer="95" xref="yes"/>
@@ -32551,35 +32423,21 @@ there to limit peak current suring transient phase to lower than
 <net name="GND" class="0">
 <segment>
 <pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="-124.46" y1="-48.26" x2="-124.46" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="-66.04" x2="-124.46" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="-66.04" x2="-124.46" y2="-66.04" width="0.1524" layer="91"/>
-<junction x="-124.46" y="-66.04"/>
 <pinref part="U8" gate="G$1" pin="GND"/>
-<pinref part="J12" gate="G$1" pin="KL"/>
 </segment>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="-124.46" y1="5.08" x2="-124.46" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="-12.7" x2="-124.46" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="-12.7" x2="-124.46" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="-124.46" y="-12.7"/>
 <pinref part="U7" gate="G$1" pin="GND"/>
-<pinref part="J13" gate="G$1" pin="KL"/>
 </segment>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="-124.46" y1="33.02" x2="-124.46" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-124.46" y1="40.64" x2="-124.46" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="40.64" x2="-124.46" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-124.46" y="40.64"/>
 <pinref part="U6" gate="G$1" pin="GND"/>
-<pinref part="J14" gate="G$1" pin="KL"/>
-</segment>
-<segment>
-<pinref part="GND31" gate="1" pin="GND"/>
-<wire x1="-251.46" y1="58.42" x2="-251.46" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="J15" gate="G$1" pin="KL"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -32603,12 +32461,9 @@ there to limit peak current suring transient phase to lower than
 </segment>
 <segment>
 <pinref part="GND45" gate="1" pin="GND"/>
-<wire x1="-124.46" y1="-106.68" x2="-124.46" y2="-124.46" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="-124.46" x2="-124.46" y2="-134.62" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="-124.46" x2="-124.46" y2="-124.46" width="0.1524" layer="91"/>
-<junction x="-124.46" y="-124.46"/>
 <pinref part="U10" gate="G$1" pin="GND"/>
-<pinref part="J17" gate="G$1" pin="KL"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
@@ -32703,11 +32558,6 @@ there to limit peak current suring transient phase to lower than
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="-99.06" y1="58.42" x2="-99.06" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="R43" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="-99.06" y1="5.08" x2="-99.06" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="R42" gate="G$1" pin="2"/>
@@ -32721,6 +32571,11 @@ there to limit peak current suring transient phase to lower than
 <pinref part="P+8" gate="1" pin="+5V"/>
 <wire x1="-99.06" y1="-106.68" x2="-99.06" y2="-109.22" width="0.1524" layer="91"/>
 <pinref part="R44" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R43" gate="G$1" pin="2"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="-99.06" y1="55.88" x2="-99.06" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IO5" class="0">
@@ -32744,18 +32599,14 @@ there to limit peak current suring transient phase to lower than
 <pinref part="U12" gate="G$1" pin="HO"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="ELECTRONICS_BATTERY" class="0">
 <segment>
-<pinref part="J15" gate="G$1" pin="KL1"/>
-<wire x1="-251.46" y1="63.5" x2="-246.38" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-246.38" y1="63.5" x2="-233.68" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-233.68" y1="63.5" x2="-226.06" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-226.06" y1="63.5" x2="-215.9" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-251.46" y1="63.5" x2="-233.68" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="63.5" x2="-215.9" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="Q21" gate="G$1" pin="D"/>
 <wire x1="-251.46" y1="7.62" x2="-251.46" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-251.46" y1="17.78" x2="-248.92" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="VCC"/>
-<wire x1="-248.92" y1="17.78" x2="-233.68" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-251.46" y1="17.78" x2="-233.68" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-233.68" y1="17.78" x2="-226.06" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-233.68" y1="63.5" x2="-233.68" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-233.68" y="63.5"/>
@@ -32765,18 +32616,14 @@ there to limit peak current suring transient phase to lower than
 <wire x1="-233.68" y1="30.48" x2="-233.68" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-233.68" y1="30.48" x2="-226.06" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-233.68" y="30.48"/>
+<label x="-251.46" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="VBATT4" class="0">
+<net name="MOTOR4" class="0">
 <segment>
 <wire x1="-40.64" y1="-99.06" x2="-35.56" y2="-99.06" width="0.1524" layer="91"/>
 <label x="-35.56" y="-99.06" size="1.778" layer="95" xref="yes"/>
 <pinref part="Q20" gate="G$1" pin="S"/>
-</segment>
-<segment>
-<wire x1="-124.46" y1="-101.6" x2="-119.38" y2="-101.6" width="0.1524" layer="91"/>
-<label x="-119.38" y="-101.6" size="1.778" layer="95" xref="yes"/>
-<pinref part="J17" gate="G$1" pin="KL1"/>
 </segment>
 <segment>
 <wire x1="-43.18" y1="-127" x2="-35.56" y2="-127" width="0.1524" layer="91"/>

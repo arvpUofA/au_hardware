@@ -32599,26 +32599,6 @@ there to limit peak current suring transient phase to lower than
 <pinref part="U12" gate="G$1" pin="HO"/>
 </segment>
 </net>
-<net name="ELECTRONICS_BATTERY" class="0">
-<segment>
-<wire x1="-251.46" y1="63.5" x2="-233.68" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-233.68" y1="63.5" x2="-215.9" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="Q21" gate="G$1" pin="D"/>
-<wire x1="-251.46" y1="7.62" x2="-251.46" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U12" gate="G$1" pin="VCC"/>
-<wire x1="-251.46" y1="17.78" x2="-233.68" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-233.68" y1="17.78" x2="-226.06" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-233.68" y1="63.5" x2="-233.68" y2="30.48" width="0.1524" layer="91"/>
-<junction x="-233.68" y="63.5"/>
-<junction x="-233.68" y="17.78"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<pinref part="R45" gate="G$1" pin="1"/>
-<wire x1="-233.68" y1="30.48" x2="-233.68" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-233.68" y1="30.48" x2="-226.06" y2="30.48" width="0.1524" layer="91"/>
-<junction x="-233.68" y="30.48"/>
-<label x="-251.46" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="MOTOR4" class="0">
 <segment>
 <wire x1="-40.64" y1="-99.06" x2="-35.56" y2="-99.06" width="0.1524" layer="91"/>
@@ -32689,6 +32669,27 @@ there to limit peak current suring transient phase to lower than
 <pinref part="R45" gate="G$1" pin="2"/>
 <wire x1="-215.9" y1="30.48" x2="-198.12" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="POWER_BOARD" class="0">
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="U12" gate="G$1" pin="VCC"/>
+<wire x1="-251.46" y1="7.62" x2="-251.46" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-251.46" y1="17.78" x2="-233.68" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="17.78" x2="-233.68" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="R45" gate="G$1" pin="1"/>
+<wire x1="-233.68" y1="17.78" x2="-233.68" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="30.48" x2="-233.68" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="Q21" gate="G$1" pin="D"/>
+<wire x1="-233.68" y1="30.48" x2="-233.68" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="63.5" x2="-215.9" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-215.9" y1="63.5" x2="-233.68" y2="63.5" width="0.1524" layer="91"/>
+<label x="-241.3" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+<junction x="-233.68" y="63.5"/>
+<wire x1="-233.68" y1="63.5" x2="-241.3" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-233.68" y="30.48"/>
+<junction x="-233.68" y="17.78"/>
 </segment>
 </net>
 </nets>

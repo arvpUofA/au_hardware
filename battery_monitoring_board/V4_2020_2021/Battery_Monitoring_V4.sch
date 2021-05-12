@@ -31086,11 +31086,11 @@ flow to the motors.   </text>
 <wire x1="116.84" y1="-17.78" x2="116.84" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-43.18" x2="99.06" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="18/A4/T/SDA0"/>
-<label x="106.68" y="-43.18" size="1.778" layer="95" xref="yes"/>
-<wire x1="99.06" y1="-43.18" x2="106.68" y2="-43.18" width="0.1524" layer="91"/>
+<label x="104.14" y="-43.18" size="1.778" layer="95" xref="yes"/>
 <wire x1="99.06" y1="-17.78" x2="99.06" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="-7.62" x2="99.06" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-43.18" x2="104.14" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="SDA"/>
@@ -31166,11 +31166,9 @@ flow to the motors.   </text>
 </net>
 <net name="CAN_TX_T" class="0">
 <segment>
-<wire x1="88.9" y1="-81.28" x2="91.44" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-81.28" x2="91.44" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-83.82" x2="93.98" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-81.28" x2="93.98" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="3/CAN-TX/PWM"/>
-<label x="93.98" y="-83.82" size="1.778" layer="95" xref="yes"/>
+<label x="93.98" y="-81.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
@@ -31598,15 +31596,15 @@ flow to the motors.   </text>
 <net name="IO5" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="16/A2/T"/>
-<wire x1="88.9" y1="-48.26" x2="106.68" y2="-48.26" width="0.1524" layer="91"/>
-<label x="106.68" y="-48.26" size="1.778" layer="95" xref="yes"/>
+<wire x1="88.9" y1="-48.26" x2="104.14" y2="-48.26" width="0.1524" layer="91"/>
+<label x="104.14" y="-48.26" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IO1" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="17/A3/T"/>
-<wire x1="88.9" y1="-45.72" x2="101.6" y2="-45.72" width="0.1524" layer="91"/>
-<label x="101.6" y="-45.72" size="1.778" layer="95" xref="yes"/>
+<wire x1="88.9" y1="-45.72" x2="104.14" y2="-45.72" width="0.1524" layer="91"/>
+<label x="104.14" y="-45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$22" class="0">

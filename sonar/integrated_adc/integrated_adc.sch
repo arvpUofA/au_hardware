@@ -10615,48 +10615,6 @@ Datasheet link: http://ww1.microchip.com/downloads/en/DeviceDoc/39935c.pdf</desc
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-PowerSymbols">
-<description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
-This library contains power, ground, and voltage-supply symbols.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="3.3V">
-<description>&lt;h3&gt;3.3V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="3.3V" prefix="SUPPLY">
-<description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Resistors">
 <description>&lt;h3&gt;SparkFun Resistors&lt;/h3&gt;
 This library contains resistors. Reference designator:R. 
@@ -15335,7 +15293,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R11" library="ENC424J600_ethernet_circuits (1)" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
-<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device="" value="+3V3"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="715OHM" device="-0603-1/10W-1%" value="49.9"/>
 <part name="R13" library="SparkFun-Resistors" deviceset="715OHM" device="-0603-1/10W-1%" value="49.9"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="715OHM" device="-0603-1/10W-1%" value="10"/>
@@ -15369,6 +15326,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R18" library="ENC424J600_ethernet_circuits (1)" deviceset="AC0603FR-0712K4L" device="" value="180"/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16754,9 +16712,6 @@ Impedance:100.39ohm
 <attribute name="NAME" x="124.5108" y="-4.3434" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="124.5362" y="-4.8514" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY6" gate="G$1" x="111.76" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="111.76" y="-2.286" size="1.778" layer="96" align="bottom-center"/>
-</instance>
 <instance part="R12" gate="G$1" x="83.82" y="129.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="82.296" y="129.54" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="85.344" y="129.54" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -16873,6 +16828,9 @@ Impedance:100.39ohm
 </instance>
 <instance part="GND27" gate="1" x="214.6554" y="110.3376" smashed="yes">
 <attribute name="VALUE" x="207.0354" y="109.0676" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V21" gate="G$1" x="111.76" y="-1.27" smashed="yes">
+<attribute name="VALUE" x="109.22" y="-6.35" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -17072,14 +17030,6 @@ Impedance:100.39ohm
 <wire x1="152.4" y1="-7.62" x2="129.54" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <label x="139.4714" y="-7.3152" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="+3.3V" class="0">
-<segment>
-<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
-<wire x1="111.76" y1="-5.08" x2="111.76" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="-7.62" x2="119.38" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI4_MOSI" class="0">
@@ -17307,6 +17257,12 @@ Impedance:100.39ohm
 <wire x1="83.82" y1="120.65" x2="83.82" y2="116.7384" width="0.1524" layer="91"/>
 <wire x1="95.25" y1="120.65" x2="83.82" y2="120.65" width="0.1524" layer="91"/>
 <junction x="83.82" y="120.65"/>
+</segment>
+<segment>
+<wire x1="111.76" y1="-3.81" x2="111.76" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="-7.62" x2="119.38" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="+3V21" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="N$3" class="0">

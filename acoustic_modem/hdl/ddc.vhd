@@ -14,7 +14,7 @@
 -- 
 -- Revision:
 -- Revision 0.01 - Components declared, instantiated and connected..
--- Additional Comments:  Generics not yet properly configured.
+-- Additional Comments: Generics not yet properly configured.
 -- 
 ----------------------------------------------------------------------------------
 

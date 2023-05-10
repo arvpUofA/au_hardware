@@ -1,3 +1,7 @@
+Acoustic_Modem_Basys3_def_val.txt
+Acoustic_Modem_Basys3_dump.txt
+
 # directories to ignore
 
 /Acoustic_Modem_Basys3
+/constraints

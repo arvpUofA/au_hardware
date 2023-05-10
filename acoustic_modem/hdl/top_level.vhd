@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: Autonomous Robotic Vehicle Project
+-- Engineer: Ian Yurychuk
 -- 
 -- Create Date: 01/22/2023 10:01:14 PM
--- Design Name: 
+-- Design Name: Acoustic Modem FSK
 -- Module Name: top_level - Behavioral
--- Project Name: 
+-- Project Name: Acoustic Modem
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
@@ -13,7 +13,7 @@
 -- Dependencies: 
 -- 
 -- Revision:
--- Revision 0.01 - File Created
+-- Revision 0.02 - Components specified and instantiated
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
@@ -22,14 +22,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity top_level is
   port  ( 
@@ -44,6 +36,7 @@ entity top_level is
 end top_level;
 
 architecture Behavioral of top_level is
+    -- Clock Synthesizer Component Specficiation
     component clk_synthesizer is
       port  (
             clk_in : in std_logic;
@@ -55,7 +48,8 @@ architecture Behavioral of top_level is
             dac_clk : out std_logic
             );
     end component clk_synthesizer;
-    
+
+    -- Digital Down Converter Component Specficiation
     component ddc is
       port  (
             ddc_clk_in : in std_logic;
@@ -64,6 +58,7 @@ architecture Behavioral of top_level is
             );
     end component ddc;
     
+    -- Symbol Synchronizer Component Specification
     component synchronizer is
       port  (
             synch_signal_in : in std_logic_vector (8 downto 0);
@@ -72,6 +67,7 @@ architecture Behavioral of top_level is
             );
     end component synchronizer;
     
+    -- Demodulator Component Specification
     component demodulator is
       port  (
             dmod_signal_in : in std_logic_vector (8 downto 0);
@@ -80,6 +76,7 @@ architecture Behavioral of top_level is
             );
     end component demodulator;
     
+    -- Modulator Component Specification
     component modulator is
       port  (
             mod_data_in : in std_logic_vector (8 downto 0);
@@ -106,7 +103,7 @@ architecture Behavioral of top_level is
     signal signal_in : std_logic_vector (8 downto 0);
     
 begin
-
+    -- Clock Synthesizer Instance
     CLK_SYNTH : clk_synthesizer 
         port map  (
             clk_in => clk,
@@ -117,29 +114,29 @@ begin
             adc_clk => adc_clk,
             dac_clk => dac_clk
             );
-            
-     DDC1 : ddc
+     -- Digital Down Converter Instance
+     DOWNCONV : ddc
         port map (
             ddc_clk_in => clk_to_ddc,
             ddc_adc_in => mixer_in,
             ddc_out => ddc_to_mux
             );
-     
+     -- Symbol Synchronizer Instance
      SYNCH : synchronizer 
         port map (
             synch_signal_in => signal_in,
             index => mux_index,
             synch_clk_in => clk_to_synch 
             );
-
+     -- Demodulator Instance
      DEMOD : demodulator
         port map (
             dmod_signal_in => signal_in,
             dmod_signal_out => data_out,
             dmod_clk_in => clk_to_demod
             );
-
-     MOD1 : modulator
+     -- Modulator Instance
+     MODULTR : modulator
         port map (
             mod_data_in => data_in,
             mod_signal_out => signal_out,
